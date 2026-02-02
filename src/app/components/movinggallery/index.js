@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const galleryImages = [
@@ -28,13 +28,13 @@ export default function MovingGallery() {
                         </h2>
                     </div>
 
-                    <a
-                        href="#book-consult"
-                        className="inline-flex items-center gap-3 rounded-full bg-[#0C3C46] text-white px-8 py-4 text-sm font-medium hover:bg-[#0a3139] transition"
+                    <Link
+                        href="/book-consult"
+                        className="inline-flex items-center gap-3 rounded-full bg-[#0C3C46] text-white px-8 py-4 text-sm font-medium hover:bg-[#0a3139] transition theme-button"
                     >
-                        Book a Consult
+                        Book A Consult
                         <ArrowRight className="w-4 h-4" />
-                    </a>
+                    </Link>
                 </div>
             </div>
 
@@ -60,21 +60,6 @@ export default function MovingGallery() {
                     ))}
                 </div>
             </div>
-
-            {/* Animation */}
-            <style jsx>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-marquee {
-          animation: marquee 40s linear infinite;
-        }
-      `}</style>
         </section>
     );
 }

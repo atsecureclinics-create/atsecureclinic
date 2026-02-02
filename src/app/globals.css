@@ -80,3 +80,26 @@ body {
 .swiper-pagination-bullet-active {
   background: white;
 }
+
+/* Sliding description – pagination spacing */
+.sliding-description-swiper .swiper-pagination {
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .sliding-description-swiper .swiper-pagination {
+    margin-top: 4rem;
+  }
+}
+
+/* Moving gallery – Lanby-style marquee (no popup) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}

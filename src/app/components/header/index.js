@@ -29,9 +29,9 @@ export default function Header() {
                         Just the Labs
                     </Link>
 
-                    <Link href="/programs" className="flex items-center gap-1 hover:opacity-70">
+                    {/* <Link href="/programs" className="flex items-center gap-1 hover:opacity-70">
                         Programs <ChevronDown size={16} />
-                    </Link>
+                    </Link> */}
 
                     {/* About Dropdown */}
                     <div
@@ -44,7 +44,7 @@ export default function Header() {
                         </button>
 
                         {aboutOpen && (
-                            <div className="absolute top-full left-0 mt-3 w-48 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden z-50">
+                            <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden z-50">
                                 <Link
                                     href="/about-us"
                                     className="block px-5 py-3 hover:bg-vanilla transition"
@@ -53,7 +53,7 @@ export default function Header() {
                                 </Link>
 
                                 <Link
-                                    href="/our-team"
+                                    href="/the-care-team"
                                     className="block px-5 py-3 hover:bg-vanilla transition"
                                 >
                                     Our Team
@@ -82,7 +82,7 @@ export default function Header() {
 
                     <Link
                         href="/join"
-                        className="bg-navy text-white px-6 py-3 rounded-full font-semibold tracking-wide hover:opacity-90 transition"
+                        className="bg-coral text-white px-6 py-3 rounded-full font-semibold tracking-wide hover:opacity-90 transition"
                     >
                         Join Now
                     </Link>

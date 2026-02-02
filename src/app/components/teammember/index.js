@@ -6,7 +6,8 @@ import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { ChevronLeft, ChevronRight, Send } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 import Container from '../container';
 
 const TeamMember = () => {
@@ -32,14 +33,14 @@ const TeamMember = () => {
                 {/* Header */}
                 <div className="text-center mb-16 max-w-6xl space-y-3">
                     <span className="text-vanilla text-2xl font-bold tracking-[0.4em] uppercase">
-                        Meet Your CareTeam
+                        Meet Your Care Team — Meet the @Secure Team
                     </span>
                     <h2 className="text-background text-4xl md:text-6xl pt-4 pb-2 mb-0">
                         Specialists Who Work Together – For You.
                     </h2>
-                    {/* <p className="text-white text-lg md:text-2xl">
-                        The journey to find your best health isn't one to go on alone.
-                    </p> */}
+                    <p className="text-white/90 text-lg md:text-xl">
+                        Specialists who listen, design and curate treatment plans together.
+                    </p>
                 </div>
 
                 <div className="max-w-6xl w-full relative">
@@ -97,9 +98,9 @@ const TeamMember = () => {
 
                     {/* CTA */}
                     <div className="flex justify-center mt-12">
-                        <button className="bg-[#a2bdc1] hover:bg-white text-[#002b30] px-12 py-5 rounded-full font-black text-xs tracking-[0.25em] uppercase transition hover:-translate-y-2 shadow-xl">
+                        <Link href="/the-care-team" className="!bg-coral hover:bg-white text-white px-12 py-5 rounded-full font-black text-xs tracking-[0.25em] uppercase transition hover:-translate-y-2 shadow-xl inline-block">
                             Meet the Team
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

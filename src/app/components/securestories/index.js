@@ -53,18 +53,15 @@ const stories = [
 
 export default function SecureStories() {
     return (
-        <section className="bg-[#F6F4EF] py-28 relative">
+        <section className="bg-[#F6F4EF] pb-28 relative">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <p className="uppercase tracking-widest text-sm text-[#C2572A] font-medium">
+                    <h2 className="text-5xl font-semibold tracking-tight text-[#1E1E1E] mt-4 text-coral">
                         Secure Stories
-                    </p>
-                    <h2 className="text-5xl font-semibold tracking-tight text-[#1E1E1E] mt-4">
-                        Our Members
                     </h2>
                     <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
-                        Patient journeys across integrated care at SecureClinics, Mumbai.
+                        Patient journeys across integrated care @ SecureClinics, Mumbai. Patient stories @ Secure Clinics.
                     </p>
                 </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import AtTheRate from "../attherate";
 import {
     Activity,
     Bone,
@@ -61,11 +62,15 @@ export default function HowWeTreat() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-20">
-                    <h2 className="text-5xl font-semibold tracking-tight text-[#1E1E1E]">
-                        How We Treat <span className="text-[#0C3C46]">SecureClinics</span>
-                    </h2>
+                <h2 className="flex flex-wrap items-baseline gap-2 text-5xl font-semibold tracking-tight text-[#1E1E1E] items-end justify-center">
+  How We Treat
+  <span className="text-[#F37C6B] text-4xl align-baseline"><AtTheRate size={48} /></span>
+  SecureClinics
+  <span className="font-normal">SECURE Treatments</span>
+</h2>
+
                     <p className="mt-6 text-xl text-gray-600">
-                        An integrated, step-by-step approach to personalized healthcare in Mumbai.
+                        An integrated step-by-step approach to personalized healthcare in Mumbai.
                     </p>
                 </div>
 

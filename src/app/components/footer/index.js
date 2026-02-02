@@ -1,4 +1,6 @@
 import React from 'react';
+import LogoFooter from '../../../../public/icons/logo.svg';
+import Image from 'next/image';
 import {
     Instagram,
     Linkedin,
@@ -15,23 +17,23 @@ const Footer = () => {
     const sections = [
         {
             title: "About",
-            links: ["Mission", "Testimonials", "Founding Story", "NYC Office", "Forward Alternative", "Press"]
+            links: ["Mission", "Testimonials", "Our Story", "Mumbai Office", "Press"]
         },
         {
             title: "Services",
-            links: ["Just The Labs", "Primary Care for You", "Primary Care for Your Executive Team", "Top Primary Care Doctors", "Gift The Lanby", "Primary Care Doctors in Midtown Manhattan"]
+            links: ["Spine Care", "Orthopaedic Care", "Surgical Care", "Physiotherapy", "Aqua Therapy", "Strength Training", "Nutrition & Lifestyle", "Diagnostics & Path Lab"]
         },
         {
-            title: "Membership",
-            links: ["Membership", "Testimonial & Reviews", "Meet The Care Team", "Member App", "FAQs"]
+            title: "Care",
+            links: ["Meet The Care Team", "How We Treat", "Secure Stories", "FAQs"]
         },
         {
             title: "Resources",
-            links: ["Blog", "Take Our Quiz", "Products", "Amazon Store", "Events", "Perks", "Glossary", "Guides"]
+            links: ["Blog", "Events", "Guides"]
         },
         {
             title: "Company",
-            links: ["Careers", "Specialist Partnerships", "Book a Consult", "Contact Us"]
+            links: ["Careers", "Partnerships", "Book a Consult", "Contact Us"]
         }
     ];
 
@@ -50,15 +52,16 @@ const Footer = () => {
                         <div className="bg-foreground font-bold text-black p-5 rounded-2xl border border-white/30 shadow-2xl shadow-[#002b30]/5">
                             <h3 className="text-sm font-black tracking-[0.2em] mb-3 uppercase">Stay In Touch</h3>
                             <p className="text-sm font-bold mb-8 leading-relaxed opacity-70">
-                                Keep tabs on us and get no-fluff content delivered to your inbox.
+                                Keep tabs on SecureClinics and get no-fluff content delivered to your inbox.
                             </p>
 
                             <form className="space-y-4">
                                 <div className="relative group">
                                     <select className="w-full appearance-none bg-white/60 border-none rounded-2xl px-5 py-4 text-sm font-semibold focus:ring-2 focus:ring-[#00434b]/20 transition-all cursor-pointer">
                                         <option>I'm interested in...</option>
-                                        <option>Primary Care</option>
-                                        <option>Membership</option>
+                                        <option>Spine & Orthopaedic Care</option>
+                                        <option>Physiotherapy & Recovery</option>
+                                        <option>Book a Consult</option>
                                     </select>
                                     <ChevronDown className="absolute right-5 top-1/2 -translate-y-1/2 w-4 h-4 opacity-40 group-hover:opacity-100 transition-opacity" />
                                 </div>
@@ -77,10 +80,10 @@ const Footer = () => {
 
                         {/* Podcast Section */}
                         <div className="space-y-6">
-                            <h3 className="text-base font-bold tracking-[0.2em] uppercase">Listen To Our Podcast</h3>
+                            <h3 className="text-base font-bold tracking-[0.2em] uppercase">Resources</h3>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <PodcastLink icon={<Music2 size={18} />} platform="Spotify" />
-                                <PodcastLink icon={<Podcast size={18} />} platform="Apple Podcasts" />
+                                <PodcastLink icon={<Music2 size={18} />} platform="Blog" href="#" />
+                                <PodcastLink icon={<Podcast size={18} />} platform="Guides" href="#" />
                             </div>
                         </div>
                     </div>
@@ -128,14 +131,24 @@ const Footer = () => {
                     </button>
                 </div> */}
             </div>
+            <hr className='my-12' />
+            <div className='logo-footer w-full h-[100px]'>
+                <Image src={LogoFooter} alt="Secure Clinic" className='w-full h-full object-contain' />
+            </div>
+            <div className="flex gap-8 justify-between items-center pt-8">
+                <div className="text-size-small">© Secure Clinics 2025. All Rights Reserved.</div>
+                <div className=" gap-5 flex items-center">
+                    <a href="#" className="underline">Privacy policy</a>
+                    <a href="#" className="underline">Terms of use</a></div>
+            </div>
         </footer>
     );
 };
 
 // --- Atomic Components ---
 
-const PodcastLink = ({ icon, platform }) => (
-    <a href="#" className="flex items-center gap-4 bg-[#002b30] text-white px-6 py-4 rounded-2xl hover:bg-[#003d45] transition-all group shadow-xl shadow-[#002b30]/10 flex-1 sm:flex-none min-w-[180px]">
+const PodcastLink = ({ icon, platform, href = "#" }) => (
+    <a href={href} className="flex items-center gap-4 bg-[#002b30] text-white px-6 py-4 rounded-2xl hover:bg-[#003d45] transition-all group shadow-xl shadow-[#002b30]/10 flex-1 sm:flex-none min-w-[180px]">
         <div className="bg-white/10 p-2 rounded-lg group-hover:scale-110 transition-transform">
             {icon}
         </div>

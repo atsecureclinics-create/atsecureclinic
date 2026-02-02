@@ -9,21 +9,21 @@ import "swiper/css/pagination";
 
 const stats = [
     {
-        value: "Few Hours",
+        value: "97%",
         description:
-            "Most patients are able to stand and walk within a few hours after minimally invasive spine surgery.",
+            "Of our patients are able to stand and walk within a few hours after minimally invasive spine surgery.",
         icon: Activity,
     },
     {
-        value: "9 / 10",
+        value: "9 out of 10",
         description:
-            "Patients complete treatment with a clear recovery plan and ongoing support.",
+            "Patients complete treatment with a clear recovery and post recovery plan with continuous rehabilitation and counselling support.",
         icon: TrendingUp,
     },
     {
         value: "92%",
         description:
-            "Patients report significant improvement in pain and mobility within their treatment plan.",
+            "Of our patients report significant improvement in pain and mobility while treatment is ongoing.",
         icon: HeartPulse,
     },
 ];
@@ -38,7 +38,7 @@ export default function StatisticTestimonialSlider() {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <p className="uppercase tracking-widest text-sm text-[#CAB37A] font-medium">
-                        Outcomes that Matter
+                        Statistic Testimonial
                     </p>
                     <h2 className="mt-4 text-5xl font-semibold tracking-tight text-white">
                         Real Results, Backed by Care
