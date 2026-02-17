@@ -1,15 +1,10 @@
 "use client";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
 import { Activity, TrendingUp, HeartPulse } from "lucide-react";
-
-import "swiper/css";
-import "swiper/css/pagination";
 
 const stats = [
     {
-        value: "97%",
+        value: "97<code>%</code>",
         description:
             "Of our patients are able to stand and walk within a few hours after minimally invasive spine surgery.",
         icon: Activity,
@@ -21,63 +16,55 @@ const stats = [
         icon: TrendingUp,
     },
     {
-        value: "92%",
+        value: "92<code>%</code>",
         description:
             "Of our patients report significant improvement in pain and mobility while treatment is ongoing.",
         icon: HeartPulse,
     },
 ];
 
-export default function StatisticTestimonialSlider() {
+export default function StatisticTestimonial() {
     return (
         <section className="relative bg-[#0C3C46] py-28 overflow-hidden">
-            {/* Subtle texture */}
+            {/* Background texture */}
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,#ffffff_1px,transparent_1px)] bg-[length:24px_24px]" />
 
-            <div className="relative max-w-6xl mx-auto px-6">
+            <div className="relative max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <p className="uppercase tracking-widest text-sm text-[#CAB37A] font-medium">
                         Statistic Testimonial
                     </p>
-                    <h2 className="mt-4 text-5xl font-semibold tracking-tight text-white">
+                    <h2 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-white">
                         Real Results, Backed by Care
                     </h2>
                 </div>
 
-                {/* Slider */}
-                <Swiper
-                    modules={[Autoplay, Pagination]}
-                    autoplay={{ delay: 4500, disableOnInteraction: false }}
-                    loop
-                    slidesPerView={1}
-                    pagination={{
-                        clickable: true,
-                        bulletClass:
-                            "swiper-pagination-bullet !bg-white/40 !w-2.5 !h-2.5",
-                        bulletActiveClass:
-                            "!bg-[#CAB37A] !scale-110",
-                    }}
-                    className="stats-pagination"
-                >
+                {/* Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {stats.map((item, index) => (
-                        <SwiperSlide key={index}>
-                            <div className="bg-white/95 backdrop-blur rounded-3xl p-12 md:p-16 shadow-xl text-center max-w-4xl mx-auto">
-                                <div className="w-20 h-20 mx-auto mb-8 rounded-full bg-[#F6F4EF] flex items-center justify-center">
-                                    <item.icon className="w-10 h-10 text-[#0C3C46]" />
-                                </div>
-
-                                <h3 className="text-6xl font-bold text-[#0C3C46] mb-6">
-                                    {item.value}
-                                </h3>
-
-                                <p className="text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
-                                    {item.description}
-                                </p>
+                        <div
+                            key={index}
+                            className="bg-white/95 backdrop-blur rounded-3xl p-10 md:p-12 shadow-xl text-center hover:scale-[1.03] transition duration-300"
+                        >
+                            {/* Icon */}
+                            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#F6F4EF] flex items-center justify-center">
+                                <item.icon className="w-10 h-10 text-navy" />
                             </div>
-                        </SwiperSlide>
+
+                            {/* Value */}
+                            <h3
+                                className="text-5xl font-bold text-navy mb-4"
+                                dangerouslySetInnerHTML={{ __html: item.value }}
+                            />
+
+                            {/* Description */}
+                            <p className="text-xl text-navy leading-relaxed">
+                                {item.description}
+                            </p>
+                        </div>
                     ))}
-                </Swiper>
+                </div>
             </div>
         </section>
     );

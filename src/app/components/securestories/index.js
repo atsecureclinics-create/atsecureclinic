@@ -5,6 +5,8 @@ import { Navigation } from "swiper/modules";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
+import AtTheRate from "../attherate";
+import Link from "next/link";
 
 const stories = [
     {
@@ -53,15 +55,15 @@ const stories = [
 
 export default function SecureStories() {
     return (
-        <section className="bg-[#F6F4EF] pb-28 relative">
+        <section className="bg-[#F6F4EF] pt-28 relative">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h2 className="text-5xl font-semibold tracking-tight text-[#1E1E1E] mt-4 text-coral">
-                        Secure Stories
+                        <span className="text-[#F37C6B] text-4xl align-baseline"><AtTheRate size={40} /></span>Secure Stories
                     </h2>
-                    <p className="mt-6 text-xl text-gray-600 max-w-2xl mx-auto">
-                        Patient journeys across integrated care @ SecureClinics, Mumbai. Patient stories @ Secure Clinics.
+                    <p className="mt-6 text-2xl text-navy mx-auto">
+                        Patient Stories at <span className="text-[#F37C6B] text-xl align-baseline"><AtTheRate size={24} /></span>SecureClinics
                     </p>
                 </div>
 
@@ -118,13 +120,13 @@ export default function SecureStories() {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-20 text-center">
-                    <a
+                <div className="flex justify-center mt-12">
+                    <Link
                         href="/book-consult"
-                        className="inline-flex items-center justify-center px-10 py-4 rounded-full bg-[#0C3C46] text-white text-lg hover:bg-[#0A3139] transition"
+                        className="theme-button px-6 py-4 !text-xl flex justify-center items-center gap-2"
                     >
-                        Book a Consult
-                    </a>
+                        Book a Consult <ArrowRight size={20} />
+                    </Link>
                 </div>
             </div>
         </section>

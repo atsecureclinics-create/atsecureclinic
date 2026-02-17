@@ -1,15 +1,18 @@
 import Image from "next/image";
-import AtTheRateImage from '../../../../public/icons/atherate.svg';
+import AtTheRateImage from "../../../../public/icons/atherate.svg";
 
-const AtTheRate = ({ size }) => (
+const AtTheRate = ({ size = 16, Atrateimg }) => {
+  const src = Atrateimg || AtTheRateImage;
+
+  return (
     <Image
-      src={AtTheRateImage}
+      src={src}
       alt="At symbol"
       width={size}
       height={size}
-      style={{ width: size, height: size }}
-      className="inline-block object-contain"
+      className="inline-block object-contain align-middle"
     />
-  );  
+  );
+};
 
 export default AtTheRate;

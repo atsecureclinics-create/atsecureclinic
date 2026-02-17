@@ -18,7 +18,13 @@ export default {
                 navy: "var(--navy)",
             },
             fontFamily: {
-                seasons: ["var(--font-the-seasons)", "sans-serif"],
+                seasons: [
+                    "var(--font-the-seasons)",
+                    "ui-serif",
+                    "Georgia",
+                    "Times New Roman",
+                    "serif",
+                ],
             },
         },
     },

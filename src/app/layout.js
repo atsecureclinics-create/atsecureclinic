@@ -5,9 +5,31 @@ import Footer from "./components/footer";
 
 const theSeasons = localFont({
   src: [
-    { path: "../../public/fonts/TheSeasons-Light.woff2", weight: "300" },
-    { path: "../../public/fonts/TheSeasons-Regular.woff2", weight: "400" },
-    { path: "../../public/fonts/TheSeasons-Bold.woff2", weight: "700" },
+    {
+      path: "./fonts/TheSeasons-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/TheSeasons-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/TheSeasons-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/theseasons-it.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "./fonts/theseasons-bdit.woff2",
+      weight: "700",
+      style: "italic",
+    },
   ],
   variable: "--font-the-seasons",
   display: "swap",

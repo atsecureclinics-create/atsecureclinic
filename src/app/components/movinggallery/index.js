@@ -20,17 +20,17 @@ export default function MovingGallery() {
             <div className="max-w-7xl mx-auto px-6 mb-14">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
                     <div>
-                        <p className="uppercase tracking-widest text-sm text-[#0C3C46] font-medium">
+                        <p className="uppercase tracking-widest text-3xl text-navy font-bold">
                             Inside Secure Clinics
                         </p>
-                        <h2 className="mt-4 text-5xl font-semibold tracking-tight text-[#0C3C46]">
+                        <h2 className="mt-4 text-5xl font-semibold tracking-tight text-navy">
                             A Care Experience Designed Around You
                         </h2>
                     </div>
 
                     <Link
                         href="/book-consult"
-                        className="inline-flex items-center gap-3 rounded-full bg-[#0C3C46] text-white px-8 py-4 text-sm font-medium hover:bg-[#0a3139] transition theme-button"
+                        className="theme-button px-6 py-4 !text-xl flex justify-center items-center gap-2"
                     >
                         Book A Consult
                         <ArrowRight className="w-4 h-4" />

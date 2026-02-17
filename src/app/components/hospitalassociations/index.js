@@ -6,13 +6,33 @@ import Image from "next/image";
 import "swiper/css";
 
 const hospitals = [
-    { name: "Bhatia Hospital", logo: "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/673bb38824264ec6435eb0fc_logo-forbes.avif" },
-    { name: "Reliance Hospital", logo: "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/673bb38824264ec6435eb0fc_logo-forbes.avif" },
-    { name: "Saifee Hospital", logo: "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/673bb38824264ec6435eb0fc_logo-forbes.avif" },
-    { name: "SRCC", logo: "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/673bb38824264ec6435eb0fc_logo-forbes.avif" },
-    { name: "Wockhardt", logo: "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/673bb38824264ec6435eb0fc_logo-forbes.avif" },
-    { name: "Breach Candy", logo: "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/673bb38824264ec6435eb0fc_logo-forbes.avif" },
+    {
+        name: "Bhatia Hospital",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bhatia_Hospital_Mumbai_logo.png",
+    },
+    {
+        name: "Kokilaben Dhirubhai Ambani Hospital",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Kokilaben_Dhirubhai_Ambani_Hospital_logo.png",
+    },
+    {
+        name: "Saifee Hospital",
+        logo: "https://upload.wikimedia.org/wikipedia/en/5/5e/Saifee_Hospital_logo.png",
+    },
+    {
+        name: "SRCC Children Hospital",
+        logo: "https://upload.wikimedia.org/wikipedia/en/1/12/SRCC_Children%27s_Hospital_logo.png",
+    },
+    {
+        name: "Wockhardt Hospital",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Wockhardt_logo.png",
+    },
+    {
+        name: "Breach Candy Hospital",
+        logo: "https://upload.wikimedia.org/wikipedia/en/0/02/Breach_Candy_Hospital_logo.png",
+    },
 ];
+
+
 
 export default function HospitalAssociations() {
     return (
@@ -20,11 +40,11 @@ export default function HospitalAssociations() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-14">
-                    <p className="uppercase tracking-widest text-sm text-[#0C3C46] font-medium">
+                    {/* <p className="uppercase tracking-widest text-2xl text-navy font-bold">
                         Trusted Clinical Network
-                    </p>
-                    <h3 className="mt-4 text-4xl font-semibold text-[#0C3C46]">
-                        Hospital Associations & Transitions
+                    </p> */}
+                    <h3 className="mt-4 text-4xl font-semibold text-navy">
+                        Hospital Associations <code>&</code> Transitions
                     </h3>
                 </div>
 

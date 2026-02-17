@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <header className="bg-background relative">
-            <div className="container flex items-center justify-between py-5">
+            <div className="container flex items-center justify-between py-8">
 
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
@@ -75,16 +75,9 @@ export default function Header() {
                 </nav>
 
                 {/* Right Actions */}
-                <div className="hidden md:flex items-center gap-6 text-xl font-extrabold text-black ">
-                    <Link href="/consult" className="text-navy">
+                <div className="">
+                    <Link href="/consult" className="theme-button px-4 py-3 font-bold !text-lg">
                         Book a Consult
-                    </Link>
-
-                    <Link
-                        href="/join"
-                        className="bg-coral text-white px-6 py-3 rounded-full font-semibold tracking-wide hover:opacity-90 transition"
-                    >
-                        Join Now
                     </Link>
                 </div>
             </div>

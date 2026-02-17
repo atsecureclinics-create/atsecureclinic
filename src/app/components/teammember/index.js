@@ -6,16 +6,17 @@ import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Container from '../container';
+import AtTheRate from '../attherate';
 
 const TeamMember = () => {
     const team = [
         {
             name: "Dr. Indira Gjoni",
             bio: "Dr. Indira Gjoni is a board-certified family medicine physician with a BA from Johns Hopkins University, an MPH in International Health from Columbia University, and an MD from St. George's University. She completed her residency in Family Medicine at HackensackUMC Mountainside and has received additional training in Functional Medicine.",
-            image: "https://images.unsplash.com/photo-1559839734-2b71f153678f?auto=format&fit=crop&q=80&w=800",
+            image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800",
             portraitBg: "bg-[#e87a5d]"
         },
         {
@@ -32,15 +33,15 @@ const TeamMember = () => {
 
                 {/* Header */}
                 <div className="text-center mb-16 max-w-6xl space-y-3">
-                    <span className="text-vanilla text-2xl font-bold tracking-[0.4em] uppercase">
-                        Meet Your Care Team — Meet the @Secure Team
+                    <span className="text-vanilla text-3xl 2xl:text-4xl font-bold">
+                        Meet the <span className="text-white text-4xl align-baseline"><AtTheRate size={30} /></span> Secure Team
                     </span>
-                    <h2 className="text-background text-4xl md:text-6xl pt-4 pb-2 mb-0">
-                        Specialists Who Work Together – For You.
+                    <h2 className="text-background text-4xl md:text-4xl pt-4 pb-2 mb-0 text-white">
+                        Specialists Who Listen, Design and Curate Treatment Plans Together
                     </h2>
-                    <p className="text-white/90 text-lg md:text-xl">
+                    {/* <p className="text-white/90 text-lg md:text-xl">
                         Specialists who listen, design and curate treatment plans together.
-                    </p>
+                    </p> */}
                 </div>
 
                 <div className="max-w-6xl w-full relative">
@@ -98,8 +99,8 @@ const TeamMember = () => {
 
                     {/* CTA */}
                     <div className="flex justify-center mt-12">
-                        <Link href="/the-care-team" className="!bg-coral hover:bg-white text-white px-12 py-5 rounded-full font-black text-xs tracking-[0.25em] uppercase transition hover:-translate-y-2 shadow-xl inline-block">
-                            Meet the Team
+                        <Link href="/the-care-team" className="theme-button px-6 py-4 !text-xl flex justify-center items-center gap-2">
+                            Meet the Team <ArrowRight size={20} />
                         </Link>
                     </div>
                 </div>

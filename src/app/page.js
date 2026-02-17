@@ -24,40 +24,26 @@ export default function Home() {
             <div className="lg:col-span-7 xl:col-span-6">
 
               {/* Eyebrow */}
-              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#0B1F23]/70">
-                What if healthcare actually worked together?
+              <p className="mb-4 text-3xl 2xl:text-4xl font-bold text-navy leading-normal">
+                What if healthcare actually worked together ?
               </p>
 
               {/* H1 */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight text-[#0B1F23]">
-                Heal. Recover. Move
+              <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-semibold leading-tight text-[#0B1F23]">
+                HEAL Stronger RECOVER Faster MOVE better
               </h1>
 
               {/* H2 – emphasis lines */}
-              <div className="mt-6 space-y-2 text-xl md:text-2xl font-medium text-[#0B1F23]/90">
-                <p>Heal stronger · Recover faster · Move better</p>
-                <p>Pain does not define you</p>
-                <p className="font-semibold">From pain to performance</p>
+              <div className="mt-6 space-y-2 text-lg md:text-2xl font-medium text-[#0B1F23]/90">
+                <p className="font-semibold no-ligatures">Doctors, Therapy, Recovery <code>&</code> Strength <code>-</code> Seamlessly Integrated in Mumbai.</p>
+                <p>We’re Not Just Surgeons. We’re the System.</p>
               </div>
-
-              {/* Body copy */}
-              <p className="mt-6 text-lg text-[#0B1F23]/80 max-w-2xl">
-                One clinic. One team. Doctors, therapy, recovery & strength working as one clinic in Mumbai.
-                We are not just surgeons. We&apos;re the system.
-              </p>
-
-              {/* H3 */}
-              <p className="mt-5 text-base md:text-lg font-semibold text-[#0C3C46] max-w-2xl">
-                Surgeons, Therapists, Nutritionists and Strength Trainers.
-                <br />
-                One Clinic. One Team. One System.
-              </p>
 
               {/* CTA */}
               <div className="mt-10">
                 <Link
                   href="/book-consult"
-                  className="inline-flex items-center justify-center rounded-full bg-[#0C3C46] px-8 py-4 text-sm font-semibold tracking-widest uppercase text-white hover:bg-[#092E35] transition"
+                  className="theme-button px-8 py-4 font-bold !text-xl"
                 >
                   Book a Consult
                 </Link>
@@ -115,7 +101,9 @@ export default function Home() {
 
       {/* SCROLL 5 – Problem / Solution */}
       <section>
-        <ProblemSolution />
+        <Container>
+          <ProblemSolution />
+        </Container>
       </section>
 
       {/* SCROLL 6 – How We Treat */}
