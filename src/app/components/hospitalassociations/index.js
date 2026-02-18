@@ -4,32 +4,33 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css";
+import Hospital1 from '../../../../public/icons/hospital-1.png';
+import Hospital2 from '../../../../public/icons/hospital-2.png';
+import Hospital3 from '../../../../public/icons/hospital-3.png';
+import Hospital4 from '../../../../public/icons/hospital-4.png';
+import Hospital5 from '../../../../public/icons/hospital-5.png';
 
 const hospitals = [
     {
         name: "Bhatia Hospital",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bhatia_Hospital_Mumbai_logo.png",
+        logo: Hospital1,
     },
     {
         name: "Kokilaben Dhirubhai Ambani Hospital",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Kokilaben_Dhirubhai_Ambani_Hospital_logo.png",
+        logo: Hospital2,
     },
     {
         name: "Saifee Hospital",
-        logo: "https://upload.wikimedia.org/wikipedia/en/5/5e/Saifee_Hospital_logo.png",
+        logo: Hospital3,
     },
     {
         name: "SRCC Children Hospital",
-        logo: "https://upload.wikimedia.org/wikipedia/en/1/12/SRCC_Children%27s_Hospital_logo.png",
+        logo: Hospital4,
     },
     {
         name: "Wockhardt Hospital",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Wockhardt_logo.png",
-    },
-    {
-        name: "Breach Candy Hospital",
-        logo: "https://upload.wikimedia.org/wikipedia/en/0/02/Breach_Candy_Hospital_logo.png",
-    },
+        logo: Hospital5,
+    }
 ];
 
 
@@ -43,7 +44,7 @@ export default function HospitalAssociations() {
                     {/* <p className="uppercase tracking-widest text-2xl text-navy font-bold">
                         Trusted Clinical Network
                     </p> */}
-                    <h3 className="mt-4 text-4xl font-semibold text-navy">
+                    <h3 className="mt-4 text-5xl font-semibold text-navy">
                         Hospital Associations <code>&</code> Transitions
                     </h3>
                 </div>
@@ -64,8 +65,8 @@ export default function HospitalAssociations() {
                 >
                     {hospitals.map((hospital, index) => (
                         <SwiperSlide key={index}>
-                            <div className="flex items-center justify-center h-24 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <img
+                            <div className="flex items-center justify-center h-24 transition-all duration-300">
+                                <Image
                                     src={hospital.logo}
                                     alt={hospital.name}
                                     width={160}

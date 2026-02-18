@@ -89,17 +89,17 @@ export default function MembershipPage() {
       <section className="pt-24 bg-[var(--vanilla)]">
         <div className="container">
 
-          <div className="max-w-4xl m-auto">
+          <div className="max-w-5xl m-auto">
 
             {/* Heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-[var(--navy)] leading-tight mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-[var(--navy)] leading-tight mb-8 text-center">
               A More Connected Approach to Care
             </h2>
 
             {/* Content */}
             {/* <span className="text-white text-4xl align-baseline"><AtTheRate size={16} /></span> */}
             <p
-              className="text-lg md:text-xl text-[var(--navy)]/80 leading-relaxed"
+              className="text-lg md:text-xl text-navy leading-relaxed font-bold"
               dangerouslySetInnerHTML={{ __html: content }}
             />
 

@@ -55,11 +55,11 @@ const stories = [
 
 export default function SecureStories() {
     return (
-        <section className="bg-[#F6F4EF] pt-28 relative">
+        <section className="pt-28 relative">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-semibold tracking-tight text-[#1E1E1E] mt-4 text-coral">
+                    <h2 className="text-5xl font-semibold tracking-tight text-navy mt-4">
                         <span className="text-[#F37C6B] text-4xl align-baseline"><AtTheRate size={40} /></span>Secure Stories
                     </h2>
                     <p className="mt-6 text-2xl text-navy mx-auto">

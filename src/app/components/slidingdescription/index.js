@@ -35,9 +35,10 @@ export default function SlidingDescription() {
       style={{ backgroundColor: BACKGROUND }}
     >
       <div className="container px-4 sm:px-6 md:px-8 mx-auto max-w-4xl">
-        <h2 className="mb-4 text-3xl 2xl:text-4xl font-bold text-white leading-normal" ><span className="text-white text-4xl align-baseline"><AtTheRate size={40} /></span> SecureClinics brings structure to healthcare in Mumbai.</h2>
+        <h2 className="mb-4 text-3xl 2xl:text-4xl font-bold text-white text-center leading-normal" >
+          <span className="text-white text-4xl align-baseline"><AtTheRate size={40} /></span>
+          SecureClinics brings structure to healthcare in Mumbai.</h2>
         {/* Quote icon – large, faded, upper left (outside swiper) */}
-
 
         <Swiper
           modules={[Pagination, Autoplay]}
@@ -51,15 +52,15 @@ export default function SlidingDescription() {
         >
           {slides.map((item, i) => (
             <SwiperSlide key={i}>
-              <div
-                className="text-[120px] md:text-[160px] lg:text-[200px] font-serif leading-none select-none pointer-events-none -mb-16 md:-mb-20 lg:-mb-24 absolute z-10"
-                style={{ color: "rgba(255, 255, 255, 0.15)" }}
-                aria-hidden
-              >
-                "
-              </div>
               <blockquote className="relative mt-10 pl-8 text-center ">
-                <p className="text-white text-lg md:text-xl lg:text-4xl leading-relaxed text-left">
+                <p className="text-white text-lg md:text-xl lg:text-4xl leading-relaxed text-center inline-block relative">
+                  <div
+                    className="text-[120px] md:text-[160px] lg:text-[200px] font-serif leading-none select-none pointer-events-none -mb-16 md:-mb-20 lg:-mb-24 absolute -top-10 -left-2 z-10"
+                    style={{ color: "rgba(255, 255, 255, 0.15)" }}
+                    aria-hidden
+                  >
+                    "
+                  </div>
                   {item.quote}
                 </p>
                 <footer className="mt-8 md:mt-10">

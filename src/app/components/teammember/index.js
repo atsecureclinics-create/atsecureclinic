@@ -36,7 +36,7 @@ const TeamMember = () => {
                     <span className="text-vanilla text-3xl 2xl:text-4xl font-bold">
                         Meet the <span className="text-white text-4xl align-baseline"><AtTheRate size={30} /></span> Secure Team
                     </span>
-                    <h2 className="text-background text-4xl md:text-4xl pt-4 pb-2 mb-0 text-white">
+                    <h2 className="text-2xl md:text-2xl pt-4 pb-2 mb-0 text-white">
                         Specialists Who Listen, Design and Curate Treatment Plans Together
                     </h2>
                     {/* <p className="text-white/90 text-lg md:text-xl">

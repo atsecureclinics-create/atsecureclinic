@@ -32,10 +32,10 @@ export default function StatisticTestimonial() {
             <div className="relative max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <p className="uppercase tracking-widest text-sm text-[#CAB37A] font-medium">
+                    {/* <p className="uppercase tracking-widest text-sm text-[#CAB37A] font-medium">
                         Statistic Testimonial
-                    </p>
-                    <h2 className="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-white">
+                    </p> */}
+                    <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-white">
                         Real Results, Backed by Care
                     </h2>
                 </div>

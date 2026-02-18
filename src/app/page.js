@@ -24,7 +24,7 @@ export default function Home() {
             <div className="lg:col-span-7 xl:col-span-6">
 
               {/* Eyebrow */}
-              <p className="mb-4 text-3xl 2xl:text-4xl font-bold text-navy leading-normal">
+              <p className="mb-4 text-3xl 2xl:text-4xl font-bold leading-normal text-coral">
                 What if healthcare actually worked together ?
               </p>
 
@@ -36,7 +36,7 @@ export default function Home() {
               {/* H2 – emphasis lines */}
               <div className="mt-6 space-y-2 text-lg md:text-2xl font-medium text-[#0B1F23]/90">
                 <p className="font-semibold no-ligatures">Doctors, Therapy, Recovery <code>&</code> Strength <code>-</code> Seamlessly Integrated in Mumbai.</p>
-                <p>We’re Not Just Surgeons. We’re the System.</p>
+                <p className="font-semibold no-ligatures" >We’re Not Just Surgeons. We’re the System.</p>
               </div>
 
               {/* CTA */}

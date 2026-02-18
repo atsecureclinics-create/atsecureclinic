@@ -20,7 +20,7 @@ export default function MovingGallery() {
             <div className="max-w-7xl mx-auto px-6 mb-14">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
                     <div>
-                        <p className="uppercase tracking-widest text-3xl text-navy font-bold">
+                        <p className="tracking-widest text-3xl text-navy font-bold">
                             Inside Secure Clinics
                         </p>
                         <h2 className="mt-4 text-5xl font-semibold tracking-tight text-navy">

@@ -55,7 +55,7 @@ const data = [
 
 export default function ProblemSolution() {
     return (
-        <section className="bg-[#F6F4EF] max-w-7xl m-auto my-16">
+        <section className="max-w-7xl m-auto my-16">
             {/* HEADER */}
             <div className="grid md:grid-cols-2">
 
