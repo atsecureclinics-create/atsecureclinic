@@ -24,19 +24,18 @@ export default function Home() {
             <div className="lg:col-span-7 xl:col-span-6">
 
               {/* Eyebrow */}
-              <p className="mb-4 text-3xl 2xl:text-4xl font-bold leading-normal text-coral">
+              <p className="mb-4 text-3xl 2xl:text-4xl font-bold leading-normal text-navy">
                 What if healthcare actually worked together ?
               </p>
 
               {/* H1 */}
-              <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-semibold leading-tight text-[#0B1F23]">
+              <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-semibold leading-tight text-navy">
                 HEAL Stronger RECOVER Faster MOVE better
               </h1>
 
               {/* H2 – emphasis lines */}
-              <div className="mt-6 space-y-2 text-lg md:text-2xl font-medium text-[#0B1F23]/90">
-                <p className="font-semibold no-ligatures">Doctors, Therapy, Recovery <code>&</code> Strength <code>-</code> Seamlessly Integrated in Mumbai.</p>
-                <p className="font-semibold no-ligatures" >We’re Not Just Surgeons. We’re the System.</p>
+              <div className="mt-6 space-y-2 text-lg md:text-2xl font-medium text-navy">
+                <p className="font-semibold no-ligatures">Surgeons, Therapists, Nutritionists and Strength Trainers. One Clinic. One team. One System. <code>-</code> Seamlessly Integrated in Mumbai.</p>
               </div>
 
               {/* CTA */}
@@ -65,7 +64,7 @@ export default function Home() {
                 <button
                   type="button"
                   aria-label="Play video"
-                  className="absolute bottom-6 right-6 w-14 h-14 rounded-full bg-[#E85A3A] flex items-center justify-center shadow-lg hover:scale-105 transition"
+                  className="absolute bottom-6 right-6 w-14 h-14 rounded-full bg-coral flex items-center justify-center shadow-lg hover:scale-105 transition"
                 >
                   <svg
                     className="w-5 h-5 text-white ml-0.5"
@@ -83,9 +82,7 @@ export default function Home() {
       </section>
 
       {/* SCROLL 2 – Sliding description */}
-      <section className="text-white">
-        <SlidingDescription />
-      </section>
+      <SlidingDescription />
 
       {/* SCROLL 3 – Features */}
       <section className="bg-white pb-12">
@@ -95,7 +92,11 @@ export default function Home() {
       </section>
 
       {/* SCROLL 4 – Meet Care Team */}
-      <section className="bg-navy">
+      <section style={{
+        backgroundImage: "url('/common/orange-bg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}>
         <TeamMember />
       </section>
 

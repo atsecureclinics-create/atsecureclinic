@@ -46,7 +46,7 @@ export default function Header() {
                         {aboutOpen && (
                             <div className="absolute top-full left-0 w-48 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden z-50">
                                 <Link
-                                    href="/about-us"
+                                    href="/about"
                                     className="block px-5 py-3 hover:bg-vanilla transition"
                                 >
                                     About Us
@@ -72,11 +72,14 @@ export default function Header() {
                     <Link href="/faq" className="hover:opacity-70">
                         FAQ
                     </Link>
+                    <Link href="/contact-us" className="hover:opacity-70">
+                        Contact Us
+                    </Link>
                 </nav>
 
                 {/* Right Actions */}
                 <div className="">
-                    <Link href="/consult" className="theme-button px-4 py-3 font-bold !text-lg">
+                    <Link href="/contact-us" className="theme-button px-4 py-3 font-bold !text-lg">
                         Book a Consult
                     </Link>
                 </div>

@@ -59,7 +59,7 @@ export default function MembershipPage() {
               </p>
 
               {/* H1 */}
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight text-[#0B1F23]">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight text-navy">
                 Designed for a SECURE long<code>-</code>term recovery, in Mumbai
               </h1>
 
@@ -76,7 +76,7 @@ export default function MembershipPage() {
 
             {/* RIGHT VIDEO */}
             <div className="lg:col-span-5 xl:col-span-6 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-lg aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-lg aspect-[4/5] rounded-4xl overflow-hidden shadow-2xl">
 
                 <Image src={team} alt="Membership" className="w-full h-full object-cover" />
               </div>
@@ -86,13 +86,13 @@ export default function MembershipPage() {
         </Container>
       </section>
 
-      <section className="pt-24 bg-[var(--vanilla)]">
+      <section className="pt-24 bg-vanilla">
         <div className="container">
 
           <div className="max-w-5xl m-auto">
 
             {/* Heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-[var(--navy)] leading-tight mb-8 text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-navy leading-tight mb-8 text-center">
               A More Connected Approach to Care
             </h2>
 
@@ -108,10 +108,14 @@ export default function MembershipPage() {
         </div>
       </section>
 
-      <section className="py-16 my-16 bg-[var(--green)]">
+      <section className="py-16 my-16" style={{
+        backgroundImage: "url('/common/blue-bg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}>
         <div className="container">
           <div className="max-w-4xl m-auto">
-            <p className="text-lg md:text-4xl text-center text-white leading-relaxed"><span className="text-white text-4xl align-baseline"><AtTheRate size={30} /></span>SecureClinics, the goal is not just to treat pain, but to support confident, sustainable recovery and better quality of life.</p>
+            <p className="text-lg md:text-4xl text-center text-navy leading-relaxed"><span className="text-navy text-4xl align-baseline"><AtTheRate size={30} /></span>SecureClinics, the goal is not just to treat pain, but to support confident, sustainable recovery and better quality of life.</p>
           </div>
         </div>
       </section>

@@ -29,11 +29,11 @@ const TeamMember = () => {
 
     return (
         <Container>
-            <div className=" font-seasons min-h-screen py-24 px-4 md:px-12 flex flex-col items-center justify-center overflow-hidden">
+            <div className=" font-seasons xl:min-h-screen py-18 px-4 2xl:px-12 flex flex-col items-center justify-center overflow-hidden">
 
                 {/* Header */}
-                <div className="text-center mb-16 max-w-6xl space-y-3">
-                    <span className="text-vanilla text-3xl 2xl:text-4xl font-bold">
+                <div className="text-center mb-8 max-w-6xl space-y-3">
+                    <span className="text-3xl 2xl:text-4xl font-bold text-white">
                         Meet the <span className="text-white text-4xl align-baseline"><AtTheRate size={30} /></span> Secure Team
                     </span>
                     <h2 className="text-2xl md:text-2xl pt-4 pb-2 mb-0 text-white">
@@ -44,7 +44,7 @@ const TeamMember = () => {
                     </p> */}
                 </div>
 
-                <div className="max-w-6xl w-full relative">
+                <div className=" max-w-5xl 2xl:max-w-6xl w-full relative">
 
                     {/* Navigation */}
                     <button className="swiper-prev-btn absolute left-[-20px] lg:left-[-80px] top-1/2 -translate-y-1/2 z-20 w-14 h-14 rounded-full border border-white/20 text-white hidden md:flex items-center justify-center hover:bg-white hover:text-navy transition cursor-pointer">

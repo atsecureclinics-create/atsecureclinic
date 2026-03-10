@@ -58,9 +58,9 @@ const Footer = () => {
                             <form className="space-y-4">
                                 <div className="relative group">
                                     <select className="w-full appearance-none bg-white/60 border-none rounded-2xl px-5 py-4 text-sm font-semibold focus:ring-2 focus:ring-[#00434b]/20 transition-all cursor-pointer">
-                                        <option>I'm interested in...</option>
-                                        <option>Spine & Orthopaedic Care</option>
-                                        <option>Physiotherapy & Recovery</option>
+                                        <option>I<code>'</code>m interested in...</option>
+                                        <option>Spine <code>&</code> Orthopaedic Care</option>
+                                        <option>Physiotherapy <code>&</code> Recovery</option>
                                         <option>Book a Consult</option>
                                     </select>
                                     <ChevronDown className="absolute right-5 top-1/2 -translate-y-1/2 w-4 h-4 opacity-40 group-hover:opacity-100 transition-opacity" />

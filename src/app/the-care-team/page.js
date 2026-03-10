@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { team } from "../api/team"; // Use alias if set up, or relative path
+import { ArrowRight } from "lucide-react";
 
 export default function CareTeam() {
   return (
-    <section className="bg-[#F4F2EE] py-20">
+    <section className="bg-foreground py-20">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-semibold text-center mb-14 text-[#0B1F23]">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14 text-navy">
           Your Care Team
         </h2>
 
@@ -15,7 +16,7 @@ export default function CareTeam() {
             <Link
               key={member.slug}
               href={`/the-care-team/${member.slug}`}
-              className="group relative rounded-[28px] overflow-hidden bg-[#E66A45] cursor-pointer block"
+              className="group relative rounded-2xl overflow-hidden bg-background cursor-pointer block"
             >
               {/* Image Container */}
               <div className="relative w-full aspect-[4/5]">
@@ -32,31 +33,31 @@ export default function CareTeam() {
               <div
                 className="
                   absolute inset-x-0 bottom-0
-                  bg-[#FBFAF7] p-6
-                  rounded-t-[24px]
-                  translate-y-[calc(100%-85px)] 
+                  bg-vanilla p-6
+                  rounded-t-2xl
+                  translate-y-[calc(100%-100px)] 
                   group-hover:translate-y-0
                   transition-transform duration-500 ease-out
                 "
               >
                 {/* Note: Adjusted translate-y calculation for better mobile/desktop consistency */}
-                
-                <p className="text-xs font-semibold tracking-widest uppercase text-[#E66A45] mb-2">
+
+                <p className="text-lg font-semibold tracking-widest uppercase text-coral mb-2">
                   {member.role}
                 </p>
 
-                <h3 className="text-xl font-semibold text-[#0B1F23]">
+                <h3 className="text-xl font-semibold text-navy">
                   {member.name}
                 </h3>
 
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                    <p className="mt-4 text-sm text-[#0B1F23]/80 leading-relaxed">
+                  <p className="mt-4 text-base text-navy leading-relaxed">
                     {member.description}
-                    </p>
+                  </p>
 
-                    <span className="mt-4 inline-flex text-sm font-semibold text-[#E66A45]">
-                    Learn More +
-                    </span>
+                  <span className="mt-4 inline-flex text-base font-semibold text-coral items-center gap-1 ">
+                    Learn More <ArrowRight size={16} />
+                  </span>
                 </div>
               </div>
             </Link>

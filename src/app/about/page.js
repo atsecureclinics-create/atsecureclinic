@@ -1,173 +1,138 @@
-import Image from "next/image";
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import Container from "../components/container";
+import team from "../../../public/common/team.png";
+import Image from "next/image";
+import { Minus, Plus } from "lucide-react";
+import MemberRoadmap from "../components/memberroadmap";
+import FAQ from "../components/faq";
+import AtTheRate from "../components/attherate";
+import MovingGallery from "../components/movinggallery";
 
-export const metadata = {
-  title: "About | SecureClinics",
-  description:
-    "Learn about SecureClinics, an integrated orthopaedic and spine care centre in Mumbai focused on conservative-first, multidisciplinary, long-term recovery.",
-};
+const faqs = [
+    {
+        title: "Comprehensive baseline assessment to kick off your membership",
+        content: [
+            "A comprehensive intake to bring your Care Team up to speed on your health and wellness.",
+            "Extensive lab work and a complete physical exam (including vitals and body composition analysis) to establish your baseline.",
+            "Collaborative conversation with your Care Team to understand your lifestyle and define your goals.",
+        ],
+    },
+    {
+        title: "Personalized Care Plan based on your biometric data and goals",
+    },
+    {
+        title:
+            "Coordination of any care outside of The Lanby to make getting healthy seamless",
+    },
+    {
+        title: "Continuous care from your dedicated Care Team",
+    },
+    {
+        title: "Trusted content and community events",
+    },
+];
 
-export default function AboutPage() {
-  return (
-    <>
-      {/* HERO */}
-      <section className="bg-background text-navy">
-        <Container>
-          <div className="py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* LEFT CONTENT */}
-              <div>
-                <p className="text-xs font-semibold tracking-[0.2em] text-orange-500 uppercase">
-                  About
-                </p>
-                <h1 className="mt-3 text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-[#0b1f23]">
-                  Care without the chaos.
-                </h1>
-                <p className="mt-4 text-xl font-semibold text-[#0b1f23]">
-                  Specialist-led care – designed for a SECURE long-term recovery.
-                </p>
+const content = `<span className="text-white text-4xl align-baseline"><AtTheRate size={40} /></span>SecureClinics is an integrated healthcare centre designed to make care feel clearer, more connected, and more reassuring for patients.
 
-                <p className="mt-6 text-lg">
-                  At <span className="font-semibold">@SecureClinics</span>, healthcare is designed to feel
-                  clear, connected and reassuring — not scattered, rushed or excessive. Based in
-                  Mumbai, our integrated clinic brings doctors, diagnostics, therapy and recovery
-                  together as one team so every plan is deliberate, coordinated and tailored.
-                </p>
+We bring together experienced orthopaedic and spine specialists, physiotherapists, rehabilitation experts, and nutrition professionals under one roof, so diagnosis, treatment, recovery, and prevention are never fragmented. Every care plan is thoughtfully structured, discussed across disciplines, and tailored to the individual, because no two bodies, injuries, or recovery journeys are the same.
 
-                <div className="mt-10 flex flex-wrap items-center gap-4">
-                  <Link href="/book-consult" className="theme-button px-6 py-3">
-                    Book a consult now
-                  </Link>
-                  <span className="text-sm text-slate-600">
-                    One clinic. One team. Designed for long-term recovery.
-                  </span>
+Our approach is grounded in evidence-based medicine and real-world clinical experience, with a strong focus on movement, function, and long-term outcomes. Just as importantly, we believe patients should feel informed and involved at every step. Options are explained clearly, decisions are shared, and progress is reviewed together <code>-</code> creating care that feels intentional, not overwhelming.`;
+
+export default function MembershipPage() {
+    const [openIndex, setOpenIndex] = useState(0);
+    return (
+        <>
+            {/* HERO */}
+            <section className="min-h-[85vh] flex items-center bg-[#ebebe6]">
+                <Container>
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                        {/* LEFT CONTENT */}
+                        <div className="lg:col-span-7 xl:col-span-6">
+                            {/* Eyebrow */}
+                            <p className="mb-4 text-2xl font-semibold uppercase tracking-[0.25em] text-coral">
+                                Specialist<code>-</code>Led Care
+                            </p>
+
+                            {/* H1 */}
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight text-navy">
+                                Designed for a SECURE long<code>-</code>term recovery, in Mumbai
+                            </h1>
+
+                            {/* CTA */}
+                            <div className="mt-10">
+                                <Link
+                                    href="/book-consult"
+                                    className="theme-button px-8 py-4 font-bold !text-xl"
+                                >
+                                    Book a Consult
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* RIGHT VIDEO */}
+                        <div className="lg:col-span-5 xl:col-span-6 flex justify-center lg:justify-end">
+                            <div className="relative w-full max-w-lg aspect-[4/5] rounded-4xl overflow-hidden shadow-2xl">
+                                <Image
+                                    src={team}
+                                    alt="Membership"
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+            </section>
+
+            <section className="pt-24 bg-vanilla">
+                <div className="container">
+                    <div className="max-w-5xl m-auto">
+                        {/* Heading */}
+                        <h2 className="text-4xl md:text-5xl font-bold text-navy leading-tight mb-8 text-center">
+                            A More Connected Approach to Care
+                        </h2>
+
+                        {/* Content */}
+                        {/* <span className="text-white text-4xl align-baseline"><AtTheRate size={16} /></span> */}
+                        <p
+                            className="text-lg md:text-xl text-navy leading-relaxed font-bold"
+                            dangerouslySetInnerHTML={{ __html: content }}
+                        />
+                    </div>
                 </div>
-              </div>
+            </section>
 
-              {/* RIGHT: BRAND HERO FILM THUMBNAIL */}
-              <div className="relative rounded-2xl overflow-hidden bg-slate-900">
-                <Image
-                  src="/window.svg"
-                  alt="SecureClinics brand hero film thumbnail"
-                  width={960}
-                  height={540}
-                  className="w-full h-auto object-cover"
-                  priority
-                />
-                <div className="absolute inset-0 bg-black/25" />
+            <section
+                className="py-16 my-16"
+                style={{
+                    backgroundImage: "url('/common/blue-bg.png')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                }}
+            >
+                <div className="container">
+                    <div className="max-w-4xl m-auto">
+                        <p className="text-lg md:text-4xl text-center text-navy leading-relaxed">
+                            <span className="text-navy text-4xl align-baseline">
+                                <AtTheRate size={30} />
+                            </span>
+                            SecureClinics, the goal is not just to treat pain, but to support
+                            confident, sustainable recovery and better quality of life.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                <button
-                  aria-label="Play SecureClinics hero film"
-                  className="absolute bottom-6 right-6 w-16 h-16 rounded-full bg-orange-500 flex items-center justify-center shadow-lg hover:scale-105 transition"
-                >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="white">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
+            <MemberRoadmap />
 
-      {/* THE SECURE STORY */}
-      <section className="bg-white text-navy py-20">
-        <Container>
-          <div className="max-w-4xl">
-            <h2 className="text-sm font-semibold tracking-[0.2em] text-orange-500 uppercase">
-              About
-            </h2>
-            <h3 className="mt-4 text-3xl md:text-4xl font-semibold">
-              The SECURE Story
-            </h3>
-            <p className="mt-6 text-lg">
-              <span className="font-semibold">@SecureClinics</span> was built to fix a problem patients
-              face every day — healthcare that feels scattered, rushed and excessive. Too often,
-              diagnosis, treatment and recovery happen in different places, with no single plan
-              tying them together.
-            </p>
-            <p className="mt-4 text-lg">
-              Based in Mumbai, <span className="font-semibold">@@SecureClinics</span> was designed as an
-              integrated healthcare clinic where doctors, diagnostics, therapy and recovery function
-              as one team. Care here is deliberate and personalised — not bundled, rushed or
-              protocol-driven. Every plan is tailored. No buffets. No one-size-fits-all solutions.
-            </p>
-            <p className="mt-4 text-lg">
-              <span className="font-semibold">@SecureClinics</span> is an integrated healthcare centre
-              designed to make care feel clearer, more connected, and more reassuring for patients.
-              We bring together experienced orthopaedic and spine specialists, physiotherapists,
-              rehabilitation experts, and nutrition professionals under one roof, so diagnosis,
-              treatment, recovery, and prevention are never fragmented.
-            </p>
-            <p className="mt-4 text-lg">
-              Every care plan is thoughtfully structured, discussed across disciplines, and tailored
-              to the individual, because no two bodies, injuries, or recovery journeys are the same.
-              Our approach is grounded in evidence-based medicine and real-world clinical
-              experience, with a strong focus on movement, function, and long-term outcomes.
-            </p>
-            <p className="mt-4 text-lg">
-              Just as importantly, we believe patients should feel informed and involved at every
-              step. Options are explained clearly, decisions are shared, and progress is reviewed
-              together — creating care that feels intentional, not overwhelming.
-            </p>
-            <p className="mt-4 text-lg">
-              At <span className="font-semibold">@SecureClinics</span>, the goal is not just to treat
-              pain, but to support confident, sustainable recovery and a better quality of life.
-            </p>
-          </div>
+            <section>
+                <MovingGallery />
+            </section>
 
-          {/* PHILOSOPHY / GUIDING CARDS */}
-          <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-10">
-            <div className="p-8 rounded-2xl bg-background border border-slate-200">
-              <h4 className="text-xl font-semibold">The Philosophy</h4>
-              <p className="mt-3 text-sm font-semibold text-orange-500">
-                Conservative first. Surgical when necessary.
-              </p>
-              <p className="mt-4 text-base">
-                At <span className="font-semibold">@@SecureClinics</span>, treatment always begins with
-                the least invasive, most effective option. Physiotherapy, rehabilitation, strength
-                training, aqua therapy and nutrition form the foundation of care.
-              </p>
-              <p className="mt-3 text-base">
-                When surgery is required, it is performed with precision using advanced minimally
-                invasive and endoscopic techniques. Restraint is a choice — mastery is a standard.
-              </p>
-            </div>
-
-            <div className="p-8 rounded-2xl bg-background border border-slate-200">
-              <h4 className="text-xl font-semibold">Designed for long-term recovery</h4>
-              <p className="mt-4 text-base">
-                Our vision is to set a new standard for healthcare in India — one that values
-                judgement over volume. We aim to build clinics where ethical, multidisciplinary and
-                outcome-driven care is the default.
-              </p>
-              <p className="mt-3 text-base">
-                Not more treatment. Just the right treatment, delivered well.
-              </p>
-            </div>
-
-            <div className="p-8 rounded-2xl bg-background border border-slate-200">
-              <h4 className="text-xl font-semibold">What guides every plan</h4>
-              <p className="mt-4 text-base">
-                Our mission is to deliver personalised, evidence-based healthcare through a
-                multidisciplinary approach. We create a la carte treatment plans that adapt to the
-                patient — not preset packages.
-              </p>
-              <p className="mt-3 text-base">
-                From diagnosis to recovery, every decision is considered, coordinated and
-                purposeful.
-              </p>
-              <div className="mt-6">
-                <Link href="/book-consult" className="theme-button px-6 py-3">
-                  Book a consult
-                </Link>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-    </>
-  );
+            <section className="bg-background">
+                <FAQ />
+            </section>
+        </>
+    );
 }
-

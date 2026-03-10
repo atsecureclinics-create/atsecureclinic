@@ -47,21 +47,21 @@ const data = [
             "Imaging and reports reviewed in real time by the care team",
     },
     {
-        problem: "Short-term fixes, recurring pain",
+        problem: "Short<code>-</code>term fixes, recurring pain",
         solution:
-            "Long-term treatments designed to prevent recurrence and build resilience and strength",
+            "Long<code>-</code>term treatments designed to prevent recurrence and build resilience and strength",
     },
 ];
 
 export default function ProblemSolution() {
     return (
-        <section className="max-w-7xl m-auto my-16">
+        <section className="max-w-6xl m-auto my-16">
             {/* HEADER */}
             <div className="grid md:grid-cols-2">
 
                 {/* LEFT */}
-                <div className="px-6 md:px-16 py-16">
-                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984df219ec09e8718fb02d_face5.png'} alt="Problem" className="w-[50px ] h-[100px] object-contain mb-4" />
+                <div className="px-4 md:px-4 py-12">
+                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984df219ec09e8718fb02d_face5.png'} alt="Problem" className="w-[100px] h-[100px] object-contain mb-4" />
 
                     <h2 className="text-3xl md:text-4xl font-semibold text-[#C2572A] tracking-wide uppercase">
                         The Problem
@@ -73,10 +73,10 @@ export default function ProblemSolution() {
                 </div>
 
                 {/* RIGHT */}
-                <div className="px-6 md:px-16 py-16 bg-[#9FB8C1] rounded-tl-[30px] rounded-tr-[30px]">
-                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984dff3649a85b335a071c_Big%20Smiley.png'} alt="Problem" className="w-[50px ] h-[100px] object-contain mb-4" />
+                <div className="px-4 md:px-4 py-8 bg-background rounded-tl-[30px] rounded-tr-[30px]">
+                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984dff3649a85b335a071c_Big%20Smiley.png'} alt="Problem" className="w-[100px] h-[100px] object-contain mb-4" />
 
-                    <h2 className="text-3xl md:text-4xl font-semibold text-[#0C3C46] tracking-wide uppercase">
+                    <h2 className="text-3xl md:text-4xl font-semibold text-navy tracking-wide uppercase">
                         The SECURE Solution
                     </h2>
 
@@ -97,20 +97,19 @@ export default function ProblemSolution() {
                         className="grid md:grid-cols-2 border-t border-gray-300/60 group last:border-b"
                     >
                         {/* LEFT */}
-                        <div className="px-6 md:px-16 py-10">
-                            <p className="text-lg md:text-2xl text-navy leading-relaxed max-w-xl">
-                                {item.problem}
-                            </p>
+                        <div className="px-4 md:px-12 py-5">
+                            <p
+                                className="text-lg md:text-2xl text-navy leading-relaxed max-w-xl"
+                                dangerouslySetInnerHTML={{ __html: item.problem }}
+                            />
                         </div>
 
                         {/* RIGHT */}
                         <div
-                            className="px-6 md:px-16 py-10 bg-[#9FB8C1] 
-                 group-last:rounded-bl-[30px] 
-                 group-last:rounded-br-[30px]"
+                            className="px-4 md:px-12 py-5 bg-background group-last:rounded-bl-[30px] group-last:rounded-br-[30px]"
                         >
-                            <p className="text-lg md:text-2xl text-navy leading-relaxed max-w-xl">
-                                {item.solution}
+                            <p className="text-lg md:text-2xl text-navy leading-relaxed max-w-xl" dangerouslySetInnerHTML={{ __html: item.solution }}>
+                                {/* {item.solution} */}
                             </p>
                         </div>
                     </div>

@@ -6,15 +6,15 @@
 ================================ */
 :root {
   --font-the-seasons: "TheSeasons", serif;
-  --background: #b1c0cd;
+  --background: #b0c0cc;
   --foreground: #d9dfe3;
   --white: #ffffff;
-  --vanilla: #f4f3e9;
-  --coral: #ff6742;
-  --green: #344946;
-  --navy: #282d38;
+  --vanilla: #f6f2ef;
+  --coral: #f78879;
+  --green: #8ea39d;
+  --navy: #363e4f;
 }
-
+ 
 /* ===============================
    BASE STYLES
 ================================ */
@@ -94,7 +94,7 @@ body {
 .sliding-description-swiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(72, 71, 71, 0.35);
   opacity: 1;
   border-radius: 999px;
   transition: all 0.3s ease;
@@ -102,7 +102,7 @@ body {
 
 /* active dot */
 .sliding-description-swiper .swiper-pagination-bullet-active {
-  background: #ffffff !important;
+  background: var(--navy) !important;
   transform: scale(1.2) !important;
 }
 

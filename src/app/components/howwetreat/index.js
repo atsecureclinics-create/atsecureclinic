@@ -58,12 +58,12 @@ const treatments = [
 
 export default function HowWeTreat() {
     return (
-        <section className="bg-[#F6F4EF] pt-28">
+        <section className="bg-foreground py-28">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
-                <div className="text-center max-w-4xl mx-auto mb-20">
-                    <h2 className="flex flex-wrap items-baseline gap-2 text-5xl font-semibold tracking-tight text-[#1E1E1E] items-end justify-center">
-                        The <span className="text-[#F37C6B] text-4xl align-baseline"><AtTheRate size={48} /></span>SECURE Treatments </h2>
+                <div className="text-center max-w-4xl mx-auto mb-8">
+                    <h2 className="flex flex-wrap items-baseline gap-2 text-5xl font-semibold tracking-tight text-navy items-end justify-center">
+                        The <span className="text-coral text-4xl align-baseline"><AtTheRate size={48} /></span>SECURE Treatments </h2>
 
                     <p className="mt-6 text-2xl text-navy">
                         An integrated step<code>-</code>by<code>-</code>step approach to personalized healthcare in Mumbai.
@@ -76,13 +76,13 @@ export default function HowWeTreat() {
                         <Link
                             key={index}
                             href={item.href}
-                            className="group flex flex-col items-center justify-center gap-6 p-10 bg-[#F6F4EF] hover:bg-[#BFD6DC]/60 transition border border-gray-300/70"
+                            className="group flex flex-col items-center justify-center gap-6 p-10 bg-vanilla hover:bg-[#BFD6DC]/60 transition border border-gray-300/70"
                         >
                             <div className="w-16 h-16 rounded-full flex items-center justify-center bg-white shadow-sm group-hover:scale-105 transition">
-                                <item.icon className="w-8 h-8 text-[#0C3C46]" />
+                                <item.icon className="w-8 h-8 text-navy" />
                             </div>
                             <p
-                                className="text-xl font-medium text-center font-bold text-navy group-hover:text-[#0C3C46]"
+                                className="text-xl text-center font-bold text-navy group-hover:text-[#0C3C46]"
                                 dangerouslySetInnerHTML={{ __html: item.title }}
                             />
                         </Link>

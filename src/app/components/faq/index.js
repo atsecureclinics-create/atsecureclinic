@@ -81,7 +81,7 @@ export default function FAQ() {
                 <button
                   type="button"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full flex items-center justify-between gap-6 py-5 md:py-6 text-left group"
+                  className="w-full flex items-center justify-between gap-6 py-5 md:py-6 text-left group cursor-pointer"
                 >
                   <span
                     className="text-base md:text-2xl font-bold text-navy group-hover:opacity-80 transition flex-1"
