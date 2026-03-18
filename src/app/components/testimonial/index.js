@@ -6,28 +6,28 @@ const stats = [
     {
         value: "97<code>%</code>",
         description:
-            "Of our patients are able to stand and walk within a few hours after minimally invasive spine surgery.",
+            "Patients are able to stand and walk within hours after minimally invasive spine surgery.",
         icon: Activity,
     },
     {
-        value: "9 out of 10",
+        value: "9<code>/</code>10 Patients",
         description:
-            "Patients complete treatment with a clear recovery and post recovery plan with continuous rehabilitation and counselling support.",
+            "Complete treatment with a clear recovery and post recovery plan, supported by rehabilitation and counselling.",
         icon: TrendingUp,
     },
     {
         value: "92<code>%</code>",
         description:
-            "Of our patients report significant improvement in pain and mobility while treatment is ongoing.",
+            "Report significant improvement in pain and mobility while treatment is ongoing.",
         icon: HeartPulse,
     },
 ];
 
 export default function StatisticTestimonial() {
     return (
-        <section className="relative bg-[#0C3C46] py-28 overflow-hidden">
+        <section className="relative bg-navy py-28 overflow-hidden mt-8">
             {/* Background texture */}
-            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,#ffffff_1px,transparent_1px)] bg-[length:24px_24px]" />
+            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,#ffffff_1px,transparent_1px)]" />
 
             <div className="relative max-w-7xl mx-auto px-6">
                 {/* Header */}
@@ -45,10 +45,10 @@ export default function StatisticTestimonial() {
                     {stats.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white/95 backdrop-blur rounded-3xl p-10 md:p-12 shadow-xl text-center hover:scale-[1.03] transition duration-300"
+                            className="bg-white/95 backdrop-blur rounded-3xl px-4 py-10 md:py-12 2xl:px-4 shadow-xl text-center hover:scale-[1.03] transition duration-300"
                         >
                             {/* Icon */}
-                            <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-[#F6F4EF] flex items-center justify-center">
+                            <div className="w-20 h-20 mx-auto rounded-full mb-4 bg-white flex items-center justify-center">
                                 <item.icon className="w-10 h-10 text-navy" />
                             </div>
 

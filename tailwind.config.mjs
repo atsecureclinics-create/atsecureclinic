@@ -16,6 +16,7 @@ export default {
                 coral: "var(--coral)",
                 green: "var(--green)",
                 navy: "var(--navy)",
+                navylight: "var(--navylight)",
             },
             fontFamily: {
                 seasons: [

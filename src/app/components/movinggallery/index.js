@@ -30,7 +30,7 @@ export default function MovingGallery() {
 
                     <Link
                         href="/book-consult"
-                        className="theme-button px-6 py-4 !text-xl flex justify-center items-center gap-2"
+                        className="theme-button flex justify-center items-center gap-2"
                     >
                         Book A Consult
                         <ArrowRight className="w-4 h-4" />

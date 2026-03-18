@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import Logo from '../../../../public/icons/logo.svg';
 import Image from "next/image";
 
@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <header className="bg-background relative">
-            <div className="container flex items-center justify-between py-8">
+            <div className="container flex items-center justify-between py-4">
 
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
@@ -65,6 +65,18 @@ export default function Header() {
                                 >
                                     Our Mission
                                 </Link>
+                                <Link
+                                    href="/press"
+                                    className="block px-5 py-3 hover:bg-vanilla transition"
+                                >
+                                    Press
+                                </Link>
+                                <Link
+                                    href="/overview"
+                                    className="block px-5 py-3 hover:bg-vanilla transition"
+                                >
+                                    Overview
+                                </Link>
                             </div>
                         )}
                     </div>
@@ -79,8 +91,8 @@ export default function Header() {
 
                 {/* Right Actions */}
                 <div className="">
-                    <Link href="/contact-us" className="theme-button px-4 py-3 font-bold !text-lg">
-                        Book a Consult
+                    <Link href="/contact-us" className="theme-button">
+                        Book a Consult <ArrowRight size={18} />
                     </Link>
                 </div>
             </div>

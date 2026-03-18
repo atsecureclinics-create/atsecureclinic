@@ -34,10 +34,9 @@ const hospitals = [
 ];
 
 
-
 export default function HospitalAssociations() {
     return (
-        <section className="bg-[#F6F4EF] py-20 overflow-hidden">
+        <section className="bg-white py-20 overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-14">

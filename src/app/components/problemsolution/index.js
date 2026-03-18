@@ -1,5 +1,9 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import AtTheRate from "../attherate";
+
 const data = [
     {
         problem: "Care feels scattered across multiple clinics",
@@ -60,11 +64,11 @@ export default function ProblemSolution() {
             <div className="grid md:grid-cols-2">
 
                 {/* LEFT */}
-                <div className="px-4 md:px-4 py-12">
+                <div className="px-4 md:px-4 py-8">
                     <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984df219ec09e8718fb02d_face5.png'} alt="Problem" className="w-[100px] h-[100px] object-contain mb-4" />
 
-                    <h2 className="text-3xl md:text-4xl font-semibold text-[#C2572A] tracking-wide uppercase">
-                        The Problem
+                    <h2 className="text-3xl md:text-4xl font-semibold text-coral tracking-wide uppercase">
+                        Problem Elsewhere
                     </h2>
 
                     <p className="mt-4 text-navy max-w-md text-xl font-bold">
@@ -73,11 +77,11 @@ export default function ProblemSolution() {
                 </div>
 
                 {/* RIGHT */}
-                <div className="px-4 md:px-4 py-8 bg-background rounded-tl-[30px] rounded-tr-[30px]">
+                <div className="px-4 md:px-4 py-8 bg-background rounded-tl-2xl rounded-tr-2xl">
                     <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984dff3649a85b335a071c_Big%20Smiley.png'} alt="Problem" className="w-[100px] h-[100px] object-contain mb-4" />
 
                     <h2 className="text-3xl md:text-4xl font-semibold text-navy tracking-wide uppercase">
-                        The SECURE Solution
+                        Solution <AtTheRate size={30} /> Secure Clinics
                     </h2>
 
                     <p className="mt-4 text-navy max-w-md text-xl font-bold">
@@ -97,24 +101,33 @@ export default function ProblemSolution() {
                         className="grid md:grid-cols-2 border-t border-gray-300/60 group last:border-b"
                     >
                         {/* LEFT */}
-                        <div className="px-4 md:px-12 py-5">
+                        <div className="px-4 md:px-8 py-5">
                             <p
-                                className="text-lg md:text-2xl text-navy leading-relaxed max-w-xl"
+                                className="text-lg md:text-xl font-bold text-navy leading-relaxed max-w-xl"
                                 dangerouslySetInnerHTML={{ __html: item.problem }}
                             />
                         </div>
 
                         {/* RIGHT */}
                         <div
-                            className="px-4 md:px-12 py-5 bg-background group-last:rounded-bl-[30px] group-last:rounded-br-[30px]"
+                            className={`px-4 md:px-8 py-5 bg-background ${index === data.length - 1
+                                ? "rounded-bl-2xl rounded-br-2xl"
+                                : ""
+                                }`}
                         >
-                            <p className="text-lg md:text-2xl text-navy leading-relaxed max-w-xl" dangerouslySetInnerHTML={{ __html: item.solution }}>
-                                {/* {item.solution} */}
-                            </p>
+                            <p
+                                className="text-lg md:text-xl font-bold text-navy leading-relaxed max-w-xl"
+                                dangerouslySetInnerHTML={{ __html: item.solution }}
+                            />
                         </div>
                     </div>
                 ))}
-
+                {/* CTA */}
+                <div className="flex justify-center mt-12">
+                    <Link href="/the-care-team" className="theme-button flex justify-center items-center gap-2">
+                        Meet the Team <ArrowRight size={20} />
+                    </Link>
+                </div>
             </div>
         </section>
     );

@@ -15,31 +15,31 @@ export default function Home() {
   return (
     <>
       {/* HERO – two-column: text left, media right */}
-      <section
-        className="min-h-[85vh] flex items-center bg-background">
+      <section className="min-h-[85vh] flex items-center bg-background">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-
             {/* LEFT CONTENT */}
             <div className="lg:col-span-7 xl:col-span-6">
-
               {/* Eyebrow */}
               <p className="mb-4 text-3xl 2xl:text-4xl font-bold leading-normal text-navy">
                 What if healthcare actually worked together ?
               </p>
 
               {/* H1 */}
-              <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-semibold leading-tight text-navy">
-                HEAL Stronger RECOVER Faster MOVE better
+              <h1 className="text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy">
+                HEAL Stronger <br /> RECOVER Faster <br /> MOVE better
               </h1>
 
               {/* H2 – emphasis lines */}
               <div className="mt-6 space-y-2 text-lg md:text-2xl font-medium text-navy">
-                <p className="font-semibold no-ligatures">Surgeons, Therapists, Nutritionists and Strength Trainers. One Clinic. One team. One System. <code>-</code> Seamlessly Integrated in Mumbai.</p>
+                <p className="font-semibold no-ligatures">
+                  Surgeons, Therapists, Nutritionists and Strength Trainers One
+                  Clinic. One team. One System.
+                </p>
               </div>
 
               {/* CTA */}
-              <div className="mt-10">
+              <div className="mt-10 !inline-block">
                 <Link
                   href="/book-consult"
                   className="theme-button px-8 py-4 font-bold !text-xl"
@@ -51,8 +51,7 @@ export default function Home() {
 
             {/* RIGHT VIDEO */}
             <div className="lg:col-span-5 xl:col-span-6 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-lg aspect-[4/5] rounded-[32px] overflow-hidden shadow-2xl">
-
+              <div className="relative w-full max-w-lg aspect-[19/20] rounded-2xl overflow-hidden shadow-2xl">
                 <video
                   className="w-full h-full object-cover"
                   src="https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d%2F69136cda4850c7f206613aef_Mi%20peli%CC%81cula%202-transcode.mp4"
@@ -76,7 +75,6 @@ export default function Home() {
                 </button>
               </div>
             </div>
-
           </div>
         </Container>
       </section>
@@ -92,16 +90,12 @@ export default function Home() {
       </section>
 
       {/* SCROLL 4 – Meet Care Team */}
-      <section style={{
-        backgroundImage: "url('/common/orange-bg.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}>
+      <section className="bg-navylight bg-cover bg-center" >
         <TeamMember />
       </section>
 
       {/* SCROLL 5 – Problem / Solution */}
-      <section>
+      <section >
         <Container>
           <ProblemSolution />
         </Container>
@@ -117,14 +111,12 @@ export default function Home() {
         <SecureStories />
       </section>
 
+      {/* SCROLL 9 – Statistic testimonial */}
+      <StatisticTestimonialSlider />
+
       {/* SCROLL 8 – Hospital associations */}
       <section>
         <HospitalAssociations />
-      </section>
-
-      {/* SCROLL 9 – Statistic testimonial */}
-      <section>
-        <StatisticTestimonialSlider />
       </section>
 
       {/* SCROLL 10 – Gallery */}

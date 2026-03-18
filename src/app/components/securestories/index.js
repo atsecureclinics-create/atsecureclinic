@@ -59,12 +59,9 @@ export default function SecureStories() {
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-5xl font-semibold tracking-tight text-navy mt-4">
-                        <span className="text-[#F37C6B] text-4xl align-baseline"><AtTheRate size={40} /></span>Secure Stories
+                    <h2 className="text-5xl font-semibold tracking-tight text-navy mt-4">Patient Stories <AtTheRate size={40} />SecureClinics
                     </h2>
-                    <p className="mt-6 text-2xl text-navy mx-auto">
-                        Patient Stories at <span className="text-[#F37C6B] text-xl align-baseline"><AtTheRate size={24} /></span>SecureClinics
-                    </p>
+                    <p className="mt-6 text-2xl text-navy mx-auto">Real experiences across diagnosis, treatment, and recovery.</p>
                 </div>
 
                 {/* Slider */}
@@ -123,7 +120,7 @@ export default function SecureStories() {
                 <div className="flex justify-center mt-12">
                     <Link
                         href="/book-consult"
-                        className="theme-button px-6 py-4 !text-xl flex justify-center items-center gap-2"
+                        className="theme-button flex justify-center items-center gap-2"
                     >
                         Book a Consult <ArrowRight size={20} />
                     </Link>
