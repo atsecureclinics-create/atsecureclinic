@@ -40,7 +40,7 @@ const Footer = () => {
     return (
         <footer className="font-seasons relative bg-background text-navy pt-24 pb-16 px-8 md:px-16 lg:px-24">
             {/* Subtle Grainy Overlay for Premium Texture */}
-            <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
@@ -49,10 +49,10 @@ const Footer = () => {
                     <div className="lg:col-span-4 space-y-12">
 
                         {/* Newsletter Card */}
-                        <div className="bg-foreground font-bold text-black p-5 rounded-2xl border border-white/30 shadow-2xl shadow-[#002b30]/5">
-                            <h3 className="text-sm font-black tracking-[0.2em] mb-3 uppercase">Stay In Touch</h3>
-                            <p className="text-sm font-bold mb-8 leading-relaxed opacity-70">
-                                Keep tabs on SecureClinics and get no-fluff content delivered to your inbox.
+                        <div className="bg-foreground text-navy p-5 rounded-2xl border border-white/30 shadow-2xl shadow-[#002b30]/5">
+                            <h3 className="text-xl tracking-[0.2em] mb-3 uppercase font-semibold">Stay In Touch</h3>
+                            <p className="font-opensans text-sm mb-8 leading-relaxed">
+                                Keep tabs on Secure Clinics and get no-fluff content delivered to your inbox.
                             </p>
 
                             <form className="space-y-4">
@@ -72,7 +72,7 @@ const Footer = () => {
                                     className="w-full bg-white/60 border-none rounded-2xl px-5 py-4 text-sm font-semibold placeholder:opacity-40 focus:ring-2 focus:ring-[#00434b]/20 transition-all"
                                 />
 
-                                <button className="w-full theme-button px-6 py-4 font-bold">
+                                <button className="w-full theme-button">
                                     Subscribe
                                 </button>
                             </form>
@@ -92,12 +92,12 @@ const Footer = () => {
                     <div className="lg:col-span-8">
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8">
                             {sections.map((section) => (
-                                <div key={section.title} className="flex flex-col space-y-5 text-black">
-                                    <h3 className="text-base font-extrabold tracking-[0.2em] uppercase opacity-90 border-b border-[#002b30]/10 pb-2">{section.title}</h3>
-                                    <ul className="flex flex-col space-y-3">
+                                <div key={section.title} className="flex flex-col space-y-3 text-black">
+                                    <h3 className="text-lg font-extrabold tracking-[0.2em] uppercase border-b border-navy/10 pb-1">{section.title}</h3>
+                                    <ul className="font-opensans flex flex-col space-y-3">
                                         {section.links.map((link) => (
-                                            <li key={link}>
-                                                <a href="#" className="group flex items-center text-base font-bold opacity-70 hover:opacity-100 transition-all">
+                                            <li key={link} className='mb-2'>
+                                                <a href="#" className="group flex items-center text-base transition-all">
                                                     {link}
                                                     <ArrowUpRight className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 -translate-y-1 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
                                                 </a>

@@ -2,10 +2,13 @@
 export default {
     content: [
         "./src/app/**/*.{js,jsx,ts,tsx}",
+        "./src/components/**/*.{js,jsx,ts,tsx}",
     ],
+
     corePlugins: {
         container: false,
     },
+
     theme: {
         extend: {
             colors: {
@@ -18,6 +21,7 @@ export default {
                 navy: "var(--navy)",
                 navylight: "var(--navylight)",
             },
+
             fontFamily: {
                 seasons: [
                     "var(--font-the-seasons)",
@@ -25,6 +29,11 @@ export default {
                     "Georgia",
                     "Times New Roman",
                     "serif",
+                ],
+
+                opensans: [
+                    "var(--font-open-sans)",
+                    "sans-serif",
                 ],
             },
         },

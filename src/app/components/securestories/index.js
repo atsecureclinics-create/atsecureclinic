@@ -61,7 +61,7 @@ export default function SecureStories() {
                 <div className="text-center mb-16">
                     <h2 className="text-5xl font-semibold tracking-tight text-navy mt-4">Patient Stories <AtTheRate size={40} />SecureClinics
                     </h2>
-                    <p className="mt-6 text-2xl text-navy mx-auto">Real experiences across diagnosis, treatment, and recovery.</p>
+                    <p className="font-opensans mt-6 text-2xl text-navy mx-auto">Real experiences across diagnosis, treatment, and recovery.</p>
                 </div>
 
                 {/* Slider */}
@@ -90,12 +90,12 @@ export default function SecureStories() {
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
                                     <div className="absolute bottom-0 p-8 text-white">
-                                        <p className="text-lg leading-relaxed mb-6">
+                                        <p className="font-opensans text-lg leading-relaxed mb-6 font-medium">
                                             “{story.quote}”
                                         </p>
                                         <a
                                             href={story.link}
-                                            className="inline-flex items-center gap-2 text-sm font-medium uppercase tracking-wide"
+                                            className="inline-flex items-center gap-2 text-xl font-bold uppercase tracking-wide"
                                         >
                                             Read the story <ArrowRight className="w-4 h-4" />
                                         </a>

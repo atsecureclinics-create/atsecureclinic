@@ -20,8 +20,8 @@ export default function MembershipPage() {
                         {/* LEFT CONTENT */}
                         <div className="lg:col-span-7 xl:col-span-6">
                             {/* Eyebrow */}
-                            <p className="mb-4 text-2xl font-bold uppercase tracking-[0.25em] text-coral">
-                                About <AtTheRate size={28} />SecureClinics
+                            <p className=" font-opensans mb-4 text-2xl font-bold uppercase tracking-[0.25em] text-coral">
+                                <AtTheRate size={28} />Secure Clinics
                             </p>
 
                             {/* H1 */}
@@ -30,7 +30,7 @@ export default function MembershipPage() {
                             </h1>
 
                             <div className="mt-6 space-y-2 text-lg md:text-xl font-medium text-navy">
-                                <p className="font-semibold no-ligatures">Consultation, diagnosis, treatment, and recovery are designed as one coordinated system so patients experience clearer decisions, fewer procedures, and stronger recovery.</p>
+                                <p className="font-opensans no-ligatures">Consultation, diagnosis, treatment, and recovery are designed as one coordinated system so patients experience clearer decisions, fewer procedures, and stronger recovery.</p>
                             </div>
 
                             {/* CTA */}
@@ -68,11 +68,7 @@ export default function MembershipPage() {
 
                         {/* Content */}
                         {/* <span className="text-white text-4xl align-baseline"><AtTheRate size={16} /></span> */}
-                        <p className="text-lg md:text-xl text-navy leading-relaxed font-bold pb-4" ><AtTheRate />SecureClinics is an integrated healthcare centre designed to make care clearer, more coordinated, and more reassuring for patients.</p>
-                        <p className="text-lg md:text-xl text-navy leading-relaxed font-bold pb-4" >We bring together experienced orthopaedic and spine specialists, physiotherapists, rehabilitation experts, and nutrition professionals under one roof so diagnosis, treatment, recovery, and prevention are never fragmented.</p>
-                        <p className="text-lg md:text-xl text-navy leading-relaxed font-bold pb-4" >Every care plan is thoughtfully structured, discussed across disciplines, and tailored to the individual because no two bodies, injuries, or recovery journeys are the same.</p>
-                        <p className="text-lg md:text-xl text-navy leading-relaxed font-bold pb-4" >Our approach is grounded in evidence based medicine and real clinical experience, with a strong focus on movement, function, and long term outcomes. Patients remain informed and involved at every stage. Options are explained clearly, decisions are shared, and progress is reviewed together so care feels structured and reassuring.</p>
-                        <p className="text-lg md:text-xl text-navy leading-relaxed font-bold pb-4" ><AtTheRate />SecureClinics, the goal is not simply to treat pain, but to support confident recovery and a better quality of life.</p>
+                        <p className="font-opensans text-lg md:text-xl text-navy leading-relaxed pb-4 max-w-6xl m-auto" >At Secure Clinics is an integrated healthcare centre designed to make care clearer, more coordinated, and more reassuring for patients. We bring together experienced orthopaedic and spine specialists, physiotherapists, rehabilitation experts, and nutrition professionals under one roof so diagnosis, treatment, recovery, and prevention are never fragmented. Every care plan is thoughtfully structured, discussed across disciplines, and tailored to the individual because no two bodies, injuries, or recovery journeys are the same. Our approach is grounded in evidence based medicine and real clinical experience, with a strong focus on movement, function, and long term outcomes. Patients remain informed and involved at every stage. Options are explained clearly, decisions are shared, and progress is reviewed together so care feels structured and reassuring. SecureClinics, the goal is not simply to treat pain, but to support confident recovery and a better quality of life.</p>
                     </div>
                 </div>
             </section>

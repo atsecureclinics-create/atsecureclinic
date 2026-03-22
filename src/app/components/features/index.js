@@ -61,7 +61,7 @@ const Features = () => {
                                 />
 
                                 <p
-                                    className="text-xl leading-relaxed text-navy font-bold"
+                                    className="font-opensans text-xl leading-relaxed text-navy font-normal"
                                     dangerouslySetInnerHTML={{ __html: feature.description }}
                                 />
                             </div>

@@ -59,7 +59,7 @@ export default function StatisticTestimonial() {
                             />
 
                             {/* Description */}
-                            <p className="text-xl text-navy leading-relaxed">
+                            <p className="font-opensans text-xl text-navy leading-relaxed">
                                 {item.description}
                             </p>
                         </div>

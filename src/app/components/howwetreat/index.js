@@ -65,7 +65,7 @@ export default function HowWeTreat() {
                     <h2 className="flex flex-wrap items-baseline gap-2 text-5xl font-semibold tracking-tight text-navy items-end justify-center">
                         Treatments <AtTheRate size={38} />SecureClinics</h2>
 
-                    <p className="mt-6 text-2xl text-navy">An integrated Step<code>-</code>by<code>-</code>step approach to personalized healthcare in Mumbai.
+                    <p className="font-opensans mt-6 text-2xl text-navy">An integrated Step-by-step approach to personalized healthcare in Mumbai.
                     </p>
                 </div>
 

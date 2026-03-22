@@ -108,16 +108,16 @@ function Overview() {
                         {/* LEFT CONTENT */}
                         <div className="lg:col-span-7 xl:col-span-6">
                             {/* Eyebrow */}
-                            {/* <p className="mb-4 text-2xl font-bold uppercase tracking-[0.25em] text-coral">
+                            <p className="mb-4 text-2xl font-bold uppercase tracking-[0.25em] text-coral">
                                 Specialist<code>-</code>Led Care
-                            </p> */}
+                            </p>
 
                             {/* H1 */}
                             <h1 className="text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-5">
                                 Advanced Surgery, Considered Carefully.
                             </h1>
 
-                            <p className="text-2xl font-semibold">Over a decade of pioneering endoscopic surgery in Mumbai, with patient first decision making. Clear decisions, minimally invasive and carefully planned recovery. </p>
+                            <p className="font-opensans md:text-2xl">Over a decade of pioneering endoscopic surgery in Mumbai, with patient first decision making. Clear decisions, minimally invasive and carefully planned recovery. </p>
                         </div>
 
                         {/* RIGHT VIDEO */}
@@ -136,19 +136,16 @@ function Overview() {
 
             <section className="py-18 bg-vanilla">
                 <Container>
-                    <div className="text-lg md:text-xl text-navy leading-relaxed space-y-6 ">
+                    <div className="font-opensans text-lg md:text-xl text-navy leading-relaxed space-y-6 ">
                         <p>
-                            <span className="inline-flex align-middle mr-1">
-                                <AtTheRate size={24} />
-                            </span>
-                            SecureClinics, surgery is never the first conversation <code>-</code> it is the most considered one. Every patient is evaluated through detailed clinical assessment, advanced diagnostics and multidisciplinary discussion. Conservative treatment options are always explored before surgery is recommended.
+                            At Secure Clinics, surgery is never the first conversation <code>-</code> it is the most considered one. Every patient is evaluated through detailed clinical assessment, advanced diagnostics and multidisciplinary discussion. Conservative treatment options are always explored before surgery is recommended.
                         </p>
                         <p>
                             When surgical intervention becomes necessary, it is performed with precision, experience and intent.
                             The surgical team has been at the forefront of minimally invasive and endoscopic spine surgery in Mumbai for over a decade. These techniques allow targeted treatment through smaller incisions, reduced tissue disruption and faster recovery without compromising outcomes.
                         </p>
                         <p>
-                            <h5 className='font-bold text-xl' >What defines surgical care here is judgement.</h5>
+                            <span className='font-bold text-xl' >What defines surgical care here is judgement.</span>
                             Each procedure is tailored to the individual, never standardised or rushed. Patients are guided clearly through why surgery is recommended, what it involves, and what recovery will look like. From pre-operative planning to post-surgical rehabilitation, care remains structured, personal and closely supported.
                         </p>
                     </div>
@@ -179,7 +176,7 @@ function Overview() {
 
                     {/* Heading */}
                     <div className="text-center mb-24">
-                        <p className="uppercase tracking-[0.35em] text-sm text-navy/60 mb-4">
+                        <p className="uppercase tracking-[0.35em] text-xl text-coral font-extrabold mb-4">
                             Surgery Journey
                         </p>
 
@@ -187,7 +184,7 @@ function Overview() {
                             Surgery <span className="text-coral">—</span> Before, During, After
                         </h2>
 
-                        <p className="mt-6 text-lg md:text-xl text-navy/75 max-w-3xl mx-auto leading-relaxed">
+                        <p className="font-opensans mt-6 text-lg md:text-xl text-navy max-w-3xl mx-auto leading-relaxed">
                             What to expect, how decisions are made and how recovery is supported.
                         </p>
                     </div>
@@ -215,7 +212,7 @@ function Overview() {
 
                                 {/* Text */}
                                 <p
-                                    className="text-lg text-navy/75 leading-relaxed"
+                                    className="font-opensans text-lg text-navy/75 leading-relaxed"
                                     dangerouslySetInnerHTML={{ __html: step.text }}
                                 />
 
@@ -233,7 +230,7 @@ function Overview() {
 
                         {/* Left Side */}
                         <div className="sticky top-24">
-                            <p className="uppercase tracking-[0.3em] text-sm text-coral font-semibold mb-6">
+                            <p className="uppercase tracking-[0.3em] text-xl text-coral font-semibold mb-6">
                                 Surgery Journey
                             </p>
 
@@ -241,7 +238,7 @@ function Overview() {
                                 Surgery designed around your recovery.
                             </h2>
 
-                            <p className="mt-8 text-lg text-navy/70 max-w-md leading-relaxed">
+                            <p className="font-opensans mt-8 text-lg text-navy max-w-md leading-relaxed font-medium">
                                 What to expect, how decisions are made and how recovery is supported.
                             </p>
                         </div>
@@ -256,18 +253,19 @@ function Overview() {
                                     <div className="flex items-start gap-6">
 
                                         {/* Number */}
-                                        <span className="font-seasons text-3xl text-coral min-w-[60px]">
-                                            {step.number}
-                                        </span>
+                                        <span
+                                            className="font-opensans text-3xl text-coral min-w-[60px]"
+                                            dangerouslySetInnerHTML={{ __html: step.number }}
+                                        />
 
                                         {/* Content */}
                                         <div>
                                             <h3
-                                                className="uppercase tracking-[0.15em] text-lg font-semibold text-navy mb-4"
+                                                className="uppercase tracking-[0.15em] text-xl font-bold text-navy mb-4"
                                                 dangerouslySetInnerHTML={{ __html: step.title }}
                                             />
 
-                                            <p className="text-lg text-navy/80 leading-relaxed max-w-2xl">
+                                            <p className="font-opensans text-lg text-navy leading-relaxed max-w-2xl">
                                                 {step.text}
                                             </p>
                                         </div>
@@ -298,20 +296,20 @@ function Overview() {
                         {steps.map((step) => (
                             <div
                                 key={step.number}
-                                className="bg-white rounded-3xl p-8 flex flex-col justify-between hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-lg"
+                                className="bg-white rounded-3xl p-5 flex flex-col justify-start hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-lg"
                             >
                                 {/* Number */}
-                                <span className="text-coral text-5xl font-seasons mb-4 font-extrabold">
+                                <span className="font-opensans text-coral text-5xl mb-4 font-extrabold">
                                     {step.number}
                                 </span>
 
                                 {/* Title */}
-                                <h3 className="text-navy uppercase tracking-[0.15em] font-semibold text-xl mb-6 leading-snug">
+                                <h3 className="text-navy uppercase tracking-[0.15em] font-semibold text-xl leading-snug mb-4">
                                     {step.title}
                                 </h3>
 
                                 {/* Text */}
-                                <p className="text-navy/80 text-lg leading-relaxed">
+                                <p className="font-opensans text-navy text-lg leading-relaxed">
                                     {step.text}
                                 </p>
                             </div>

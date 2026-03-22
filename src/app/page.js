@@ -15,13 +15,13 @@ export default function Home() {
   return (
     <>
       {/* HERO – two-column: text left, media right */}
-      <section className="min-h-[85vh] flex items-center bg-background">
+      <section className="min-h-[85vh] flex items-center">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* LEFT CONTENT */}
             <div className="lg:col-span-7 xl:col-span-6">
               {/* Eyebrow */}
-              <p className="mb-4 text-3xl 2xl:text-4xl font-bold leading-normal text-navy">
+              <p className=" font-opensans mb-4 text-2xl 2xl:text-3xl font-semibold leading-normal text-navy">
                 What if healthcare actually worked together ?
               </p>
 
@@ -32,7 +32,7 @@ export default function Home() {
 
               {/* H2 – emphasis lines */}
               <div className="mt-6 space-y-2 text-lg md:text-2xl font-medium text-navy">
-                <p className="font-semibold no-ligatures">
+                <p className="font-semibold no-ligatures font-opensans">
                   Surgeons, Therapists, Nutritionists and Strength Trainers One
                   Clinic. One team. One System.
                 </p>

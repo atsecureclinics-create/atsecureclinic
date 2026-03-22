@@ -71,7 +71,7 @@ export default function ProblemSolution() {
                         Problem Elsewhere
                     </h2>
 
-                    <p className="mt-4 text-navy max-w-md text-xl font-bold">
+                    <p className=" font-opensans mt-4 text-navy max-w-md text-xl">
                         Stop feeling frustrated, overwhelmed, or stuck with fragmented care.
                     </p>
                 </div>
@@ -84,7 +84,7 @@ export default function ProblemSolution() {
                         Solution <AtTheRate size={30} /> Secure Clinics
                     </h2>
 
-                    <p className="mt-4 text-navy max-w-md text-xl font-bold">
+                    <p className=" font-opensans mt-4 text-navy max-w-md text-xl">
                         Problem focussed solutions. Prevention comes first. Prevent before a problem arises.
                     </p>
                 </div>
@@ -101,22 +101,22 @@ export default function ProblemSolution() {
                         className="grid md:grid-cols-2 border-t border-gray-300/60 group last:border-b"
                     >
                         {/* LEFT */}
-                        <div className="px-4 md:px-8 py-5">
+                        <div className="font-opensans px-4 md:px-8 py-5">
                             <p
-                                className="text-lg md:text-xl font-bold text-navy leading-relaxed max-w-xl"
+                                className="text-lg md:text-xl text-navy leading-relaxed max-w-xl"
                                 dangerouslySetInnerHTML={{ __html: item.problem }}
                             />
                         </div>
 
                         {/* RIGHT */}
                         <div
-                            className={`px-4 md:px-8 py-5 bg-background ${index === data.length - 1
+                            className={`font-opensans px-4 md:px-8 py-5 bg-background ${index === data.length - 1
                                 ? "rounded-bl-2xl rounded-br-2xl"
                                 : ""
                                 }`}
                         >
                             <p
-                                className="text-lg md:text-xl font-bold text-navy leading-relaxed max-w-xl"
+                                className="text-lg md:text-xl text-navy leading-relaxed max-w-xl"
                                 dangerouslySetInnerHTML={{ __html: item.solution }}
                             />
                         </div>

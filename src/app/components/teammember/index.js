@@ -36,7 +36,7 @@ const TeamMember = () => {
                     <span className="text-3xl 2xl:text-5xl font-bold text-white">
                         Team <AtTheRate size={40} /> Secure Clinics
                     </span>
-                    <h2 className="text-2xl md:text-xl pt-4 pb-2 mb-0 text-white">
+                    <h2 className="font-opensans text-lg md:text-xl pt-4 pb-2 mb-0 text-white">
                         Specialists who listen, collaborate, and design treatment plans together
                     </h2>
                 </div>
@@ -74,7 +74,7 @@ const TeamMember = () => {
                                             {member.name}
                                         </h3>
                                         <p
-                                            className="text-navy text-base md:text-lg font-extrabold leading-relaxed"
+                                            className="font-opensans text-navy text-base md:text-lg leading-relaxed"
                                             dangerouslySetInnerHTML={{ __html: member.bio }}
                                         />
                                     </div>

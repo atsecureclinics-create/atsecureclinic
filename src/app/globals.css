@@ -6,6 +6,7 @@
 ================================ */
 :root {
   --font-the-seasons: "TheSeasons", serif;
+  --font-open-sans: "Open Sans", sans-serif;
   --background: #b0c0cc;
   --foreground: #d9dfe3;
   --white: #ffffff;
@@ -79,7 +80,7 @@ body {
 ================================ */
 .theme-button {
   font-size: 1rem;
-  font-family: var(--font-the-seasons);
+  font-family: var(--font-open-sans);
   color: var(--white);
   background-color: var(--coral);
   border-radius: 12px;

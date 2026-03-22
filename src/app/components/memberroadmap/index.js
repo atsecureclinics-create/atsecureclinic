@@ -27,17 +27,17 @@ export default function MemberRoadmap() {
                   The Philosophy
                 </h3>
 
-                <h4 className="mt-4 text-xl font-bold" >Conservative First. Surgical When Necessary.</h4>
+                <h4 className="font-opensans mt-4 text-xl font-semibold" >Conservative First. Surgical When Necessary.</h4>
 
-                <ul className="mt-6 space-y-4 list-disc pl-5 text-lg">
+                <ul className="font-opensans mt-6 space-y-4 list-disc pl-5 text-lg">
                   <li>
-                    At <span className="text-white align-baseline"><AtTheRate size={16} /></span>SecureClinics, treatment always begins with the least invasive, most effective option.
+                    At Secure Clinics, treatment always begins with the least invasive, most effective option.
                   </li>
                   <li>
                     Physiotherapy, rehabilitation, strength training, aqua therapy and nutrition form the foundation of care.
                   </li>
                   <li>When surgery is required, it is performed with precision using advanced minimally invasive and endoscopic techniques.</li>
-                  <li>Restraint is a choice <code>-</code> mastery is a standard.</li>
+                  <li>Restraint is a choice mastery is a standard.</li>
                 </ul>
               </div>
             </div>
@@ -56,9 +56,9 @@ export default function MemberRoadmap() {
                   Vision
                 </h3>
 
-                <h4 className="mt-4 text-xl font-bold" >Designed for Long<code>-</code>Term Recovery</h4>
+                <h4 className="font-opensans mt-4 text-xl font-semibold" >Designed for Long<code>-</code>Term Recovery</h4>
 
-                <ul className="mt-6 space-y-4 list-disc pl-5 text-lg">
+                <ul className="font-opensans mt-6 space-y-4 list-disc pl-5 text-lg">
                   <li>
                     Our vision is to set a new standard for healthcare in India <code>-</code> one that values judgement over volume.
                   </li>
@@ -81,9 +81,9 @@ export default function MemberRoadmap() {
                   Mission
                 </h3>
 
-                <h4 className="mt-4 text-xl font-bold" >What Guides Every Plan</h4>
+                <h4 className="font-opensans mt-4 text-xl font-semibold" >What Guides Every Plan</h4>
 
-                <ul className="mt-6 space-y-4 list-disc pl-5 text-lg">
+                <ul className="font-opensans mt-6 space-y-4 list-disc pl-5 text-lg">
                   <li>
                     Our mission is to deliver personalised, evidence-based healthcare through a multidisciplinary approach.
                   </li>
