@@ -138,8 +138,8 @@ const Footer = () => {
             <div className="flex gap-8 justify-between items-center pt-8">
                 <div className="text-size-small">© Secure Clinics 2025. All Rights Reserved.</div>
                 <div className=" gap-5 flex items-center">
-                    <a href="#" className="underline">Privacy policy</a>
-                    <a href="#" className="underline">Terms of use</a></div>
+                    <a href="#" className="">Privacy policy</a>
+                    <a href="#" className="">Terms of use</a></div>
             </div>
         </footer>
     );

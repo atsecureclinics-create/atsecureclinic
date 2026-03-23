@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import AtTheRate from "../attherate";
 
@@ -125,7 +124,7 @@ export default function ProblemSolution() {
                 {/* CTA */}
                 <div className="flex justify-center mt-12">
                     <Link href="/the-care-team" className="theme-button flex justify-center items-center gap-2">
-                        Meet the Team <ArrowRight size={20} />
+                        Meet the Team
                     </Link>
                 </div>
             </div>

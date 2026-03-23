@@ -21,12 +21,12 @@ export default async function CareTeamProfile({ params }) {
 
   return (
     <>
-      <section className="bg-[#F4F2EE] min-h-screen py-20">
+      <section className="bg-white min-h-screen py-20">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16">
 
           {/* LEFT CONTENT */}
           <div className="lg:col-span-7 flex flex-col justify-center">
-            <Link href="/the-care-team" className="text-base font-bold uppercase tracking-[.2em] text-coral mb-6 hover:underline">
+            <Link href="/the-care-team" className="text-base uppercase tracking-[.2em] text-coral mb-6 hover:underline font-extrabold ">
               ← Back to Team
             </Link>
 
@@ -38,7 +38,7 @@ export default async function CareTeamProfile({ params }) {
               {member.role}
             </p>
 
-            <div className="space-y-6 text-base md:text-lg leading-relaxed text-navy">
+            <div className="font-opensans space-y-6 text-base md:text-lg leading-relaxed text-navy">
               {/* Safe mapping: checks if content exists, otherwise falls back to empty array */}
               {(member.content || []).map((para, i) => (
                 <p key={i}>{para}</p>

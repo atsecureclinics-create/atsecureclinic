@@ -6,7 +6,7 @@ import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import Container from '../container';
 import AtTheRate from '../attherate';
@@ -97,7 +97,7 @@ const TeamMember = () => {
                     {/* CTA */}
                     <div className="flex justify-center mt-12">
                         <Link href="/the-care-team" className="theme-button flex justify-center items-center gap-2">
-                            Meet the Team <ArrowRight size={20} />
+                            Meet the Team
                         </Link>
                     </div>
                 </div>

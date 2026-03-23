@@ -97,7 +97,7 @@ export default function SecureStories() {
                                             href={story.link}
                                             className="inline-flex items-center gap-2 text-xl font-bold uppercase tracking-wide"
                                         >
-                                            Read the story <ArrowRight className="w-4 h-4" />
+                                            Read the story
                                         </a>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@ export default function SecureStories() {
                         href="/book-consult"
                         className="theme-button flex justify-center items-center gap-2"
                     >
-                        Book a Consult <ArrowRight size={20} />
+                        Book a Consult
                     </Link>
                 </div>
             </div>

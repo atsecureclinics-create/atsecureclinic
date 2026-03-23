@@ -1,6 +1,4 @@
 import Link from "next/link";
-import AtTheRate from "../attherate";
-import { ArrowRight } from "lucide-react";
 import Container from "../container";
 
 export default function MemberRoadmap() {
@@ -105,7 +103,7 @@ export default function MemberRoadmap() {
             href="/book-consult"
             className="theme-button"
           >
-            Book a consult <ArrowRight size={20} />
+            Book a consult
           </Link>
         </div>
       </Container>

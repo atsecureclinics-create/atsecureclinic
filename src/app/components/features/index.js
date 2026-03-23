@@ -1,5 +1,4 @@
 import React from 'react';
-import { Send, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 const Features = () => {
@@ -77,7 +76,7 @@ const Features = () => {
             {/* Optional "Learn More" link to enhance premium feel */}
             <div className='flex justify-center pt-8' >
                 <Link href="/book-consult" className="flex justify-center items-center gap-2 theme-button ">
-                    Book a consult <ArrowRight size={20} />
+                    Book a consult
                 </Link>
             </div>
         </section>

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 const galleryImages = [
     "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/64936ebf54d5c20c4f8c7edd_room2.avif",
@@ -33,7 +32,6 @@ export default function MovingGallery() {
                         className="theme-button flex justify-center items-center gap-2"
                     >
                         Book A Consult
-                        <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
             </div>

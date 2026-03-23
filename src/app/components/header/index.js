@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import Logo from "../../../../public/icons/logo.svg";
 import Image from "next/image";
 
@@ -37,14 +37,11 @@ export default function Header() {
                                 <Link href="/about" className="block px-5 py-3 hover:bg-vanilla transition">
                                     About Us
                                 </Link>
-                                <Link href="/mission" className="block px-5 py-3 hover:bg-vanilla transition">
+                                {/* <Link href="/mission" className="block px-5 py-3 hover:bg-vanilla transition">
                                     Our Mission
-                                </Link>
+                                </Link> */}
                                 <Link href="/press" className="block px-5 py-3 hover:bg-vanilla transition">
                                     Press
-                                </Link>
-                                <Link href="/overview" className="block px-5 py-3 hover:bg-vanilla transition">
-                                    Overview
                                 </Link>
                             </div>
                         )}
@@ -66,18 +63,12 @@ export default function Header() {
                         </button>
 
                         {treatmentOpen && (
-                            <div className="absolute top-full left-0 pt-2 w-52 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
-                                <Link href="/general-dentistry" className="block px-5 py-3 hover:bg-vanilla transition">
-                                    General Dentistry
+                            <div className="text-lg absolute top-full left-0 pt-2 w-52 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
+                                <Link href="/overview" className="block px-5 py-3 hover:bg-vanilla transition">
+                                    Surgical Treatments
                                 </Link>
-                                <Link href="/cosmetic-dentistry" className="block px-5 py-3 hover:bg-vanilla transition">
-                                    Cosmetic Dentistry
-                                </Link>
-                                <Link href="/oral-surgery" className="block px-5 py-3 hover:bg-vanilla transition">
-                                    Oral Surgery
-                                </Link>
-                                <Link href="/orthodontics" className="block px-5 py-3 hover:bg-vanilla transition">
-                                    Orthodontics
+                                <Link href="/overview" className="block px-5 py-3 hover:bg-vanilla transition">
+                                    Non<code>-</code>Surgical Treatments
                                 </Link>
                             </div>
                         )}
@@ -98,7 +89,7 @@ export default function Header() {
                 {/* CTA */}
                 <div>
                     <Link href="/contact-us" className="theme-button">
-                        Book a Consult <ArrowRight size={18} />
+                        Book a Consult
                     </Link>
                 </div>
             </div>
