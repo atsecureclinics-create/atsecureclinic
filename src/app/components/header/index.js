@@ -64,10 +64,10 @@ export default function Header() {
 
                         {treatmentOpen && (
                             <div className="text-lg absolute top-full left-0 pt-2 w-52 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
-                                <Link href="/overview" className="block px-5 py-3 hover:bg-vanilla transition">
+                                <Link href="/surgical" className="block px-5 py-3 hover:bg-vanilla transition">
                                     Surgical Treatments
                                 </Link>
-                                <Link href="/overview" className="block px-5 py-3 hover:bg-vanilla transition">
+                                <Link href="/nonsurgical" className="block px-5 py-3 hover:bg-vanilla transition">
                                     Non<code>-</code>Surgical Treatments
                                 </Link>
                             </div>

@@ -1,13 +1,10 @@
 import React from 'react'
-import Container from '../components/container'
-import Image from 'next/image'
-import Link from 'next/link'
+import Container from '../components/container';
+import Image from 'next/image';
 import team from "../../../public/common/team.png";
-import AtTheRate from '../components/attherate';
 import HowWeTreat from '../components/howwetreat';
 import MovingGallery from '../components/movinggallery';
 import FAQ from '../components/faq';
-// import Biomarkers from '../../../public/common/'
 
 const surgerySteps = [
     {
@@ -52,53 +49,7 @@ const surgerySteps = [
     },
 ];
 
-const ProgramOutline = [
-    {
-        number: "01",
-        title: "You’re Heard Properly",
-        text: "Every journey starts with listening, not rushing. Your spine or ortho concerns, pain, lifestyle, and goals are understood before any treatment is suggested.",
-    },
-    {
-        number: "02",
-        title: "Nothing Is Rushed",
-        text: "Surgery is never the first step. We explore all conservative, non-surgical options first, ensuring that every decision is thoughtful and patient-focused.",
-    },
-    {
-        number: "03",
-        title: "Only What Truly Helps",
-        text: "When surgery becomes necessary, it’s because it delivers clear benefits. Our specialists recommend minimally invasive or endoscopic spine and ortho procedures only when truly needed.",
-    },
-    {
-        number: "04",
-        title: "A Plan Made Just for You",
-        text: "Each surgical plan — from approach to technique to recovery — is tailored specifically for your condition.",
-    },
-];
-
-const steps = [
-    {
-        number: "1.",
-        title: "YOU’RE HEARD PROPERLY",
-        text: "Every journey starts with listening carefully. Your spine or ortho concerns, pain, lifestyle, and goals are understood before treatment is suggested.",
-    },
-    {
-        number: "2.",
-        title: "NOTHING IS RUSHED",
-        text: "Surgery is never the first step. We explore conservative, non-surgical options first so every decision remains thoughtful and patient-focused.",
-    },
-    {
-        number: "3.",
-        title: "WATCH AND LEARN",
-        text: "When surgery becomes necessary, specialists recommend minimally invasive or endoscopic procedures only when truly beneficial.",
-    },
-    {
-        number: "4.",
-        title: "APPLY YOUR INSIGHTS",
-        text: "Recovery plans include physiotherapy, rehab guidance, and continuous follow-up for long-term healing.",
-    },
-];
-
-function Overview() {
+function SurgicalTreatments() {
     return (
         <div>
             {/* HERO */}
@@ -223,103 +174,6 @@ function Overview() {
                 </div>
             </section>
 
-            <section className="bg-[#d9e7e7] py-24">
-                <div className="max-w-7xl mx-auto px-6 lg:px-12">
-
-                    <div className="grid lg:grid-cols-2 gap-20 items-start">
-
-                        {/* Left Side */}
-                        <div className="sticky top-24">
-                            <p className="uppercase tracking-[0.3em] text-xl text-coral font-semibold mb-6">
-                                Surgery Journey
-                            </p>
-
-                            <h2 className="font-seasons text-5xl md:text-7xl text-navy leading-[1.05] max-w-xl">
-                                Surgery designed around your recovery.
-                            </h2>
-
-                            <p className="font-opensans mt-8 text-lg text-navy max-w-md leading-relaxed font-medium">
-                                What to expect, how decisions are made and how recovery is supported.
-                            </p>
-                        </div>
-
-                        {/* Right Side */}
-                        <div className="space-y-10">
-                            {ProgramOutline.map((step) => (
-                                <div
-                                    key={step.number}
-                                    className="border-t border-navy/20 pt-8 group"
-                                >
-                                    <div className="flex items-start gap-6">
-
-                                        {/* Number */}
-                                        <span
-                                            className="font-opensans text-3xl text-coral min-w-[60px]"
-                                            dangerouslySetInnerHTML={{ __html: step.number }}
-                                        />
-
-                                        {/* Content */}
-                                        <div>
-                                            <h3
-                                                className="uppercase tracking-[0.15em] text-xl font-bold text-navy mb-4"
-                                                dangerouslySetInnerHTML={{ __html: step.title }}
-                                            />
-
-                                            <p className="font-opensans text-lg text-navy leading-relaxed max-w-2xl">
-                                                {step.text}
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-
-            <section className="bg-green py-18">
-                <div className="max-w-7xl mx-auto">
-
-                    {/* Heading */}
-                    <div className="text-center mb-8">
-                        <h2 className="font-seasons text-5xl md:text-6xl text-navy">
-                            How it Works
-                        </h2>
-                    </div>
-
-                    {/* Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-
-                        {steps.map((step) => (
-                            <div
-                                key={step.number}
-                                className="bg-white rounded-3xl p-5 flex flex-col justify-start hover:-translate-y-2 transition-all duration-500 shadow-sm hover:shadow-lg"
-                            >
-                                {/* Number */}
-                                <span className="font-opensans text-coral text-5xl mb-4 font-extrabold">
-                                    {step.number}
-                                </span>
-
-                                {/* Title */}
-                                <h3 className="text-navy uppercase tracking-[0.15em] font-semibold text-xl leading-snug mb-4">
-                                    {step.title}
-                                </h3>
-
-                                {/* Text */}
-                                <p className="font-opensans text-navy text-lg leading-relaxed">
-                                    {step.text}
-                                </p>
-                            </div>
-                        ))}
-
-                    </div>
-
-                </div>
-            </section>
-
             <section>
                 <HowWeTreat />
             </section>
@@ -337,4 +191,4 @@ function Overview() {
     )
 }
 
-export default Overview
+export default SurgicalTreatments
