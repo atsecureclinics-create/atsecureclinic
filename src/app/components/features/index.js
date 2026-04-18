@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import ConsultButton from '../consultmodal/button';
 
 const Features = () => {
     const features = [
@@ -36,48 +36,45 @@ const Features = () => {
     ];
 
     return (
-        <section className="min-h-screen font-seasons text-navy relative overflow-hidden">
-            <div className="max-w-5xl mx-auto space-y-0 pt-10">
+        <section className="font-seasons text-navy relative overflow-hidden">
+            <div className="max-w-5xl mx-auto space-y-0 pt-8 md:pt-10 px-4 sm:px-6">
                 {features.map((feature, index) => (
-                    <>
-                        <div key={index} className="flex items-center gap-14 py-6 group">
-                            {/* Image Side with Premium Reveal Effect */}
-                            <div className="w-1/3 relative overflow-hidden rounded-3xl shadow-2xl shadow-black/5 ">
+                    <React.Fragment key={index}>
+                        <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10 lg:gap-14 py-6 group">
+                            {/* Image Side */}
+                            <div className="w-full md:w-1/3 relative overflow-hidden rounded-2xl md:rounded-3xl shadow-2xl shadow-black/5">
                                 <img
                                     src={feature.image}
                                     alt={feature.imageAlt}
-                                    className="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105"
+                                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                                 />
-                                {/* Subtle overlay for depth */}
-                                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-40" /> */}
                             </div>
 
                             {/* Text Side */}
-                            <div className="w-2/3">
+                            <div className="w-full md:w-2/3">
                                 <h2
-                                    className="text-2xl lg:text-4xl font-serif font-bold leading-tight text-navy mb-4"
+                                    className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold leading-tight text-navy mb-3 md:mb-4"
                                     dangerouslySetInnerHTML={{ __html: feature.title }}
                                 />
 
                                 <p
-                                    className="font-opensans text-xl leading-relaxed text-navy font-normal"
+                                    className="font-opensans text-base md:text-lg lg:text-xl leading-relaxed text-navy font-normal"
                                     dangerouslySetInnerHTML={{ __html: feature.description }}
                                 />
                             </div>
                         </div>
 
-                        {/* Premium Divider - doesn't show after the last item */}
                         {index < features.length - 1 && (
-                            <div className="w-full h-[1px] bg-green my-2" />
+                            <div className="w-full h-px bg-green my-2" />
                         )}
-                    </>
+                    </React.Fragment>
                 ))}
             </div>
             {/* Optional "Learn More" link to enhance premium feel */}
             <div className='flex justify-center pt-8' >
-                <Link href="/book-consult" className="flex justify-center items-center gap-2 theme-button ">
+                <ConsultButton className="flex justify-center items-center gap-2 theme-button ">
                     Book a consult
-                </Link>
+                </ConsultButton>
             </div>
         </section>
     );

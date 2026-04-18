@@ -50,46 +50,45 @@ const data = [
             "Imaging and reports reviewed in real time by the care team",
     },
     {
-        problem: "Short<code>-</code>term fixes, recurring pain",
+        problem: "Short-term fixes, recurring pain",
         solution:
-            "Long<code>-</code>term treatments designed to prevent recurrence and build resilience and strength",
+            "Long-term treatments designed to prevent recurrence and build resilience and strength",
     },
 ];
 
 export default function ProblemSolution() {
     return (
-        <section className="max-w-6xl m-auto my-16">
+        <section className="max-w-6xl m-auto my-10 md:my-16 px-4 sm:px-6">
             {/* HEADER */}
-            <div className="grid md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2">
 
                 {/* LEFT */}
-                <div className="px-4 md:px-4 py-8">
-                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984df219ec09e8718fb02d_face5.png'} alt="Problem" className="w-[100px] h-[100px] object-contain mb-4" />
+                <div className="px-4 py-6 md:py-8">
+                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984df219ec09e8718fb02d_face5.png'} alt="Problem elsewhere" className="w-16 md:w-25 h-16 md:h-25 object-contain mb-4" />
 
-                    <h2 className="text-3xl md:text-4xl font-semibold text-coral tracking-wide uppercase">
+                    <h2 className="text-2xl md:text-4xl font-semibold text-coral tracking-wide uppercase">
                         Problem Elsewhere
                     </h2>
 
-                    <p className=" font-opensans mt-4 text-navy max-w-md text-xl">
+                    <p className="font-opensans mt-3 md:mt-4 text-navy max-w-md text-base md:text-xl leading-relaxed">
                         Stop feeling frustrated, overwhelmed, or stuck with fragmented care.
                     </p>
                 </div>
 
                 {/* RIGHT */}
-                <div className="px-4 md:px-4 py-8 bg-background rounded-tl-2xl rounded-tr-2xl">
-                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984dff3649a85b335a071c_Big%20Smiley.png'} alt="Problem" className="w-[100px] h-[100px] object-contain mb-4" />
+                <div className="px-4 py-6 md:py-8 bg-background rounded-t-2xl md:rounded-tr-2xl md:rounded-tl-none">
+                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984dff3649a85b335a071c_Big%20Smiley.png'} alt="Solution at Secure Clinics" className="w-16 md:w-25 h-16 md:h-25 object-contain mb-4" />
 
-                    <h2 className="text-3xl md:text-4xl font-semibold text-navy tracking-wide uppercase">
-                        Solution <AtTheRate size={30} /> Secure Clinics
+                    <h2 className="text-2xl md:text-4xl font-semibold text-navy tracking-wide uppercase inline-flex items-baseline gap-1 flex-wrap">
+                        Solution <AtTheRate size={24} className="md:hidden" /><AtTheRate size={30} className="hidden md:inline-block" /> Secure Clinics
                     </h2>
 
-                    <p className=" font-opensans mt-4 text-navy max-w-md text-xl">
+                    <p className="font-opensans mt-3 md:mt-4 text-navy max-w-md text-base md:text-xl leading-relaxed">
                         Problem focussed solutions. Prevention comes first. Prevent before a problem arises.
                     </p>
                 </div>
             </div>
 
-            {/* DIVIDER */}
             <div className="border-t border-gray-300/60" />
 
             {/* TABLE ROWS */}
@@ -97,32 +96,26 @@ export default function ProblemSolution() {
                 {data.map((item, index) => (
                     <div
                         key={index}
-                        className="grid md:grid-cols-2 border-t border-gray-300/60 group last:border-b"
+                        className="grid grid-cols-1 md:grid-cols-2 border-t border-gray-300/60 group last:border-b"
                     >
-                        {/* LEFT */}
-                        <div className="font-opensans px-4 md:px-8 py-5">
-                            <p
-                                className="text-lg md:text-xl text-navy leading-relaxed max-w-xl"
-                                dangerouslySetInnerHTML={{ __html: item.problem }}
-                            />
+                        <div className="font-opensans px-4 md:px-8 py-4 md:py-5">
+                            <p className="text-base md:text-xl text-navy leading-relaxed max-w-xl">
+                                {item.problem}
+                            </p>
                         </div>
 
-                        {/* RIGHT */}
                         <div
-                            className={`font-opensans px-4 md:px-8 py-5 bg-background ${index === data.length - 1
-                                ? "rounded-bl-2xl rounded-br-2xl"
-                                : ""
+                            className={`font-opensans px-4 md:px-8 py-4 md:py-5 bg-background ${index === data.length - 1 ? "rounded-b-2xl" : ""
                                 }`}
                         >
-                            <p
-                                className="text-lg md:text-xl text-navy leading-relaxed max-w-xl"
-                                dangerouslySetInnerHTML={{ __html: item.solution }}
-                            />
+                            <p className="text-base md:text-xl text-navy leading-relaxed max-w-xl">
+                                {item.solution}
+                            </p>
                         </div>
                     </div>
                 ))}
-                {/* CTA */}
-                <div className="flex justify-center mt-12">
+
+                <div className="flex justify-center mt-10 md:mt-12">
                     <Link href="/the-care-team" className="theme-button flex justify-center items-center gap-2">
                         Meet the Team
                     </Link>

@@ -7,19 +7,19 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
   {
     q: "Is SecureClinics a full replacement for orthopaedic and spine care?",
-    a: "Yes. SecureClinics covers consultations, diagnostics, surgery (when needed), physiotherapy, rehabilitation and prevention—all under one roof in Mumbai. We use a conservative-first approach and recommend surgery only when truly needed.",
+    a: "Yes. SecureClinics covers consultations, diagnostics, surgery (when needed), physiotherapy, rehabilitation and prevention — all under one roof in Mumbai. We use a conservative-first approach and recommend surgery only when truly needed.",
   },
   {
-    q: "What is conservative<code>-</code>first care?",
-    a: "We prioritise non-surgical options—physiotherapy, strength training, aqua therapy, and lifestyle changes—before considering surgery. Surgery is recommended only when clearly needed for your recovery.",
+    q: "What is conservative-first care?",
+    a: "We prioritise non-surgical options — physiotherapy, strength training, aqua therapy, and lifestyle changes — before considering surgery. Surgery is recommended only when clearly needed for your recovery.",
   },
   {
     q: "What is included in my care?",
-    a: "Your care includes consultations with specialists, diagnostics and imaging reviewed in real time, therapy and rehabilitation <code>(</code>physiotherapy, strength training, aqua therapy<code>)</code>, nutrition support, and a single coordinated care plan from first visit to full recovery.",
+    a: "Your care includes consultations with specialists, diagnostics and imaging reviewed in real time, therapy and rehabilitation (physiotherapy, strength training, aqua therapy), nutrition support, and a single coordinated care plan from first visit to full recovery.",
   },
   {
     q: "How do I get started?",
-    a: "Book a consult. Our team will guide you through an initial assessment, and if needed, diagnostics and a personalized care plan—all in one location.",
+    a: "Book a consult. Our team will guide you through an initial assessment, and if needed, diagnostics and a personalised care plan — all in one location.",
   },
   {
     q: "How does SecureClinics help with specialist referrals?",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: "How do you work with insurance?",
-    a: "We help you use your existing insurance where applicable <code>(</code>e.g. diagnostics, certain procedures<code>)</code>. Our team can explain what is covered and how to maximise your benefits.",
+    a: "We help you use your existing insurance where applicable (e.g. diagnostics, certain procedures). Our team can explain what is covered and how to maximise your benefits.",
   },
 ];
 
@@ -47,19 +47,18 @@ export default function FAQ() {
       style={{ backgroundColor: FAQ_BG }}
     >
       <Container>
-        {/* Mobile: "FAQ" heading above list (horizontal) */}
-        <div className="lg:hidden mb-10">
+        {/* Mobile: "FAQ" heading above list */}
+        <div className="lg:hidden mb-8 md:mb-10">
           <h2
-            className="text-4xl md:text-5xl font-bold tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight"
             style={{ color: FAQ_ACCENT }}
           >
             FAQ
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
-          {/* Left: Large vertical "FAQ" heading (rotated 90° counter-clockwise) — desktop only */}
-          <div className="hidden lg:flex lg:col-span-3 xl:col-span-4 items-center justify-center lg:justify-start min-h-[320px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+          <div className="hidden lg:flex lg:col-span-3 xl:col-span-4 items-center justify-center lg:justify-start min-h-80">
             <h2
               className="text-6xl xl:text-7xl 2xl:text-[200px] font-bold tracking-tight whitespace-nowrap origin-center"
               style={{
@@ -71,7 +70,6 @@ export default function FAQ() {
             </h2>
           </div>
 
-          {/* Right: FAQ accordion list */}
           <div className="lg:col-span-9 xl:col-span-8 space-y-0">
             {faqs.map((item, index) => (
               <div
@@ -81,17 +79,17 @@ export default function FAQ() {
                 <button
                   type="button"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                  className="w-full flex items-center justify-between gap-6 py-5 md:py-6 text-left group cursor-pointer"
+                  aria-expanded={openIndex === index}
+                  className="w-full flex items-center justify-between gap-4 md:gap-6 py-4 md:py-6 text-left group cursor-pointer"
                 >
-                  <span
-                    className="text-base md:text-2xl font-bold text-navy group-hover:opacity-80 transition flex-1"
-                    dangerouslySetInnerHTML={{ __html: item.q }}
-                  />
+                  <span className="text-base sm:text-lg md:text-2xl font-bold text-navy group-hover:opacity-80 transition flex-1">
+                    {item.q}
+                  </span>
 
                   <span
-                    className="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xl font-light leading-none cursor-pointer"
+                    className="flex-shrink-0 w-6 h-6 flex items-center justify-center text-xl font-light leading-none"
                     style={{ color: FAQ_ACCENT }}
-                    aria-hidden
+                    aria-hidden="true"
                   >
                     {openIndex === index ? <Minus /> : <Plus />}
                   </span>
@@ -101,13 +99,11 @@ export default function FAQ() {
                     }`}
                 >
                   <div className="overflow-hidden">
-                    <p
-                      className="font-opensans pb-5 md:pb-6 text-navy text-base md:text-lg leading-relaxed pr-10"
-                      dangerouslySetInnerHTML={{ __html: item.a }}
-                    />
+                    <p className="font-opensans pb-4 md:pb-6 text-navy text-sm sm:text-base md:text-lg leading-relaxed pr-2 sm:pr-6 md:pr-10">
+                      {item.a}
+                    </p>
                   </div>
                 </div>
-
               </div>
             ))}
           </div>

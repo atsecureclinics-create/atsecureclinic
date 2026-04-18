@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Container from "./components/container";
 import SlidingDescription from "./components/slidingdescription";
 import Features from "./components/features";
@@ -10,69 +9,52 @@ import StatisticTestimonialSlider from "./components/testimonial";
 import HospitalAssociations from "./components/hospitalassociations";
 import MovingGallery from "./components/movinggallery";
 import FAQ from "./components/faq";
+import ConsultButton from "./components/consultmodal/button";
 
 export default function Home() {
   return (
     <>
       {/* HERO – two-column: text left, media right */}
-      <section className="min-h-[85vh] flex items-center">
+      <section className="min-h-[70vh] lg:min-h-[85vh] flex items-center py-12 lg:py-0">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* LEFT CONTENT */}
             <div className="lg:col-span-7 xl:col-span-6">
-              {/* Eyebrow */}
-              <p className=" font-opensans mb-4 text-2xl 2xl:text-3xl font-semibold leading-normal text-navy">
-                What if healthcare actually worked together ?
+              <p className="font-opensans mb-3 md:mb-4 text-lg sm:text-xl md:text-2xl 2xl:text-3xl font-semibold leading-normal text-navy">
+                What if healthcare actually worked together?
               </p>
 
-              {/* H1 */}
-              <h1 className="text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy">
                 HEAL Stronger <br /> RECOVER Faster <br /> MOVE better
               </h1>
 
-              {/* H2 – emphasis lines */}
-              <div className="mt-6 space-y-2 text-lg md:text-2xl font-medium text-navy">
-                <p className="font-semibold no-ligatures font-opensans">
-                  Surgeons, Therapists, Nutritionists and Strength Trainers One
+              <div className="mt-5 md:mt-6 space-y-2 text-base md:text-xl lg:text-2xl font-medium text-navy">
+                <p className="font-semibold no-ligatures font-opensans leading-relaxed">
+                  Surgeons, Therapists, Nutritionists and Strength Trainers. One
                   Clinic. One team. One System.
                 </p>
               </div>
 
-              {/* CTA */}
-              <div className="mt-10 !inline-block">
-                <Link
-                  href="/book-consult"
-                  className="theme-button px-8 py-4 font-bold !text-xl"
-                >
+              <div className="mt-8 md:mt-10">
+                <ConsultButton className="theme-button inline-flex! px-6 md:px-8 py-3.5 md:py-4 font-bold text-base md:text-xl!">
                   Book a Consult
-                </Link>
+                </ConsultButton>
               </div>
             </div>
 
             {/* RIGHT VIDEO */}
             <div className="lg:col-span-5 xl:col-span-6 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-lg aspect-[19/20] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg aspect-19/20 rounded-2xl overflow-hidden shadow-2xl">
                 <video
                   className="w-full h-full object-cover"
                   src="https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d%2F69136cda4850c7f206613aef_Mi%20peli%CC%81cula%202-transcode.mp4"
                   muted
                   loop
                   playsInline
+                  autoPlay
+                  preload="metadata"
+                  aria-hidden="true"
                 />
-
-                <button
-                  type="button"
-                  aria-label="Play video"
-                  className="absolute bottom-6 right-6 w-14 h-14 rounded-full bg-coral flex items-center justify-center shadow-lg hover:scale-105 transition"
-                >
-                  <svg
-                    className="w-5 h-5 text-white ml-0.5"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </button>
               </div>
             </div>
           </div>

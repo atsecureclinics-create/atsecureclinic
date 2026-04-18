@@ -43,33 +43,33 @@ export default function HowWeTreat({ category = "surgical" }) {
     const label = CATEGORY_LABEL[category] ?? "TREATMENTS";
 
     return (
-        <section className="bg-foreground py-28">
-            <div className="max-w-7xl mx-auto px-6">
+        <section className="bg-foreground py-16 md:py-24 lg:py-28">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 {/* Header */}
                 <div className="text-center max-w-4xl mx-auto mb-8">
-                    <h2 className="flex flex-wrap items-baseline gap-2 text-5xl font-semibold tracking-tight text-navy items-end justify-center">
-                        {label} <AtTheRate size={38} />TREATMENTS
+                    <h2 className="flex flex-wrap items-baseline justify-center gap-2 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-navy">
+                        {label} <AtTheRate size={28} className="sm:hidden" /><AtTheRate size={38} className="hidden sm:inline-block" />TREATMENTS
                     </h2>
 
-                    <p className="font-opensans mt-6 text-2xl text-navy">
+                    <p className="font-opensans mt-4 md:mt-6 text-base sm:text-xl md:text-2xl text-navy">
                         An integrated step-by-step approach to personalised healthcare in Mumbai.
                     </p>
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 border border-gray-300/70 rounded-3xl overflow-hidden">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 border border-gray-300/70 rounded-2xl md:rounded-3xl overflow-hidden">
                     {items.map((item) => {
                         const Icon = ICONS[item.iconKey] ?? Activity;
                         return (
                             <Link
                                 key={item.slug}
                                 href={`${basePath}/${item.slug}`}
-                                className="group flex flex-col items-center justify-center gap-6 p-10 bg-vanilla hover:bg-[#BFD6DC]/60 transition border border-gray-300/70"
+                                className="group flex flex-col items-center justify-center gap-4 md:gap-6 p-5 sm:p-6 md:p-10 bg-vanilla hover:bg-[#BFD6DC]/60 transition border border-gray-300/70"
                             >
-                                <div className="w-16 h-16 rounded-full flex items-center justify-center bg-white shadow-sm group-hover:scale-105 transition">
-                                    <Icon className="w-8 h-8 text-navy" />
+                                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center bg-white shadow-sm group-hover:scale-105 transition">
+                                    <Icon className="w-6 h-6 md:w-8 md:h-8 text-navy" />
                                 </div>
-                                <p className="text-xl text-center font-bold text-navy group-hover:text-[#0C3C46]">
+                                <p className="text-sm sm:text-base md:text-xl text-center font-bold text-navy group-hover:text-[#0C3C46] leading-snug">
                                     {item.cardTitle}
                                 </p>
                             </Link>

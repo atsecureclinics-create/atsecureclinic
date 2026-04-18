@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/navigation";
 import AtTheRate from "../attherate";
-import Link from "next/link";
+import ConsultButton from "../consultmodal/button";
 
 const stories = [
     {
@@ -55,39 +55,41 @@ const stories = [
 
 export default function SecureStories() {
     return (
-        <section className="pt-28 relative">
-            <div className="max-w-7xl mx-auto px-6">
-                {/* Header */}
-                <div className="text-center mb-16">
-                    <h2 className="text-5xl font-semibold tracking-tight text-navy mt-4">Patient Stories <AtTheRate size={40} />SecureClinics
+        <section className="pt-16 md:pt-28 relative">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                <div className="text-center mb-10 md:mb-16">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-navy mt-2 md:mt-4 inline-flex items-baseline justify-center gap-1 flex-wrap">
+                        Patient Stories<AtTheRate size={40} className="hidden md:inline-block" />SecureClinics
                     </h2>
-                    <p className="font-opensans mt-6 text-2xl text-navy mx-auto">Real experiences across diagnosis, treatment, and recovery.</p>
+                    <p className="font-opensans mt-4 md:mt-6 text-base md:text-xl lg:text-2xl text-navy">
+                        Real experiences across diagnosis, treatment, and recovery.
+                    </p>
                 </div>
 
-                {/* Slider */}
                 <div className="relative">
                     <Swiper
                         modules={[Navigation]}
-                        spaceBetween={32}
-                        slidesPerView={1.5}
+                        spaceBetween={20}
+                        slidesPerView={1.1}
                         navigation={{
                             prevEl: ".stories-prev",
                             nextEl: ".stories-next",
                         }}
                         breakpoints={{
-                            768: { slidesPerView: 2.2 },
-                            1024: { slidesPerView: 3.2 },
+                            640: { slidesPerView: 1.5, spaceBetween: 24 },
+                            768: { slidesPerView: 2.2, spaceBetween: 28 },
+                            1024: { slidesPerView: 3.2, spaceBetween: 32 },
                         }}
                     >
                         {stories.map((story, index) => (
                             <SwiperSlide key={index}>
-                                <div className="relative h-[420px] rounded-3xl overflow-hidden group">
+                                <div className="relative h-80 md:h-105 rounded-2xl md:rounded-3xl overflow-hidden group">
                                     <img
                                         src={story.image}
                                         alt={story.name}
                                         className="absolute inset-0 w-full h-full object-cover"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                                    <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
 
                                     <div className="absolute bottom-0 p-8 text-white">
                                         <p className="font-opensans text-lg leading-relaxed mb-6 font-medium">
@@ -118,12 +120,9 @@ export default function SecureStories() {
 
                 {/* CTA */}
                 <div className="flex justify-center mt-12">
-                    <Link
-                        href="/book-consult"
-                        className="theme-button flex justify-center items-center gap-2"
-                    >
+                    <ConsultButton className="theme-button flex justify-center items-center gap-2">
                         Book a Consult
-                    </Link>
+                    </ConsultButton>
                 </div>
             </div>
         </section>

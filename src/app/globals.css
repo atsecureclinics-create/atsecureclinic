@@ -5,8 +5,6 @@
    DESIGN TOKENS (Single Source)
 ================================ */
 :root {
-  --font-the-seasons: "TheSeasons", serif;
-  --font-open-sans: "Open Sans", sans-serif;
   --background: #b0c0cc;
   --foreground: #d9dfe3;
   --white: #ffffff;
@@ -15,7 +13,6 @@
   --green: #8ea39d;
   --navy: #282d38;
   --navylight: #363e4f;
-  /* --navy: #000; */
 }
 
 /* ===============================
@@ -24,7 +21,8 @@
 body {
   background-color: var(--vanilla);
   color: var(--navy);
-  font-family: var(--font-the-seasons), sans-serif;
+  font-family: var(--font-the-seasons), "Open Sans", Georgia, "Times New Roman",
+    serif;
   font-variant-ligatures: none;
   font-feature-settings:
     "liga" 0,

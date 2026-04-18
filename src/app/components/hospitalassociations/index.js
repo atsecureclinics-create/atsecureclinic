@@ -36,14 +36,10 @@ const hospitals = [
 
 export default function HospitalAssociations() {
     return (
-        <section className="bg-white py-20 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6">
-                {/* Header */}
-                <div className="text-center mb-14">
-                    {/* <p className="uppercase tracking-widest text-2xl text-navy font-bold">
-                        Trusted Clinical Network
-                    </p> */}
-                    <h3 className="mt-4 text-5xl font-semibold text-navy">
+        <section className="bg-white py-14 md:py-20 overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                <div className="text-center mb-10 md:mb-14">
+                    <h3 className="mt-2 md:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-navy leading-tight">
                         Hospital Associations <code>&</code> Transitions
                     </h3>
                 </div>

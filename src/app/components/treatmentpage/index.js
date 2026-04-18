@@ -1,9 +1,9 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Check } from "lucide-react";
 import Container from "../container";
 import FAQ from "../faq";
 import MovingGallery from "../movinggallery";
+import ConsultButton from "../consultmodal/button";
 
 export default function TreatmentPage({ treatment }) {
   const {
@@ -20,44 +20,41 @@ export default function TreatmentPage({ treatment }) {
   return (
     <div>
       {/* HERO */}
-      <section className="min-h-[85vh] flex items-center bg-vanilla pt-16 pb-20">
+      <section className="min-h-[70vh] lg:min-h-[85vh] flex items-center bg-vanilla pt-10 md:pt-16 pb-14 md:pb-20">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-7">
               {hero.eyebrow && (
-                <p className="mb-4 text-sm md:text-base font-bold uppercase tracking-[0.35em] text-coral font-opensans">
+                <p className="mb-3 md:mb-4 text-xs md:text-sm font-bold uppercase tracking-[0.35em] text-coral font-opensans">
                   {hero.eyebrow}
                 </p>
               )}
 
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-4 md:mb-6">
                 {hero.title}
               </h1>
 
-              <p className="font-opensans text-xl md:text-2xl text-navy/80 italic mb-8 leading-snug">
+              <p className="font-opensans text-lg md:text-xl lg:text-2xl text-navy/80 italic mb-5 md:mb-8 leading-snug">
                 {hero.tagline}
               </p>
 
-              <p className="font-opensans text-base md:text-lg text-navy/85 leading-relaxed mb-6">
+              <p className="font-opensans text-base md:text-lg text-navy/85 leading-relaxed mb-4 md:mb-6">
                 {hero.intro}
               </p>
 
               {hero.closing && (
-                <p className="font-opensans text-base md:text-lg text-navy font-semibold leading-relaxed mb-8">
+                <p className="font-opensans text-base md:text-lg text-navy font-semibold leading-relaxed mb-6 md:mb-8">
                   {hero.closing}
                 </p>
               )}
 
-              <Link
-                href={cta.buttonHref}
-                className="theme-button !inline-flex px-8 py-4 !text-lg"
-              >
+              <ConsultButton className="theme-button inline-flex! px-6 md:px-8 py-3.5 md:py-4 text-base md:text-lg!">
                 {cta.buttonLabel}
-              </Link>
+              </ConsultButton>
             </div>
 
             <div className="lg:col-span-5 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-lg aspect-[4/5] rounded-4xl overflow-hidden shadow-2xl">
+              <div className="relative w-full max-w-md lg:max-w-lg aspect-4/5 rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl">
                 <Image
                   src={hero.image}
                   alt={hero.title}
@@ -71,18 +68,18 @@ export default function TreatmentPage({ treatment }) {
 
       {/* WHY SECTION */}
       {why && (
-        <section className="py-20 md:py-28 bg-white">
+        <section className="py-14 md:py-24 lg:py-28 bg-white">
           <Container>
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <p className="uppercase tracking-[0.3em] text-sm md:text-base text-coral font-extrabold mb-4 font-opensans">
+            <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
+              <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
                 {why.eyebrow}
               </p>
-              <h2 className="font-seasons text-3xl md:text-5xl text-navy leading-tight">
+              <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight">
                 {why.heading}
               </h2>
             </div>
 
-            <div className="max-w-3xl mx-auto font-opensans text-lg md:text-xl text-navy/85 leading-relaxed space-y-6">
+            <div className="max-w-3xl mx-auto font-opensans text-base md:text-lg lg:text-xl text-navy/85 leading-relaxed space-y-5 md:space-y-6">
               {why.paragraphs?.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -106,16 +103,16 @@ export default function TreatmentPage({ treatment }) {
 
       {/* EXPERIENCE / PIONEERS */}
       {experience && (
-        <section className="py-20 md:py-28 bg-foreground">
+        <section className="py-14 md:py-24 lg:py-28 bg-foreground">
           <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
               <div className="lg:col-span-5">
-                <h2 className="font-seasons text-3xl md:text-5xl text-navy leading-tight">
+                <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight">
                   {experience.heading}
                 </h2>
               </div>
 
-              <div className="lg:col-span-7 font-opensans text-lg text-navy/85 leading-relaxed space-y-6">
+              <div className="lg:col-span-7 font-opensans text-base md:text-lg text-navy/85 leading-relaxed space-y-5 md:space-y-6">
                 <p>{experience.intro}</p>
 
                 {experience.listTitle && (
@@ -124,7 +121,7 @@ export default function TreatmentPage({ treatment }) {
                   </p>
                 )}
 
-                <ul className="space-y-4">
+                <ul className="space-y-3 md:space-y-4">
                   {experience.points.map((point, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="mt-1 flex-none w-6 h-6 rounded-full bg-coral/15 text-coral flex items-center justify-center">
@@ -136,7 +133,7 @@ export default function TreatmentPage({ treatment }) {
                 </ul>
 
                 {experience.closing && (
-                  <p className="font-semibold text-navy text-xl pt-4 border-t border-navy/10">
+                  <p className="font-semibold text-navy text-lg md:text-xl pt-4 border-t border-navy/10">
                     {experience.closing}
                   </p>
                 )}
@@ -148,15 +145,15 @@ export default function TreatmentPage({ treatment }) {
 
       {/* PROCEDURES */}
       {procedures && (
-        <section className="py-20 md:py-28 bg-vanilla">
+        <section className="py-14 md:py-24 lg:py-28 bg-vanilla">
           <Container>
-            <div className="text-center mb-16 md:mb-20">
+            <div className="text-center mb-12 md:mb-20">
               {procedures.eyebrow && (
-                <p className="uppercase tracking-[0.3em] text-sm md:text-base text-coral font-extrabold mb-4 font-opensans">
+                <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
                   {procedures.eyebrow}
                 </p>
               )}
-              <h2 className="font-seasons text-3xl md:text-5xl text-navy leading-tight max-w-4xl mx-auto">
+              <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight max-w-4xl mx-auto">
                 {procedures.heading}
               </h2>
             </div>
@@ -164,9 +161,9 @@ export default function TreatmentPage({ treatment }) {
             <ProceduresGrid items={procedures.items} />
 
             {procedures.extraGroups?.map((group, gi) => (
-              <div key={gi} className="mt-20 md:mt-24">
-                <div className="text-center mb-12">
-                  <h3 className="font-seasons text-2xl md:text-4xl text-navy leading-tight">
+              <div key={gi} className="mt-14 md:mt-20 lg:mt-24">
+                <div className="text-center mb-8 md:mb-12">
+                  <h3 className="font-seasons text-xl sm:text-2xl md:text-3xl lg:text-4xl text-navy leading-tight">
                     {group.heading}
                   </h3>
                 </div>
@@ -179,20 +176,20 @@ export default function TreatmentPage({ treatment }) {
 
       {/* BENEFITS + RIGHT FOR YOU (Two-column) */}
       {(benefits || rightForYou) && (
-        <section className="py-20 md:py-28 bg-white">
+        <section className="py-14 md:py-24 lg:py-28 bg-white">
           <Container>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
               {benefits && (
-                <div className="bg-vanilla rounded-3xl p-8 md:p-12 border border-navy/5">
+                <div className="bg-vanilla rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 border border-navy/5">
                   {benefits.eyebrow && (
-                    <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-4 font-opensans">
+                    <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
                       {benefits.eyebrow}
                     </p>
                   )}
-                  <h2 className="font-seasons text-2xl md:text-4xl text-navy leading-tight mb-8">
+                  <h2 className="font-seasons text-2xl md:text-3xl lg:text-4xl text-navy leading-tight mb-6 md:mb-8">
                     {benefits.heading}
                   </h2>
-                  <ul className="space-y-4 font-opensans text-base md:text-lg text-navy/85">
+                  <ul className="space-y-3 md:space-y-4 font-opensans text-base md:text-lg text-navy/85">
                     {benefits.items.map((b, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="mt-1 flex-none w-6 h-6 rounded-full bg-coral text-white flex items-center justify-center">
@@ -206,21 +203,21 @@ export default function TreatmentPage({ treatment }) {
               )}
 
               {rightForYou && (
-                <div className="bg-navy text-white rounded-3xl p-8 md:p-12">
+                <div className="bg-navy text-white rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12">
                   {rightForYou.eyebrow && (
-                    <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-4 font-opensans">
+                    <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
                       {rightForYou.eyebrow}
                     </p>
                   )}
-                  <h2 className="font-seasons text-2xl md:text-4xl leading-tight mb-6">
+                  <h2 className="font-seasons text-2xl md:text-3xl lg:text-4xl leading-tight mb-5 md:mb-6">
                     {rightForYou.heading}
                   </h2>
                   {rightForYou.intro && (
-                    <p className="font-opensans text-base md:text-lg text-white/80 mb-6 leading-relaxed">
+                    <p className="font-opensans text-base md:text-lg text-white/80 mb-5 md:mb-6 leading-relaxed">
                       {rightForYou.intro}
                     </p>
                   )}
-                  <ul className="space-y-4 font-opensans text-base md:text-lg text-white/90">
+                  <ul className="space-y-3 md:space-y-4 font-opensans text-base md:text-lg text-white/90">
                     {rightForYou.items.map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="mt-1 flex-none w-6 h-6 rounded-full bg-coral/20 text-coral flex items-center justify-center">
@@ -231,7 +228,7 @@ export default function TreatmentPage({ treatment }) {
                     ))}
                   </ul>
                   {rightForYou.closing && (
-                    <p className="mt-8 pt-6 border-t border-white/15 font-opensans text-base md:text-lg text-white/80 italic leading-relaxed">
+                    <p className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-white/15 font-opensans text-base md:text-lg text-white/80 italic leading-relaxed">
                       {rightForYou.closing}
                     </p>
                   )}
@@ -244,21 +241,21 @@ export default function TreatmentPage({ treatment }) {
 
       {/* VIDEO */}
       {video && (
-        <section className="py-20 md:py-28 bg-foreground">
+        <section className="py-14 md:py-24 lg:py-28 bg-foreground">
           <Container>
-            <div className="text-center mb-12">
+            <div className="text-center mb-8 md:mb-12">
               {video.eyebrow && (
-                <p className="uppercase tracking-[0.3em] text-sm md:text-base text-coral font-extrabold mb-4 font-opensans">
+                <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
                   {video.eyebrow}
                 </p>
               )}
-              <h2 className="font-seasons text-3xl md:text-5xl text-navy leading-tight">
+              <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight">
                 {video.heading}
               </h2>
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl bg-navy">
+              <div className="relative w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl bg-navy">
                 <video
                   className="w-full h-full object-cover"
                   src={video.url}
@@ -279,23 +276,20 @@ export default function TreatmentPage({ treatment }) {
 
       {/* CTA */}
       {cta && (
-        <section className="py-20 md:py-28 bg-coral text-white">
+        <section className="py-14 md:py-24 lg:py-28 bg-coral text-white">
           <Container>
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-seasons text-3xl md:text-5xl leading-tight mb-6">
+              <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 md:mb-6">
                 {cta.heading}
               </h2>
               {cta.text && (
-                <p className="font-opensans text-lg md:text-xl text-white/90 leading-relaxed mb-10">
+                <p className="font-opensans text-base md:text-lg lg:text-xl text-white/90 leading-relaxed mb-8 md:mb-10">
                   {cta.text}
                 </p>
               )}
-              <Link
-                href={cta.buttonHref}
-                className="inline-flex items-center justify-center bg-white text-coral font-opensans font-bold text-lg px-8 py-4 rounded-xl hover:bg-vanilla transition"
-              >
+              <ConsultButton className="inline-flex items-center justify-center bg-white text-coral font-opensans font-bold text-base md:text-lg px-6 md:px-8 py-3.5 md:py-4 rounded-xl hover:bg-vanilla transition">
                 {cta.buttonLabel}
-              </Link>
+              </ConsultButton>
             </div>
           </Container>
         </section>
@@ -312,23 +306,25 @@ export default function TreatmentPage({ treatment }) {
 function ProceduresGrid({ items }) {
   if (!items || items.length === 0) return null;
 
+  const hasNumbers = items.some((it) => it.number);
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8">
       {items.map((item, i) => (
         <article
           key={item.number ?? i}
-          className="group bg-white rounded-3xl p-8 md:p-10 border border-navy/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
+          className="group bg-white rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 border border-navy/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-500"
         >
-          {(item.number || items.some((it) => it.number)) && (
-            <div className="flex items-center justify-between mb-6">
-              <span className="text-4xl md:text-5xl font-seasons text-coral/70 group-hover:text-coral transition-colors">
+          {hasNumbers && (
+            <div className="flex items-center justify-between mb-5 md:mb-6">
+              <span className="text-3xl md:text-4xl lg:text-5xl font-seasons text-coral/70 group-hover:text-coral transition-colors">
                 {item.number ?? String(i + 1).padStart(2, "0")}
               </span>
-              <div className="w-12 h-px bg-navy/20 group-hover:w-20 transition-all" />
+              <div className="w-10 md:w-12 h-px bg-navy/20 group-hover:w-16 md:group-hover:w-20 transition-all" />
             </div>
           )}
 
-          <h3 className="font-seasons text-2xl md:text-3xl text-navy mb-4 leading-snug">
+          <h3 className="font-seasons text-xl sm:text-2xl md:text-3xl text-navy mb-3 md:mb-4 leading-snug">
             {item.title}
           </h3>
 
