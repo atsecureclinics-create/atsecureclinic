@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AtTheRateImage from "../../../../public/icons/atherate.svg";
 
-const AtTheRate = ({ size = 16, Atrateimg }) => {
+const AtTheRate = ({ size = 16, Atrateimg, className }) => {
   const src = Atrateimg || AtTheRateImage;
 
   return (
@@ -10,7 +10,7 @@ const AtTheRate = ({ size = 16, Atrateimg }) => {
       alt="At symbol"
       width={size}
       height={size}
-      className="inline-block object-contain align-middle"
+      className={`object-contain align-middle ${className}`}
     />
   );
 };

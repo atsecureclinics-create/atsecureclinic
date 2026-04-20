@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <>
       {/* HERO – two-column: text left, media right */}
-      <section className="min-h-[70vh] lg:min-h-[85vh] flex items-center py-12 lg:py-0">
+      <section className="flex items-center pt-4 pb-12 md:py-12 lg:py-18">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="flex gap-8 lg:gap-12 items-center">
             {/* LEFT CONTENT */}
-            <div className="lg:col-span-7 xl:col-span-6">
+            <div className="md:w-1/2 lg:col-span-7 xl:col-span-6">
               <p className="font-opensans mb-3 md:mb-4 text-lg sm:text-xl md:text-2xl 2xl:text-3xl font-semibold leading-normal text-navy">
                 What if healthcare actually worked together?
               </p>
@@ -28,7 +28,7 @@ export default function Home() {
                 HEAL Stronger <br /> RECOVER Faster <br /> MOVE better
               </h1>
 
-              <div className="mt-5 md:mt-6 space-y-2 text-base md:text-xl lg:text-2xl font-medium text-navy">
+              <div className="mt-5 md:mt-6 space-y-2 text-sm md:text-sm lg:text-base font-medium text-navy">
                 <p className="font-semibold no-ligatures font-opensans leading-relaxed">
                   Surgeons, Therapists, Nutritionists and Strength Trainers. One
                   Clinic. One team. One System.
@@ -36,14 +36,14 @@ export default function Home() {
               </div>
 
               <div className="mt-8 md:mt-10">
-                <ConsultButton className="theme-button inline-flex! px-6 md:px-8 py-3.5 md:py-4 font-bold text-base md:text-xl!">
+                <ConsultButton className="theme-button">
                   Book a Consult
                 </ConsultButton>
               </div>
             </div>
 
             {/* RIGHT VIDEO */}
-            <div className="lg:col-span-5 xl:col-span-6 flex justify-center lg:justify-end">
+            <div className="md:w-1/2 lg:col-span-5 xl:col-span-6 flex justify-center lg:justify-end">
               <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg aspect-19/20 rounded-2xl overflow-hidden shadow-2xl">
                 <video
                   className="w-full h-full object-cover"

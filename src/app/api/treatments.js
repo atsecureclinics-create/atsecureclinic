@@ -1,4 +1,22 @@
-import Team from "../../../public/common/team.png";
+// Surgical
+import EndoscopicSpineImg from "../../../public/surgical/Endoscopic Spine Surgery.png";
+import MinimallyInvasiveImg from "../../../public/surgical/Minimally invasive surgery.png";
+import SpineSurgeryImg from "../../../public/surgical/Spine Surgery.png";
+import KneeSurgeryImg from "../../../public/surgical/Knee Surgery.png";
+import ShoulderSurgeryImg from "../../../public/surgical/Shoulder Surgery.png";
+import FootAnkleImg from "../../../public/surgical/Foot Ankle.png";
+import HandBoneImg from "../../../public/surgical/Hand Bone.png";
+import HipSurgeryImg from "../../../public/surgical/Hip surgery.png";
+
+// Non-surgical
+import IVInjectionsImg from "../../../public/non-surgical/IV Injections.png";
+import DiagnosticsImg from "../../../public/non-surgical/Diagnostics.png";
+import AquaTherapyImg from "../../../public/non-surgical/Aqua Theraphy.png";
+import PhysiotherapyImg from "../../../public/non-surgical/Physiotheraphy.png";
+import StrengthTrainingImg from "../../../public/non-surgical/Strength  Training.png";
+import PilatesImg from "../../../public/non-surgical/Pilates.png";
+import NutritionImg from "../../../public/non-surgical/Nutrition.png";
+import OsteoporosisImg from "../../../public/non-surgical/Osteoporosis management.png";
 
 export const treatments = [
   // ───────────────────────── PAGE 1 ─────────────────────────
@@ -19,7 +37,7 @@ export const treatments = [
         "At @SecureClinics, endoscopic spine surgery isn’t a trend — it’s a discipline we’ve refined for over a decade. As pioneers of endoscopic spine surgery in Mumbai, our team brings together experience, technology and judgment to treat spine conditions with maximum precision and minimal disruption to the body.",
       closing:
         "We operate only when necessary. And when we do, we do it thoughtfully.",
-      image: Team,
+      image: EndoscopicSpineImg,
     },
 
     why: {
@@ -120,7 +138,7 @@ export const treatments = [
         "At @SecureClinics, minimally invasive spine surgery is practised with restraint, precision and deep experience. For over a decade, our surgeons have been at the forefront of minimally invasive spine surgery (MIS) in Mumbai, offering modern surgical solutions while preserving muscles, stability and recovery timelines.",
       closing:
         "Surgery is never the first option — but when it’s needed, we choose the least disruptive path.",
-      image: Team,
+      image: MinimallyInvasiveImg,
     },
 
     why: {
@@ -220,7 +238,7 @@ export const treatments = [
         "At @SecureClinics, spine surgery is approached with depth, discipline and responsibility. With over a decade of experience in complex spine surgery in Mumbai, our team treats a wide spectrum of spinal conditions — always guided by clinical need, not urgency.",
       closing:
         "We believe surgery should restore stability, function and confidence — not create uncertainty.",
-      image: Team,
+      image: SpineSurgeryImg,
     },
 
     why: {
@@ -321,7 +339,7 @@ export const treatments = [
         "At @SecureClinics, knee surgery is guided by precision, planning and proven outcomes. With years of experience in advanced knee surgery in Mumbai, our orthopaedic surgeons offer modern surgical solutions — from sports injuries to joint preservation and replacement.",
       closing:
         "Every procedure is chosen carefully, tailored to the knee, the activity level and long-term function.",
-      image: Team,
+      image: KneeSurgeryImg,
     },
 
     why: {
@@ -420,7 +438,7 @@ export const treatments = [
         "At @SecureClinics, shoulder surgery focuses on restoring strength, stability and pain-free movement. Our orthopaedic surgeons bring extensive experience in advanced shoulder surgery in Mumbai, offering modern surgical solutions for sports injuries, degenerative conditions and complex shoulder problems.",
       closing:
         "Each procedure is planned with precision to help patients return to daily activities and performance with confidence.",
-      image: Team,
+      image: ShoulderSurgeryImg,
     },
 
     why: {
@@ -520,7 +538,7 @@ export const treatments = [
         "At @SecureClinics, foot and ankle surgery is focused on restoring alignment, stability and pain-free mobility. Our orthopaedic surgeons bring extensive experience in advanced foot and ankle surgery in Mumbai, treating injuries, deformities and degenerative conditions with precision-driven techniques.",
       closing:
         "Every procedure is selected to support long-term function and everyday movement.",
-      image: Team,
+      image: FootAnkleImg,
     },
 
     why: {
@@ -621,7 +639,7 @@ export const treatments = [
         "At @SecureClinics, hand and upper limb surgery focuses on restoring fine movement, strength and function. Our orthopaedic and hand surgeons bring extensive experience in advanced hand and upper limb surgery in Mumbai, treating nerve compression, tendon disorders, trauma and complex hand conditions.",
       closing:
         "Each procedure is planned to restore everyday function with precision.",
-      image: Team,
+      image: HandBoneImg,
     },
 
     why: {
@@ -718,7 +736,7 @@ export const treatments = [
         "At @SecureClinics, hip surgery focuses on relieving pain, restoring movement and improving long-term joint function. Our orthopaedic surgeons bring extensive experience in advanced hip surgery in Mumbai, treating degenerative, traumatic and sports-related hip conditions with precision-driven techniques.",
       closing:
         "Every procedure is selected carefully to support stability, comfort and mobility.",
-      image: Team,
+      image: HipSurgeryImg,
     },
 
     why: {
@@ -817,7 +835,7 @@ export const treatments = [
         "At Secure Clinics, injections and IV therapies are used with intent — not as routine add-ons. Each treatment is carefully selected based on diagnosis, pain source and response to previous care.",
       closing:
         "This is not buffet medicine. We à-la-carte your treatment — only what your body needs, nothing it doesn’t.",
-      image: Team,
+      image: IVInjectionsImg,
     },
 
     why: {
@@ -925,7 +943,7 @@ export const treatments = [
         "At Secure Clinics, diagnostics are done with purpose. Every test is ordered to answer a specific clinical question — not as a routine checklist.",
       closing:
         "From blood work to advanced nerve studies, investigations are integrated directly into your care plan for faster decisions and better outcomes.",
-      image: Team,
+      image: DiagnosticsImg,
     },
 
     why: {
@@ -1007,7 +1025,7 @@ export const treatments = [
         "Aqua therapy at Secure Clinics uses water as a clinical tool — not just a setting. Buoyancy, resistance and controlled movement allow patients to regain confidence and mobility when land-based therapy feels limiting.",
       closing:
         "This is structured aquatic rehabilitation, guided by trained therapists.",
-      image: Team,
+      image: AquaTherapyImg,
     },
 
     why: {
@@ -1102,7 +1120,7 @@ export const treatments = [
       intro:
         "At Secure Clinics, physiotherapy is structured, intentional and personalised. Every plan is built around your diagnosis, movement patterns and recovery goals — not generic routines.",
       closing: "We focus on restoring how you move, not just reducing pain.",
-      image: Team,
+      image: PhysiotherapyImg,
     },
 
     why: {
@@ -1201,7 +1219,7 @@ export const treatments = [
         "At Secure Clinics, strength training is used as a clinical tool — not a fitness trend. Every program is designed to improve stability, control and movement efficiency, whether for recovery, injury prevention or long-term joint health.",
       closing:
         "The goal isn’t just strength. It’s strength that supports how you move every day.",
-      image: Team,
+      image: StrengthTrainingImg,
     },
 
     why: {
@@ -1299,7 +1317,7 @@ export const treatments = [
         "Pilates at Secure Clinics is clinically guided and purpose-driven. Each session focuses on alignment, control and core stability — supporting recovery, reducing pain and improving movement efficiency.",
       closing:
         "This is Pilates designed for rehabilitation, not performance alone.",
-      image: Team,
+      image: PilatesImg,
     },
 
     why: {
@@ -1395,7 +1413,7 @@ export const treatments = [
         "At Secure Clinics, nutrition is not generic advice — it is clinically guided and purpose-driven. Every nutrition plan supports bone health, muscle strength, recovery and long-term mobility.",
       closing:
         "Nutrition here works alongside medical care, physiotherapy and surgical treatment — not in isolation.",
-      image: Team,
+      image: NutritionImg,
     },
 
     why: {
@@ -1478,7 +1496,7 @@ export const treatments = [
         "At Secure Clinics, osteoporosis and orthopaedic care work hand in hand. Bone health is not treated in isolation — it directly influences fractures, joint health, recovery after surgery and long-term mobility.",
       closing:
         "Our approach focuses on early detection, precise diagnosis and structured treatment — ensuring bones and joints are protected today and for the future.",
-      image: Team,
+      image: OsteoporosisImg,
     },
 
     why: {

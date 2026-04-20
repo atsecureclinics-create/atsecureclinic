@@ -25,8 +25,7 @@ export default function Header() {
 
     return (
         <header className="bg-background relative z-50">
-            <div className="container flex items-center justify-between gap-3 py-3 md:py-4">
-
+            <div className="container flex items-center justify-between gap-3 py-3 md:py-5">
                 {/* Logo */}
                 <Link
                     href="/"
@@ -39,7 +38,7 @@ export default function Header() {
                         width={200}
                         height={80}
                         priority
-                        className="w-32 sm:w-40 md:w-50 h-auto"
+                        className="w-36 md:w-40 xl:w-50 h-auto"
                     />
                 </Link>
 
@@ -57,11 +56,11 @@ export default function Header() {
                         </button>
 
                         {aboutOpen && (
-                            <div className="absolute top-full left-0 pt-2 w-52 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
-                                <Link href="/about" className="block px-5 py-3 hover:bg-vanilla transition">
+                            <div className="absolute top-full left-0 w-52 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
+                                <Link href="/about" className="block px-2.5 py-2 hover:bg-vanilla transition">
                                     About Us
                                 </Link>
-                                <Link href="/press" className="block px-5 py-3 hover:bg-vanilla transition">
+                                <Link href="/press" className="block px-2.5 py-2 hover:bg-vanilla transition">
                                     Press
                                 </Link>
                             </div>
@@ -83,12 +82,12 @@ export default function Header() {
                         </button>
 
                         {treatmentOpen && (
-                            <div className="text-base absolute top-full left-0 pt-2 w-60 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
+                            <div className="text-base absolute top-full left-0 w-60 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
                                 <Link href="/surgical" className="block px-5 py-3 hover:bg-vanilla transition">
                                     Surgical Treatments
                                 </Link>
                                 <Link href="/nonsurgical" className="block px-5 py-3 hover:bg-vanilla transition">
-                                    Non-Surgical Treatments
+                                    Non<code>-</code>Surgical Treatments
                                 </Link>
                             </div>
                         )}

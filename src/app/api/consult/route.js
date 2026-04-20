@@ -37,14 +37,14 @@ export async function POST(request) {
         return NextResponse.json({ ok: true });
     }
 
-    if (!name || !phone || !email) {
+    if (!name || !phone) {
         return NextResponse.json(
-            { error: "Name, phone and email are required." },
+            { error: "Name and phone are required." },
             { status: 400 }
         );
     }
 
-    if (!EMAIL_RE.test(email)) {
+    if (email && !EMAIL_RE.test(email)) {
         return NextResponse.json({ error: "Please enter a valid email." }, { status: 400 });
     }
 
@@ -81,7 +81,7 @@ export async function POST(request) {
         ``,
         `Name: ${name}`,
         `Phone: ${phone}`,
-        `Email: ${email}`,
+        email ? `Email: ${email}` : null,
         concern ? `Area of concern: ${concern}` : null,
         message ? `\nMessage:\n${message}` : null,
     ]
@@ -95,7 +95,7 @@ export async function POST(request) {
             <table style="border-collapse: collapse; width: 100%; font-size: 15px;">
                 <tr><td style="padding: 6px 0; color: #4a5160; width: 140px;">Name</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(name)}</td></tr>
                 <tr><td style="padding: 6px 0; color: #4a5160;">Phone</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(phone)}</td></tr>
-                <tr><td style="padding: 6px 0; color: #4a5160;">Email</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(email)}</td></tr>
+                ${email ? `<tr><td style="padding: 6px 0; color: #4a5160;">Email</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(email)}</td></tr>` : ""}
                 ${concern ? `<tr><td style="padding: 6px 0; color: #4a5160;">Concern</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(concern)}</td></tr>` : ""}
             </table>
             ${message ? `<div style="margin-top: 20px;"><p style="color: #4a5160; margin: 0 0 6px;">Message</p><p style="white-space: pre-wrap; margin: 0; line-height: 1.55;">${escapeHtml(message)}</p></div>` : ""}
@@ -106,7 +106,7 @@ export async function POST(request) {
         await transporter.sendMail({
             from,
             to,
-            replyTo: email,
+            ...(email ? { replyTo: email } : {}),
             subject,
             text: textBody,
             html: htmlBody,

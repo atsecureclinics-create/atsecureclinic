@@ -1,33 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import AtTheRate from "../attherate";
-import {
-    Activity,
-    Bone,
-    Stethoscope,
-    HeartPulse,
-    Waves,
-    Dumbbell,
-    Apple,
-    Microscope,
-    Syringe,
-    FlaskConical,
-    Sparkles,
-} from "lucide-react";
 import { getTreatmentsByCategory } from "../../api/treatments";
-
-const ICONS = {
-    activity: Activity,
-    bone: Bone,
-    stethoscope: Stethoscope,
-    heartPulse: HeartPulse,
-    waves: Waves,
-    dumbbell: Dumbbell,
-    apple: Apple,
-    microscope: Microscope,
-    syringe: Syringe,
-    flaskConical: FlaskConical,
-    sparkles: Sparkles,
-};
 
 const CATEGORY_LABEL = {
     surgical: "SURGICAL",
@@ -58,23 +32,28 @@ export default function HowWeTreat({ category = "surgical" }) {
 
                 {/* Grid */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 border border-gray-300/70 rounded-2xl md:rounded-3xl overflow-hidden">
-                    {items.map((item) => {
-                        const Icon = ICONS[item.iconKey] ?? Activity;
-                        return (
-                            <Link
-                                key={item.slug}
-                                href={`${basePath}/${item.slug}`}
-                                className="group flex flex-col items-center justify-center gap-4 md:gap-6 p-5 sm:p-6 md:p-10 bg-vanilla hover:bg-[#BFD6DC]/60 transition border border-gray-300/70"
-                            >
-                                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center bg-white shadow-sm group-hover:scale-105 transition">
-                                    <Icon className="w-6 h-6 md:w-8 md:h-8 text-navy" />
-                                </div>
-                                <p className="text-sm sm:text-base md:text-xl text-center font-bold text-navy group-hover:text-[#0C3C46] leading-snug">
-                                    {item.cardTitle}
-                                </p>
-                            </Link>
-                        );
-                    })}
+                    {items.map((item) => (
+                        <Link
+                            key={item.slug}
+                            href={`${basePath}/${item.slug}`}
+                            className="group flex flex-col items-center justify-center gap-4 md:gap-6 p-5 sm:p-6 md:p-10 bg-vanilla hover:bg-[#BFD6DC]/60 transition border border-gray-300/70"
+                        >
+                            <div className="relative w-20 h-20 md:w-28 md:h-28 rounded-full overflow-hidden bg-white shadow-sm group-hover:scale-105 transition">
+                                {item.hero?.image && (
+                                    <Image
+                                        src={item.hero.image}
+                                        alt={item.cardTitle}
+                                        fill
+                                        sizes="(max-width: 768px) 80px, 112px"
+                                        className="object-cover"
+                                    />
+                                )}
+                            </div>
+                            <p className="text-sm sm:text-base md:text-xl text-center font-bold text-navy group-hover:text-[#0C3C46] leading-snug">
+                                {item.cardTitle}
+                            </p>
+                        </Link>
+                    ))}
                 </div>
             </div>
         </section>

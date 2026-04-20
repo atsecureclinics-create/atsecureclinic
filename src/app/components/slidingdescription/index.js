@@ -51,8 +51,10 @@ export default function SlidingDescription() {
     >
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-center leading-normal text-white inline-flex items-baseline gap-1 flex-wrap justify-center w-full">
-          <span className="text-white inline-block"><AtTheRate size={30} className="sm:hidden" /><AtTheRate size={40} className="hidden sm:inline-block" /></span>
-          Secure Clinics brings structure to healthcare in Mumbai.
+          <span className="text-white inline-block">
+            <AtTheRate size={30} className="block md:hidden" />
+            <AtTheRate size={28} className="hidden md:inline-block" /></span>
+          secure clinics brings structure to healthcare in Mumbai.
         </h2>
 
         <Swiper
@@ -67,7 +69,7 @@ export default function SlidingDescription() {
         >
           {slides.map((item, i) => (
             <SwiperSlide key={i}>
-              <blockquote className="relative mt-8 md:mt-10 px-4 text-center">
+              <blockquote className="relative mt-2 md:mt-4 px-4 text-center">
                 <span
                   className="absolute -top-6 md:-top-10 left-2 md:-left-4 select-none pointer-events-none"
                   aria-hidden="true"
