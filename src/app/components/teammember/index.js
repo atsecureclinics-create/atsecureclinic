@@ -16,13 +16,12 @@ import { team } from '../../api/team';
 const TeamMember = () => {
     return (
         <Container>
-            <div className="font-seasons flex flex-col items-center justify-center overflow-hidden py-12 md:py-18">
+            <div className="font-seasons flex flex-col items-center justify-center overflow-hidden py-8 md:py-16">
 
                 <div className="text-center mb-8 md:mb-10 max-w-3xl px-2">
-                    <span className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-white inline-flex items-end gap-1 flex-wrap justify-center">
-                        Team <AtTheRate size={28} className="sm:hidden" />
-                        <AtTheRate size={28} className="hidden sm:inline-block" />  secure clinics
-                    </span>
+                    <h4 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-white inline-flex items-end gap-2 flex-wrap justify-center">
+                        Team <AtTheRate textClassName="text-white" />
+                    </h4>
                     <h2 className="font-opensans text-base md:text-lg lg:text-xl pt-3 md:pt-4 pb-2 mb-0 text-white leading-snug">
                         Specialists who listen, collaborate, and design treatment plans together
                     </h2>
@@ -73,7 +72,7 @@ const TeamMember = () => {
                                     </div>
 
                                     <div className="md:col-span-4 order-1 md:order-2">
-                                        <div className={`relative w-full h-64 sm:h-72 md:h-full rounded-2xl overflow-hidden ${member.portraitBg} group`}>
+                                        <div className={`relative w-full h-64 sm:h-80 md:h-full rounded-2xl overflow-hidden ${member.portraitBg} group`}>
                                             <Image
                                                 src={member.image}
                                                 alt={member.name}

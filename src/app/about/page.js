@@ -19,7 +19,7 @@ export default function MembershipPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                         <div className="lg:col-span-7 xl:col-span-6">
                             <p className="font-opensans mb-3 md:mb-4 text-base md:text-xl lg:text-2xl font-bold uppercase tracking-[0.25em] text-coral inline-flex items-center gap-1">
-                                <AtTheRate size={22} />Secure Clinics
+                                <AtTheRate />
                             </p>
 
                             <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-semibold leading-tight text-navy">
@@ -33,8 +33,8 @@ export default function MembershipPage() {
                             </div>
 
                             <div className="mt-8 md:mt-10">
-                                <ConsultButton className="theme-button inline-flex!">
-                                    Book a consult now
+                                <ConsultButton className="theme-button">
+                                    Book a consult
                                 </ConsultButton>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ export default function MembershipPage() {
             <section className="pt-14 md:pt-24 bg-vanilla">
                 <div className="container">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy leading-tight mb-6 md:mb-8 text-center inline-flex items-baseline justify-center gap-2 w-full flex-wrap">
-                        The <AtTheRate size={28} className="sm:hidden" /><AtTheRate size={40} className="hidden sm:inline-block" />SecureClinics Story
+                        The <AtTheRate /> Story
                     </h2>
 
                     <p className="font-opensans text-base md:text-lg lg:text-xl text-navy leading-relaxed pb-4 max-w-6xl m-auto">

@@ -10,7 +10,7 @@ const faqs = [
     a: "Yes. SecureClinics covers consultations, diagnostics, surgery (when needed), physiotherapy, rehabilitation and prevention — all under one roof in Mumbai. We use a conservative-first approach and recommend surgery only when truly needed.",
   },
   {
-    q: "What is conservative-first care?",
+    q: "What is conservative first care?",
     a: "We prioritise non-surgical options — physiotherapy, strength training, aqua therapy, and lifestyle changes — before considering surgery. Surgery is recommended only when clearly needed for your recovery.",
   },
   {
@@ -60,7 +60,7 @@ export default function FAQ() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
           <div className="hidden lg:flex lg:col-span-3 xl:col-span-4 items-center justify-center lg:justify-start min-h-80">
             <h2
-              className="text-6xl xl:text-7xl 2xl:text-[200px] font-bold tracking-tight whitespace-nowrap origin-center"
+              className="text-6xl xl:text-[170px] 2xl:text-[200px] font-bold tracking-tight whitespace-nowrap origin-center"
               style={{
                 color: FAQ_ACCENT,
                 transform: "rotate(-90deg)",

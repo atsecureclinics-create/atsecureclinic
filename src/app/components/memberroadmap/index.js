@@ -79,11 +79,11 @@ export default function MemberRoadmap() {
 
         </div>
 
-        <div className="mt-10 md:mt-14 flex justify-center">
+        {/* <div className="mt-10 md:mt-14 flex justify-center">
           <ConsultButton className="theme-button">
             Book a Consult
           </ConsultButton>
-        </div>
+        </div> */}
       </Container>
     </section>
   );

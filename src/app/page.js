@@ -17,10 +17,10 @@ export default function Home() {
       {/* HERO – two-column: text left, media right */}
       <section className="flex items-center pt-4 pb-12 md:py-12 lg:py-18">
         <Container>
-          <div className="flex gap-8 lg:gap-12 items-center">
+          <div className="flex gap-8 lg:gap-12 items-center flex-col-reverse md:flex-row">
             {/* LEFT CONTENT */}
             <div className="md:w-1/2 lg:col-span-7 xl:col-span-6">
-              <p className="font-opensans mb-3 md:mb-4 text-lg sm:text-xl md:text-2xl 2xl:text-3xl font-semibold leading-normal text-navy">
+              <p className="font-opensans mb-3 md:mb-4 text-sm md:text-base font-semibold leading-normal text-navy">
                 What if healthcare actually worked together?
               </p>
 
@@ -85,7 +85,7 @@ export default function Home() {
 
       {/* SCROLL 6 – How We Treat */}
       <section>
-        <HowWeTreat />
+        <HowWeTreat label="Solutions" />
       </section>
 
       {/* SCROLL 7 – Secure Stories */}

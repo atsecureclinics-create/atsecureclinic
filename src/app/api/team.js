@@ -1,4 +1,4 @@
-import TeamFallback from "../../../public/common/team.png";
+import TeamFallback from "../../../public/doctors/empty-profile.png";
 import SambhavShah from "../../../public/doctors/sambhav-shah.png";
 import DinkyShah from "../../../public/doctors/dinkyshah.png";
 import AnkitSheth from "../../../public/doctors/ankitsheth.png";

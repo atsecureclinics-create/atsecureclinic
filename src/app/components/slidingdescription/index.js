@@ -50,11 +50,8 @@ export default function SlidingDescription() {
     // }}
     >
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-center leading-normal text-white inline-flex items-baseline gap-1 flex-wrap justify-center w-full">
-          <span className="text-white inline-block">
-            <AtTheRate size={30} className="block md:hidden" />
-            <AtTheRate size={28} className="hidden md:inline-block" /></span>
-          secure clinics brings structure to healthcare in Mumbai.
+        <h2 className="text-lg sm:text-2xl md:text-3xl 2xl:text-4xl font-bold text-center leading-normal text-white">
+          <AtTheRate textClassName="text-white" /> brings structure to healthcare in Mumbai.
         </h2>
 
         <Swiper

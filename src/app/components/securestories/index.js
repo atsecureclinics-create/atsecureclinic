@@ -9,57 +9,23 @@ import AtTheRate from "../attherate";
 import ConsultButton from "../consultmodal/button";
 
 const stories = [
-    {
-        name: "Rahul M.",
-        image: "https://cdn.prod.website-files.com/6053b88a7e3de31c4aa14e83/6406530102671e3d18ef788c_image1%20(1).avif",
-        quote:
-            "It truly feels like a partnership where I have a voice in my own care and a clear plan forward.",
-        link: "/stories/rahul",
-    },
-    {
-        name: "Ananya S.",
-        image: "https://cdn.prod.website-files.com/6053b88a7e3de31c4aa14e83/6406530102671e3d18ef788c_image1%20(1).avif",
-        quote:
-            "I’ve felt fully supported across diagnostics, therapy, and recovery. Everything works together.",
-        link: "/stories/ananya",
-    },
-    {
-        name: "Meera K.",
-        image: "https://cdn.prod.website-files.com/6053b88a7e3de31c4aa14e83/6406530102671e3d18ef788c_image1%20(1).avif",
-        quote:
-            "My physician looks at the whole picture — not just symptoms — and that changed everything.",
-        link: "/stories/meera",
-    },
-    {
-        name: "Sanjay P.",
-        image: "https://cdn.prod.website-files.com/6053b88a7e3de31c4aa14e83/6406530102671e3d18ef788c_image1%20(1).avif",
-        quote:
-            "The coordination and follow-up gave me confidence that I was on the right path.",
-        link: "/stories/sanjay",
-    },
-    {
-        name: "Meera K.",
-        image: "https://cdn.prod.website-files.com/6053b88a7e3de31c4aa14e83/6406530102671e3d18ef788c_image1%20(1).avif",
-        quote:
-            "My physician looks at the whole picture — not just symptoms — and that changed everything.",
-        link: "/stories/meera",
-    },
-    {
-        name: "Sanjay P.",
-        image: "https://cdn.prod.website-files.com/6053b88a7e3de31c4aa14e83/6406530102671e3d18ef788c_image1%20(1).avif",
-        quote:
-            "The coordination and follow-up gave me confidence that I was on the right path.",
-        link: "/stories/sanjay",
-    },
+    { image: "/testimonals/testimonials1.png" },
+    { image: "/testimonals/testimonials2.png" },
+    { image: "/testimonals/testimonials3.png" },
+    { image: "/testimonals/testimonials4.png" },
+    { image: "/testimonals/testimonials5.png" },
+    { image: "/testimonals/testimonials6.png" },
+    { image: "/testimonals/testimonials7.png" },
+    { image: "/testimonals/testimonials8.png" },
 ];
 
 export default function SecureStories() {
     return (
-        <section className="pt-16 md:pt-28 relative">
+        <section className="pt-16 md:pt-20 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="text-center mb-10 md:mb-16">
-                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-navy mt-2 md:mt-4 inline-flex items-baseline justify-center gap-1 flex-wrap">
-                        Patient Stories<AtTheRate size={40} className="hidden md:inline-block" />SecureClinics
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-navy mt-2 md:mt-4 inline-flex items-baseline justify-center gap-2 flex-wrap">
+                        Patient Stories <AtTheRate />
                     </h2>
                     <p className="font-opensans mt-4 md:mt-6 text-base md:text-xl lg:text-2xl text-navy">
                         Real experiences across diagnosis, treatment, and recovery.
@@ -83,15 +49,15 @@ export default function SecureStories() {
                     >
                         {stories.map((story, index) => (
                             <SwiperSlide key={index}>
-                                <div className="relative h-80 md:h-105 rounded-2xl md:rounded-3xl overflow-hidden group">
+                                <div className="relative h-80 md:h-110 rounded-2xl md:rounded-3xl overflow-hidden group">
                                     <img
                                         src={story.image}
                                         alt={story.name}
                                         className="absolute inset-0 w-full h-full object-cover"
                                     />
-                                    <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" />
+                                    {/* <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent" /> */}
 
-                                    <div className="absolute bottom-0 p-8 text-white">
+                                    {/* <div className="absolute bottom-0 p-8 text-white">
                                         <p className="font-opensans text-lg leading-relaxed mb-6 font-medium">
                                             “{story.quote}”
                                         </p>
@@ -101,7 +67,7 @@ export default function SecureStories() {
                                         >
                                             Read the story
                                         </a>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </SwiperSlide>
                         ))}
@@ -119,11 +85,11 @@ export default function SecureStories() {
                 </div>
 
                 {/* CTA */}
-                <div className="flex justify-center mt-12">
+                {/* <div className="flex justify-center mt-12">
                     <ConsultButton className="theme-button flex justify-center items-center gap-2">
                         Book a Consult
                     </ConsultButton>
-                </div>
+                </div> */}
             </div>
         </section>
     );

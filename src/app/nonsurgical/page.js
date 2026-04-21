@@ -146,9 +146,10 @@ function NonSurgicalTreatments() {
                                     className="group bg-white rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-500 border border-navy/5 hover:-translate-y-2"
                                 >
                                     <div className="flex items-center justify-between mb-6 md:mb-8">
-                                        <span className="text-4xl sm:text-5xl md:text-6xl font-seasons text-coral/70 group-hover:text-coral transition-colors duration-500">
-                                            {plainNumber}
-                                        </span>
+                                        <span
+                                            className="text-4xl sm:text-5xl md:text-6xl font-seasons text-coral/70 group-hover:text-coral transition-colors duration-500"
+                                            dangerouslySetInnerHTML={{ __html: plainNumber }}
+                                        />
                                         <div className="w-10 md:w-12 h-px bg-navy/20 group-hover:w-16 md:group-hover:w-20 transition-all duration-500" />
                                     </div>
 

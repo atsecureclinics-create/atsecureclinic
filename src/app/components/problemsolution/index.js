@@ -1,6 +1,3 @@
-"use client";
-
-import Link from "next/link";
 import AtTheRate from "../attherate";
 
 const data = [
@@ -58,68 +55,67 @@ const data = [
 
 export default function ProblemSolution() {
     return (
-        <section className="max-w-6xl m-auto my-10 md:my-16 px-4 sm:px-6">
+        <section className="md:max-w-6xl m-auto my-10 md:my-16 px-0 sm:px-6">
             {/* HEADER */}
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-2">
 
                 {/* LEFT */}
-                <div className="px-4 py-6 md:py-8">
-                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984df219ec09e8718fb02d_face5.png'} alt="Problem elsewhere" className="w-16 md:w-25 h-16 md:h-25 object-contain mb-4" />
+                <div className="px-3 sm:px-5 md:px-8 py-5 md:py-8">
+                    <img
+                        src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984df219ec09e8718fb02d_face5.png'}
+                        alt="Problem elsewhere"
+                        className="w-12 sm:w-16 md:w-25 h-12 sm:h-16 md:h-25 object-contain mb-3 md:mb-4"
+                    />
 
-                    <h2 className="text-2xl md:text-4xl font-semibold text-coral tracking-wide uppercase">
+                    <h2 className="text-lg sm:text-2xl md:text-3xl font-semibold text-coral tracking-wide uppercase leading-tight">
                         Problem Elsewhere
                     </h2>
 
-                    <p className="font-opensans mt-3 md:mt-4 text-navy max-w-md text-base md:text-xl leading-relaxed">
+                    <p className="font-opensans mt-2 sm:mt-3 md:mt-4 text-navy max-w-md text-sm sm:text-base md:text-xl leading-relaxed">
                         Stop feeling frustrated, overwhelmed, or stuck with fragmented care.
                     </p>
                 </div>
 
                 {/* RIGHT */}
-                <div className="px-4 py-6 md:py-8 bg-background rounded-t-2xl md:rounded-tr-2xl md:rounded-tl-none">
-                    <img src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984dff3649a85b335a071c_Big%20Smiley.png'} alt="Solution at Secure Clinics" className="w-16 md:w-25 h-16 md:h-25 object-contain mb-4" />
+                <div className="px-3 sm:px-5 md:px-8 py-5 md:py-8 bg-background rounded-tr-2xl">
+                    <img
+                        src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984dff3649a85b335a071c_Big%20Smiley.png'}
+                        alt="Solution at Secure Clinics"
+                        className="w-12 sm:w-16 md:w-25 h-12 sm:h-16 md:h-25 object-contain mb-3 md:mb-4"
+                    />
 
-                    <h2 className="text-2xl md:text-4xl font-semibold text-navy tracking-wide uppercase inline-flex items-baseline gap-1 flex-wrap">
-                        Solution <AtTheRate size={24} className="md:hidden" /><AtTheRate size={30} className="hidden md:inline-block" /> Secure Clinics
+                    <h2 className="text-base sm:text-2xl md:text-3xl font-semibold text-navy tracking-wide uppercase inline-flex items-baseline gap-2 flex-wrap leading-tight">
+                        Solution <AtTheRate />
                     </h2>
 
-                    <p className="font-opensans mt-3 md:mt-4 text-navy max-w-md text-base md:text-xl leading-relaxed">
+                    <p className="font-opensans mt-2 sm:mt-3 md:mt-4 text-navy max-w-md text-sm sm:text-base md:text-xl leading-relaxed">
                         Problem focussed solutions. Prevention comes first. Prevent before a problem arises.
                     </p>
                 </div>
             </div>
-
-            <div className="border-t border-gray-300/60" />
 
             {/* TABLE ROWS */}
             <div>
                 {data.map((item, index) => (
                     <div
                         key={index}
-                        className="grid grid-cols-1 md:grid-cols-2 border-t border-gray-300/60 group last:border-b"
+                        className="grid grid-cols-2 border-t border-gray-300/60 last:border-b"
                     >
-                        <div className="font-opensans px-4 md:px-8 py-4 md:py-5">
-                            <p className="text-base md:text-xl text-navy leading-relaxed max-w-xl">
+                        <div className="font-opensans px-3 sm:px-5 md:px-8 py-3 sm:py-4 md:py-5">
+                            <p className="text-sm sm:text-base md:text-xl text-navy leading-relaxed max-w-xl">
                                 {item.problem}
                             </p>
                         </div>
 
                         <div
-                            className={`font-opensans px-4 md:px-8 py-4 md:py-5 bg-background ${index === data.length - 1 ? "rounded-b-2xl" : ""
-                                }`}
+                            className={`font-opensans px-3 sm:px-5 md:px-8 py-3 sm:py-4 md:py-5 bg-background ${index === data.length - 1 ? "rounded-br-2xl" : ""}`}
                         >
-                            <p className="text-base md:text-xl text-navy leading-relaxed max-w-xl">
+                            <p className="text-sm sm:text-base md:text-xl text-navy leading-relaxed max-w-xl">
                                 {item.solution}
                             </p>
                         </div>
                     </div>
                 ))}
-
-                <div className="flex justify-center mt-10 md:mt-12">
-                    <Link href="/the-care-team" className="theme-button flex justify-center items-center gap-2">
-                        Meet the Team
-                    </Link>
-                </div>
             </div>
         </section>
     );

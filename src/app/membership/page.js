@@ -34,11 +34,13 @@ const faqs = [
   }
 ];
 
-const content = `<span className="text-white text-4xl align-baseline"><AtTheRate size={40} /></span>SecureClinics is an integrated healthcare centre designed to make care feel clearer, more connected, and more reassuring for patients.
-
-We bring together experienced orthopaedic and spine specialists, physiotherapists, rehabilitation experts, and nutrition professionals under one roof, so diagnosis, treatment, recovery, and prevention are never fragmented. Every care plan is thoughtfully structured, discussed across disciplines, and tailored to the individual, because no two bodies, injuries, or recovery journeys are the same.
-
-Our approach is grounded in evidence-based medicine and real-world clinical experience, with a strong focus on movement, function, and long-term outcomes. Just as importantly, we believe patients should feel informed and involved at every step. Options are explained clearly, decisions are shared, and progress is reviewed together <code>-</code> creating care that feels intentional, not overwhelming.`;
+const contentParagraphs = [
+  <>
+    <AtTheRate /> is an integrated healthcare centre designed to make care feel clearer, more connected, and more reassuring for patients.
+  </>,
+  "We bring together experienced orthopaedic and spine specialists, physiotherapists, rehabilitation experts, and nutrition professionals under one roof, so diagnosis, treatment, recovery, and prevention are never fragmented. Every care plan is thoughtfully structured, discussed across disciplines, and tailored to the individual, because no two bodies, injuries, or recovery journeys are the same.",
+  "Our approach is grounded in evidence-based medicine and real-world clinical experience, with a strong focus on movement, function, and long-term outcomes. Just as importantly, we believe patients should feel informed and involved at every step. Options are explained clearly, decisions are shared, and progress is reviewed together — creating care that feels intentional, not overwhelming.",
+];
 
 export default function MembershipPage() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -85,10 +87,11 @@ export default function MembershipPage() {
               A More Connected Approach to Care
             </h2>
 
-            <p
-              className="text-base md:text-lg lg:text-xl text-navy leading-relaxed font-bold"
-              dangerouslySetInnerHTML={{ __html: content }}
-            />
+            <div className="text-base md:text-lg lg:text-xl text-navy leading-relaxed font-bold space-y-4 md:space-y-5">
+              {contentParagraphs.map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
+            </div>
 
           </div>
 
@@ -102,9 +105,8 @@ export default function MembershipPage() {
       }}>
         <div className="container">
           <div className="max-w-4xl m-auto">
-            <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-center text-navy leading-relaxed">
-              <span className="text-navy align-baseline inline-block mr-1"><AtTheRate size={24} /></span>
-              SecureClinics, the goal is not just to treat pain, but to support confident, sustainable recovery and better quality of life.
+            <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl text-center text-navy leading-relaxed inline-flex flex-wrap items-baseline gap-2 justify-center">
+              <AtTheRate />, the goal is not just to treat pain, but to support confident, sustainable recovery and better quality of life.
             </p>
           </div>
         </div>

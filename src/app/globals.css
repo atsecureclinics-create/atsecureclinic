@@ -123,12 +123,6 @@ body {
   margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
-  .sliding-description-swiper .swiper-pagination {
-    margin-top: 1rem;
-  }
-}
-
 /* Moving gallery – Lanby-style marquee (no popup) */
 @keyframes marquee {
   0% {
@@ -140,4 +134,20 @@ body {
 }
 .animate-marquee {
   animation: marquee 40s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .sliding-description-swiper .swiper-pagination {
+    margin-top: 1rem;
+  }
+  /* ===============================
+   COMMON STYLE
+================================ */
+  .theme-button {
+    font-size: 14px;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+  }
 }

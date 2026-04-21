@@ -39,3 +39,10 @@ export default {
         },
     },
 };
+
+
+
+
+{/* <span className="text-white inline-block">
+                  <AtTheRate size={30} className="block md:hidden" textStyle="inline-block md:hidden" />
+                  <AtTheRate size={35} className="hidden md:inline-block" textStyle="hidden md:inline-block" /></span> */}

@@ -71,11 +71,11 @@ const Features = () => {
                 ))}
             </div>
             {/* Optional "Learn More" link to enhance premium feel */}
-            <div className='flex justify-center pt-8' >
+            {/* <div className='flex justify-center pt-8' >
                 <ConsultButton className="flex justify-center items-center gap-2 theme-button ">
                     Book a consult
                 </ConsultButton>
-            </div>
+            </div> */}
         </section>
     );
 };

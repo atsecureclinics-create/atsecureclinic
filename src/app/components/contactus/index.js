@@ -31,7 +31,7 @@ export default function ContactSection() {
               Care that listens starts here.
             </h1>
             <p className="font-opensans text-base md:text-lg lg:text-xl text-navy leading-relaxed">
-              At <AtTheRate />SecureClinics, appointments are not rushed. Your concern is reviewed carefully and directed to the right specialist — spine, orthopaedics, physiotherapy, diagnostics, rehabilitation or nutrition.
+              At <AtTheRate />, appointments are not rushed. Your concern is reviewed carefully and directed to the right specialist — spine, orthopaedics, physiotherapy, diagnostics, rehabilitation or nutrition.
             </p>
           </div>
 
@@ -61,7 +61,7 @@ export default function ContactSection() {
                 {NEXT_STEPS.map((step, i) => (
                   <li key={step} className="flex items-start gap-4">
                     <span className="font-seasons text-2xl md:text-3xl text-coral/80 leading-none w-8 shrink-0">
-                      {String(i + 1).padStart(2, "0")}
+                      <code>{String(i + 1).padStart(2, "0")}</code>
                     </span>
                     <p className="font-opensans text-base md:text-lg text-navy leading-relaxed">
                       {step}
@@ -100,9 +100,8 @@ export default function ContactSection() {
               <p className="text-sm md:text-xl font-extrabold tracking-[.2em] text-coral uppercase mb-3 md:mb-4">
                 Visit Us
               </p>
-              <h2 className="font-seasons text-3xl sm:text-4xl md:text-5xl text-navy mb-3 leading-tight inline-flex items-end gap-1 flex-wrap">
-                <AtTheRate size={28} className="sm:hidden" />
-                <AtTheRate size={36} className="hidden sm:inline-block" />SecureClinics, Mumbai
+              <h2 className="font-seasons text-3xl sm:text-3xl md:text-4xl text-navy mb-3 leading-tight inline-flex items-end gap-2 flex-wrap">
+                <AtTheRate />, Mumbai
               </h2>
               <p className="font-opensans text-base md:text-lg text-navy/80 mb-8 md:mb-10 leading-relaxed">
                 An integrated healthcare clinic offering spine care, orthopaedics, physiotherapy, rehabilitation, diagnostics and recovery — all under one roof.

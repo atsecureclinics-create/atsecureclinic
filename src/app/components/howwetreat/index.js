@@ -4,17 +4,18 @@ import AtTheRate from "../attherate";
 import { getTreatmentsByCategory } from "../../api/treatments";
 
 const CATEGORY_LABEL = {
-    surgical: "SURGICAL",
-    nonsurgical: "NON-SURGICAL",
+    surgical: "Surgical",
+    nonsurgical: "Non Surgical",
+    homepage: "Solutions"
 };
 
-export default function HowWeTreat({ category = "surgical" }) {
+export default function HowWeTreat({ category = "surgical", label: labelProp }) {
     const items = getTreatmentsByCategory(category);
 
     if (items.length === 0) return null;
 
     const basePath = category === "nonsurgical" ? "/nonsurgical" : "/surgical";
-    const label = CATEGORY_LABEL[category] ?? "TREATMENTS";
+    const label = labelProp ?? CATEGORY_LABEL[category] ?? "Solutions";
 
     return (
         <section className="bg-foreground py-16 md:py-24 lg:py-28">
@@ -22,7 +23,7 @@ export default function HowWeTreat({ category = "surgical" }) {
                 {/* Header */}
                 <div className="text-center max-w-4xl mx-auto mb-8">
                     <h2 className="flex flex-wrap items-baseline justify-center gap-2 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-navy">
-                        {label} <AtTheRate size={28} className="sm:hidden" /><AtTheRate size={38} className="hidden sm:inline-block" />TREATMENTS
+                        {label} <AtTheRate />
                     </h2>
 
                     <p className="font-opensans mt-4 md:mt-6 text-base sm:text-xl md:text-2xl text-navy">

@@ -4,19 +4,19 @@ import { Activity, TrendingUp, HeartPulse } from "lucide-react";
 
 const stats = [
     {
-        value: "97%",
+        value: "97<code>%</code>",
         description:
             "Patients are able to stand and walk within hours after minimally invasive spine surgery.",
         icon: Activity,
     },
     {
-        value: "9/10 Patients",
+        value: "9<code>/</code>10 Patients",
         description:
             "Complete treatment with a clear recovery and post-recovery plan, supported by rehabilitation and counselling.",
         icon: TrendingUp,
     },
     {
-        value: "92%",
+        value: "92<code>%</code>",
         description:
             "Report significant improvement in pain and mobility while treatment is ongoing.",
         icon: HeartPulse,
@@ -45,9 +45,10 @@ export default function StatisticTestimonial() {
                                 <item.icon className="w-8 h-8 md:w-10 md:h-10 text-navy" />
                             </div>
 
-                            <h3 className="text-4xl md:text-5xl font-bold text-navy mb-3 md:mb-4">
-                                {item.value}
-                            </h3>
+                            <h3
+                                className="text-4xl md:text-5xl font-bold text-navy mb-3 md:mb-4"
+                                dangerouslySetInnerHTML={{ __html: item.value }}
+                            />
 
                             <p className="font-opensans text-base md:text-lg lg:text-xl text-navy leading-relaxed">
                                 {item.description}

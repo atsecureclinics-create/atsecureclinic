@@ -59,7 +59,7 @@ function SurgicalTreatments() {
                         {/* LEFT CONTENT */}
                         <div className="lg:col-span-7 xl:col-span-6">
                             <p className="mb-3 md:mb-4 text-base md:text-xl lg:text-2xl font-bold uppercase tracking-[0.25em] text-coral">
-                                Specialist-Led Care
+                                Specialist<code>-</code>Led Care
                             </p>
 
                             <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-4 md:mb-5">
