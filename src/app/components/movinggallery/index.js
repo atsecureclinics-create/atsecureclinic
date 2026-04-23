@@ -12,7 +12,7 @@ const galleryImages = [
 
 export default function MovingGallery() {
     return (
-        <section className="relative bg-[#F6F4EF] py-14 md:py-24 overflow-hidden">
+        <section className="relative bg-[#F6F4EF] py-9 md:py-24 overflow-hidden">
             {/* Header */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 mb-10 md:mb-14">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-8">

@@ -43,7 +43,7 @@ export default function FAQ() {
 
   return (
     <section
-      className="py-16 md:py-24 lg:py-8 relative"
+      className="py-10 md:py-24 lg:py-8 relative"
       style={{ backgroundColor: FAQ_BG }}
     >
       <Container>

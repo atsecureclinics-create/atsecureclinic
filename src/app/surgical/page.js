@@ -9,7 +9,7 @@ import FAQ from '../components/faq';
 const surgerySteps = [
     {
         number: "01",
-        title: "You’re Heard <code>-</code> Properly",
+        title: "You’re Heard Properly",
         text: "Every journey starts with listening, not rushing. Your spine or ortho concerns, pain, lifestyle, and goals are understood before any treatment is suggested.",
     },
     {
@@ -23,7 +23,7 @@ const surgerySteps = [
         text: "When surgery becomes necessary, it’s because it delivers clear benefits. Our specialists recommend minimally invasive or endoscopic spine and ortho procedures only when truly needed.",
     },
     {
-        number: "0<code>4</code>",
+        number: '0<span class="text-coral">4</span>',
         title: "A Plan Made Just for You",
         text: "No standard protocols. No packages. Each surgical plan — from approach to technique to recovery — is tailor-made for your spine or ortho condition.",
     },
@@ -53,7 +53,7 @@ function SurgicalTreatments() {
     return (
         <div>
             {/* HERO */}
-            <section className="min-h-[70vh] lg:min-h-[85vh] flex items-center bg-vanilla py-16 lg:py-0">
+            <section className="min-h-[70vh] lg:min-h-[85vh] flex items-center bg-vanilla py-4 lg:py-0">
                 <Container>
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                         {/* LEFT CONTENT */}
@@ -62,11 +62,11 @@ function SurgicalTreatments() {
                                 Specialist<code>-</code>Led Care
                             </p>
 
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-4 md:mb-5">
+                            <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-4 md:mb-5">
                                 Advanced Surgery, Considered Carefully.
                             </h1>
 
-                            <p className="font-opensans text-base md:text-xl lg:text-2xl leading-relaxed">
+                            <p className="font-opensans text-sm md:text-xl lg:text-2xl leading-relaxed">
                                 Over a decade of pioneering endoscopic surgery in Mumbai, with patient-first decision making. Clear decisions, minimally invasive and carefully planned recovery.
                             </p>
                         </div>
@@ -85,9 +85,9 @@ function SurgicalTreatments() {
                 </Container>
             </section>
 
-            <section className="py-14 md:py-18 bg-vanilla">
+            <section className="py-4 md:py-18 bg-vanilla">
                 <Container>
-                    <div className="font-opensans text-base md:text-lg lg:text-xl text-navy leading-relaxed space-y-5 md:space-y-6">
+                    <div className="font-opensans text-sm md:text-lg lg:text-xl text-navy leading-relaxed space-y-5 md:space-y-6">
                         <p>
                             At Secure Clinics, surgery is never the first conversation — it is the most considered one. Every patient is evaluated through detailed clinical assessment, advanced diagnostics and multidisciplinary discussion. Conservative treatment options are always explored before surgery is recommended.
                         </p>
@@ -121,20 +121,20 @@ function SurgicalTreatments() {
                 </Container>
             </section>
 
-            <section className="bg-vanilla py-16 md:py-24">
+            <section className="bg-vanilla py-4 md:py-24">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
 
                     {/* Heading */}
-                    <div className="text-center mb-14 md:mb-24">
+                    <div className="text-center mb-4 md:mb-24">
                         <p className="uppercase tracking-[0.35em] text-sm md:text-xl text-coral font-extrabold mb-3 md:mb-4">
                             Surgery Journey
                         </p>
 
-                        <h2 className="font-seasons text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-navy leading-tight max-w-4xl mx-auto">
+                        <h2 className="font-seasons text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-navy leading-tight max-w-4xl mx-auto">
                             Surgery <span className="text-coral">—</span> Before, During, After
                         </h2>
 
-                        <p className="font-opensans mt-4 md:mt-6 text-base md:text-xl text-navy max-w-3xl mx-auto leading-relaxed">
+                        <p className="font-opensans mt-4 md:mt-6 text-sm md:text-xl text-navy max-w-3xl mx-auto leading-relaxed">
                             What to expect, how decisions are made and how recovery is supported.
                         </p>
                     </div>
@@ -150,18 +150,20 @@ function SurgicalTreatments() {
                                     key={step.number}
                                     className="group bg-white rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-500 border border-navy/5 hover:-translate-y-2"
                                 >
-                                    <div className="flex items-center justify-between mb-6 md:mb-8">
-                                        <span className="text-4xl sm:text-5xl md:text-6xl font-seasons text-coral/70 group-hover:text-coral transition-colors duration-500">
-                                            {plainNumber}
-                                        </span>
+                                    <div className="flex items-center justify-between mb-2 md:mb-8">
+                                        <span
+                                            className="text-4xl sm:text-5xl md:text-6xl font-seasons text-coral/70 group-hover:text-coral transition-colors duration-500"
+                                            dangerouslySetInnerHTML={{ __html: plainNumber }}
+                                        />
                                         <div className="w-10 md:w-12 h-px bg-navy/20 group-hover:w-16 md:group-hover:w-20 transition-all duration-500" />
                                     </div>
 
-                                    <h3 className="font-seasons text-2xl sm:text-3xl md:text-4xl text-navy mb-3 md:mb-5 leading-snug">
-                                        {plainTitle}
-                                    </h3>
+                                    <h3
+                                        className="font-seasons text-2xl sm:text-3xl md:text-4xl text-navy mb-3 md:mb-5 leading-snug"
+                                        dangerouslySetInnerHTML={{ __html: plainTitle }}
+                                    />
 
-                                    <p className="font-opensans text-base md:text-lg text-navy/75 leading-relaxed">
+                                    <p className="font-opensans text-sm md:text-lg text-navy/75 leading-relaxed">
                                         {plainText}
                                     </p>
                                 </div>

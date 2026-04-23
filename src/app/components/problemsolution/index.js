@@ -77,7 +77,7 @@ export default function ProblemSolution() {
                 </div>
 
                 {/* RIGHT */}
-                <div className="px-3 sm:px-5 md:px-8 py-5 md:py-8 bg-background rounded-tr-2xl">
+                <div className="px-3 sm:px-5 md:px-8 py-5 md:py-8 bg-background rounded-tl-2xl rounded-tr-2xl">
                     <img
                         src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/66984dff3649a85b335a071c_Big%20Smiley.png'}
                         alt="Solution at Secure Clinics"

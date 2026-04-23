@@ -49,7 +49,7 @@ export default function SecureStories() {
                     >
                         {stories.map((story, index) => (
                             <SwiperSlide key={index}>
-                                <div className="relative h-80 md:h-110 rounded-2xl md:rounded-3xl overflow-hidden group">
+                                <div className="relative h-110 md:h-110 rounded-2xl md:rounded-3xl overflow-hidden group">
                                     <img
                                         src={story.image}
                                         alt={story.name}

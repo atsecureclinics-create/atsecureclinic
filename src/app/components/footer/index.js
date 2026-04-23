@@ -33,7 +33,7 @@ const SECTIONS = [
         ],
     },
     {
-        title: "Non-Surgical Care",
+        title: "Non<code>-</code>Surgical Care",
         links: [
             { label: "All Non-Surgical Treatments", href: "/nonsurgical" },
             { label: "Physiotherapy", href: "/nonsurgical/physiotherapy" },
@@ -88,9 +88,10 @@ const Footer = () => {
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 md:gap-y-16 gap-x-6 md:gap-x-8">
                             {SECTIONS.map((section) => (
                                 <div key={section.title} className="flex flex-col space-y-3 text-black">
-                                    <h3 className="text-sm md:text-lg font-extrabold tracking-[0.2em] uppercase border-b border-navy/10 pb-1">
-                                        {section.title}
-                                    </h3>
+                                    <h3
+                                        className="text-sm md:text-lg font-extrabold tracking-[0.2em] uppercase border-b border-navy/10 pb-1"
+                                        dangerouslySetInnerHTML={{ __html: section.title }}
+                                    />
                                     <ul className="font-opensans flex flex-col space-y-2 md:space-y-3">
                                         {section.links.map((link) => (
                                             <li key={link.href + link.label} className="mb-1 md:mb-2">

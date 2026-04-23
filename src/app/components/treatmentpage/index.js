@@ -329,7 +329,7 @@ function ProceduresGrid({ items }) {
           </h3>
 
           {item.description && (
-            <p className="font-opensans text-base md:text-lg text-navy/75 leading-relaxed">
+            <p className="font-opensans text-sm md:text-lg text-navy/75 leading-relaxed">
               {item.description}
             </p>
           )}

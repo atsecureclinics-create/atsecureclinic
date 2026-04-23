@@ -15,7 +15,7 @@ export const team = [
     name: "Dr. Sambhav Shah",
     role: "Founder & Spine Specialist",
     image: SambhavShah,
-    portraitBg: "bg-[#e87a5d]",
+    portraitBg: "bg-[#FE805D]",
     description:
       "MS Orthopaedics. Pioneer of endoscopic spine surgery in Mumbai with international training across the UK, Germany, Italy, and Singapore.",
     bio: "Dr. Sambhav Shah (MS Orthopaedics) is one of India's leading spine specialists, recognised for his precision-driven, minimally invasive approach and a deeply patient-centric philosophy that puts honest diagnosis before intervention. As the pioneer of endoscopic spine surgery in Mumbai, he has redefined modern spine care in India — and is known for an unwavering belief that not every spine problem requires surgery.",

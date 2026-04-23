@@ -18,15 +18,15 @@ export default function HowWeTreat({ category = "surgical", label: labelProp }) 
     const label = labelProp ?? CATEGORY_LABEL[category] ?? "Solutions";
 
     return (
-        <section className="bg-foreground py-16 md:py-24 lg:py-28">
+        <section className="bg-foreground py-10 md:py-24 lg:py-28">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 {/* Header */}
-                <div className="text-center max-w-4xl mx-auto mb-8">
+                <div className="text-center max-w-4xl mx-auto mb-2 md:mb-8">
                     <h2 className="flex flex-wrap items-baseline justify-center gap-2 text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-navy">
                         {label} <AtTheRate />
                     </h2>
 
-                    <p className="font-opensans mt-4 md:mt-6 text-base sm:text-xl md:text-2xl text-navy">
+                    <p className="font-opensans mt-4 md:mt-6 text-sm sm:text-xl md:text-2xl text-navy">
                         An integrated step-by-step approach to personalised healthcare in Mumbai.
                     </p>
                 </div>
@@ -50,7 +50,7 @@ export default function HowWeTreat({ category = "surgical", label: labelProp }) 
                                     />
                                 )}
                             </div>
-                            <p className="text-sm sm:text-base md:text-xl text-center font-bold text-navy group-hover:text-[#0C3C46] leading-snug">
+                            <p className="font-opensans text-sm sm:text-base md:text-xl text-center font-medium md:font-bold text-navy group-hover:text-[#0C3C46] leading-snug">
                                 {item.cardTitle}
                             </p>
                         </Link>

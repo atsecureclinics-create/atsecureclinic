@@ -29,11 +29,11 @@ const TeamMember = () => {
 
                 <div className="max-w-4xl 2xl:max-w-5xl w-full relative">
 
-                    <button className="swiper-prev-btn absolute -left-5 lg:-left-20 top-[40%] -translate-y-1/2 z-20 w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-background text-white hidden md:flex items-center justify-center hover:bg-white hover:text-navy transition cursor-pointer">
+                    <button className="swiper-prev-btn absolute left-[30%] lg:-left-20 top-[89%] md:top-[40%] -translate-y-1/2 z-20 w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-background text-white flex items-center justify-center hover:bg-white hover:text-navy transition cursor-pointer">
                         <ChevronLeft size={24} className="text-background lg:w-7 lg:h-7" />
                     </button>
 
-                    <button className="swiper-next-btn absolute -right-5 lg:-right-20 top-[40%] -translate-y-1/2 z-20 w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-background text-white hidden md:flex items-center justify-center hover:bg-white hover:text-navy transition cursor-pointer">
+                    <button className="swiper-next-btn absolute right-[30%] lg:-right-20 top-[89%] md:top-[40%] -translate-y-1/2 z-20 w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-background text-white flex items-center justify-center hover:bg-white hover:text-navy transition cursor-pointer">
                         <ChevronRight size={24} className="text-background lg:w-7 lg:h-7" />
                     </button>
 
@@ -46,11 +46,11 @@ const TeamMember = () => {
                             prevEl: '.swiper-prev-btn',
                             nextEl: '.swiper-next-btn',
                         }}
-                        className="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl"
+                        className="rounded-2xl md:rounded-3xl overflow-hidden md:shadow-2xl"
                     >
                         {team.map((member) => (
                             <SwiperSlide key={member.slug}>
-                                <div className="bg-white grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 p-5 sm:p-6 md:p-8">
+                                <div className="bg-white grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 p-3 sm:p-6 md:p-8 rounded-xl md:rounded-none">
                                     <div className="md:col-span-8 flex flex-col justify-center order-2 md:order-1">
                                         <h3 className="text-navy text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-2">
                                             {member.name}
@@ -60,7 +60,7 @@ const TeamMember = () => {
                                                 {member.role}
                                             </p>
                                         )}
-                                        <p className="font-opensans text-navy text-sm sm:text-base md:text-lg leading-relaxed">
+                                        <p className="font-opensans text-navy text-sm sm:text-base md:text-lg leading-relaxed line-clamp-5">
                                             {member.bio}
                                         </p>
                                         <Link
@@ -72,7 +72,7 @@ const TeamMember = () => {
                                     </div>
 
                                     <div className="md:col-span-4 order-1 md:order-2">
-                                        <div className={`relative w-full h-64 sm:h-80 md:h-full rounded-2xl overflow-hidden ${member.portraitBg} group`}>
+                                        <div className={`relative w-full h-80 md:h-full rounded-2xl overflow-hidden ${member.portraitBg} group`}>
                                             <Image
                                                 src={member.image}
                                                 alt={member.name}
@@ -87,7 +87,7 @@ const TeamMember = () => {
                         ))}
                     </Swiper>
 
-                    <div className="flex justify-center mt-8 md:mt-12">
+                    <div className="flex justify-center mt-20 md:mt-12">
                         <Link href="/the-care-team" className="theme-button flex justify-center items-center gap-2">
                             Meet the Team
                         </Link>
