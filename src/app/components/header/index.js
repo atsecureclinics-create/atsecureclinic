@@ -6,6 +6,10 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import Logo from "../../../../public/icons/logo.svg";
 import Image from "next/image";
 import ConsultButton from "../consultmodal/button";
+import { getTreatmentsByCategory } from "../../api/treatments";
+
+const surgicalTreatments = getTreatmentsByCategory("surgical");
+const nonsurgicalTreatments = getTreatmentsByCategory("nonsurgical");
 
 export default function Header() {
     const [aboutOpen, setAboutOpen] = useState(false);
@@ -35,10 +39,10 @@ export default function Header() {
                     <Image
                         src={Logo}
                         alt="Secure Clinic"
-                        width={200}
-                        height={80}
+                        width={300}
+                        height={100}
                         priority
-                        className="w-36 md:w-40 xl:w-50 h-auto"
+                        className="w-36 md:w-40 xl:w-60 h-auto"
                     />
                 </Link>
 
@@ -82,13 +86,49 @@ export default function Header() {
                         </button>
 
                         {treatmentOpen && (
-                            <div className="text-base absolute top-full left-0 w-60 bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
-                                <Link href="/surgical" className="block px-5 py-3 hover:bg-vanilla transition">
-                                    Surgical Treatments
-                                </Link>
-                                <Link href="/nonsurgical" className="block px-5 py-3 hover:bg-vanilla transition">
-                                    Non<code>-</code>Surgical Treatments
-                                </Link>
+                            <div className="absolute top-full left-1/2 -translate-x-1/2 w-[40rem] lg:w-[44rem] bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
+                                <div className="grid grid-cols-2 divide-x divide-black/5">
+                                    <div className="p-4">
+                                        <Link
+                                            href="/surgical"
+                                            className="block text-base font-extrabold text-navy uppercase tracking-[0.15em] px-2 py-2 hover:text-coral transition"
+                                        >
+                                            Surgical Treatments
+                                        </Link>
+                                        <ul className="mt-1 font-opensans text-sm font-normal">
+                                            {surgicalTreatments.map((t) => (
+                                                <li key={t.slug}>
+                                                    <Link
+                                                        href={`/surgical/${t.slug}`}
+                                                        className="block px-2 py-1.5 rounded-md hover:bg-vanilla hover:text-coral transition"
+                                                    >
+                                                        {t.cardTitle}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                    <div className="p-4">
+                                        <Link
+                                            href="/nonsurgical"
+                                            className="block text-base font-extrabold text-navy uppercase tracking-[0.15em] px-2 py-2 hover:text-coral transition"
+                                        >
+                                            Non-Surgical Treatments
+                                        </Link>
+                                        <ul className="mt-1 font-opensans text-sm font-normal">
+                                            {nonsurgicalTreatments.map((t) => (
+                                                <li key={t.slug}>
+                                                    <Link
+                                                        href={`/nonsurgical/${t.slug}`}
+                                                        className="block px-2 py-1.5 rounded-md hover:bg-vanilla hover:text-coral transition"
+                                                    >
+                                                        {t.cardTitle}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         )}
                     </div>
@@ -154,13 +194,56 @@ export default function Header() {
                                     className="transition-transform duration-200 group-open:rotate-180"
                                 />
                             </summary>
-                            <div className="flex flex-col pl-3 pb-3 gap-2 text-base font-normal font-opensans">
-                                <Link href="/surgical" onClick={closeMobile} className="py-1.5">
-                                    Surgical Treatments
-                                </Link>
-                                <Link href="/nonsurgical" onClick={closeMobile} className="py-1.5">
-                                    Non-Surgical Treatments
-                                </Link>
+                            <div className="pl-3 pb-3 flex flex-col gap-3">
+                                <details className="group/sub">
+                                    <summary className="flex justify-between items-center py-2 cursor-pointer list-none text-base font-extrabold uppercase tracking-[0.15em]">
+                                        <Link href="/surgical" onClick={closeMobile}>
+                                            Surgical Treatments
+                                        </Link>
+                                        <ChevronDown
+                                            size={16}
+                                            className="transition-transform duration-200 group-open/sub:rotate-180"
+                                        />
+                                    </summary>
+                                    <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
+                                        {surgicalTreatments.map((t) => (
+                                            <li key={t.slug}>
+                                                <Link
+                                                    href={`/surgical/${t.slug}`}
+                                                    onClick={closeMobile}
+                                                    className="block py-1.5"
+                                                >
+                                                    {t.cardTitle}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </details>
+
+                                <details className="group/sub">
+                                    <summary className="flex justify-between items-center py-2 cursor-pointer list-none text-base font-extrabold uppercase tracking-[0.15em]">
+                                        <Link href="/nonsurgical" onClick={closeMobile}>
+                                            Non-Surgical Treatments
+                                        </Link>
+                                        <ChevronDown
+                                            size={16}
+                                            className="transition-transform duration-200 group-open/sub:rotate-180"
+                                        />
+                                    </summary>
+                                    <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
+                                        {nonsurgicalTreatments.map((t) => (
+                                            <li key={t.slug}>
+                                                <Link
+                                                    href={`/nonsurgical/${t.slug}`}
+                                                    onClick={closeMobile}
+                                                    className="block py-1.5"
+                                                >
+                                                    {t.cardTitle}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </details>
                             </div>
                         </details>
 
