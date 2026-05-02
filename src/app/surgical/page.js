@@ -152,7 +152,7 @@ function SurgicalTreatments() {
                                 >
                                     <div className="flex items-center justify-between mb-2 md:mb-8">
                                         <span
-                                            className="text-4xl sm:text-5xl md:text-6xl font-seasons text-coral/70 group-hover:text-coral transition-colors duration-500"
+                                            className="text-4xl sm:text-5xl md:text-6xl font-serif text-coral/70 group-hover:text-coral transition-colors duration-500"
                                             dangerouslySetInnerHTML={{ __html: plainNumber }}
                                         />
                                         <div className="w-10 md:w-12 h-px bg-navy/20 group-hover:w-16 md:group-hover:w-20 transition-all duration-500" />

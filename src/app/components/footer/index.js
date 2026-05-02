@@ -134,7 +134,7 @@ const Footer = () => {
                         <Image
                             src={LogoFooter}
                             alt="Secure Clinic"
-                            className="h-full w-2xs object-contain m-auto"
+                            className="h-full w-3xs object-contain m-auto"
                         />
                     </div>
 

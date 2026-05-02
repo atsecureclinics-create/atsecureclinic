@@ -317,9 +317,12 @@ function ProceduresGrid({ items }) {
         >
           {hasNumbers && (
             <div className="flex items-center justify-between mb-5 md:mb-6">
-              <span className="text-3xl md:text-4xl lg:text-5xl font-seasons text-coral/70 group-hover:text-coral transition-colors">
-                {item.number ?? String(i + 1).padStart(2, "0")}
-              </span>
+              <span
+                className="text-3xl md:text-4xl lg:text-5xl font-serif text-coral/70 group-hover:text-coral transition-colors"
+                dangerouslySetInnerHTML={{
+                  __html: item.number ?? String(i + 1).padStart(2, "0"),
+                }}
+              />
               <div className="w-10 md:w-12 h-px bg-navy/20 group-hover:w-16 md:group-hover:w-20 transition-all" />
             </div>
           )}
