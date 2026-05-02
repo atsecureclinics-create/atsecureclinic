@@ -113,7 +113,7 @@ export default function ContactSection() {
                     Location
                   </h4>
                   <p className="text-navy font-opensans text-sm md:text-base leading-relaxed">
-                    Mumbai, India
+                    Ground floor, Tarabai Hall, Netaji Subhash Chandra Bose Rd, Marine drive, Mumbai, Maharashtra 400002
                   </p>
                 </div>
 

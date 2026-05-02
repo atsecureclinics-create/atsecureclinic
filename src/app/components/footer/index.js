@@ -64,77 +64,86 @@ const SECTIONS = [
 const Footer = () => {
 
     return (
-        <footer className="font-seasons relative bg-background text-navy pt-16 md:pt-24 pb-10 md:pb-16 px-4 sm:px-8 md:px-12 lg:px-24">
-            <div className="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
+        <>
+            <footer className="font-seasons relative bg-background text-navy pt-16 md:pt-24 px-4 sm:px-8 md:px-12 lg:px-24">
+                <div className="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
 
-            <div className="max-w-7xl mx-auto relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16">
+                <div className="max-w-7xl mx-auto relative z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16">
 
-                    {/* LEFT: Newsletter & Resources */}
-                    <div className="lg:col-span-4 space-y-10 md:space-y-12">
+                        {/* LEFT: Newsletter & Resources */}
+                        <div className="lg:col-span-4 space-y-10 md:space-y-12">
 
-                        <div className="bg-foreground text-navy p-5 rounded-2xl border border-white/30 shadow-2xl shadow-[#002b30]/5">
-                            <h3 className="text-base md:text-xl tracking-[0.2em] mb-3 uppercase font-semibold">Stay In Touch</h3>
-                            <p className="font-opensans text-sm mb-6 md:mb-8 leading-relaxed">
-                                Keep tabs on Secure Clinics and get no-fluff content delivered to your inbox.
-                            </p>
+                            <div className="bg-foreground text-navy p-5 rounded-2xl border border-white/30 shadow-2xl shadow-[#002b30]/5">
+                                <h3 className="text-base md:text-xl tracking-[0.2em] mb-3 uppercase font-semibold">Stay In Touch</h3>
+                                <p className="font-opensans text-sm mb-6 md:mb-8 leading-relaxed">
+                                    Keep tabs on Secure Clinics and get no-fluff content delivered to your inbox.
+                                </p>
 
-                            <SubscribeForm />
+                                <SubscribeForm />
+                            </div>
                         </div>
-                    </div>
 
-                    {/* RIGHT: Navigation Links Grid */}
-                    <div className="lg:col-span-8">
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 md:gap-y-16 gap-x-6 md:gap-x-8">
-                            {SECTIONS.map((section) => (
-                                <div key={section.title} className="flex flex-col space-y-3 text-black">
-                                    <h3
-                                        className="text-sm md:text-lg font-extrabold tracking-[0.2em] uppercase border-b border-navy/10 pb-1"
-                                        dangerouslySetInnerHTML={{ __html: section.title }}
-                                    />
-                                    <ul className="font-opensans flex flex-col space-y-2 md:space-y-3">
-                                        {section.links.map((link) => (
-                                            <li key={link.href + link.label} className="mb-1 md:mb-2">
-                                                <Link href={link.href} className="group flex items-center text-sm md:text-base transition-all">
-                                                    {link.label}
-                                                    <ArrowUpRight className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 -translate-y-1 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
+                        {/* RIGHT: Navigation Links Grid */}
+                        <div className="lg:col-span-8">
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 md:gap-y-16 gap-x-6 md:gap-x-8">
+                                {SECTIONS.map((section) => (
+                                    <div key={section.title} className="flex flex-col space-y-3 text-black">
+                                        <h3
+                                            className="text-sm md:text-lg font-extrabold tracking-[0.2em] uppercase border-b border-navy/10 pb-1"
+                                            dangerouslySetInnerHTML={{ __html: section.title }}
+                                        />
+                                        <ul className="font-opensans flex flex-col space-y-2 md:space-y-3">
+                                            {section.links.map((link) => (
+                                                <li key={link.href + link.label} className="mb-1 md:mb-2">
+                                                    <Link href={link.href} className="group flex items-center text-sm md:text-base transition-all">
+                                                        {link.label}
+                                                        <ArrowUpRight className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 -translate-y-1 translate-x-1 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
 
-                            <div className="flex flex-col space-y-4 md:space-y-5 text-black">
-                                <h3 className="text-sm md:text-base font-bold tracking-[0.2em] uppercase opacity-90 border-b border-[#002b30]/10 pb-2">
-                                    Socials
-                                </h3>
-                                <div className="flex gap-5 md:gap-6 items-center pt-1">
-                                    <SocialIcon href="https://instagram.com/the.secureclinics" label="Instagram" icon={<Instagram size={20} strokeWidth={1.5} />} />
-                                    <SocialIcon href="#" label="Twitter" icon={<Twitter size={20} strokeWidth={1.5} />} />
-                                    <SocialIcon href="#" label="LinkedIn" icon={<Linkedin size={20} strokeWidth={1.5} />} />
-                                    <SocialIcon href="#" label="YouTube" icon={<Youtube size={22} strokeWidth={1.5} />} />
+                                <div className="flex flex-col space-y-4 md:space-y-5 text-black">
+                                    <h3 className="text-sm md:text-base font-bold tracking-[0.2em] uppercase opacity-90 border-b border-[#002b30]/10 pb-2">
+                                        Socials
+                                    </h3>
+                                    <div className="flex gap-5 md:gap-6 items-center pt-1">
+                                        <SocialIcon href="https://instagram.com/the.secureclinics" label="Instagram" icon={<Instagram size={20} strokeWidth={1.5} />} />
+                                        <SocialIcon href="#" label="Twitter" icon={<Twitter size={20} strokeWidth={1.5} />} />
+                                        <SocialIcon href="#" label="LinkedIn" icon={<Linkedin size={20} strokeWidth={1.5} />} />
+                                        <SocialIcon href="#" label="YouTube" icon={<Youtube size={22} strokeWidth={1.5} />} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <hr className="my-8 md:my-12 border-navy/15" />
+                {/* <hr className="my-8 md:my-12 border-navy/15" /> */}
+            </footer>
 
-            <div className="logo-footer w-full h-14 md:h-25">
-                <Image src={LogoFooter} alt="Secure Clinic" className="w-full h-full object-contain" />
-            </div>
+            <div
+                className="bg-cover bg-center bg-no-repeat px-4 sm:px-8 md:px-12 lg:px-24 py-2 md:py-4"
+                style={{ backgroundImage: "url('/common/blue-bg.png')" }}
+            >
+                <div className="max-w-7xl mx-auto">
+                    <div className="logo-footer w-full h-14 md:h-25">
+                        <Image src={LogoFooter} alt="Secure Clinic" className="w-full h-full object-contain" />
+                    </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-8 justify-between sm:items-center pt-6 md:pt-8 text-xs sm:text-sm">
-                <div>© Secure Clinics {new Date().getFullYear()}. All Rights Reserved.</div>
-                <div className="flex gap-5 items-center">
-                    <Link href="#">Privacy policy</Link>
-                    <Link href="#">Terms of use</Link>
+                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-8 justify-between sm:items-center pt-6 md:pt-8 text-xs sm:text-sm">
+                        <div>© Secure Clinics {new Date().getFullYear()}. All Rights Reserved.</div>
+                        <div className="flex gap-5 items-center">
+                            <Link href="#">Privacy policy</Link>
+                            <Link href="#">Terms of use</Link>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </>
     );
 };
 
