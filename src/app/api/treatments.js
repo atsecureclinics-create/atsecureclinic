@@ -526,13 +526,13 @@ export const treatments = [
     category: "surgical",
     cardTitle: "FOOT AND ANKLE SURGERY",
     iconKey: "dumbbell",
-    metaTitle: "Foot & Ankle Surgery in Mumbai | SecureClinics",
+    metaTitle: "Foot and Ankle Surgery in Mumbai | SecureClinics",
     metaDescription:
       "Advanced foot and ankle surgery in Mumbai — fracture fixation, bunion correction, arthroscopy, replacement and tendon repair with precision care.",
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Foot & Ankle Surgery in Mumbai",
+      title: "Foot and Ankle Surgery in Mumbai",
       tagline: "Stable Steps. Precise Surgery. Confident Movement.",
       intro:
         "At @SecureClinics, foot and ankle surgery is focused on restoring alignment, stability and pain-free mobility. Our orthopaedic surgeons bring extensive experience in advanced foot and ankle surgery in Mumbai, treating injuries, deformities and degenerative conditions with precision-driven techniques.",
@@ -542,7 +542,7 @@ export const treatments = [
     },
 
     why: {
-      eyebrow: "Why Foot & Ankle Surgery?",
+      eyebrow: "Why Foot and Ankle Surgery?",
       heading: "When pain, deformity or instability affects walking and balance.",
       paragraphs: [
         "Foot and ankle surgery is considered when fractures, tendon injuries, arthritis or deformities limit mobility and conservative care no longer provides relief.",
@@ -551,7 +551,7 @@ export const treatments = [
     },
 
     experience: {
-      heading: "Experienced Foot & Ankle Surgeons in Mumbai",
+      heading: "Experienced Foot and Ankle Surgeons in Mumbai",
       intro:
         "Our orthopaedic team has wide experience in trauma care, joint preservation and reconstructive foot and ankle surgery.",
       listTitle: "This expertise allows us to:",
@@ -567,9 +567,9 @@ export const treatments = [
 
     procedures: {
       eyebrow: "Procedures",
-      heading: "Foot & Ankle Surgery Procedures We Offer",
+      heading: "Foot and Ankle Surgery Procedures We Offer",
       items: [
-        { number: "01", title: "Foot & Ankle Fracture Surgery", description: "Surgical fixation of fractures to restore alignment, stability and weight-bearing function." },
+        { number: "01", title: "Foot and Ankle Fracture Surgery", description: "Surgical fixation of fractures to restore alignment, stability and weight-bearing function." },
         { number: "02", title: "Bunion Surgery", description: "Correction of bunion deformities to relieve pain, improve alignment and restore footwear comfort." },
         { number: "03", title: "Achilles Tendon Surgery", description: "Surgical repair of Achilles tendon tears or chronic tendon conditions affecting walking and sports activity." },
         { number: "04", title: "Ankle Arthroscopy", description: "Minimally invasive keyhole surgery to treat cartilage damage, impingement and ligament problems within the ankle joint." },
@@ -581,7 +581,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Foot & Ankle Surgery at @SecureClinics",
+      heading: "Benefits of Foot and Ankle Surgery at @SecureClinics",
       items: [
         "Precise alignment restoration",
         "Advanced fixation and surgical techniques",
@@ -594,7 +594,7 @@ export const treatments = [
 
     rightForYou: {
       eyebrow: "Eligibility",
-      heading: "Is Foot & Ankle Surgery Right for You?",
+      heading: "Is Foot and Ankle Surgery Right for You?",
       intro: "Foot and ankle surgery may be considered for:",
       items: [
         "Fractures and trauma",
@@ -609,7 +609,7 @@ export const treatments = [
 
     video: {
       eyebrow: "Watch",
-      heading: "Foot & Ankle Surgery",
+      heading: "Foot and Ankle Surgery",
       url: "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d%2F69136cda4850c7f206613aef_Mi%20peli%CC%81cula%202-transcode.mp4",
     },
 
@@ -627,13 +627,13 @@ export const treatments = [
     category: "surgical",
     cardTitle: "HAND AND UPPER LIMB SURGERY",
     iconKey: "apple",
-    metaTitle: "Hand & Upper Limb Surgery in Mumbai | SecureClinics",
+    metaTitle: "Hand and Upper Limb Surgery in Mumbai | SecureClinics",
     metaDescription:
       "Hand and upper limb surgery in Mumbai — carpal tunnel, trigger finger, microsurgery, fracture fixation and ganglion surgery with precision care.",
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Hand & Upper Limb Surgery in Mumbai",
+      title: "Hand and Upper Limb Surgery in Mumbai",
       tagline: "Precision Hand Care. Restored Function. Confident Use.",
       intro:
         "At @SecureClinics, hand and upper limb surgery focuses on restoring fine movement, strength and function. Our orthopaedic and hand surgeons bring extensive experience in advanced hand and upper limb surgery in Mumbai, treating nerve compression, tendon disorders, trauma and complex hand conditions.",
@@ -643,7 +643,7 @@ export const treatments = [
     },
 
     why: {
-      eyebrow: "Why Hand & Upper Limb Surgery?",
+      eyebrow: "Why Hand and Upper Limb Surgery?",
       heading: "When pain, numbness or loss of function affects daily use.",
       paragraphs: [
         "Hand and upper limb surgery is considered when nerve compression, tendon problems, fractures or masses interfere with work, grip or hand movement.",
@@ -652,7 +652,7 @@ export const treatments = [
     },
 
     experience: {
-      heading: "Experienced Hand & Upper Limb Surgeons in Mumbai",
+      heading: "Experienced Hand and Upper Limb Surgeons in Mumbai",
       intro:
         "Our surgical team has significant expertise in microsurgery, trauma reconstruction and functional hand surgery.",
       listTitle: "This experience allows us to:",
@@ -667,7 +667,7 @@ export const treatments = [
 
     procedures: {
       eyebrow: "Procedures",
-      heading: "Hand & Upper Limb Surgery Procedures We Offer",
+      heading: "Hand and Upper Limb Surgery Procedures We Offer",
       items: [
         { number: "01", title: "Carpal Tunnel Surgery", description: "Surgical release of the median nerve to relieve numbness, pain and weakness in the hand." },
         { number: "02", title: "Fracture Fixation", description: "Precise surgical stabilisation of hand, wrist and forearm fractures to restore alignment and function." },
@@ -679,7 +679,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Hand & Upper Limb Surgery at @SecureClinics",
+      heading: "Benefits of Hand and Upper Limb Surgery at @SecureClinics",
       items: [
         "Precision-focused surgical techniques",
         "Improved hand function and strength",
@@ -691,7 +691,7 @@ export const treatments = [
 
     rightForYou: {
       eyebrow: "Eligibility",
-      heading: "Is Hand & Upper Limb Surgery Right for You?",
+      heading: "Is Hand and Upper Limb Surgery Right for You?",
       intro: "Hand and upper limb surgery may be considered for:",
       items: [
         "Persistent numbness or tingling",
@@ -706,7 +706,7 @@ export const treatments = [
 
     video: {
       eyebrow: "Watch",
-      heading: "Hand & Upper Limb Surgery",
+      heading: "Hand and Upper Limb Surgery",
       url: "https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d%2F69136cda4850c7f206613aef_Mi%20peli%CC%81cula%202-transcode.mp4",
     },
 
@@ -817,19 +817,19 @@ export const treatments = [
 
   // ══════════════════════ NON-SURGICAL ══════════════════════
 
-  // ─── NS PAGE 1 ─── Injections & IV Therapy
+  // ─── NS PAGE 1 ─── Injections and IV Therapy
   {
     slug: "injections-and-iv-therapy",
     category: "nonsurgical",
-    cardTitle: "INJECTIONS & IV THERAPY",
+    cardTitle: "INJECTIONS AND IV THERAPY",
     iconKey: "syringe",
-    metaTitle: "Injections & IV Therapy in Mumbai | SecureClinics",
+    metaTitle: "Injections and IV Therapy in Mumbai | SecureClinics",
     metaDescription:
       "Image-guided spine and joint injections, radiofrequency ablation and advanced IV therapies in Mumbai — targeted relief without guesswork.",
 
     hero: {
       eyebrow: "LABS@SECURECLINICS",
-      title: "Injections & IV Therapy in Mumbai",
+      title: "Injections and IV Therapy in Mumbai",
       tagline: "Targeted Relief. Precision Delivery. No Guesswork.",
       intro:
         "At Secure Clinics, injections and IV therapies are used with intent — not as routine add-ons. Each treatment is carefully selected based on diagnosis, pain source and response to previous care.",
@@ -839,7 +839,7 @@ export const treatments = [
     },
 
     why: {
-      eyebrow: "Why Injections & IV Therapy?",
+      eyebrow: "Why Injections and IV Therapy?",
       heading: "When pain needs precision, not pills.",
       paragraphs: ["Injections and IV therapies are used to:"],
       items: [
@@ -853,7 +853,7 @@ export const treatments = [
     },
 
     experience: {
-      heading: "Experienced Pain & Intervention Specialists in Mumbai",
+      heading: "Experienced Pain and Intervention Specialists in Mumbai",
       intro:
         "Our team has extensive experience in image-guided spine and joint injections and advanced IV therapies.",
       listTitle: "This expertise allows us to:",
@@ -868,7 +868,7 @@ export const treatments = [
 
     procedures: {
       eyebrow: "Therapies",
-      heading: "Injection & IV Therapies We Offer",
+      heading: "Injection and IV Therapies We Offer",
       items: [
         { number: "01", title: "Nerve Root Block", description: "Targeted injection to calm inflamed spinal nerves causing radiating arm or leg pain." },
         { number: "02", title: "Epidural Injection", description: "Anti-inflammatory medication delivered around spinal nerves to relieve back and neck pain." },
@@ -892,7 +892,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Injections & IV Therapy at Secure Clinics",
+      heading: "Benefits of Injections and IV Therapy at Secure Clinics",
       items: [
         "Image-guided precision delivery",
         "Reduced reliance on oral medications",
@@ -925,19 +925,19 @@ export const treatments = [
     },
   },
 
-  // ─── NS PAGE 2 ─── Path Labs & Imaging
+  // ─── NS PAGE 2 ─── Path Labs and Imaging
   {
     slug: "path-labs-and-imaging",
     category: "nonsurgical",
-    cardTitle: "PATH LABS & IMAGING",
+    cardTitle: "PATH LABS AND IMAGING",
     iconKey: "flaskConical",
-    metaTitle: "Path Labs & Imaging in Mumbai | SecureClinics",
+    metaTitle: "Path Labs and Imaging in Mumbai | SecureClinics",
     metaDescription:
       "In-house diagnostics in Mumbai — blood work, X-ray, DEXA, EMG/NCS/SSEP, ultrasound and sleep studies, reviewed in clinical context.",
 
     hero: {
       eyebrow: "LABS@SECURECLINICS",
-      title: "Path Labs & Imaging in Mumbai",
+      title: "Path Labs and Imaging in Mumbai",
       tagline: "Clear Answers. Reliable Results. One Place.",
       intro:
         "At Secure Clinics, diagnostics are done with purpose. Every test is ordered to answer a specific clinical question — not as a routine checklist.",
@@ -1065,7 +1065,7 @@ export const treatments = [
         { number: "02", title: "Ai Chi", description: "Gentle flowing movements to enhance balance, relaxation and body awareness." },
         { number: "03", title: "Watsu (Water Shiatsu)", description: "Assisted water-based mobilisation and stretching to reduce pain and stiffness." },
         { number: "04", title: "Halliwick Method", description: "A structured approach focusing on balance, postural control and movement confidence in water." },
-        { number: "05", title: "Aquatic Strength & Mobility Training", description: "Resistance-based exercises using water to build strength with minimal joint strain." },
+        { number: "05", title: "Aquatic Strength and Mobility Training", description: "Resistance-based exercises using water to build strength with minimal joint strain." },
       ],
     },
 
@@ -1162,7 +1162,7 @@ export const treatments = [
         { number: "04", title: "Hydrotherapy (Water Therapy)", description: "Low-impact therapy using buoyancy and resistance to support movement with reduced joint stress." },
         { number: "05", title: "Cryotherapy", description: "Cold-based therapy to reduce inflammation and post-injury pain." },
         { number: "06", title: "Laser Therapy", description: "Advanced light therapy to support tissue healing and pain relief." },
-        { number: "07", title: "Taping & Bracing", description: "Supportive techniques to improve joint stability and functional movement." },
+        { number: "07", title: "Taping and Bracing", description: "Supportive techniques to improve joint stability and functional movement." },
       ],
     },
 
@@ -1238,7 +1238,7 @@ export const treatments = [
     },
 
     experience: {
-      heading: "Experienced Strength & Rehab Specialists in Mumbai",
+      heading: "Experienced Strength and Rehab Specialists in Mumbai",
       intro:
         "Our strength and rehabilitation specialists are trained in movement science and clinical exercise prescription.",
       listTitle: "This allows us to:",
@@ -1259,7 +1259,7 @@ export const treatments = [
         { number: "01", title: "Isometric Exercises", description: "Muscle activation without joint movement to build strength safely in painful or unstable joints." },
         { number: "02", title: "Isotonic Exercises", description: "Controlled movement-based strengthening to improve muscle power and endurance." },
         { number: "03", title: "Resistance Band Training", description: "Progressive resistance exercises to improve strength, coordination and control." },
-        { number: "04", title: "Free Weights & Machines", description: "Structured strengthening using weights and machines for targeted muscle development." },
+        { number: "04", title: "Free Weights and Machines", description: "Structured strengthening using weights and machines for targeted muscle development." },
         { number: "05", title: "Closed Kinetic Chain Exercises", description: "Weight-bearing exercises that improve joint stability and functional strength." },
         { number: "06", title: "Open Kinetic Chain Exercises", description: "Isolated muscle strengthening to address specific weaknesses." },
       ],
@@ -1355,7 +1355,7 @@ export const treatments = [
       items: [
         { number: "01", title: "Clinical Pilates", description: "Therapist-guided Pilates focused on rehabilitation and movement correction." },
         { number: "02", title: "Pilates for Lower Back Pain", description: "Targeted core and mobility work to reduce pain and improve spinal support." },
-        { number: "03", title: "Pilates for Knee & Hip Rehabilitation", description: "Controlled strengthening and alignment-focused exercises to support joint recovery." },
+        { number: "03", title: "Pilates for Knee and Hip Rehabilitation", description: "Controlled strengthening and alignment-focused exercises to support joint recovery." },
         { number: "04", title: "Pilates for Post-Surgical Recovery", description: "Gentle, progressive movement to rebuild strength and confidence after surgery." },
       ],
     },
@@ -1478,19 +1478,19 @@ export const treatments = [
     },
   },
 
-  // ─── NS PAGE 8 ─── Osteoporosis & Orthopaedic Care
+  // ─── NS PAGE 8 ─── Osteoporosis and Orthopaedic Care
   {
     slug: "osteoporosis-and-orthopaedic-care",
     category: "nonsurgical",
-    cardTitle: "OSTEOPOROSIS & ORTHO CARE",
+    cardTitle: "OSTEOPOROSIS AND ORTHO CARE",
     iconKey: "bone",
-    metaTitle: "Osteoporosis & Orthopaedic Care in Mumbai | SecureClinics",
+    metaTitle: "Osteoporosis and Orthopaedic Care in Mumbai | SecureClinics",
     metaDescription:
       "Integrated osteoporosis and orthopaedic care in Mumbai — DEXA, fracture risk, medical management and bone-aware orthopaedic decisions.",
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Osteoporosis & Orthopaedic Care in Mumbai",
+      title: "Osteoporosis and Orthopaedic Care in Mumbai",
       tagline: "Stronger Bones. Smarter Orthopaedics. Better Outcomes.",
       intro:
         "At Secure Clinics, osteoporosis and orthopaedic care work hand in hand. Bone health is not treated in isolation — it directly influences fractures, joint health, recovery after surgery and long-term mobility.",
@@ -1500,7 +1500,7 @@ export const treatments = [
     },
 
     why: {
-      eyebrow: "Why Osteoporosis & Orthopaedic Care Must Go Together",
+      eyebrow: "Why Osteoporosis and Orthopaedic Care Must Go Together",
       heading: "Because weak bones change how orthopaedic problems behave.",
       paragraphs: ["Integrated care helps to:"],
       items: [
@@ -1515,7 +1515,7 @@ export const treatments = [
     },
 
     experience: {
-      heading: "Comprehensive Bone & Joint Care in Mumbai",
+      heading: "Comprehensive Bone and Joint Care in Mumbai",
       intro: "Our specialists assess:",
       listTitle: "Every plan considers:",
       points: [
@@ -1531,7 +1531,7 @@ export const treatments = [
 
     procedures: {
       eyebrow: "Services",
-      heading: "Osteoporosis Evaluation & Management",
+      heading: "Osteoporosis Evaluation and Management",
       items: [
         { number: "01", title: "DEXA Scan Assessment", description: "Bone density measurement to diagnose and monitor osteoporosis over time." },
         { number: "02", title: "Blood Investigations", description: "Metabolic and hormonal workup to identify underlying causes of bone loss." },
@@ -1556,16 +1556,16 @@ export const treatments = [
             { title: "Joint Degeneration", description: "Orthopaedic management that accounts for underlying bone quality." },
             { title: "Spine-Related Bone Conditions", description: "Evaluation and treatment of vertebral compression and instability." },
             { title: "Post-Fracture Deformities", description: "Reconstructive planning for healed but malaligned fractures." },
-            { title: "Surgical & Non-Surgical Orthopaedic Problems", description: "Balanced decisions between conservative care and surgical intervention." },
+            { title: "Surgical and Non-Surgical Orthopaedic Problems", description: "Balanced decisions between conservative care and surgical intervention." },
           ],
         },
         {
           heading: "Integrated Approach to Treatment",
           items: [
             { title: "Clinical Nutrition" },
-            { title: "Physiotherapy & Rehabilitation" },
+            { title: "Physiotherapy and Rehabilitation" },
             { title: "Strength Training" },
-            { title: "Imaging & Diagnostics" },
+            { title: "Imaging and Diagnostics" },
             { title: "Post-Treatment Monitoring" },
           ],
         },
@@ -1574,7 +1574,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Combined Osteoporosis & Ortho Care",
+      heading: "Benefits of Combined Osteoporosis and Ortho Care",
       items: [
         "Reduced fracture risk",
         "Better surgical planning",
@@ -1586,7 +1586,7 @@ export const treatments = [
 
     rightForYou: {
       eyebrow: "Eligibility",
-      heading: "Is Osteoporosis & Orthopaedic Care for You?",
+      heading: "Is Osteoporosis and Orthopaedic Care for You?",
       intro: "You may benefit if you:",
       items: [
         "Have low bone density or osteoporosis",

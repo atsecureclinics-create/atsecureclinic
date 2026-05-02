@@ -5,7 +5,7 @@ import Link from "next/link";
 import MoreTeam from "@/app/components/morerteams";
 import ContactSection from "@/app/components/contactus";
 
-// 1. Statically generate routes at build time (Great for SEO & Speed)
+// 1. Statically generate routes at build time (Great for SEO and Speed)
 export async function generateStaticParams() {
   return team.map((member) => ({
     slug: member.slug,

@@ -47,13 +47,13 @@ export default function Home() {
               <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg aspect-19/20 rounded-2xl overflow-hidden shadow-2xl">
                 <video
                   className="w-full h-full object-cover"
-                  src="https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d%2F69136cda4850c7f206613aef_Mi%20peli%CC%81cula%202-transcode.mp4"
+                  src="/video/banner-video.mp4"
                   muted
                   loop
                   playsInline
                   autoPlay
+                  controls
                   preload="metadata"
-                  aria-hidden="true"
                 />
               </div>
             </div>

@@ -4,8 +4,8 @@ import { useState } from "react";
 import { ChevronDown, Loader2, Check } from "lucide-react";
 
 const INTERESTS = [
-    "Spine & Orthopaedic Care",
-    "Physiotherapy & Recovery",
+    "Spine and Orthopaedic Care",
+    "Physiotherapy and Recovery",
     "Book a Consult",
 ];
 

@@ -13,7 +13,7 @@ export const team = [
   {
     slug: "sambhav-shah",
     name: "Dr. Sambhav Shah",
-    role: "Founder & Spine Specialist",
+    role: "Founder and Spine Specialist",
     image: SambhavShah,
     portraitBg: "bg-[#FE805D]",
     description:
@@ -34,8 +34,8 @@ export const team = [
       "Complex spinal reconstruction",
       "Minimally invasive spine techniques",
       "Spinal oncology",
-      "Disc, nerve & sciatica management",
-      "Conservative spine care & rehabilitation",
+      "Disc, nerve and sciatica management",
+      "Conservative spine care and rehabilitation",
       "Spinal pain management",
       "Paediatric spine"
     ],
@@ -49,7 +49,7 @@ export const team = [
   {
     slug: "dinky-shah",
     name: "Dr. Dinky Shah",
-    role: "Consultant Physiotherapist & Co-Founder",
+    role: "Consultant Physiotherapist and Co-Founder",
     image: DinkyShah,
     portraitBg: "bg-[#748c7a]",
     description:
@@ -67,12 +67,12 @@ export const team = [
     ],
     expertise: [
       "Orthopaedic physiotherapy",
-      "Pre & post-operative rehabilitation",
-      "Spine, back & neck recovery",
-      "Shoulder & knee rehabilitation",
+      "Pre and post-operative rehabilitation",
+      "Spine, back and neck recovery",
+      "Shoulder and knee rehabilitation",
       "Complex musculoskeletal cases",
       "Nutrition-integrated recovery",
-      "Holistic & preventive wellness",
+      "Holistic and preventive wellness",
       "Physiotherapy team leadership"
     ],
     whySecureClinics:
@@ -85,7 +85,7 @@ export const team = [
   {
     slug: "ankit-sheth",
     name: "Dr. Ankit Sheth",
-    role: "Consultant Physiotherapist & Co-Founder",
+    role: "Consultant Physiotherapist and Co-Founder",
     image: AnkitSheth,
     portraitBg: "bg-[#c8a97e]",
     description:
@@ -105,10 +105,10 @@ export const team = [
       "Aquatic therapy",
       "Clinical Pilates",
       "Manual therapy",
-      "Functional movement & performance enhancement",
+      "Functional movement and performance enhancement",
       "Musculoskeletal physiotherapy",
-      "Cold therapy & recovery protocols",
-      "Athlete & active patient care"
+      "Cold therapy and recovery protocols",
+      "Athlete and active patient care"
     ],
     whySecureClinics:
       "@SecureClinics is the natural home for the kind of integrated, evidence-based care Dr. Sheth has always practised — where physiotherapy, aqua therapy, and clinical wellness work together under one roof rather than in isolation.",
@@ -120,7 +120,7 @@ export const team = [
   {
     slug: "prasham-shah",
     name: "Dr. Prasham Shah",
-    role: "Consulting Orthopaedic Surgeon & Co-Founder",
+    role: "Consulting Orthopaedic Surgeon and Co-Founder",
     image: TeamFallback,
     portraitBg: "bg-[#5b6e7a]",
     description:
@@ -133,19 +133,19 @@ export const team = [
       "Over four decades, three pioneering firsts, and thousands of patients later, Dr. Prasham Shah remains as curious, committed, and clinically sharp as ever."
     ],
     education: [
-      "Grant Medical College & JJ Hospital, Mumbai — MBBS & MS Orthopaedics",
-      "Arthroscopic Surgery — Specialisation, USA & Germany",
+      "Grant Medical College and JJ Hospital, Mumbai — MBBS and MS Orthopaedics",
+      "Arthroscopic Surgery — Specialisation, USA and Germany",
       "Ilizarov Technique — Advanced Training, Russia"
     ],
     expertise: [
       "Arthroscopic surgery",
-      "Ilizarov & limb reconstruction techniques",
-      "Ozone therapy for spine & orthopaedic conditions",
-      "Rheumatoid & osteoarthritis management",
-      "Diabetic & alcoholic neuritis",
+      "Ilizarov and limb reconstruction techniques",
+      "Ozone therapy for spine and orthopaedic conditions",
+      "Rheumatoid and osteoarthritis management",
+      "Diabetic and alcoholic neuritis",
       "Infected wound management",
       "Complex orthopaedic consultation",
-      "Surgical education & training"
+      "Surgical education and training"
     ],
     whySecureClinics:
       "Dr. Prasham Shah joins @SecureClinics because the model reflects everything he has believed in across four decades of practice — honest, evidence-based care that explores every option before committing to surgery. A clinic where innovation and patient-first thinking are not aspirations but the baseline.",
@@ -176,10 +176,10 @@ export const team = [
       "Stroke rehabilitation",
       "Parkinson's rehabilitation",
       "Spinal cord injury rehabilitation",
-      "Balance & gait training",
+      "Balance and gait training",
       "Neuromuscular re-education",
       "Functional neurological rehabilitation",
-      "Motor control & movement analysis",
+      "Motor control and movement analysis",
       "Multi-stage neurological recovery"
     ],
     whySecureClinics:
@@ -192,7 +192,7 @@ export const team = [
   {
     slug: "shrey-binyala",
     name: "Dr. Shrey Binyala",
-    role: "Consultant Spine Specialist & Surgeon",
+    role: "Consultant Spine Specialist and Surgeon",
     image: TeamFallback,
     portraitBg: "bg-[#7a5c4a]",
     description:
@@ -205,11 +205,11 @@ export const team = [
       "What brings all of this together is a clear and consistent philosophy: precise, modern, patient-centric spinal care that prioritises the least invasive path to the best possible outcome."
     ],
     education: [
-      "MBBS & MS Orthopaedics — First Rank, MGM Medical College & Hospital, Navi Mumbai",
+      "MBBS and MS Orthopaedics — First Rank, MGM Medical College and Hospital, Navi Mumbai",
       "DNB Orthopaedics",
       "MRCS — Royal College of Surgeons, Edinburgh, UK",
       "Spine Surgery Fellowship — Sion Hospital, Mumbai (First Rank, State)",
-      "Minimally Invasive & 3D Navigated Spine Surgery — Kokilaben Dhirubhai Ambani Hospital, Mumbai",
+      "Minimally Invasive and 3D Navigated Spine Surgery — Kokilaben Dhirubhai Ambani Hospital, Mumbai",
       "International Fellowships — FISS, FMISS, FMISSAB, FESS",
       "Endoscopic Spine Surgery — AIN Hospital, South Korea · Schön Klinik, Germany · St. Anna Hospital, Germany"
     ],
@@ -217,11 +217,11 @@ export const team = [
       "Endoscopic spine surgery",
       "Minimally invasive spine surgery",
       "3D navigated spine surgery",
-      "Spinal disc & nerve conditions",
+      "Spinal disc and nerve conditions",
       "Complex spinal reconstruction",
-      "Orthopaedic trauma & reconstructive surgery",
-      "Academic research & peer-reviewed publication",
-      "Conference presentation & surgical education"
+      "Orthopaedic trauma and reconstructive surgery",
+      "Academic research and peer-reviewed publication",
+      "Conference presentation and surgical education"
     ],
     whySecureClinics:
       "@SecureClinics is built on the same philosophy that has guided Dr. Binyala's entire surgical career — that the most advanced technique, applied with the most honest intent, produces the best outcomes. A clinic where minimally invasive care is not a selling point but a standard.",
@@ -250,8 +250,8 @@ export const team = [
     expertise: [
       "Musculoskeletal pain management",
       "Manual therapy techniques",
-      "Back & neck pain rehabilitation",
-      "Joint & muscle injury treatment",
+      "Back and neck pain rehabilitation",
+      "Joint and muscle injury treatment",
       "Functional movement restoration"
     ],
     whySecureClinics:
@@ -281,11 +281,11 @@ export const team = [
       "Clinical Practice — Go Physio, Wales, UK"
     ],
     expertise: [
-      "Advanced manual therapy & manipulation",
-      "Musculoskeletal assessment & rehabilitation",
-      "Personalised movement & recovery programmes",
+      "Advanced manual therapy and manipulation",
+      "Musculoskeletal assessment and rehabilitation",
+      "Personalised movement and recovery programmes",
       "NHS-trained clinical assessment",
-      "Pain management & root cause identification",
+      "Pain management and root cause identification",
       "Functional movement restoration",
       "End-to-end patient care management"
     ],
@@ -303,7 +303,7 @@ export const team = [
     image: AishwaryaChorge,
     portraitBg: "bg-[#6d8a7a]",
     description:
-      "Musculoskeletal physiotherapist with an MSc in Advanced Musculoskeletal Physiotherapy from Cardiff University and hospital & private clinic experience in Mumbai.",
+      "Musculoskeletal physiotherapist with an MSc in Advanced Musculoskeletal Physiotherapy from Cardiff University and hospital and private clinic experience in Mumbai.",
     bio: "Dr. Aishwarya Chorge is a musculoskeletal physiotherapist specialising in the management of musculoskeletal pain, injuries, and movement disorders. She holds an MSc in Advanced Musculoskeletal Physiotherapy from Cardiff University, UK, and a BPT from D. Y. Patil University, Navi Mumbai. Her approach is built on detailed assessment before treatment — targeted rehabilitation that is built to last.",
     content: [
       "Dr. Aishwarya Chorge is a musculoskeletal physiotherapist specialising in the management of musculoskeletal pain, injuries, and movement disorders. She holds an MSc in Advanced Musculoskeletal Physiotherapy from Cardiff University, UK, and a Bachelor of Physiotherapy from D. Y. Patil University, Navi Mumbai — a combination of international postgraduate training and strong foundational clinical education.",
@@ -315,13 +315,13 @@ export const team = [
       "BPT — D. Y. Patil University, Navi Mumbai"
     ],
     expertise: [
-      "Musculoskeletal pain & injury management",
+      "Musculoskeletal pain and injury management",
       "Movement disorder rehabilitation",
       "Evidence-based clinical assessment",
       "Structured individualised rehabilitation",
-      "Injury & trauma recovery",
+      "Injury and trauma recovery",
       "Functional movement restoration",
-      "Hospital & private clinic rehabilitation"
+      "Hospital and private clinic rehabilitation"
     ],
     whySecureClinics:
       "@SecureClinics brings together the kind of multidisciplinary environment that makes Dr. Aishwarya's work most effective — where physiotherapy is connected to diagnostics, specialist consultations, and integrated care rather than treated as a standalone service.",
@@ -337,29 +337,29 @@ export const team = [
     image: ShrutiKamya,
     portraitBg: "bg-[#d49072]",
     description:
-      "Sports & Performance Nutritionist and Founder of Nutryst — nearly a decade of experience serving 3,000+ clients including elite cricketers, swimmers, and athletes.",
+      "Sports and Performance Nutritionist and Founder of Nutryst — nearly a decade of experience serving 3,000+ clients including elite cricketers, swimmers, and athletes.",
     bio: "Shruti Kamya is one of India's most accomplished sports and performance nutritionists, with nearly a decade of clinical experience and 3,000+ clients globally — from elite cricketers and swimmers to hockey and tennis players. A university topper from SNDT with a distinguished PG Diploma in Sports Nutrition from Oxford and dual ACSM/ISSA certifications, her credentials are matched by her results.",
     content: [
       "Shruti Kamya is one of India's most accomplished sports and performance nutritionists, with nearly a decade of clinical experience and a client base of over 3,000 individuals across the globe. From elite cricketers and swimmers to hockey and tennis players, she has built a reputation for nutrition strategies that are as precise as they are personalised — grounded in science, shaped by results.",
-      "Her academic credentials are as strong as her track record. A university topper from SNDT University in Sports Science, Exercise & Wellness Nutrition, she went on to earn a Postgraduate Diploma from Oxford University with Distinction, and holds dual certifications in Sports Nutrition from the American College of Sports Medicine (ACSM) and the International Sports Sciences Association (ISSA).",
-      "Shruti's work extends well beyond the clinic. She has served as Nutrition Consultant for Triumph Knights in the Mumbai T20 League, Puneri Paltan Season 10 Champions of Pro Kabaddi, and The Fundamental of Sports Fitness Academy, among many others. Her expertise has been recognised with the Star Indian Icon Award for Best Nutritionist (2024), the Great Companies International Women Entrepreneur Award in Nutrition & Fitness (2024), and features in the Times of India and Femina.",
+      "Her academic credentials are as strong as her track record. A university topper from SNDT University in Sports Science, Exercise and Wellness Nutrition, she went on to earn a Postgraduate Diploma from Oxford University with Distinction, and holds dual certifications in Sports Nutrition from the American College of Sports Medicine (ACSM) and the International Sports Sciences Association (ISSA).",
+      "Shruti's work extends well beyond the clinic. She has served as Nutrition Consultant for Triumph Knights in the Mumbai T20 League, Puneri Paltan Season 10 Champions of Pro Kabaddi, and The Fundamental of Sports Fitness Academy, among many others. Her expertise has been recognised with the Star Indian Icon Award for Best Nutritionist (2024), the Great Companies International Women Entrepreneur Award in Nutrition and Fitness (2024), and features in the Times of India and Femina.",
       "At @SecureClinics, she brings that same elite-level thinking to everyday patients — because whether you are a professional athlete or someone recovering from surgery, your nutrition deserves the same rigour."
     ],
     education: [
-      "BSc Sports Science, Exercise & Wellness Nutrition — SNDT University (University Topper, A+)",
+      "BSc Sports Science, Exercise and Wellness Nutrition — SNDT University (University Topper, A+)",
       "PG Diploma in Sports Nutrition — Oxford University (Distinction)",
-      "ACSM Certified Specialist — Wellness & Sports Nutrition",
+      "ACSM Certified Specialist — Wellness and Sports Nutrition",
       "ISSA Certified Specialist — Sports Nutrition"
     ],
     expertise: [
-      "Personalised & sports nutrition",
+      "Personalised and sports nutrition",
       "Performance nutrition for elite athletes",
-      "Recovery & rehabilitation nutrition",
-      "Weight management & body composition",
+      "Recovery and rehabilitation nutrition",
+      "Weight management and body composition",
       "Nutrition for chronic conditions",
       "Clinical nutrition planning",
-      "Supplement guidance & protocol design",
-      "Team & institutional nutrition consulting"
+      "Supplement guidance and protocol design",
+      "Team and institutional nutrition consulting"
     ],
     whySecureClinics:
       "Nutrition has always been the missing link in most clinical recovery programmes. At @SecureClinics, it is not an afterthought — it sits at the centre of how patients heal, rebuild, and perform. That alignment is exactly why Shruti is here.",
@@ -375,7 +375,7 @@ export const team = [
     image: HastiGala,
     portraitBg: "bg-[#9c7a5a]",
     description:
-      "Clinical & Wellness Nutritionist with a Master's in Specialised Dietetics from SVT College, Mumbai — working across diabetes, hormonal health, gut conditions, and sports nutrition.",
+      "Clinical and Wellness Nutritionist with a Master's in Specialised Dietetics from SVT College, Mumbai — working across diabetes, hormonal health, gut conditions, and sports nutrition.",
     bio: "Hasti Gala is a Clinical Nutritionist with a Master's in Specialised Dietetics from SVT College, Mumbai. She works across diabetes, weight management, hormonal health, gut conditions, and sports nutrition — building plans that are clinically sound yet genuinely practical. Certifications include Diabetes Educator (NDEP), Low FODMAP for IBS (Monash University), FSSAI, and ITCFSAN.",
     content: [
       "Hasti Gala is a Clinical Nutritionist with a Master's degree in Specialised Dietetics from SVT College, Mumbai, and a practice built around one core belief — that sustainable results come from understanding the person, not just the condition. She works across a wide range of health areas including diabetes, weight management, hormonal health, gut conditions, and sports nutrition, bringing the same evidence-based rigour and individual sensitivity to each.",
@@ -384,7 +384,7 @@ export const team = [
       "At @SecureClinics, Hasti brings a holistic, patient-centred lens to a clinical environment — helping patients not just improve specific health markers but build better habits, feel stronger, and genuinely enhance their quality of life."
     ],
     education: [
-      "BSc Food, Nutrition & Dietetics — SVT College, Mumbai",
+      "BSc Food, Nutrition and Dietetics — SVT College, Mumbai",
       "Masters in Specialised Dietetics — SVT College, Mumbai",
       "Certified Diabetes Educator — NDEP",
       "Low FODMAP Diet for IBS — Monash University, Australia",
@@ -392,12 +392,12 @@ export const team = [
       "Food Product Development — ITCFSAN"
     ],
     expertise: [
-      "Diabetes management & education",
-      "Weight management & fat loss",
-      "Hormonal health — PCOS & menopause",
-      "Gut health & IBS (Low FODMAP)",
-      "Sports & performance nutrition",
-      "Sustainable lifestyle & habit coaching",
+      "Diabetes management and education",
+      "Weight management and fat loss",
+      "Hormonal health — PCOS and menopause",
+      "Gut health and IBS (Low FODMAP)",
+      "Sports and performance nutrition",
+      "Sustainable lifestyle and habit coaching",
       "Clinical nutrition planning",
       "Evidence-based dietary counselling"
     ],

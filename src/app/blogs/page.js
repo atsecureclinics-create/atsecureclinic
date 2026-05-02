@@ -10,7 +10,7 @@ const featured = {
     date: "APRIL 29, 2025",
     title: "A Busy Person’s Meal Plan",
     description:
-        "A quick & easy guide for breakfast, lunch, dinner, & snacks in 15 minutes or less.",
+        "A quick and easy guide for breakfast, lunch, dinner, and snacks in 15 minutes or less.",
     image: team,
 };
 

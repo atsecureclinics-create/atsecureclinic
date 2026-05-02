@@ -41,7 +41,7 @@ const SECTIONS = [
             { label: "Strength Training", href: "/nonsurgical/strength-training" },
             { label: "Pilates", href: "/nonsurgical/pilates" },
             { label: "Clinical Nutrition", href: "/nonsurgical/clinical-nutrition" },
-            { label: "Diagnostics & Path Lab", href: "/nonsurgical/path-labs-and-imaging" },
+            { label: "Diagnostics and Path Lab", href: "/nonsurgical/path-labs-and-imaging" },
         ],
     },
     {
@@ -71,7 +71,7 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16">
 
-                        {/* LEFT: Newsletter & Resources */}
+                        {/* LEFT: Newsletter and Resources */}
                         <div className="lg:col-span-4 space-y-10 md:space-y-12">
 
                             <div className="bg-foreground text-navy p-5 rounded-2xl border border-white/30 shadow-2xl shadow-[#002b30]/5">
@@ -134,7 +134,7 @@ const Footer = () => {
                         <Image
                             src={LogoFooter}
                             alt="Secure Clinic"
-                            className="h-full w-auto object-contain m-auto"
+                            className="h-full w-2xs object-contain m-auto"
                         />
                     </div>
 

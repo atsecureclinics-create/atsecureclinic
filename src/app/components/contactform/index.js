@@ -7,7 +7,7 @@ const CONCERN_OPTIONS = [
     "Spine care",
     "Orthopaedics",
     "Physiotherapy",
-    "Rehab & Strength",
+    "Rehab and Strength",
     "Aqua Therapy",
     "Nutrition",
     "Diagnostics",

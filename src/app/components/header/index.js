@@ -29,7 +29,7 @@ export default function Header() {
 
     return (
         <header className="bg-background relative z-50">
-            <div className="container flex items-center justify-between gap-3 py-3 md:py-5">
+            <div className="container flex items-center justify-between gap-3">
                 {/* Logo */}
                 <Link
                     href="/"
@@ -113,7 +113,7 @@ export default function Header() {
                                             href="/nonsurgical"
                                             className="block text-base font-extrabold text-navy uppercase tracking-[0.15em] px-2 py-2 hover:text-coral transition"
                                         >
-                                            Non-Surgical Treatments
+                                            Non<code>-</code>Surgical Treatments
                                         </Link>
                                         <ul className="mt-1 font-opensans text-sm font-normal">
                                             {nonsurgicalTreatments.map((t) => (
@@ -223,7 +223,7 @@ export default function Header() {
                                 <details className="group/sub">
                                     <summary className="flex justify-between items-center py-2 cursor-pointer list-none text-base font-extrabold uppercase tracking-[0.15em]">
                                         <Link href="/nonsurgical" onClick={closeMobile}>
-                                            Non-Surgical Treatments
+                                            Non<code>-</code>Surgical Treatments
                                         </Link>
                                         <ChevronDown
                                             size={16}
