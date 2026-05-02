@@ -122,8 +122,8 @@ export default function ContactSection() {
                     Phone
                   </h4>
                   <p className="text-navy font-opensans text-sm md:text-base">
-                    <Link href="tel:+91" className="hover:text-coral transition">
-                      +—
+                    <Link href="tel:+919833165670" className="hover:text-coral transition">
+                      09833165670
                     </Link>
                   </p>
                 </div>
@@ -133,8 +133,8 @@ export default function ContactSection() {
                     Email
                   </h4>
                   <p className="text-navy font-opensans text-sm md:text-base">
-                    <Link href="mailto:" className="hover:text-coral transition">
-                      —
+                    <Link href="mailto:contact@secure-clinics.com" className="hover:text-coral transition">
+                      contact@secure-clinics.com
                     </Link>
                   </p>
                 </div>
