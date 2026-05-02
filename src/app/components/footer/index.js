@@ -126,19 +126,23 @@ const Footer = () => {
             </footer>
 
             <div
-                className="bg-cover bg-center bg-no-repeat px-4 sm:px-8 md:px-12 lg:px-24 py-2 md:py-4"
+                className="bg-cover bg-center bg-no-repeat px-4 sm:px-8 md:px-12 lg:px-24 py-6 sm:py-8 md:py-10"
                 style={{ backgroundImage: "url('/common/blue-bg.png')" }}
             >
-                <div className="max-w-7xl mx-auto">
-                    <div className="logo-footer w-full h-14 md:h-25">
-                        <Image src={LogoFooter} alt="Secure Clinic" className="w-full h-full object-contain" />
+                <div className="max-w-7xl mx-auto flex flex-col gap-5 sm:gap-6 md:gap-8">
+                    <div className="logo-footer h-10 sm:h-12 md:h-16 lg:h-20 mx-auto sm:mx-0">
+                        <Image
+                            src={LogoFooter}
+                            alt="Secure Clinic"
+                            className="h-full w-auto object-contain object-left"
+                        />
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-3 sm:gap-8 justify-between sm:items-center pt-6 md:pt-8 text-xs sm:text-sm">
+                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 sm:justify-between sm:items-center text-center sm:text-left text-xs sm:text-sm">
                         <div>© Secure Clinics {new Date().getFullYear()}. All Rights Reserved.</div>
-                        <div className="flex gap-5 items-center">
-                            <Link href="#">Privacy policy</Link>
-                            <Link href="#">Terms of use</Link>
+                        <div className="flex flex-wrap gap-x-5 gap-y-2 items-center justify-center sm:justify-end">
+                            <Link href="#" className="hover:opacity-70 transition">Privacy policy</Link>
+                            <Link href="#" className="hover:opacity-70 transition">Terms of use</Link>
                         </div>
                     </div>
                 </div>
