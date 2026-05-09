@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       {/* HERO – two-column: text left, media right */}
-      <section className="flex items-center pt-4 pb-12 md:py-12 lg:py-18">
+      <section className="flex items-center pt-4 pb-12 md:py-12 lg:py-18 bg-vanilla">
         <Container>
           <div className="flex gap-8 lg:gap-12 items-center flex-col-reverse md:flex-row">
             {/* LEFT CONTENT */}
@@ -25,13 +25,15 @@ export default function Home() {
               </p>
 
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy">
-                HEAL Stronger <br /> RECOVER Faster <br /> MOVE better
+                Heal Stronger. <br /> Recover Faster. <br /> Move Better.
               </h1>
 
               <div className="mt-5 md:mt-6 space-y-2 text-sm md:text-sm lg:text-base font-medium text-navy">
                 <p className="font-semibold no-ligatures font-opensans leading-relaxed">
-                  Surgeons, Therapists, Nutritionists and Strength Trainers. One
-                  Clinic. One team. One System.
+                  Surgeons, therapists, nutritionists, and strength trainers — working together in one integrated system of care.
+                </p>
+                <p className="font-semibold no-ligatures font-opensans leading-relaxed">
+                  Only @ Secure Clinics, Mumbai.
                 </p>
               </div>
 
@@ -72,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* SCROLL 4 – Meet Care Team */}
-      <section className="bg-navylight bg-cover bg-center" >
+      <section className="bg-foreground bg-cover bg-center" >
         <TeamMember />
       </section>
 
@@ -85,7 +87,7 @@ export default function Home() {
 
       {/* SCROLL 6 – How We Treat */}
       <section>
-        <HowWeTreat label="Solutions" />
+        <HowWeTreat category="homepage" label="Treatments" />
       </section>
 
       {/* SCROLL 7 – Secure Stories */}

@@ -70,12 +70,11 @@ const Features = () => {
                     </React.Fragment>
                 ))}
             </div>
-            {/* Optional "Learn More" link to enhance premium feel */}
-            {/* <div className='flex justify-center pt-8' >
+            <div className='flex justify-center pt-8 md:pt-10' >
                 <ConsultButton className="flex justify-center items-center gap-2 theme-button ">
-                    Book a consult
+                    Book A Consult
                 </ConsultButton>
-            </div> */}
+            </div>
         </section>
     );
 };

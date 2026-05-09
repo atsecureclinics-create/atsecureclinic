@@ -25,9 +25,9 @@ export default function MovingGallery() {
                         </h2>
                     </div>
 
-                    {/* <ConsultButton className="theme-button flex justify-center items-center gap-2 self-start md:self-auto">
+                    <ConsultButton className="theme-button flex justify-center items-center gap-2 self-start md:self-auto">
                         Book A Consult
-                    </ConsultButton> */}
+                    </ConsultButton>
                 </div>
             </div>
 

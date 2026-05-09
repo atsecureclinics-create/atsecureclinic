@@ -19,22 +19,22 @@ const TeamMember = () => {
             <div className="font-seasons flex flex-col items-center justify-center overflow-hidden py-8 md:py-16">
 
                 <div className="text-center mb-8 md:mb-10 max-w-3xl px-2">
-                    <h4 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-white inline-flex items-end gap-2 flex-wrap justify-center">
-                        Team <AtTheRate textClassName="text-white" />
+                    <h4 className="text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold text-navy inline-flex items-end gap-2 flex-wrap justify-center">
+                        Team <AtTheRate textClassName="text-navy" />
                     </h4>
-                    <h2 className="font-opensans text-base md:text-lg lg:text-xl pt-3 md:pt-4 pb-2 mb-0 text-white leading-snug">
-                        Specialists who listen, collaborate, and design treatment plans together
+                    <h2 className="font-opensans text-base md:text-lg lg:text-xl pt-3 md:pt-4 pb-2 mb-0 text-navy leading-snug">
+                        Specialists who listen, collaborate, and design treatment plans together.
                     </h2>
                 </div>
 
                 <div className="max-w-4xl 2xl:max-w-5xl w-full relative">
 
-                    <button className="swiper-prev-btn absolute left-[30%] lg:-left-20 top-[89%] md:top-[40%] -translate-y-1/2 z-20 w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-background text-white flex items-center justify-center hover:bg-white hover:text-navy transition cursor-pointer">
-                        <ChevronLeft size={24} className="text-background lg:w-7 lg:h-7" />
+                    <button className="swiper-prev-btn absolute left-[30%] lg:-left-20 top-[89%] md:top-[40%] -translate-y-1/2 z-20 w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-navy text-navy flex items-center justify-center hover:bg-navy hover:text-white transition cursor-pointer">
+                        <ChevronLeft size={24} className="lg:w-7 lg:h-7" />
                     </button>
 
-                    <button className="swiper-next-btn absolute right-[30%] lg:-right-20 top-[89%] md:top-[40%] -translate-y-1/2 z-20 w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-background text-white flex items-center justify-center hover:bg-white hover:text-navy transition cursor-pointer">
-                        <ChevronRight size={24} className="text-background lg:w-7 lg:h-7" />
+                    <button className="swiper-next-btn absolute right-[30%] lg:-right-20 top-[89%] md:top-[40%] -translate-y-1/2 z-20 w-12 h-12 lg:w-14 lg:h-14 rounded-full border border-navy text-navy flex items-center justify-center hover:bg-navy hover:text-white transition cursor-pointer">
+                        <ChevronRight size={24} className="lg:w-7 lg:h-7" />
                     </button>
 
                     <Swiper

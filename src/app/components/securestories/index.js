@@ -85,11 +85,11 @@ export default function SecureStories() {
                 </div>
 
                 {/* CTA */}
-                {/* <div className="flex justify-center mt-12">
+                <div className="flex justify-center mt-12">
                     <ConsultButton className="theme-button flex justify-center items-center gap-2">
-                        Book a Consult
+                        Book A Consult
                     </ConsultButton>
-                </div> */}
+                </div>
             </div>
         </section>
     );

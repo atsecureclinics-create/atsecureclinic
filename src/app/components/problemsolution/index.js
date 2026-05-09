@@ -9,7 +9,7 @@ const data = [
     {
         problem: "Too many opinions, no clear plan",
         solution:
-            "A single, coordinated care plan from start to finish built by a multidisciplinary team",
+            "A single, coordinated care plan from start to finish, built by a multidisciplinary team",
     },
     {
         problem: "Surgery suggested too quickly",
@@ -24,7 +24,7 @@ const data = [
     {
         problem: "Advanced tech used without context",
         solution:
-            "Technology used with intent — only what improves diagnosis and outcomes.",
+            "Technology used with intent — only what improves diagnosis and outcomes",
     },
     {
         problem: "Treatment ends once symptoms reduce",
@@ -32,7 +32,7 @@ const data = [
             "Structured post-treatment care focused on long-term recovery, not just relief",
     },
     {
-        problem: "Patients confused of what to do next",
+        problem: "Patients left unsure of what's next",
         solution:
             "Clear guidance at every stage, from first visit to full recovery and maintenance",
     },
@@ -50,6 +50,11 @@ const data = [
         problem: "Short-term fixes, recurring pain",
         solution:
             "Long-term treatments designed to prevent recurrence and build resilience and strength",
+    },
+    {
+        problem: "Problem focussed solutions",
+        solution:
+            "Prevention comes first. Prevent before a problem arises. Prevention focussed solutions.",
     },
 ];
 

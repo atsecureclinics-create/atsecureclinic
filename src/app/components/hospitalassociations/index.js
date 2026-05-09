@@ -14,23 +14,33 @@ const hospitals = [
     {
         name: "Bhatia Hospital",
         logo: Hospital1,
+        url: "https://www.bhatiahospital.org/",
     },
     {
-        name: "Kokilaben Dhirubhai Ambani Hospital",
+        name: "Reliance Foundation Hospital",
         logo: Hospital2,
+        url: "https://www.rfhospital.org/care-centres/orthopaedics-joint-replacement/orthopaedics",
     },
     {
         name: "Saifee Hospital",
         logo: Hospital3,
+        url: "https://www.saifeehospital.com/",
     },
     {
-        name: "SRCC Children Hospital",
+        name: "SRCC Children's Hospital",
         logo: Hospital4,
+        url: "https://www.narayanahealth.org/srcc-childrens-hospital-mumbai",
     },
     {
-        name: "Wockhardt Hospital",
+        name: "Wockhardt Hospitals",
         logo: Hospital5,
-    }
+        url: "https://www.wockhardthospitals.com/",
+    },
+    {
+        name: "Breach Candy Hospital",
+        logo: null,
+        url: "https://www.breachcandyhospital.org/",
+    },
 ];
 
 
@@ -60,15 +70,27 @@ export default function HospitalAssociations() {
                 >
                     {hospitals.map((hospital, index) => (
                         <SwiperSlide key={index}>
-                            <div className="flex items-center justify-center h-24 transition-all duration-300">
-                                <Image
-                                    src={hospital.logo}
-                                    alt={hospital.name}
-                                    width={160}
-                                    height={80}
-                                    className="object-contain"
-                                />
-                            </div>
+                            <a
+                                href={hospital.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={hospital.name}
+                                className="flex items-center justify-center h-24 transition-all duration-300 hover:opacity-80"
+                            >
+                                {hospital.logo ? (
+                                    <Image
+                                        src={hospital.logo}
+                                        alt={hospital.name}
+                                        width={160}
+                                        height={80}
+                                        className="object-contain"
+                                    />
+                                ) : (
+                                    <span className="font-opensans text-center text-base md:text-lg font-semibold text-navy px-3">
+                                        {hospital.name}
+                                    </span>
+                                )}
+                            </a>
                         </SwiperSlide>
                     ))}
                 </Swiper>
