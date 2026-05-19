@@ -79,16 +79,94 @@ export async function POST(request) {
         .filter(Boolean)
         .join("\n");
 
-    const htmlBody = `
-        <div style="font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #282d38; max-width: 560px;">
-            <h2 style="font-family: Georgia, serif; color: #282d38; margin: 0 0 16px;">New newsletter subscriber</h2>
-            <p style="color: #4a5160; margin: 0 0 20px;">Submitted from the footer "Stay In Touch" form on secureclinics.com.</p>
-            <table style="border-collapse: collapse; width: 100%; font-size: 15px;">
-                <tr><td style="padding: 6px 0; color: #4a5160; width: 140px;">Email</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(email)}</td></tr>
-                ${interest ? `<tr><td style="padding: 6px 0; color: #4a5160;">Interest</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(interest)}</td></tr>` : ""}
-            </table>
-        </div>
-    `;
+    const submittedAt = new Date().toLocaleString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        dateStyle: "medium",
+        timeStyle: "short",
+    });
+
+    const htmlBody = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>New newsletter subscriber</title>
+</head>
+<body style="margin:0;padding:0;background:#f6f2ef;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;">
+    <div style="display:none;max-height:0;overflow:hidden;font-size:1px;line-height:1px;color:#f6f2ef;">New subscriber: ${escapeHtml(email)} — Stay In Touch form on secureclinics.com</div>
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f6f2ef;padding:32px 16px;">
+        <tr>
+            <td align="center">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;width:100%;background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(40,45,56,0.08);">
+                    <tr>
+                        <td style="background:#282d38;padding:32px 32px 28px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td style="font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;color:#ffffff;letter-spacing:-0.01em;">
+                                        Secure<span style="color:#ff6742;">Clinics</span>
+                                    </td>
+                                    <td align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#b0c0cc;font-weight:600;">
+                                        New Subscriber
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:36px 32px 8px;text-align:center;">
+                            <div style="display:inline-block;background:#fff1ec;border-radius:999px;padding:8px 16px;margin-bottom:18px;">
+                                <span style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#ff6742;font-weight:700;">Stay In Touch</span>
+                            </div>
+                            <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:26px;line-height:1.25;color:#282d38;font-weight:700;">You have a new subscriber.</h1>
+                            <p style="margin:0 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#4a5160;">Submitted from the footer form on secureclinics.com.</p>
+                            <p style="margin:0 0 28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8a8f9c;">${escapeHtml(submittedAt)} IST</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0 32px 8px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f6f2ef;border-radius:12px;overflow:hidden;">
+                                <tr>
+                                    <td style="padding:14px 24px;border-bottom:${interest ? "1px solid #eef0f3" : "none"};font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#8a8f9c;font-weight:600;width:120px;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">Email</td>
+                                    <td style="padding:14px 24px;border-bottom:${interest ? "1px solid #eef0f3" : "none"};font-size:16px;color:#282d38;font-weight:600;vertical-align:top;font-family:Arial,Helvetica,sans-serif;"><a href="mailto:${escapeHtml(email)}" style="color:#282d38;text-decoration:none;border-bottom:1px solid #ff6742;">${escapeHtml(email)}</a></td>
+                                </tr>
+                                ${interest ? `
+                                <tr>
+                                    <td style="padding:14px 24px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#8a8f9c;font-weight:600;width:120px;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">Interest</td>
+                                    <td style="padding:14px 24px;font-size:16px;color:#282d38;font-weight:600;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">${escapeHtml(interest)}</td>
+                                </tr>
+                                ` : ""}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:28px 32px 8px;text-align:center;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto;">
+                                <tr>
+                                    <td style="background:#ff6742;border-radius:999px;">
+                                        <a href="mailto:${escapeHtml(email)}?subject=Welcome%20to%20Secure%20Clinics" style="display:inline-block;padding:14px 28px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;color:#ffffff;text-decoration:none;letter-spacing:0.02em;">Send a welcome →</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:32px 32px 36px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-top:1px solid #eef0f3;padding-top:24px;">
+                                <tr>
+                                    <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8a8f9c;line-height:1.6;">
+                                        Secure Clinics · Marine Drive, Mumbai<br>
+                                        Sent automatically from secureclinics.com
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>`;
 
     try {
         await transporter.sendMail({

@@ -49,7 +49,7 @@ export const team = [
   {
     slug: "dinky-shah",
     name: "Dr. Dinky Shah",
-    role: "Consultant Physiotherapist and Co-Founder",
+    role: "Consultant Physiotherapist and Co<code>-</code>Founder",
     image: DinkyShah,
     portraitBg: "bg-[#748c7a]",
     description:
@@ -85,7 +85,7 @@ export const team = [
   {
     slug: "ankit-sheth",
     name: "Dr. Ankit Sheth",
-    role: "Consultant Physiotherapist and Co-Founder",
+    role: "Consultant Physiotherapist and Co<code>-</code>Founder",
     image: AnkitSheth,
     portraitBg: "bg-[#c8a97e]",
     description:

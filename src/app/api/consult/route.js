@@ -88,19 +88,103 @@ export async function POST(request) {
         .filter(Boolean)
         .join("\n");
 
-    const htmlBody = `
-        <div style="font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #282d38; max-width: 560px;">
-            <h2 style="font-family: Georgia, serif; color: #282d38; margin: 0 0 16px;">New consultation request</h2>
-            <p style="color: #4a5160; margin: 0 0 20px;">The following enquiry was submitted on secureclinics.com.</p>
-            <table style="border-collapse: collapse; width: 100%; font-size: 15px;">
-                <tr><td style="padding: 6px 0; color: #4a5160; width: 140px;">Name</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(name)}</td></tr>
-                <tr><td style="padding: 6px 0; color: #4a5160;">Phone</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(phone)}</td></tr>
-                ${email ? `<tr><td style="padding: 6px 0; color: #4a5160;">Email</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(email)}</td></tr>` : ""}
-                ${concern ? `<tr><td style="padding: 6px 0; color: #4a5160;">Concern</td><td style="padding: 6px 0; font-weight: 600;">${escapeHtml(concern)}</td></tr>` : ""}
-            </table>
-            ${message ? `<div style="margin-top: 20px;"><p style="color: #4a5160; margin: 0 0 6px;">Message</p><p style="white-space: pre-wrap; margin: 0; line-height: 1.55;">${escapeHtml(message)}</p></div>` : ""}
-        </div>
+    const detailRow = (label, value) => `
+        <tr>
+            <td style="padding:14px 24px;border-bottom:1px solid #eef0f3;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#8a8f9c;font-weight:600;width:120px;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">${label}</td>
+            <td style="padding:14px 24px;border-bottom:1px solid #eef0f3;font-size:16px;color:#282d38;font-weight:600;vertical-align:top;font-family:Arial,Helvetica,sans-serif;">${value}</td>
+        </tr>
     `;
+
+    const submittedAt = new Date().toLocaleString("en-IN", {
+        timeZone: "Asia/Kolkata",
+        dateStyle: "medium",
+        timeStyle: "short",
+    });
+
+    const htmlBody = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>New consultation request</title>
+</head>
+<body style="margin:0;padding:0;background:#f6f2ef;font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;">
+    <div style="display:none;max-height:0;overflow:hidden;font-size:1px;line-height:1px;color:#f6f2ef;">New consultation request from ${escapeHtml(name)} — submitted via secureclinics.com</div>
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f6f2ef;padding:32px 16px;">
+        <tr>
+            <td align="center">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="max-width:600px;width:100%;background:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(40,45,56,0.08);">
+                    <tr>
+                        <td style="background:#282d38;padding:32px 32px 28px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td style="font-family:Georgia,'Times New Roman',serif;font-size:22px;font-weight:700;color:#ffffff;letter-spacing:-0.01em;">
+                                        Secure<span style="color:#ff6742;">Clinics</span>
+                                    </td>
+                                    <td align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#b0c0cc;font-weight:600;">
+                                        New Enquiry
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:36px 32px 8px;">
+                            <p style="margin:0 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:#ff6742;font-weight:700;">Consultation request</p>
+                            <h1 style="margin:0 0 12px;font-family:Georgia,'Times New Roman',serif;font-size:28px;line-height:1.2;color:#282d38;font-weight:700;">${escapeHtml(name)} wants to talk to you.</h1>
+                            <p style="margin:0 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#4a5160;">A new enquiry was just submitted on secureclinics.com. Reach out soon — they're waiting to hear back.</p>
+                            <p style="margin:0 0 28px;font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8a8f9c;">Submitted ${escapeHtml(submittedAt)} IST</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding:0 32px 8px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f6f2ef;border-radius:12px;overflow:hidden;">
+                                ${detailRow("Name", escapeHtml(name))}
+                                ${detailRow("Phone", `<a href="tel:${escapeHtml(phone)}" style="color:#282d38;text-decoration:none;border-bottom:1px solid #ff6742;">${escapeHtml(phone)}</a>`)}
+                                ${email ? detailRow("Email", `<a href="mailto:${escapeHtml(email)}" style="color:#282d38;text-decoration:none;border-bottom:1px solid #ff6742;">${escapeHtml(email)}</a>`) : ""}
+                                ${concern ? detailRow("Concern", escapeHtml(concern)) : ""}
+                            </table>
+                        </td>
+                    </tr>
+                    ${message ? `
+                    <tr>
+                        <td style="padding:24px 32px 8px;">
+                            <p style="margin:0 0 10px;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#8a8f9c;font-weight:600;">Message</p>
+                            <div style="background:#f6f2ef;border-left:3px solid #ff6742;border-radius:8px;padding:18px 22px;font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.6;color:#282d38;white-space:pre-wrap;">${escapeHtml(message)}</div>
+                        </td>
+                    </tr>
+                    ` : ""}
+                    ${email ? `
+                    <tr>
+                        <td style="padding:28px 32px 8px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="background:#ff6742;border-radius:999px;">
+                                        <a href="mailto:${escapeHtml(email)}?subject=Re:%20Your%20enquiry%20with%20Secure%20Clinics" style="display:inline-block;padding:14px 28px;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;color:#ffffff;text-decoration:none;letter-spacing:0.02em;">Reply to ${escapeHtml(name.split(" ")[0])} →</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    ` : ""}
+                    <tr>
+                        <td style="padding:32px 32px 36px;">
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-top:1px solid #eef0f3;padding-top:24px;">
+                                <tr>
+                                    <td style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#8a8f9c;line-height:1.6;">
+                                        Secure Clinics · Marine Drive, Mumbai<br>
+                                        Sent automatically from secureclinics.com
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>`;
 
     try {
         await transporter.sendMail({

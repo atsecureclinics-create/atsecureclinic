@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import LogoFooter from '../../../../public/icons/logo.svg';
+import LogoFooter from '../../../../public/icons/footer-logo.png';
 import Image from 'next/image';
 import {
     Instagram,
     Linkedin,
     Youtube,
     Twitter,
+    Facebook,
     ArrowUpRight
 } from 'lucide-react';
 import SubscribeForm from './subscribeform';
@@ -47,7 +48,7 @@ const SECTIONS = [
     {
         title: "Resources",
         links: [
-            { label: "Blogs", href: "/blogs" },
+            // { label: "Blogs", href: "/blogs" },
             { label: "FAQ", href: "/faq" },
         ],
     },
@@ -111,10 +112,11 @@ const Footer = () => {
                                         Socials
                                     </h3>
                                     <div className="flex gap-5 md:gap-6 items-center pt-1">
-                                        <SocialIcon href="https://instagram.com/the.secureclinics" label="Instagram" icon={<Instagram size={20} strokeWidth={1.5} />} />
-                                        <SocialIcon href="#" label="Twitter" icon={<Twitter size={20} strokeWidth={1.5} />} />
+                                        <SocialIcon href="https://www.instagram.com/secureclinics?igsh=c2VkbDgza203Y2c2" label="Instagram" icon={<Instagram size={20} strokeWidth={1.5} />} />
+                                        <SocialIcon href="https://www.facebook.com/share/1GX7JMhLLD/?mibextid=wwXIfr" label="Facebook" icon={<Facebook size={20} strokeWidth={1.5} />} />
+                                        {/* <SocialIcon href="#" label="Twitter" icon={<Twitter size={20} strokeWidth={1.5} />} />
                                         <SocialIcon href="#" label="LinkedIn" icon={<Linkedin size={20} strokeWidth={1.5} />} />
-                                        <SocialIcon href="#" label="YouTube" icon={<Youtube size={22} strokeWidth={1.5} />} />
+                                        <SocialIcon href="#" label="YouTube" icon={<Youtube size={22} strokeWidth={1.5} />} /> */}
                                     </div>
                                 </div>
                             </div>
@@ -130,11 +132,11 @@ const Footer = () => {
                 style={{ backgroundImage: "url('/common/blue-bg.png')" }}
             >
                 <div className="max-w-7xl mx-auto flex flex-col gap-5 sm:gap-6 md:gap-8">
-                    <div className="logo-footer h-10 sm:h-12 md:h-16 lg:h-20 mx-auto sm:mx-0">
+                    <div className="logo-footer">
                         <Image
                             src={LogoFooter}
                             alt="Secure Clinic"
-                            className="h-full w-3xs object-contain m-auto"
+                            className="object-contain m-auto"
                         />
                     </div>
 

@@ -27,16 +27,16 @@ export default function MoreTeam({ currentSlug }) {
               className="group block"
             >
               {/* Card Container - Cream Background */}
-              <div className="bg-[#F9F8F6] rounded-[20px] p-6 pb-10 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+              <div className="bg-[#F9F8F6] rounded-[20px] p-4 pb-10 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
 
                 {/* Image Wrapper */}
-                <div className="relative w-full aspect-[4/3] rounded-[12px] overflow-hidden mb-8">
+                <div className="relative w-full aspect-[4/4] rounded-[12px] overflow-hidden mb-8">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 40vw"
                   />
                 </div>
 

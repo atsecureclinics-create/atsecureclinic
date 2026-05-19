@@ -42,7 +42,7 @@ export default function Header() {
                         width={300}
                         height={100}
                         priority
-                        className="w-36 md:w-40 xl:w-60 h-auto"
+                        className="w-36 md:w-40 xl:w-80 h-auto"
                     />
                 </Link>
 
@@ -50,7 +50,10 @@ export default function Header() {
                 <nav className="font-seasons hidden md:flex items-center gap-5 lg:gap-7 xl:gap-8 text-base lg:text-lg xl:text-xl font-extrabold text-navy">
 
                     {/* About Dropdown */}
-                    <div
+                    <Link href="/about" className="hover:opacity-70">
+                        About Us
+                    </Link>
+                    {/* <div
                         className="relative"
                         onMouseEnter={() => setAboutOpen(true)}
                         onMouseLeave={() => setAboutOpen(false)}
@@ -69,7 +72,7 @@ export default function Header() {
                                 </Link>
                             </div>
                         )}
-                    </div>
+                    </div> */}
 
                     <Link href="/the-care-team" className="hover:opacity-70">
                         Our Team
