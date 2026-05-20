@@ -79,7 +79,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Endoscopic Spine Surgery at @SecureClinics",
+      heading: "Benefits of Endoscopic Spine Surgery at Secure Clinics",
       items: [
         "Minimally invasive spine surgery",
         "Smaller incisions (often under 1 cm)",
@@ -179,7 +179,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Minimally Invasive Spine Surgery at @SecureClinics",
+      heading: "Benefits of Minimally Invasive Spine Surgery at Secure Clinics",
       items: [
         "Smaller incisions",
         "Reduced blood loss",
@@ -282,7 +282,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Spine Surgery at @SecureClinics",
+      heading: "Benefits of Spine Surgery at Secure Clinics",
       items: [
         "Individualised surgical planning",
         "Evidence-based surgical techniques",
@@ -380,7 +380,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Knee Surgery at @SecureClinics",
+      heading: "Benefits of Knee Surgery at Secure Clinics",
       items: [
         "Advanced surgical planning",
         "Precision-driven techniques",
@@ -480,7 +480,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Shoulder Surgery at @SecureClinics",
+      heading: "Benefits of Shoulder Surgery at Secure Clinics",
       items: [
         "Minimally invasive arthroscopic techniques",
         "Precision-guided surgical planning",
@@ -581,7 +581,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Foot and Ankle Surgery at @SecureClinics",
+      heading: "Benefits of Foot and Ankle Surgery at Secure Clinics",
       items: [
         "Precise alignment restoration",
         "Advanced fixation and surgical techniques",
@@ -679,7 +679,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Hand and Upper Limb Surgery at @SecureClinics",
+      heading: "Benefits of Hand and Upper Limb Surgery at Secure Clinics",
       items: [
         "Precision-focused surgical techniques",
         "Improved hand function and strength",
@@ -776,7 +776,7 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Hip Surgery at @SecureClinics",
+      heading: "Benefits of Hip Surgery at Secure Clinics",
       items: [
         "Precision-guided surgical techniques",
         "Improved pain relief and joint stability",

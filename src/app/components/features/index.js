@@ -6,31 +6,31 @@ const Features = () => {
         {
             title: "Ethical by Design",
             description: "Every care plan is guided by <b>need, not numbers</b>. Clear diagnosis, honest conversations, and <b>no unnecessary procedures ever.</b>",
-            image: "./usp/ethical-by-design.jpeg",
+            image: "./usp/usp1.png",
             imageAlt: "Patient and doctor in a modern clinic"
         },
         {
             title: "Team-Based Precision",
             description: "Decisions are made <b>collaboratively, not in isolation</b>. Doctors, therapists, nutritionists, and rehabilitation specialists work together to deliver <b>accurate, minimally invasive care.</b>",
-            image: "./usp/team-based-precision.jpeg",
+            image: "./usp/usp2.png",
             imageAlt: "Medical consultation in progress"
         },
         {
             title: "Technology with Intent",
             description: "Advanced diagnostics paired with <b>minimally invasive and endoscopic surgical techniques</b>. Technology is used to <b>improve precision, reduce tissue damage, and accelerate recovery never to overtest.</b>",
-            image: "./usp/technology-with-intent.jpeg",
+            image: "./usp/usp3.png",
             imageAlt: "Medical consultation in progress"
         },
         {
             title: "One Secure Stop",
             description: "Consultations, diagnostics, therapy, rehabilitation, and recovery <b>under one roof</b>. No referrals across the city. No fragmented appointments. <b>Just seamless care.</b>",
-            image: "./usp/one-secure-stop.jpeg",
+            image: "./usp/usp4.png",
             imageAlt: "Medical consultation in progress"
         },
         {
             title: "Recovery, Reimagined",
             description: "Your journey from <b>pain to performance</b> is fully supported. Structured physiotherapy, strength training, aqua therapy, and nutrition guidance help you <b>return to movement sooner and stronger.</b>",
-            image: "./usp/recovery-reimagined.jpeg",
+            image: "./usp/usp5.png",
             imageAlt: "Medical consultation in progress"
         }
     ];

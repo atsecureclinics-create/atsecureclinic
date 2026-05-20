@@ -11,10 +11,10 @@ const AtTheRate = ({ Atrateimg, textClassName = "" }) => {
         alt="@"
         width={24}
         height={24}
-        className="w-4 h-4 md:w-6 md:h-6 object-contain self-center"
+        className="w-4 h-4 md:w-8 md:h-8 object-contain self-center"
       />
       <span className={`font-seasons font-normal ${textClassName}`}>
-        <b className="font-bold">secure</b> clinics
+        <b className="font-bold">Secure</b> Clinics
       </span>
     </span>
   );

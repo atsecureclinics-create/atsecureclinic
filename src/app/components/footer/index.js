@@ -18,7 +18,7 @@ const SECTIONS = [
         links: [
             { label: "About Us", href: "/about" },
             { label: "Our Team", href: "/the-care-team" },
-            { label: "Press", href: "/press" },
+            // { label: "Press", href: "/press" },
         ],
     },
     {
@@ -56,7 +56,7 @@ const SECTIONS = [
         title: "Company",
         links: [
             { label: "Membership", href: "/membership" },
-            { label: "Book a Consult", href: "/contact-us" },
+            // { label: "Book a Consult", href: "/contact-us" },
             { label: "Contact Us", href: "/contact-us" },
         ],
     },
