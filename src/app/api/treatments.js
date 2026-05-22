@@ -275,7 +275,7 @@ export const treatments = [
         { number: "05", title: "Spine Infection Surgery", description: "Surgical intervention for spinal infections when required — including abscess drainage, decompression and stabilisation." },
         { number: "06", title: "Spine Tuberculosis Surgery", description: "Specialised surgical care for spinal tuberculosis, addressing instability, deformity and neurological compression." },
         { number: "07", title: "Posterior Cervical Spine Surgery", description: "Surgical treatment for cervical spine conditions approached from the back of the neck when indicated." },
-        { number: "08", title: "Anterior Cervical Spine Surgery (ACDF)", description: "Anterior cervical discectomy and fusion for disc prolapse, nerve compression and spinal instability in the neck." },
+        { number: "08", title: "Anterior Cervical Spine Surgery <code>(</code>ACDF<code>)</code>", description: "Anterior cervical discectomy and fusion for disc prolapse, nerve compression and spinal instability in the neck." },
         { number: "09", title: "Cervical Disc Replacement", description: "Motion-preserving cervical disc replacement surgery in selected patients to maintain mobility and reduce adjacent segment stress." },
       ],
     },

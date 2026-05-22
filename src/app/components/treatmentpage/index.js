@@ -240,7 +240,7 @@ export default function TreatmentPage({ treatment }) {
       )}
 
       {/* VIDEO */}
-      {video && (
+      {/* {video && (
         <section className="py-14 md:py-24 lg:py-28 bg-foreground">
           <Container>
             <div className="text-center mb-8 md:mb-12">
@@ -267,7 +267,7 @@ export default function TreatmentPage({ treatment }) {
             </div>
           </Container>
         </section>
-      )}
+      )} */}
 
       {/* MOVING GALLERY */}
       <section>
@@ -327,9 +327,10 @@ function ProceduresGrid({ items }) {
             </div>
           )}
 
-          <h3 className="font-seasons text-xl sm:text-2xl md:text-3xl text-navy mb-3 md:mb-4 leading-snug">
-            {item.title}
-          </h3>
+          <h3
+            className="font-seasons text-xl sm:text-2xl md:text-3xl text-navy mb-3 md:mb-4 leading-snug"
+            dangerouslySetInnerHTML={{ __html: item.title }}
+          />
 
           {item.description && (
             <p className="font-opensans text-sm md:text-lg text-navy/75 leading-relaxed">

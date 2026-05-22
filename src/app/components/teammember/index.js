@@ -52,13 +52,15 @@ const TeamMember = () => {
                             <SwiperSlide key={member.slug}>
                                 <div className="bg-white grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 p-3 sm:p-6 md:p-8 rounded-xl md:rounded-none">
                                     <div className="md:col-span-8 flex flex-col justify-center order-2 md:order-1">
-                                        <h3 className="text-navy text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-2">
-                                            {member.name}
-                                        </h3>
+                                        <h3
+                                            className="text-navy text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-2"
+                                            dangerouslySetInnerHTML={{ __html: member.name }}
+                                        />
                                         {member.role && (
-                                            <p className="font-opensans text-coral text-xs sm:text-sm md:text-base font-semibold uppercase tracking-[0.15em] mb-4 md:mb-6">
-                                                {member.role}
-                                            </p>
+                                            <p
+                                                className="font-opensans text-coral text-xs sm:text-sm md:text-base font-semibold uppercase tracking-[0.15em] mb-4 md:mb-6"
+                                                dangerouslySetInnerHTML={{ __html: member.role }}
+                                            />
                                         )}
                                         <p className="font-opensans text-navy text-sm sm:text-base md:text-lg leading-relaxed line-clamp-5">
                                             {member.bio}

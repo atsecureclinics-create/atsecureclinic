@@ -69,7 +69,7 @@ export default function SubscribeForm() {
                 <select
                     name="interest"
                     defaultValue=""
-                    className="w-full appearance-none bg-white/60 border-none rounded-2xl px-5 py-3 md:py-4 text-sm font-semibold focus:ring-2 focus:ring-[#00434b]/20 transition-all cursor-pointer"
+                    className=" font-opensans w-full appearance-none bg-white/60 border-none rounded-2xl px-5 py-3 md:py-4 text-sm font-semibold focus:ring-2 focus:ring-[#00434b]/20 transition-all cursor-pointer"
                 >
                     <option value="" disabled>I’m interested in...</option>
                     {INTERESTS.map((opt) => (
@@ -88,7 +88,7 @@ export default function SubscribeForm() {
                 placeholder="Email address"
                 aria-label="Email address"
                 autoComplete="email"
-                className="w-full bg-white/60 border-none rounded-2xl px-5 py-3 md:py-4 text-sm font-semibold placeholder:opacity-40 focus:ring-2 focus:ring-[#00434b]/20 transition-all"
+                className="font-opensans w-full bg-white/60 border-none rounded-2xl px-5 py-3 md:py-4 text-sm font-semibold placeholder:opacity-40 focus:ring-2 focus:ring-[#00434b]/20 transition-all"
             />
 
             {status === "error" && errorMsg && (
