@@ -42,12 +42,12 @@ export default function ConsultModal({ isOpen, onClose }) {
                     type="button"
                     onClick={onClose}
                     aria-label="Close"
-                    className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full hover:bg-vanilla transition z-10 cursor-pointer"
+                    className="absolute top-2 md:top-4 right-2 md:right-4 w-10 h-10 flex items-center justify-center rounded-full hover:bg-vanilla transition z-10 cursor-pointer"
                 >
                     <X className="w-5 h-5 text-navy" />
                 </button>
 
-                <div className="p-8 md:p-10">
+                <div className="p-4 md:p-10">
                     <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold font-opensans mb-3">
                         Request an Appointment
                     </p>
@@ -57,7 +57,7 @@ export default function ConsultModal({ isOpen, onClose }) {
                     >
                         Care that listens starts here.
                     </h2>
-                    <p className="font-opensans text-navy/70 mb-6 leading-relaxed">
+                    <p className="font-opensans text-navy/70 mb-6 leading-relaxed text-sm md:text-base">
                         At @SecureClinics, appointments are not rushed. Your concern is reviewed carefully and directed to the right specialist — spine, orthopaedics, physiotherapy, diagnostics, rehabilitation or nutrition.
                     </p>
 

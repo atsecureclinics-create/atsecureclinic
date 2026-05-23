@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
-import Logo from "../../../../public/icons/logo.svg";
+import Logo from "../../../../public/icons/logo.png";
 import Image from "next/image";
 import ConsultButton from "../consultmodal/button";
 import { getTreatmentsByCategory } from "../../api/treatments";
@@ -29,7 +29,7 @@ export default function Header() {
 
     return (
         <header className="bg-background relative z-50">
-            <div className="container flex items-center justify-between gap-3">
+            <div className="container flex items-center justify-between gap-3 py-1 md:py-4">
                 {/* Logo */}
                 <Link
                     href="/"
@@ -170,19 +170,19 @@ export default function Header() {
                         <details className="group border-b border-navy/10">
                             <summary className="flex justify-between items-center py-3 cursor-pointer list-none">
                                 About
-                                <ChevronDown
+                                {/* <ChevronDown
                                     size={18}
                                     className="transition-transform duration-200 group-open:rotate-180"
-                                />
+                                /> */}
                             </summary>
-                            <div className="flex flex-col pl-3 pb-3 gap-2 text-base font-normal font-opensans">
+                            {/* <div className="flex flex-col pl-3 pb-3 gap-2 text-base font-normal font-opensans">
                                 <Link href="/about" onClick={closeMobile} className="py-1.5">
                                     About Us
                                 </Link>
                                 <Link href="/press" onClick={closeMobile} className="py-1.5">
                                     Press
                                 </Link>
-                            </div>
+                            </div> */}
                         </details>
 
                         <Link href="/the-care-team" onClick={closeMobile} className="py-3 border-b border-navy/10">
@@ -250,9 +250,9 @@ export default function Header() {
                             </div>
                         </details>
 
-                        <Link href="/blogs" onClick={closeMobile} className="py-3 border-b border-navy/10">
+                        {/* <Link href="/blogs" onClick={closeMobile} className="py-3 border-b border-navy/10">
                             Blogs
-                        </Link>
+                        </Link> */}
                         <Link href="/faq" onClick={closeMobile} className="py-3 border-b border-navy/10">
                             FAQ
                         </Link>

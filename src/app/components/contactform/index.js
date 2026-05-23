@@ -60,7 +60,7 @@ export default function ContactForm({ idPrefix = "contact", autoFocus = false, o
                 <h3 className="font-seasons text-2xl md:text-3xl text-navy mb-3">
                     Thanks — we’ll be in touch.
                 </h3>
-                <p className="font-opensans text-navy/75 leading-relaxed">
+                <p className="font-opensans text-navy/75 leading-relaxed text-sm md:text-base">
                     Our team will contact you to confirm the next steps.
                 </p>
             </div>

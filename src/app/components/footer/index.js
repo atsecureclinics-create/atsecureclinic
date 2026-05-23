@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import LogoFooter from '../../../../public/icons/footer-logo.png';
+import LogoFooter from '../../../../public/icons/logo.png';
 import Image from 'next/image';
 import {
     Instagram,
