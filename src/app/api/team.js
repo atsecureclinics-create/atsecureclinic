@@ -8,6 +8,7 @@ import PrayushiShah from "../../../public/doctors/prayushi-shah.png";
 import AishwaryaChorge from "../../../public/doctors/ashwarya-chorge.png";
 import ShrutiKamya from "../../../public/doctors/shruti-kainya.png";
 import HastiGala from "../../../public/doctors/hasti-gala.png";
+import ShreyBinyala from "../../../public/doctors/shrey-binyala.png";
 
 export const team = [
   {
@@ -193,7 +194,7 @@ export const team = [
     slug: "shrey-binyala",
     name: "Dr. Shrey Binyala",
     role: "Consultant Spine Specialist and Surgeon",
-    image: TeamFallback,
+    image: ShreyBinyala,
     portraitBg: "bg-[#7a5c4a]",
     description:
       "Spine surgeon trained across India, South Korea, and Germany, specialising in endoscopic, minimally invasive, and 3D-navigated spine surgery.",

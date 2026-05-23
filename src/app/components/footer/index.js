@@ -14,14 +14,6 @@ import SubscribeForm from './subscribeform';
 
 const SECTIONS = [
     {
-        title: "About",
-        links: [
-            { label: "About Us", href: "/about" },
-            { label: "Our Team", href: "/the-care-team" },
-            // { label: "Press", href: "/press" },
-        ],
-    },
-    {
         title: "Surgical Care",
         links: [
             { label: "All Surgical Treatments", href: "/surgical" },
@@ -46,6 +38,14 @@ const SECTIONS = [
         ],
     },
     {
+        title: "About",
+        links: [
+            { label: "About Us", href: "/about" },
+            { label: "Our Team", href: "/the-care-team" },
+            // { label: "Press", href: "/press" },
+        ],
+    },
+    {
         title: "Resources",
         links: [
             // { label: "Blogs", href: "/blogs" },
@@ -55,7 +55,7 @@ const SECTIONS = [
     {
         title: "Company",
         links: [
-            { label: "Membership", href: "/membership" },
+            // { label: "Membership", href: "/membership" },
             // { label: "Book a Consult", href: "/contact-us" },
             { label: "Contact Us", href: "/contact-us" },
         ],
@@ -66,7 +66,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="font-seasons relative bg-background text-navy pt-16 md:pt-24 px-4 sm:px-8 md:px-12 lg:px-24">
+            <footer className="font-seasons relative bg-background text-navy pt-16 md:pt-24 px-4 sm:px-8 md:px-12 lg:px-24 pb-4">
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none"></div>
 
                 <div className="max-w-7xl mx-auto relative z-10">
@@ -87,7 +87,7 @@ const Footer = () => {
 
                         {/* RIGHT: Navigation Links Grid */}
                         <div className="lg:col-span-8">
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 md:gap-y-16 gap-x-6 md:gap-x-8">
+                            <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 md:gap-y-16 gap-x-3 md:gap-x-8">
                                 {SECTIONS.map((section) => (
                                     <div key={section.title} className="flex flex-col space-y-3 text-black">
                                         <h3
@@ -108,7 +108,7 @@ const Footer = () => {
                                 ))}
 
                                 <div className="flex flex-col space-y-4 md:space-y-5 text-black">
-                                    <h3 className="text-sm md:text-base font-bold tracking-[0.2em] uppercase opacity-90 border-b border-[#002b30]/10 pb-2">
+                                    <h3 className="text-sm md:text-base font-bold uppercase opacity-90 border-b border-[#002b30]/10 pb-2">
                                         Socials
                                     </h3>
                                     <div className="flex gap-5 md:gap-6 items-center pt-1">
@@ -140,11 +140,11 @@ const Footer = () => {
                         />
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 sm:justify-between sm:items-center text-center sm:text-left text-xs sm:text-sm">
+                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 sm:justify-center sm:items-center text-center sm:text-left text-xs sm:text-sm">
                         <div>© Secure Clinics {new Date().getFullYear()}. All Rights Reserved.</div>
                         <div className="flex flex-wrap gap-x-5 gap-y-2 items-center justify-center sm:justify-end">
-                            <Link href="#" className="hover:opacity-70 transition">Privacy policy</Link>
-                            <Link href="#" className="hover:opacity-70 transition">Terms of use</Link>
+                            {/* <Link href="#" className="hover:opacity-70 transition">Privacy policy</Link>
+                            <Link href="#" className="hover:opacity-70 transition">Terms of use</Link> */}
                         </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@ const SocialIcon = ({ icon, href = "#", label }) => (
         aria-label={label}
         target={href.startsWith("http") ? "_blank" : undefined}
         rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-        className="p-2 -m-2 text-[#002b30] opacity-60 hover:opacity-100 hover:scale-125 transition-all duration-300"
+        className=" text-[#002b30] opacity-60 hover:opacity-100 hover:scale-125 transition-all duration-300"
     >
         {icon}
     </a>
