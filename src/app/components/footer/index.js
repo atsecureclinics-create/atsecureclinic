@@ -142,9 +142,9 @@ const Footer = () => {
 
                     <div className="flex flex-row md:flex-row sm:flex-row gap-2 sm:gap-6 justify-between md:justify-between sm:items-center text-center sm:text-left text-xs sm:text-sm">
                         {/* <div>© Secure Clinics {new Date().getFullYear()}. All Rights Reserved.</div>  */}
-                        <div>PAMS spinesecure LLP</div>
+                        <div>PAMS SpineSecure LLP</div>
                         <div className="flex flex-wrap gap-x-5 gap-y-2 items-center justify-center sm:justify-end relative">
-                            <span className='  ' >Managed by <Link href="https://de-li.in/" target='_blank' className="hover:opacity-70 transition hover:underline">de<code>-</code>li</Link></span>
+                            <span className='  ' >Develop <code>&</code> Managed by <Link href="https://de-li.in/" target='_blank' className="hover:opacity-70 transition hover:underline">de<code>-</code>li</Link></span>
                             {/* <Link href="#" className="hover:opacity-70 transition">Privacy policy</Link>
                             <Link href="#" className="hover:opacity-70 transition">Terms of use</Link> */}
                         </div>

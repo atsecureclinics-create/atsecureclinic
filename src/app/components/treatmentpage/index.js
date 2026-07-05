@@ -15,6 +15,7 @@ export default function TreatmentPage({ treatment }) {
     rightForYou,
     video,
     cta,
+    faq,
   } = treatment;
 
   return (
@@ -38,9 +39,21 @@ export default function TreatmentPage({ treatment }) {
                 {hero.tagline}
               </p>
 
-              <p className="font-opensans text-base md:text-lg text-navy/85 leading-relaxed mb-4 md:mb-6">
-                {hero.intro}
-              </p>
+              <div className="font-opensans text-base md:text-lg text-navy/85 leading-relaxed mb-4 md:mb-6 space-y-3">
+                {Array.isArray(hero.intro)
+                  ? hero.intro.map((p, i) => <p key={i}>{p}</p>)
+                  : <p>{hero.intro}</p>}
+                {hero.introItems && hero.introItems.length > 0 && (
+                  <ul className="space-y-1.5 mt-2">
+                    {hero.introItems.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2.5">
+                        <span className="mt-2 flex-none w-2 h-2 rounded-full bg-coral" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
 
               {hero.closing && (
                 <p className="font-opensans text-base md:text-lg text-navy font-semibold leading-relaxed mb-6 md:mb-8">
@@ -297,7 +310,7 @@ export default function TreatmentPage({ treatment }) {
 
       {/* FAQ */}
       <section className="bg-background">
-        <FAQ />
+        <FAQ items={faq} />
       </section>
     </div>
   );

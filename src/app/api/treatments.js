@@ -32,28 +32,38 @@ export const treatments = [
     hero: {
       eyebrow: "SPINE@SECURECLINICS",
       title: "Endoscopic Spine Surgery in Mumbai",
-      tagline: "Precision Spine Care. Smaller Incisions. Faster Recovery.",
-      intro:
-        "At @SecureClinics, endoscopic spine surgery isn’t a trend — it’s a discipline we’ve refined for over a decade. As pioneers of endoscopic spine surgery in Mumbai, our team brings together experience, technology and judgment to treat spine conditions with maximum precision and minimal disruption to the body.",
-      closing:
-        "We operate only when necessary. And when we do, we do it thoughtfully.",
+      tagline: "Minimally Invasive Spine Treatment for Faster Recovery & Reduced Pain",
+      intro: [
+        "Endoscopic spine surgery is an advanced minimally invasive technique used to treat spinal conditions through a small incision with the help of a specialised endoscope and high-definition imaging.",
+        "@ Secure Clinics, Mumbai, our spine specialists use precision-based surgical approaches to treat conditions affecting the discs, nerves, and spinal canal while focusing on preserving normal spinal structures and supporting faster rehabilitation.",
+        "For patients suffering from slipped discs, sciatica, nerve compression, spinal stenosis, and chronic back pain, endoscopic spine surgery may provide an effective treatment option when conservative care is not sufficient.",
+      ],
+      closing: "Advanced spine care. Precision surgery. Structured recovery.",
       image: EndoscopicSpineImg,
     },
 
     why: {
-      eyebrow: "Why Endoscopic Spine Surgery?",
+      eyebrow: "What is Endoscopic Spine Surgery?",
       heading: "Smaller incisions. Smarter surgery. Safer recovery.",
       paragraphs: [
-        "Endoscopic spine surgery is a minimally invasive technique that allows surgeons to treat spinal conditions through tiny incisions using a high-definition camera and specialised instruments. This approach reduces muscle damage, blood loss and recovery time — without compromising surgical outcomes.",
-        "At @SecureClinics, endoscopy is not an add-on. It is central to how we practise modern spine care in Mumbai.",
+        "Endoscopic spine surgery is a minimally invasive spinal procedure where surgeons use a thin 4 mm working channel camera (endoscope) and specialised instruments to access the affected area of the spine through a small opening.",
+        "Unlike traditional open spine surgery, endoscopic surgery is superior to tubular discectomy or microdiscectomy and these endoscopic techniques aim to:",
       ],
+      items: [
+        "Minimise damage to surrounding muscles",
+        "Reduce surgical trauma",
+        "Preserve spinal stability",
+        "Support earlier mobilisation",
+        "Improve post-operative recovery",
+      ],
+      closing: "With Endoscopic techniques there is no need for removal of bone or ligament to gain access to the disc unlike the traditional techniques which require removal — hence recovery is faster. It is like a surgical strike of the disc. Removal of the enemy with no collateral damage. The suitability of endoscopic surgery depends on the patient’s diagnosis, imaging findings, symptoms, and overall health.",
     },
 
     experience: {
-      heading: "Pioneers of Endoscopic Spine Surgery in Mumbai",
+      heading: "Pioneers of Endoscopic Spine Surgery",
       intro:
-        "With over 10 years of focused experience, our spine surgeons have been early adopters and leaders in endoscopic techniques across lumbar, cervical and thoracic spine conditions.",
-      listTitle: "This depth of experience allows us to:",
+        "Dr. Sambhav Shah (MS Orthopaedics, Founder @ Secure Clinics) is one of India’s leading spine specialists recognised for his minimally invasive approach and a deeply patient-centric philosophy. With advanced training across the UK, Germany, Italy, and Singapore, and a prior appointment as Consultant Spine Surgeon at Queens Medical Centre, Nottingham, Dr. Shah brings an internationally trained perspective to every consultation — redefining what spine care looks like in India. He has been an integral part of Mumbai’s leading hospitals like Reliance, Saifee, Breach Candy, Bhatia, SRCC Children’s, and Wockhardt where he has successfully treated thousands of patients. Championing this advanced technique for over two decades, this depth of experience allows him to:",
+      listTitle: null,
       points: [
         "Select the right patients for endoscopic surgery",
         "Avoid unnecessary procedures",
@@ -61,7 +71,7 @@ export const treatments = [
         "Support faster mobilisation and rehabilitation",
       ],
       closing:
-        "Experience matters — especially in minimally invasive spine surgery.",
+        "With a comprehensive team of spine and orthopaedic surgeons as well as physiotherapists, nutritionists, and strength trainers, post surgical recovery becomes seamless and unparalleled.",
     },
 
     procedures: {
@@ -118,6 +128,19 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "Is endoscopic spine surgery safe?", a: "Endoscopic spine surgery is considered a modern minimally invasive technique when performed for appropriate conditions by trained spine specialists. The risks and benefits vary depending on the patient's condition. It is the safest form of spine surgery with negligible risk of infections and highest magnification to prevent any injury to nerves." },
+      { q: "Is endoscopic spine surgery better than open spine surgery?", a: "Endoscopic spine surgery is clinically proven to be superior to open surgery because of low risks of infections, nerve injuries, faster recovery and lower rates of future degeneration as normal anatomy is spared." },
+      { q: "How long does recovery take after endoscopic spine surgery?", a: "Patients are walking 2 hours after surgery and are discharged the same day. With the availability of aqua therapy @ Secure Clinics itself, rehabilitation can be started within a week." },
+      { q: "Can endoscopic spine surgery treat a slipped disc?", a: "Yes, all slipped disc cases may be treated using endoscopic techniques to relieve nerve compression and reduce symptoms." },
+      { q: "Will I need physiotherapy after endoscopic spine surgery?", a: "Rehabilitation is an important part of recovery. Physiotherapy helps improve strength, mobility, posture, and long-term spine health. @ Secure Clinics has a team of highly specialised physiotherapists along with the required equipment for your post surgical care." },
+      { q: "How much does endoscopic spine surgery cost in Mumbai?", a: "The cost depends on the complexity of the condition, procedure required, hospital facilities, and individual treatment plan. A comprehensive consultation is required for accurate guidance." },
+      { q: "Can endoscopic spine surgery cure back pain permanently?", a: "The outcome depends on the underlying cause of back pain. Surgery aims to treat the specific spinal problem causing symptoms, while long-term recovery also depends on rehabilitation, nutrition and lifestyle factors — all of which are provided @ Secure Clinics." },
+      { q: "Is the surgery performed at the clinic or a hospital?", a: "Spine surgery is carried out in a well equipped hospital setting. @ Secure Clinics has skilled surgeons attached with the top hospitals in Mumbai like Reliance, Saifee, Breach Candy, Bhatia, SRCC Children's and Wockhardt Hospitals." },
+      { q: "How is endoscopic spine surgery performed?", a: "During endoscopic spine surgery, a small incision is made through which a specialised camera and surgical instruments are inserted. The surgeon views the spine on a high-definition monitor and removes the tissue causing nerve compression while aiming to preserve healthy surrounding structures." },
+      { q: "How soon can I walk after endoscopic spine surgery?", a: "Many patients are mobilised as fast as 2 hours after surgery and usually discharged the next day. Your surgical and physiotherapy team @ Secure Clinics provides guidance for safe movement after the procedure and discharge." },
+    ],
   },
 
   // ───────────────────────── PAGE 2 ─────────────────────────
@@ -133,21 +156,32 @@ export const treatments = [
     hero: {
       eyebrow: "SPINE@SECURECLINICS",
       title: "Minimally Invasive Spine Surgery in Mumbai",
-      tagline: "Advanced Techniques. Smaller Impact. Smarter Recovery.",
-      intro:
-        "At @SecureClinics, minimally invasive spine surgery is practised with restraint, precision and deep experience. For over a decade, our surgeons have been at the forefront of minimally invasive spine surgery (MIS) in Mumbai, offering modern surgical solutions while preserving muscles, stability and recovery timelines.",
-      closing:
-        "Surgery is never the first option — but when it’s needed, we choose the least disruptive path.",
+      tagline: "Advanced Spine Procedures Designed for Precision, Faster Recovery & Better Mobility",
+      intro: [
+        "At Secure Clinics, Mumbai, minimally invasive spine surgery combines advanced surgical technology, detailed imaging, and precision-based techniques to treat spinal disorders with minimal disruption to surrounding tissues.",
+        "Unlike traditional open spine procedures, minimally invasive approaches use smaller surgical access points and specialised instruments to address problems affecting the discs, nerves, and spinal structures.",
+        "Our spine specialists evaluate every patient individually to determine whether minimally invasive surgery is the right treatment option based on the condition, symptoms, imaging findings, and recovery goals.",
+      ],
+      closing: "Precision treatment. Smaller surgical approach. Comprehensive recovery.",
       image: MinimallyInvasiveImg,
     },
 
     why: {
-      eyebrow: "Why Minimally Invasive Spine Surgery?",
+      eyebrow: "What is Minimally Invasive Spine Surgery?",
       heading: "Less tissue damage. More precision. Faster healing.",
       paragraphs: [
-        "Minimally invasive spine surgery uses specialised instruments, tubular retractors and advanced imaging to treat spinal conditions through smaller incisions — reducing muscle injury, blood loss and post-operative pain.",
-        "At @SecureClinics, MIS is used selectively and responsibly, ensuring long-term outcomes are never compromised for short-term convenience.",
+        "Minimally invasive spine surgery (MIS) is an advanced surgical approach where spine procedures are performed through smaller incisions using specialised instruments, magnification, and imaging guidance.",
+        "The objective is to treat the underlying spinal problem while preserving as much normal muscle and tissue as possible.",
+        "Compared with traditional open spine surgery, minimally invasive techniques may help:",
       ],
+      items: [
+        "Reduce muscle injury",
+        "Minimise blood loss",
+        "Decrease post-operative discomfort",
+        "Support earlier mobilisation",
+        "Improve rehabilitation outcomes",
+      ],
+      closing: "The appropriate surgical approach depends on the patient’s specific spinal condition.",
     },
 
     experience: {
@@ -218,6 +252,23 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "What is minimally invasive spine surgery (MIS)?", a: "Minimally invasive spine surgery is a technique where spinal procedures are performed through smaller surgical openings using specialised instruments and imaging guidance." },
+      { q: "Is minimally invasive spine surgery (MIS) safer than open surgery?", a: "The safety and effectiveness depend on the patient’s condition, diagnosis, and surgical requirements. In all cases, minimally invasive approaches may reduce tissue disruption and are clinically proven to be among the safest procedures available." },
+      { q: "Is minimally invasive spine surgery (MIS) painful?", a: "The procedure is performed with anaesthesia. Post-operative discomfort varies but minimally invasive techniques aim to reduce surgical trauma." },
+      { q: "How long does recovery take after minimally invasive spine surgery (MIS)?", a: "Recovery depends on the procedure performed, health condition, and rehabilitation progress. Most patients experience earlier mobilisation immediately after surgery compared with traditional approaches, and are typically discharged the next day after surgery." },
+      { q: "Can minimally invasive surgery (MIS) treat a slipped disc?", a: "Yes, selected slipped disc cases may be treated using minimally invasive techniques to relieve nerve compression." },
+      { q: "Does minimally invasive spine surgery (MIS) avoid scars?", a: "Because smaller incisions are used, scars are generally smaller compared with traditional open procedures." },
+      { q: "Can elderly patients undergo minimally invasive spine surgery (MIS)?", a: "Many older patients may be candidates depending on their overall health, bone quality, and spinal condition." },
+      { q: "Is physiotherapy needed after minimally invasive spine surgery (MIS)?", a: "Yes. Rehabilitation helps restore strength, flexibility, posture, and long-term spinal function." },
+      { q: "How do I know if I need minimally invasive spine surgery (MIS)?", a: "@ Secure Clinics, an expert spine specialist evaluates symptoms, examination findings, and imaging results before recommending surgery." },
+      { q: "Is minimally invasive spine surgery (MIS) suitable for every spine condition?", a: "No. MIS is not suitable for every spinal problem. The decision depends on the type of spinal disorder, location of compression, severity of the condition, patient health, previous treatments, and imaging findings. A spine specialist determines the safest and most effective approach." },
+      { q: "What are the common minimally invasive spine (MIS) procedures?", a: "Depending on the condition, minimally invasive procedures may include endoscopic spine surgery, minimally invasive discectomy, nerve decompression procedures, minimally invasive spinal fusion, and stabilisation procedures. @ Secure Clinics the procedure selected depends on the patient’s diagnosis and evaluation." },
+      { q: "Can minimally invasive surgery (MIS) treat a pinched nerve?", a: "Yes. When a nerve is compressed due to a disc problem, narrowing of the spinal canal, or other structural issues, minimally invasive decompression procedures may help relieve pressure on the nerve." },
+      { q: "Does minimally invasive spine surgery (MIS) require hospital admission?", a: "The duration of hospital stay depends on the procedure and patient’s medical condition. Some minimally invasive procedures may allow earlier discharge compared with traditional surgery. @ Secure Clinics a conservative approach is used without compromising your care — post surgical guidance and therapy are given equal importance." },
+      { q: "Can minimally invasive spine surgery (MIS) prevent future spine problems?", a: "Surgery treats the specific structural problem causing symptoms. Long-term spine health also depends on rehabilitation, physiotherapy, muscle strengthening, posture correction, healthy movement habits, lifestyle factors, and nutrition. @ Secure Clinics provides this integrated care under one roof so that you are not referred to multiple doctors." },
+    ],
   },
 
   // ───────────────────────── PAGE 3 ─────────────────────────
@@ -333,12 +384,25 @@ export const treatments = [
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Knee Surgery in Mumbai",
-      tagline: "Advanced Knee Care. Precision Surgery. Confident Recovery.",
-      intro:
-        "At @SecureClinics, knee surgery is guided by precision, planning and proven outcomes. With years of experience in advanced knee surgery in Mumbai, our orthopaedic surgeons offer modern surgical solutions — from sports injuries to joint preservation and replacement.",
-      closing:
-        "Every procedure is chosen carefully, tailored to the knee, the activity level and long-term function.",
+      title: "Knee Surgery @ Secure Clinics in Mumbai",
+      tagline: "Advanced Surgical Solutions for Knee Pain, Joint Damage & Mobility Restoration",
+      intro: [
+        "The knee joint plays a vital role in walking, balance, stability, and everyday movement. Injuries, cartilage damage, ligament tears, and degenerative conditions can affect knee function and lead to persistent pain, stiffness, and reduced mobility.",
+        "At Secure Clinics, Mumbai, our orthopaedic specialists provide comprehensive knee surgical care using advanced techniques, evidence-based treatment planning, and rehabilitation-focused recovery programs.",
+        "Every patient undergoes a detailed evaluation to identify the underlying cause of knee problems and determine the most appropriate treatment approach.",
+        "Our knee surgery services include advanced treatment for:",
+      ],
+      introItems: [
+        "Knee arthritis and joint degeneration",
+        "Total knee replacement",
+        "Partial knee replacement",
+        "ACL and ligament injuries",
+        "Meniscus tears",
+        "Sports-related knee injuries",
+        "Cartilage damage",
+        "Knee instability",
+      ],
+      closing: "From diagnosis and surgical planning to rehabilitation and recovery, Secure Clinics focuses on helping patients return to active, pain-free movement.",
       image: KneeSurgeryImg,
     },
 
@@ -418,6 +482,32 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "When is knee surgery recommended?", a: "Knee surgery may be recommended when pain, instability, or reduced mobility continues despite non-surgical treatments such as physiotherapy, medication, activity modification, weight management, and injections. Surgery may be considered when there is significant joint damage, ligament injury, or structural problems affecting daily activities." },
+      { q: "Does every knee pain require surgery?", a: "No. Many knee conditions improve with conservative treatment including physiotherapy, strengthening exercises, lifestyle changes, medication, and non-surgical procedures. A knee specialist determines whether surgery is necessary." },
+      { q: "What conditions can be treated with knee surgery?", a: "Knee surgery may help treat osteoarthritis of the knee, ligament injuries, ACL tears, meniscus injuries, cartilage damage, knee instability, sports injuries, joint degeneration, and certain fractures. The recommended procedure depends on the condition." },
+      { q: "What are the different types of knee surgery?", a: "Common knee procedures include total knee replacement surgery, partial knee replacement, knee arthroscopy, robotic knee replacement, ACL reconstruction, meniscus repair, ligament reconstruction, and cartilage repair procedures. Your surgeon recommends the procedure based on your diagnosis and activity goals." },
+      { q: "What is knee replacement surgery?", a: "Knee replacement surgery is a procedure where damaged joint surfaces are replaced with artificial components designed to reduce pain and improve movement. It is commonly performed for advanced knee arthritis causing severe pain, reduced walking ability, stiffness, and difficulty performing daily activities." },
+      { q: "Who is a candidate for knee replacement surgery?", a: "Knee replacement may be considered when patients have advanced arthritis, chronic knee pain, significant movement restriction, or poor response to non-surgical treatment. Age, activity level, overall health, and joint condition are considered before surgery." },
+      { q: "Is knee replacement surgery safe?", a: "Modern knee replacement surgery is performed using advanced surgical techniques and careful planning. Safety depends on patient health, severity of arthritis, surgical technique, and the rehabilitation process." },
+      { q: "How long does recovery take after knee surgery?", a: "Recovery depends on the type of surgery performed, patient age, muscle strength, and rehabilitation progress. A structured physiotherapy program helps restore movement and function." },
+      { q: "How soon can I walk after knee replacement surgery?", a: "Many patients begin assisted walking soon after surgery under medical guidance. The recovery plan depends on individual health, surgical findings, and rehabilitation progress." },
+      { q: "What is knee arthroscopy?", a: "Knee arthroscopy is a minimally invasive procedure where a small camera is inserted into the knee joint to diagnose and treat certain problems. It may be used for meniscus tears, ligament injuries, cartilage problems, and joint conditions." },
+      { q: "Can ACL injuries heal without surgery?", a: "Some ACL injuries may be managed without surgery depending on the severity of tear, knee stability, activity level, and patient goals. Surgery may be recommended for athletes or patients with significant instability." },
+      { q: "What are the signs that I may need knee surgery?", a: "You should consider a knee evaluation if you have persistent knee pain, swelling, locking or catching sensation, knee instability, difficulty climbing stairs, reduced walking ability, or pain affecting sleep or daily life." },
+      { q: "Can sports injuries require knee surgery?", a: "Yes. Some sports injuries require surgical repair, especially ACL tears, meniscus injuries, ligament injuries, and cartilage damage. Early assessment helps determine the correct treatment pathway." },
+      { q: "How long does a knee replacement last?", a: "Modern knee replacements are designed to provide long-term improvement in pain and function. Longevity depends on activity level, weight management, implant factors, rehabilitation, and overall joint health." },
+      { q: "Can knee surgery be avoided with physiotherapy?", a: "Physiotherapy can significantly improve strength, flexibility, and function in many knee conditions. However, surgery may be needed when there is advanced damage or structural injury." },
+      { q: "What tests are needed before knee surgery?", a: "Evaluation may include clinical examination, X-rays, MRI scans, movement assessment, and other tests if required. These help determine the most suitable procedure." },
+      { q: "Can older adults undergo knee surgery?", a: "Yes. Many older adults benefit from knee surgery, especially when arthritis or joint damage affects independence and quality of life. Overall health and surgical suitability are assessed before treatment." },
+      { q: "How do I prepare for knee surgery?", a: "Preparation may include medical evaluation, pre-operative investigations, exercise guidance, understanding recovery expectations, and planning rehabilitation support." },
+      { q: "What happens after knee surgery?", a: "Recovery usually involves pain management, gradual mobilisation, physiotherapy, strengthening exercises, and follow-up visits. The goal is restoring safe and confident movement." },
+      { q: "What is robotic knee replacement surgery?", a: "Robotic knee replacement is an advanced, computer-assisted procedure that helps surgeons perform knee replacement with greater precision. The robotic system creates a 3D model of your knee, allowing for accurate implant positioning and personalised surgical planning." },
+      { q: "How soon can I walk after robotic knee replacement?", a: "Most patients are encouraged to stand and walk with support on the same day or the day after surgery. Early mobilisation helps improve circulation, reduces complications, and speeds recovery." },
+      { q: "Why choose @ Secure Clinics for knee surgery in Mumbai?", a: "Secure Clinics provides specialist orthopaedic evaluation, advanced knee procedures, personalised surgical planning, rehabilitation-focused care, long-term functional recovery support, and complete care under one roof. Our approach focuses on helping patients return to an active lifestyle." },
+      { q: "What is the cost of knee surgery in Mumbai?", a: "The cost depends on the type of procedure, complexity of the condition, implant or surgical requirements, and individual treatment plan. A consultation with our specialists @ Secure Clinics helps determine the appropriate treatment and expected cost, presented with full transparency so you can decide with clarity." },
+    ],
   },
 
   // ───────────────────────── PAGE 5 ─────────────────────────
@@ -433,11 +523,25 @@ export const treatments = [
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
       title: "Shoulder Surgery in Mumbai",
-      tagline: "Precision Shoulder Care. Restored Movement. Reliable Outcomes.",
-      intro:
-        "At @SecureClinics, shoulder surgery focuses on restoring strength, stability and pain-free movement. Our orthopaedic surgeons bring extensive experience in advanced shoulder surgery in Mumbai, offering modern surgical solutions for sports injuries, degenerative conditions and complex shoulder problems.",
-      closing:
-        "Each procedure is planned with precision to help patients return to daily activities and performance with confidence.",
+      tagline: "Advanced Surgical Treatment for Shoulder Pain, Injuries & Joint Disorders",
+      intro: [
+        "The shoulder is one of the most mobile joints in the human body, allowing a wide range of movements required for daily activities, sports, and work. Injuries, tendon problems, instability, and degenerative changes can affect shoulder function and lead to pain, stiffness, weakness, and restricted movement.",
+        "@ Secure Clinics, Mumbai, our best orthopaedic specialists provide comprehensive shoulder surgical care using advanced techniques, accurate diagnosis, and personalised rehabilitation programs.",
+        "Each patient undergoes a detailed evaluation to identify the underlying cause of shoulder symptoms and determine whether surgical intervention is appropriate.",
+        "Our shoulder surgery services include treatment for:",
+      ],
+      introItems: [
+        "Rotator cuff injuries",
+        "Shoulder impingement",
+        "Shoulder instability and dislocation",
+        "Labral injuries",
+        "Frozen shoulder-related procedures",
+        "Sports-related shoulder injuries",
+        "Shoulder arthritis",
+        "Joint degeneration",
+        "Shoulder fractures",
+      ],
+      closing: "From diagnosis and surgical planning to post-operative rehabilitation, @ Secure Clinics focuses on restoring strength, mobility, and long-term shoulder function.",
       image: ShoulderSurgeryImg,
     },
 
@@ -518,6 +622,31 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "When is shoulder surgery recommended?", a: "Shoulder surgery may be recommended when pain, weakness, instability, or movement restriction continues despite non-surgical treatments such as physiotherapy, medication, activity modification, injections, and rehabilitation exercises. Surgery may be considered when there is structural damage affecting shoulder function." },
+      { q: "Does every shoulder pain require surgery?", a: "No. Many shoulder problems improve with conservative treatment including physiotherapy, strengthening exercises, posture correction, medication, and activity modification. A shoulder specialist determines whether surgery is required." },
+      { q: "What conditions can be treated with shoulder surgery?", a: "Shoulder surgery may be used to treat rotator cuff tears, shoulder instability, recurrent dislocation, labral tears, shoulder impingement, frozen shoulder conditions, arthritis, cartilage damage, and shoulder fractures. The recommended treatment depends on the underlying condition." },
+      { q: "What are the different types of shoulder surgery?", a: "Common shoulder procedures include shoulder arthroscopy, rotator cuff repair, labral repair, shoulder stabilisation surgery, shoulder replacement surgery, and fracture fixation procedures. Your surgeon selects the procedure based on your diagnosis and functional goals." },
+      { q: "What is shoulder arthroscopy?", a: "Shoulder arthroscopy is a minimally invasive procedure where a small camera is inserted into the shoulder joint to diagnose and treat certain conditions. It may be used for rotator cuff problems, labral injuries, impingement, and joint damage." },
+      { q: "What is rotator cuff surgery?", a: "Rotator cuff surgery repairs damaged tendons that help stabilise and move the shoulder. It may be recommended when patients have persistent shoulder pain, weakness, reduced arm movement, or a confirmed tendon tear." },
+      { q: "Can a rotator cuff tear heal without surgery?", a: "Some smaller or partial tears may improve with non-surgical treatment. Surgery may be considered when there is a large tendon tear, significant weakness, persistent symptoms, or failure of conservative treatment." },
+      { q: "What are the signs that I may need shoulder surgery?", a: "You should consider a shoulder evaluation if you have persistent shoulder pain, difficulty lifting your arm, shoulder weakness, repeated dislocation, clicking or catching sensation, pain affecting sleep, or reduced range of motion." },
+      { q: "Is shoulder surgery safe?", a: "Modern shoulder surgery is performed using advanced techniques and careful planning. Safety depends on the type of shoulder condition, surgical procedure, patient health, and the rehabilitation process." },
+      { q: "How long does recovery take after shoulder surgery?", a: "Recovery depends on the type of procedure, severity of injury, tissue healing, and rehabilitation progress. Physiotherapy plays an important role in restoring shoulder movement and strength." },
+      { q: "How soon can I move my shoulder after surgery?", a: "The timing of shoulder movement depends on the procedure performed. Some surgeries allow early movement, while tendon repairs may require a protected recovery period. Your rehabilitation plan is customised accordingly." },
+      { q: "Can sports injuries require shoulder surgery?", a: "Yes. Some sports-related shoulder injuries may require surgery, including rotator cuff tears, labral injuries, shoulder instability, and ligament injuries. Early diagnosis helps prevent worsening damage." },
+      { q: "What causes shoulder instability?", a: "Shoulder instability can occur due to previous dislocation, ligament injury, sports trauma, and structural abnormalities. Surgery may be required when instability repeatedly affects function." },
+      { q: "Is shoulder replacement surgery required for arthritis?", a: "Shoulder replacement may be considered when advanced arthritis causes severe pain, stiffness, reduced arm movement, or loss of daily function. The decision depends on joint damage and patient requirements." },
+      { q: "Can frozen shoulder require surgery?", a: "Many frozen shoulder cases improve with non-surgical treatment. Surgery may be considered when stiffness and pain persist despite appropriate conservative management." },
+      { q: "What tests are needed before shoulder surgery?", a: "Assessment may include clinical examination, X-rays, MRI scan, ultrasound, and movement evaluation. These help identify the exact shoulder problem." },
+      { q: "Can elderly patients undergo shoulder surgery?", a: "Yes. Age alone does not determine eligibility. Doctors consider overall health, bone quality, shoulder condition, and expected functional improvement." },
+      { q: "How can I prepare for shoulder surgery?", a: "Preparation may include medical assessment, pre-operative investigations, understanding rehabilitation expectations, and arranging post-operative support." },
+      { q: "Will I need physiotherapy after shoulder surgery?", a: "Yes. Rehabilitation is essential after most shoulder procedures. Physiotherapy helps improve range of motion, strength, stability, and functional movement." },
+      { q: "Can shoulder surgery permanently cure pain?", a: "The outcome depends on the cause of pain and the condition being treated. Surgery aims to correct the structural problem, while rehabilitation supports long-term recovery." },
+      { q: "Why choose @ Secure Clinics for shoulder surgery in Mumbai?", a: "Secure Clinics provides specialist orthopaedic evaluation, advanced shoulder procedures, minimally invasive surgical options where appropriate, personalised rehabilitation plans, and complete recovery support. Our goal is to restore shoulder movement and help patients return to their normal activities." },
+      { q: "What is the cost of shoulder surgery in Mumbai?", a: "The cost depends on the type of surgery, complexity of injury, surgical requirements, hospital requirements, and rehabilitation needs. A consultation helps determine the appropriate treatment plan. @ Secure Clinics our team will guide you every step of the way to ensure your comfort." },
+    ],
   },
 
   // ───────────────────────── PAGE 6 ─────────────────────────
@@ -532,12 +661,27 @@ export const treatments = [
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Foot and Ankle Surgery in Mumbai",
-      tagline: "Stable Steps. Precise Surgery. Confident Movement.",
-      intro:
-        "At @SecureClinics, foot and ankle surgery is focused on restoring alignment, stability and pain-free mobility. Our orthopaedic surgeons bring extensive experience in advanced foot and ankle surgery in Mumbai, treating injuries, deformities and degenerative conditions with precision-driven techniques.",
-      closing:
-        "Every procedure is selected to support long-term function and everyday movement.",
+      title: "Foot & Ankle Surgery in Mumbai",
+      tagline: "Advanced Surgical Care for Foot Pain, Ankle Injuries & Mobility Restoration",
+      intro: [
+        "The foot and ankle form the foundation of balance, stability, and movement. Conditions affecting these structures can significantly impact walking, posture, sports performance, and everyday activities.",
+        "Injuries, arthritis, tendon disorders, deformities, and structural problems can lead to persistent pain, swelling, instability, and difficulty walking.",
+        "@ Secure Clinics, Mumbai, our orthopaedic specialists provide comprehensive foot and ankle surgical care using advanced techniques, accurate diagnosis, and rehabilitation-focused treatment plans.",
+        "Each patient undergoes a detailed evaluation to understand the underlying cause of symptoms and identify the most appropriate treatment approach.",
+        "Our foot and ankle surgery services include treatment for:",
+      ],
+      introItems: [
+        "Ankle ligament injuries",
+        "Sports-related foot and ankle injuries",
+        "Foot deformities",
+        "Bunions and toe deformities",
+        "Ankle arthritis",
+        "Tendon injuries",
+        "Fractures and trauma",
+        "Chronic foot pain conditions",
+        "Flat foot and alignment problems",
+      ],
+      closing: "From diagnosis and surgical planning to rehabilitation and recovery, the most skilled and qualified team of doctors @ Secure Clinics focus on restoring comfortable movement and improving quality of life.",
       image: FootAnkleImg,
     },
 
@@ -619,6 +763,30 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "When is foot or ankle surgery recommended?", a: "Foot or ankle surgery may be recommended when pain, instability, deformity, or reduced mobility continues despite non-surgical treatments such as physiotherapy, medication, bracing or support, activity modification, and rehabilitation exercises. Surgery is considered when structural correction is required." },
+      { q: "Does every foot or ankle pain require surgery?", a: "No. Many foot and ankle conditions improve without surgery. Treatment may include physiotherapy, footwear modification, activity changes, medication, and supportive devices. A comprehensive specialist evaluation helps determine the best treatment pathway." },
+      { q: "What conditions can be treated with foot and ankle surgery?", a: "Foot and ankle surgery may help treat ankle ligament tears, ankle instability, Achilles tendon injuries, bunions, toe deformities, flat feet, arthritis, fractures, cartilage injuries, and sports injuries. Treatment depends on the underlying condition." },
+      { q: "What are the different types of foot and ankle surgery?", a: "Common procedures include ankle arthroscopy, ligament repair, tendon repair, fracture fixation, bunion correction surgery, deformity correction, joint reconstruction, fusion procedures, and ankle replacement surgery. The procedure depends on the diagnosis and functional requirements." },
+      { q: "What is ankle arthroscopy?", a: "Ankle arthroscopy is a minimally invasive procedure where a small camera is inserted into the ankle joint to diagnose and treat certain problems. It may be used for cartilage injuries, joint inflammation, scar tissue, and certain ligament problems." },
+      { q: "Can ankle ligament injuries heal without surgery?", a: "Some ligament injuries improve with rest, physiotherapy, strengthening exercises, and bracing. Surgery may be recommended for severe tears, repeated ankle instability, or persistent symptoms." },
+      { q: "What are the signs that I may need foot or ankle surgery?", a: "You should consider evaluation if you experience persistent foot or ankle pain, repeated ankle twisting, difficulty walking, swelling that does not improve, visible deformity, reduced movement, or pain affecting daily activities." },
+      { q: "What is bunion surgery?", a: "Bunion surgery corrects a deformity where the big toe shifts toward the other toes, creating a painful prominence near the joint. Surgery may help when bunions cause persistent pain, difficulty wearing footwear, walking problems, or progressive deformity." },
+      { q: "Can flat feet require surgery?", a: "Many flat foot conditions can be managed without surgery. Surgery may be considered when flat feet cause persistent pain, progressive deformity, tendon dysfunction, or difficulty walking." },
+      { q: "What is ankle replacement surgery?", a: "Ankle replacement surgery involves replacing damaged ankle joint surfaces with an artificial implant. It may be considered for selected patients with advanced ankle arthritis who have significant pain and reduced movement." },
+      { q: "Is foot and ankle surgery safe?", a: "Modern foot and ankle procedures are performed using advanced surgical techniques and careful planning. Safety depends on the type of condition, procedure performed, patient health, and the rehabilitation process." },
+      { q: "How long does recovery take after foot or ankle surgery?", a: "Recovery depends on the type of surgery, severity of condition, healing process, and rehabilitation progress. Some procedures require protected weight-bearing, while others allow earlier movement." },
+      { q: "Will I need physiotherapy after foot and ankle surgery?", a: "Yes. Rehabilitation is an important part of recovery. Physiotherapy helps improve strength, balance, walking pattern, joint mobility, and functional movement." },
+      { q: "Can sports injuries require foot and ankle surgery?", a: "Yes. Certain sports injuries may require surgery, including ligament tears, tendon injuries, fractures, cartilage damage, and chronic instability. Early diagnosis helps prevent long-term problems." },
+      { q: "What tests are needed before foot or ankle surgery?", a: "Evaluation may include physical examination, X-rays, MRI scan, CT scan, gait assessment, and other investigations if required." },
+      { q: "Can older adults undergo foot and ankle surgery?", a: "Yes. Suitability depends on overall health, bone quality, condition severity, and expected improvement. Age alone does not determine eligibility." },
+      { q: "How do I prepare for foot or ankle surgery?", a: "Preparation may include medical assessment, pre-operative investigations, understanding recovery expectations, and planning mobility support after surgery." },
+      { q: "How soon can I walk after foot or ankle surgery?", a: "Walking depends on the procedure performed. Some patients begin gradual weight-bearing early, while others require a period of protection for healing. Your surgeon will provide personalised guidance." },
+      { q: "Can chronic ankle pain be treated surgically?", a: "Yes, if chronic pain is caused by structural problems such as instability, arthritis, tendon problems, or previous injury complications. A detailed evaluation helps identify the cause." },
+      { q: "Why choose @ Secure Clinics for foot and ankle surgery in Mumbai?", a: "Secure Clinics provides specialist orthopaedic assessment, advanced surgical techniques, personalised treatment planning, rehabilitation-focused recovery, and a complete patient care pathway. The goal is to restore comfortable movement and long-term function." },
+      { q: "What is the cost of foot and ankle surgery in Mumbai?", a: "The cost depends on the type of procedure, complexity of condition, surgical requirements, hospital requirements, and rehabilitation needs. A consultation helps determine the right treatment plan. @ Secure Clinics team will guide you every step of the way with clarity and keeping your comfort in mind." },
+    ],
   },
 
   // ───────────────────────── PAGE 7 ─────────────────────────
@@ -633,12 +801,28 @@ export const treatments = [
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Hand and Upper Limb Surgery in Mumbai",
-      tagline: "Precision Hand Care. Restored Function. Confident Use.",
-      intro:
-        "At @SecureClinics, hand and upper limb surgery focuses on restoring fine movement, strength and function. Our orthopaedic and hand surgeons bring extensive experience in advanced hand and upper limb surgery in Mumbai, treating nerve compression, tendon disorders, trauma and complex hand conditions.",
-      closing:
-        "Each procedure is planned to restore everyday function with precision.",
+      title: "Hand & Upper Limb Surgery in Mumbai",
+      tagline: "Advanced Surgical Care for Hand, Wrist, Elbow & Upper Limb Conditions",
+      intro: [
+        "The hand and upper limb are essential for daily activities, communication, work, sports, and independence. Conditions affecting the fingers, hand, wrist, elbow, and arm can significantly impact grip strength, movement, coordination, and quality of life.",
+        "Injuries, nerve compression, tendon disorders, fractures, arthritis, and degenerative conditions can lead to pain, stiffness, weakness, numbness, and restricted function.",
+        "@ Secure Clinics, Mumbai, our orthopaedic specialists provide comprehensive hand and upper limb surgical care using advanced techniques, accurate diagnosis, and personalised rehabilitation plans.",
+        "Every patient undergoes a detailed evaluation to identify the underlying cause of symptoms and determine the most appropriate treatment pathway.",
+        "Our hand and upper limb surgery services include treatment for:",
+      ],
+      introItems: [
+        "Hand and wrist injuries",
+        "Tendon injuries and repairs",
+        "Nerve compression disorders",
+        "Carpal tunnel syndrome",
+        "Fractures and trauma",
+        "Ligament injuries",
+        "Arthritis-related conditions",
+        "Elbow disorders",
+        "Sports-related upper limb injuries",
+        "Movement and function problems",
+      ],
+      closing: "From diagnosis and surgical planning to rehabilitation and recovery, @ Secure Clinics focuses on restoring strength, mobility, and confidence in daily activities.",
       image: HandBoneImg,
     },
 
@@ -716,6 +900,32 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "When is hand or upper limb surgery recommended?", a: "Hand or upper limb surgery may be recommended when pain, weakness, nerve symptoms, instability, or movement restriction continues despite non-surgical treatments. Surgery may be considered for severe injuries, nerve compression, tendon damage, fractures, joint degeneration, or structural problems affecting function." },
+      { q: "Does every hand or wrist pain require surgery?", a: "No. Many hand and wrist conditions improve with conservative treatment including physiotherapy, splinting, medication, activity modification, and exercise therapy. A specialist assessment helps determine the right approach." },
+      { q: "What conditions can be treated with hand and upper limb surgery?", a: "Surgical treatment may be required for carpal tunnel syndrome, tendon injuries, ligament injuries, hand fractures, wrist fractures, arthritis, nerve injuries, trigger finger, joint instability, and elbow disorders." },
+      { q: "What are common types of hand and upper limb surgery?", a: "Procedures may include tendon repair surgery, nerve decompression surgery, fracture fixation, ligament repair, joint reconstruction, wrist surgery, hand injury repair, and elbow procedures. The recommended procedure depends on the condition and severity." },
+      { q: "What is carpal tunnel surgery?", a: "Carpal tunnel surgery is a procedure performed to relieve pressure on the median nerve at the wrist. It may be recommended for patients experiencing hand numbness, tingling fingers, weak grip, night-time symptoms, or difficulty using the hand." },
+      { q: "Can carpal tunnel syndrome improve without surgery?", a: "Some cases improve with wrist support, activity modification, physiotherapy, and medication. Surgery may be considered when symptoms persist or nerve compression becomes significant." },
+      { q: "What is tendon repair surgery?", a: "Tendon repair surgery restores damaged tendons that help move the fingers, wrist, or arm. It may be needed after cuts or injuries, sports trauma, tendon tears, or certain degenerative conditions." },
+      { q: "What are the signs that I may need hand surgery?", a: "You should consider evaluation if you have persistent hand or wrist pain, numbness or tingling, loss of grip strength, difficulty moving fingers, swelling, joint deformity, or repeated symptoms affecting daily activities." },
+      { q: "Can nerve compression in the hand be treated surgically?", a: "Yes. Conditions involving nerve compression, such as carpal tunnel syndrome, may be treated with surgical decompression when appropriate. The goal is to reduce pressure on the nerve and improve symptoms." },
+      { q: "What is wrist surgery performed for?", a: "Wrist surgery may be needed for fractures, ligament injuries, arthritis, cartilage problems, chronic wrist pain, and instability. Treatment depends on the cause of the wrist problem." },
+      { q: "Is hand and upper limb surgery safe?", a: "Modern hand and upper limb procedures are performed using advanced surgical techniques and careful planning. Outcomes depend on the type of condition, injury severity, surgical approach, and rehabilitation." },
+      { q: "How long does recovery take after hand surgery?", a: "Recovery depends on the type of surgery, tissue healing, severity of injury, and rehabilitation progress. Hand therapy and exercises often play an important role." },
+      { q: "Will I need physiotherapy after hand surgery?", a: "Yes. Rehabilitation is often essential after hand and upper limb procedures. Therapy may help improve movement, strength, grip function, coordination, and flexibility." },
+      { q: "Can sports injuries require hand or upper limb surgery?", a: "Yes. Sports injuries may require surgery when there is tendon damage, ligament tear, fracture, joint instability, or nerve injury. Early treatment can help restore function." },
+      { q: "What causes loss of grip strength?", a: "Loss of grip strength may occur due to nerve compression, tendon injury, arthritis, muscle weakness, or trauma. A specialist evaluation helps identify the cause." },
+      { q: "Can arthritis of the hand require surgery?", a: "Some patients with advanced hand or wrist arthritis may require surgery when pain and stiffness significantly affect daily activities. Treatment depends on joint damage and functional requirements." },
+      { q: "What tests are needed before hand surgery?", a: "Assessment may include physical examination, X-rays, MRI scan, nerve conduction studies, and functional assessment. These help identify the exact problem." },
+      { q: "Can older adults undergo hand surgery?", a: "Yes. Suitability depends on overall health, condition severity, functional needs, and expected improvement. Age alone does not determine eligibility." },
+      { q: "How do I prepare for upper limb surgery?", a: "Preparation may include medical evaluation, pre-operative investigations, understanding rehabilitation requirements, and planning recovery support." },
+      { q: "How soon can I use my hand after surgery?", a: "Recovery depends on the procedure. Some patients begin gentle movement early, while tendon or fracture repairs may require protection during healing." },
+      { q: "Can hand surgery restore full movement?", a: "Results depend on the type of injury, severity, timing of treatment, and rehabilitation. The goal is to maximise movement, strength, and function." },
+      { q: "Why choose @ Secure Clinics for hand and upper limb surgery in Mumbai?", a: "@ Secure Clinics provides specialist orthopaedic evaluation, advanced surgical techniques, personalised treatment planning, and rehabilitation-focused care — all under one roof with a complete team of specialists in every field." },
+      { q: "What is the cost of hand or upper limb surgery in Mumbai?", a: "The cost depends on the type of procedure, complexity of condition, surgical requirements, hospital requirements, and rehabilitation needs. The team @ Secure Clinics will take into account all your needs and guide you forward keeping your comfort and care in mind." },
+    ],
   },
 
   // ───────────────────────── PAGE 8 ─────────────────────────
@@ -730,12 +940,25 @@ export const treatments = [
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Hip Surgery in Mumbai",
-      tagline: "Restored Mobility. Precise Surgery. Confident Movement.",
-      intro:
-        "At @SecureClinics, hip surgery focuses on relieving pain, restoring movement and improving long-term joint function. Our orthopaedic surgeons bring extensive experience in advanced hip surgery in Mumbai, treating degenerative, traumatic and sports-related hip conditions with precision-driven techniques.",
-      closing:
-        "Every procedure is selected carefully to support stability, comfort and mobility.",
+      title: "Hip Surgery @ Secure Clinics Mumbai",
+      tagline: "Advanced Surgical Care for Hip Pain, Joint Damage & Mobility Restoration",
+      intro: [
+        "The hip joint is one of the strongest weight-bearing joints in the body, responsible for balance, walking, and smooth lower-body movement. Damage to the hip joint caused by arthritis, injury, degeneration, or structural abnormalities can lead to persistent pain, stiffness, reduced mobility, and difficulty performing daily activities.",
+        "@ Secure Clinics, Mumbai, the best team of orthopaedic specialists and physiotherapists provide comprehensive hip surgical care using advanced techniques, evidence-based treatment planning, and personalised rehabilitation programs.",
+        "Every patient undergoes a detailed assessment to identify the underlying cause of hip symptoms and determine whether surgical intervention is the most appropriate option.",
+        "Our hip surgery services include treatment for:",
+      ],
+      introItems: [
+        "Hip arthritis and joint degeneration",
+        "Total hip replacement",
+        "Hip fractures",
+        "Hip injuries and trauma",
+        "Hip joint disorders",
+        "Hip preservation procedures",
+        "Avascular necrosis of the hip",
+        "Mobility-related hip conditions",
+      ],
+      closing: "From diagnosis and surgical planning to rehabilitation and recovery, @ Secure Clinics focuses on restoring movement, reducing pain, and helping patients return to an active lifestyle.",
       image: HipSurgeryImg,
     },
 
@@ -813,6 +1036,32 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "When is hip surgery recommended?", a: "Hip surgery may be recommended when pain, stiffness, or reduced mobility continues despite non-surgical treatments such as physiotherapy, medication, activity modification, weight management, and supportive treatments. Surgery may be considered when joint damage significantly affects daily activities." },
+      { q: "Does every hip pain require surgery?", a: "No. Many hip conditions improve with non-surgical treatment including physiotherapy, exercise programs, medication, lifestyle modification, and activity changes. A specialist evaluation helps determine the right approach." },
+      { q: "What conditions can be treated with hip surgery?", a: "Hip surgery may help treat osteoarthritis of the hip, hip fractures, avascular necrosis, joint degeneration, hip instability, certain sports-related injuries, and structural hip abnormalities. The recommended procedure depends on the condition and severity." },
+      { q: "What are the different types of hip surgery?", a: "Common hip procedures include total hip replacement surgery, partial hip replacement, hip arthroscopy, hip fracture fixation, hip reconstruction procedures, hip preservation surgery, and minimally invasive hip procedures. Your surgeon selects the appropriate procedure based on diagnosis and functional goals." },
+      { q: "What is hip replacement surgery?", a: "Hip replacement surgery is a procedure where damaged portions of the hip joint are replaced with artificial components designed to reduce pain and improve movement. It is commonly performed for advanced hip arthritis or severe joint damage." },
+      { q: "Who is a candidate for hip replacement surgery?", a: "Hip replacement may be considered when patients experience severe hip pain, difficulty walking, reduced range of motion, pain affecting sleep or daily activities, or poor response to conservative treatment. Overall health and joint condition are assessed before surgery." },
+      { q: "Is hip replacement surgery safe?", a: "Modern hip replacement surgery is performed using advanced techniques and careful surgical planning. Safety depends on patient health, joint condition, surgical technique, and the recovery process." },
+      { q: "How long does recovery take after hip surgery?", a: "Recovery depends on the type of hip procedure, patient age and health, bone and muscle condition, and rehabilitation progress. A structured rehabilitation program helps restore strength and mobility." },
+      { q: "How soon can I walk after hip replacement surgery?", a: "Many patients begin assisted walking soon after surgery under medical guidance. The timeline depends on the surgical approach, patient condition, and recovery progress." },
+      { q: "How long does a hip replacement last?", a: "Modern hip replacements are designed to provide long-term improvement in pain and function. Longevity depends on activity level, implant factors, weight management, rehabilitation, and overall joint health." },
+      { q: "Can hip arthritis be treated without surgery?", a: "Early or moderate hip arthritis may improve with physiotherapy, strengthening exercises, lifestyle changes, and pain management strategies. Advanced arthritis with severe joint damage may require surgery." },
+      { q: "What are the signs that I may need hip surgery?", a: "You should consider a hip evaluation if you experience persistent hip pain, groin pain, difficulty walking, stiffness, reduced hip movement, pain affecting sleep, or difficulty performing daily activities." },
+      { q: "Can younger patients undergo hip surgery?", a: "Yes. Hip surgery is not limited to older adults. Younger patients may require surgery due to sports injuries, trauma, structural abnormalities, avascular necrosis, or joint damage." },
+      { q: "What is minimally invasive hip surgery?", a: "Minimally invasive hip surgery uses smaller surgical approaches where appropriate to access the hip joint while aiming to reduce tissue disruption. The suitability depends on the patient's condition." },
+      { q: "What causes hip joint damage?", a: "Hip damage can occur due to age-related degeneration, arthritis, previous injury, fractures, blood supply problems affecting the joint, and structural abnormalities." },
+      { q: "Can hip fractures require surgery?", a: "Yes. Many hip fractures require surgical treatment to restore stability, reduce complications, and help patients regain mobility. The procedure depends on the type and location of the fracture." },
+      { q: "What tests are needed before hip surgery?", a: "Evaluation may include clinical examination, X-rays, MRI scan if required, movement assessment, and blood tests and pre-operative evaluation." },
+      { q: "Will I need physiotherapy after hip surgery?", a: "Yes. Rehabilitation is an important part of recovery. Physiotherapy helps improve walking ability, strength, balance, joint movement, and confidence with activities." },
+      { q: "Can hip surgery permanently relieve pain?", a: "The outcome depends on the condition being treated and individual recovery. Hip surgery aims to address the structural cause of pain and improve function." },
+      { q: "How do I prepare for hip surgery?", a: "Preparation may include medical evaluation, pre-operative investigations, understanding recovery expectations, preparing home support, and following pre-surgery instructions." },
+      { q: "Can elderly patients undergo hip surgery?", a: "Yes. Many older adults benefit from hip surgery, especially when pain or fractures affect independence. Suitability depends on overall health and expected benefit." },
+      { q: "Why choose @ Secure Clinics for hip surgery in Mumbai?", a: "Secure Clinics provides specialist orthopaedic evaluation, advanced hip procedures, personalised surgical planning, rehabilitation-focused recovery, and long-term mobility support. Our goal is to help patients regain movement, independence, and quality of life." },
+      { q: "What is the cost of hip surgery in Mumbai?", a: "The cost depends on the type of surgery, complexity of condition, implant or procedure requirements, hospital requirements, and rehabilitation needs. The team @ Secure Clinics is dedicated to guide you depending on your comfort and needs." },
+    ],
   },
 
   // ══════════════════════ NON-SURGICAL ══════════════════════
@@ -829,27 +1078,33 @@ export const treatments = [
 
     hero: {
       eyebrow: "LABS@SECURECLINICS",
-      title: "Injections and IV Therapy in Mumbai",
+      title: "Injections and IV Therapy for Pain Relief, Recovery and Better Health @ Secure Clinics in Mumbai",
       tagline: "Targeted Relief. Precision Delivery. No Guesswork.",
-      intro:
-        "At Secure Clinics, injections and IV therapies are used with intent — not as routine add-ons. Each treatment is carefully selected based on diagnosis, pain source and response to previous care.",
-      closing:
-        "This is not buffet medicine. We à-la-carte your treatment — only what your body needs, nothing it doesn’t.",
+      intro: [
+        "@ Secure Clinics, our advanced Injections and IV therapy treatments provide personalised non-surgical solutions for pain management, tissue healing, recovery and overall musculoskeletal wellness.",
+        "Our experienced specialists use evidence-based injection therapies and medically supervised IV treatments to help patients manage joint pain, sports injuries, inflammation, nutritional deficiencies and recovery needs.",
+        "With a patient-focused approach, we combine accurate diagnosis, clinical expertise and customised treatment plans to help you return to movement with confidence.",
+      ],
+      closing: "Serving patients across Mumbai with advanced orthopaedic and rehabilitation care.",
       image: IVInjectionsImg,
     },
 
     why: {
-      eyebrow: "Why Injections and IV Therapy?",
+      eyebrow: "Why Injections and IV Therapy @ Secure Clinics?",
       heading: "When pain needs precision, not pills.",
-      paragraphs: ["Injections and IV therapies are used to:"],
+      paragraphs: [
+        "Non-surgical treatments can play an important role in managing pain and improving function before considering surgical options.",
+        "@ Secure Clinics, every treatment plan is designed after understanding:",
+      ],
       items: [
-        "Reduce inflammation at the exact pain source",
-        "Control nerve-related pain",
-        "Improve mobility without surgery",
-        "Support recovery and healing",
+        "Your diagnosis",
+        "Severity of symptoms",
+        "Lifestyle requirements",
+        "Activity goals",
+        "Recovery expectations",
       ],
       closing:
-        "At Secure Clinics, these therapies are performed only after proper evaluation, imaging correlation and clinical indication.",
+        "Our goal is to reduce pain, restore mobility and support long-term musculoskeletal health.",
     },
 
     experience: {
@@ -923,6 +1178,18 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "What are injections used for in orthopaedic treatment?", a: "Injection therapies are used to help manage pain, inflammation and certain joint or soft tissue conditions while improving mobility and function." },
+      { q: "Are injections better than surgery?", a: "Injections may help many patients manage symptoms without surgery, depending on the condition and severity. Your doctor will recommend the most suitable treatment approach." },
+      { q: "Are injection treatments painful?", a: "Most injections involve minimal discomfort. Doctors use techniques to ensure patient comfort during treatment." },
+      { q: "How long does injection therapy take to work?", a: "The response varies depending on the type of injection, the condition being treated and individual healing factors." },
+      { q: "Who is suitable for IV therapy?", a: "Suitability depends on your health assessment, nutritional needs and treatment goals." },
+      { q: "Can injections treat knee pain?", a: "Yes, certain injection therapies may help selected patients with knee pain, arthritis and joint inflammation." },
+      { q: "Can injections delay joint replacement surgery?", a: "For some patients, non-surgical treatments may help control symptoms and improve function before surgery is considered." },
+      { q: "What conditions can be treated with Injections and IV Therapy?", a: "Secure Clinics provides non-surgical treatment options for joint conditions including osteoarthritis, knee pain, shoulder arthritis and joint inflammation; sports and soft tissue injuries such as tendon injuries, ligament injuries, muscle strain and overuse injuries; spine-related problems including neck pain, back pain and muscle-related spinal discomfort; and recovery support for post-injury rehabilitation, muscle recovery and general wellness support." },
+      { q: "What is IV Therapy for recovery and wellness?", a: "IV therapy delivers essential nutrients directly into the bloodstream under medical supervision. It may support recovery after physical stress, hydration, nutritional support, energy levels and wellness goals. Treatment suitability is assessed individually by our medical team." },
+    ],
   },
 
   // ─── NS PAGE 2 ─── Path Labs and Imaging
@@ -937,28 +1204,32 @@ export const treatments = [
 
     hero: {
       eyebrow: "LABS@SECURECLINICS",
-      title: "Path Labs and Imaging in Mumbai",
+      title: "Path Labs and Imaging Services for Accurate Diagnosis @ Secure Clinics in Mumbai",
       tagline: "Clear Answers. Reliable Results. One Place.",
-      intro:
-        "At Secure Clinics, diagnostics are done with purpose. Every test is ordered to answer a specific clinical question — not as a routine checklist.",
-      closing:
-        "From blood work to advanced nerve studies, investigations are integrated directly into your care plan for faster decisions and better outcomes.",
+      intro: [
+        "At Secure Clinics, our advanced in-house pathology and imaging services support accurate diagnosis and personalised treatment planning for bone, joint, spine and musculoskeletal conditions.",
+        "A correct diagnosis is the foundation of effective treatment. Our diagnostic approach combines advanced imaging technology, clinical expertise and detailed evaluation to identify the underlying cause of pain, injury or movement limitations. At Secure Clinics, diagnostics are done with purpose. Every test is ordered to answer a specific clinical question, not as a routine checklist.",
+        "From X-rays, DEXA scans, blood investigations to advanced nerve studies, our diagnostic services help specialists create targeted non-surgical and surgical care plans.",
+      ],
       image: DiagnosticsImg,
     },
 
     why: {
-      eyebrow: "Why In-House Diagnostics Matter",
+      eyebrow: "Why Diagnostic Care @ Secure Clinics?",
       heading: "Because timely answers change treatment.",
-      paragraphs: ["Integrated diagnostics help to:"],
+      paragraphs: [
+        "Accurate assessment helps prevent delayed treatment, unnecessary procedures and ineffective therapies.",
+        "At Secure Clinics, every diagnostic evaluation is planned after understanding:",
+      ],
       items: [
-        "Reduce delays in diagnosis",
-        "Avoid unnecessary testing",
-        "Guide precise treatment planning",
-        "Monitor recovery and progress",
-        "Improve coordination between specialists",
+        "Your symptoms",
+        "Medical history",
+        "Injury or condition",
+        "Lifestyle requirements",
+        "Treatment goals",
       ],
       closing:
-        "All results are reviewed in clinical context — not in isolation.",
+        "Our goal is to provide precise diagnosis that supports faster recovery and better mobility. This approach helps ensure that every patient receives the right treatment pathway.",
     },
 
     experience: {
@@ -990,12 +1261,28 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Diagnostics at Secure Clinics",
+      heading: "Benefits of Advanced Diagnostic Imaging",
       items: [
-        "Faster diagnosis",
-        "Reduced dependency on multiple labs",
-        "Clinically relevant testing",
-        "Integrated treatment planning",
+        "Accurate identification of the problem",
+        "Helps avoid unnecessary treatments",
+        "Avoids coordination with multiple labs",
+        "Tracks healing and recovery",
+        "Integrated plan with multispecialists improving treatment outcomes",
+      ],
+    },
+
+    rightForYou: {
+      eyebrow: "Eligibility",
+      heading: "When Are Diagnostics Recommended?",
+      intro: "Pathology and imaging may be recommended for patients experiencing:",
+      items: [
+        "Persistent joint pain",
+        "Back or neck pain",
+        "Sports injuries",
+        "Reduced mobility",
+        "Swelling or stiffness",
+        "Suspected fractures",
+        "Chronic musculoskeletal problems",
       ],
     },
 
@@ -1005,6 +1292,22 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "Why are imaging tests important in orthopaedic and spine treatment?", a: "Imaging tests help doctors understand the exact cause of pain, injury or joint problems and choose the most appropriate treatment." },
+      { q: "What imaging tests are commonly used for bone and joint problems?", a: "Common investigations include X-rays, MRI scans, CT scans and ultrasound imaging depending on the condition." },
+      { q: "When is an MRI scan required?", a: "MRI is usually recommended for evaluating soft tissues such as ligaments, tendons, cartilage, nerves and spinal structures." },
+      { q: "Can diagnostic tests prevent surgery?", a: "Accurate diagnosis can help identify suitable non-surgical treatments and may prevent unnecessary procedures in selected cases." },
+      { q: "Are pathology tests needed for joint pain?", a: "Sometimes. Blood investigations may help identify inflammation, nutritional deficiencies, arthritis-related conditions or other causes." },
+      { q: "How do doctors decide which scan is needed?", a: "The choice of imaging depends on symptoms, clinical examination and suspected condition." },
+      { q: "Are imaging tests safe?", a: "At Secure Clinics, our X-Ray Machine has longer plates hence reducing the radiation exposure and the requirement of the number of imaging shots are cut down to half." },
+      { q: "Can imaging help monitor recovery?", a: "Yes. Follow-up imaging may help doctors assess healing and treatment progress." },
+      { q: "What is a DEXA scan?", a: "A DEXA scan (Dual-Energy X-ray Absorptiometry scan) is an advanced imaging test used to measure bone mineral density and assess bone strength and body fat analysis. It is considered the gold-standard test for diagnosing osteoporosis and osteopenia (low bone density)." },
+      { q: "Why is a DEXA scan done?", a: "Doctors recommend a DEXA scan to diagnose osteoporosis, detect osteopenia (early bone loss), assess fracture risk, monitor bone health during treatment, evaluate age-related bone weakening, and check bone loss risk due to certain medications or conditions." },
+      { q: "What does a DEXA scan measure?", a: "A DEXA scan measures the amount of calcium and other minerals present in your bones. It commonly evaluates hip bone density, spine (lumbar vertebrae) and forearm/wrist when required. Results are reported as T-score (comparing bone density with a healthy young adult, used to diagnose osteoporosis) and Z-score (comparing bone density with people of similar age). Body fat analysis measures body fat percentage, lean muscle mass and bone mineral density by analysing the body segment by segment, providing far more detail than a single number." },
+      { q: "Who may need a DEXA scan?", a: "It may be recommended for people at risk of osteoporosis, post-menopausal women, older adults, patients with previous fractures, individuals with risk factors for bone loss, and patients undergoing osteoporosis treatment monitoring." },
+      { q: "Do you do home visits?", a: "Yes. For patients who are in pain or discomfort and cannot travel to our clinic, we offer the facility of home visits. Call or WhatsApp us for more details." },
+    ],
   },
 
   // ─── NS PAGE 3 ─── Aqua Therapy
@@ -1019,28 +1322,34 @@ export const treatments = [
 
     hero: {
       eyebrow: "AQUA@SECURECLINICS",
-      title: "Aqua Therapy in Mumbai",
+      title: "Aquatherapy for Pain Relief, Rehabilitation and Improved Mobility @ Secure Clinics in Mumbai",
       tagline: "Movement Supported. Recovery Reimagined.",
-      intro:
-        "Aqua therapy at Secure Clinics uses water as a clinical tool — not just a setting. Buoyancy, resistance and controlled movement allow patients to regain confidence and mobility when land-based therapy feels limiting.",
+      intro: [
+        "@ Secure Clinics, our aquatherapy and aquatic rehabilitation programs provide a gentle yet effective approach to managing pain, improving mobility and supporting recovery from orthopaedic conditions and post surgery.",
+        "Aquatherapy uses the natural properties of water to create a low-impact environment where patients can perform controlled movements with reduced stress on joints and muscles. Water supports your weight and takes the pressure off the inflamed joints.",
+        "Our personalised aqua therapy programs are designed to improve strength, flexibility, balance and confidence while helping patients return to daily activities with better movement. Buoyancy, resistance and controlled movement allow patients to regain confidence and mobility when land-based therapy feels limiting.",
+      ],
       closing:
         "This is structured aquatic rehabilitation, guided by trained therapists.",
       image: AquaTherapyImg,
     },
 
     why: {
-      eyebrow: "Why Aqua Therapy?",
+      eyebrow: "Why Aquatherapy @ Secure Clinics?",
       heading: "When reduced load enables better movement.",
-      paragraphs: ["Aqua therapy is beneficial for:"],
+      paragraphs: [
+        "Aquatherapy plays an important role in rehabilitation by allowing patients to exercise in a supportive environment while reducing pressure on painful joints.",
+        "@ Secure Clinics, every aquatherapy plan is designed after understanding:",
+      ],
       items: [
-        "Post-surgical recovery",
-        "Chronic pain and stiffness",
-        "Arthritis and joint degeneration",
-        "Balance and coordination challenges",
-        "Limited tolerance to land-based exercise",
+        "Your diagnosis",
+        "Pain levels and mobility limitations",
+        "Strength and flexibility",
+        "Recovery goals",
+        "Lifestyle requirements",
       ],
       closing:
-        "Water allows earlier, safer movement with less pain.",
+        "Our goal is to help patients move better with safer, progressive rehabilitation. Our aquatic rehabilitation programs are guided by clinical assessment and personalised treatment planning.",
     },
 
     experience: {
@@ -1071,28 +1380,31 @@ export const treatments = [
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Aqua Therapy at Secure Clinics",
+      heading: "Benefits of Aquatherapy at Secure Clinics",
       items: [
-        "Reduced joint stress",
-        "Improved movement confidence",
-        "Pain-managed mobility training",
-        "Early post-operative rehabilitation",
-        "Smooth transition to land therapy",
+        "Low-impact exercise option",
+        "Reduces stress on joints",
+        "Improves flexibility and mobility",
+        "Helps strengthen muscles safely",
+        "Supports pain management",
+        "Improves balance and coordination",
+        "Enhances confidence during movement",
       ],
     },
 
     rightForYou: {
       eyebrow: "Eligibility",
-      heading: "Is Aqua Therapy Right for You?",
-      intro: "Aqua therapy may be suitable if you have:",
+      heading: "Is Aquatherapy Right for You?",
+      intro: "Aquatherapy may be suitable for patients with:",
       items: [
-        "Post-surgical stiffness",
         "Chronic joint pain",
-        "Balance or coordination issues",
-        "Fear of movement due to pain",
-        "Difficulty tolerating land-based therapy",
+        "Arthritis",
+        "Reduced mobility",
+        "Weak muscles",
+        "Injury recovery needs",
+        "Balance difficulties",
       ],
-      closing: "Assessment ensures the right aquatic approach.",
+      closing: "Suitability is decided after clinical evaluation.",
     },
 
     cta: {
@@ -1101,6 +1413,28 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "What is aquatherapy?", a: "Aquatherapy is a form of rehabilitation where exercises are performed in water to improve strength, movement and mobility while reducing stress on the body." },
+      { q: "Is aquatherapy the same as swimming?", a: "No. Aquatherapy involves specific therapeutic exercises planned according to a patient's condition and recovery goals." },
+      { q: "Is aquatherapy good for knee arthritis?", a: "Yes, aquatherapy can help improve knee movement, strengthen supporting muscles and reduce stress on painful joints." },
+      { q: "Can aquatherapy help with back pain?", a: "Aquatherapy may help selected patients with back pain by improving mobility, core strength and movement control." },
+      { q: "Is aquatherapy safe after surgery?", a: "Aquatic rehabilitation may be recommended after certain surgeries once healing allows, under professional guidance." },
+      { q: "Who should avoid aquatherapy?", a: "Patients with certain medical conditions may require evaluation before starting aquatic therapy." },
+      { q: "How often should I do aquatherapy?", a: "The frequency depends on your condition, recovery stage and rehabilitation goals." },
+      { q: "Can aquatherapy replace physiotherapy?", a: "Aquatherapy is a form of rehabilitation and is often combined with physiotherapy for comprehensive recovery." },
+      { q: "How does water-based rehabilitation therapy help?", a: "Aquatherapy uses controlled exercises performed in water to support recovery. The buoyancy of water helps reduce weight-bearing stress, improve joint movement, support balance and coordination, allow safer exercise progression and improve muscle activation." },
+      { q: "What conditions can be treated with Aquatherapy?", a: "@ Secure Clinics provides aquatic rehabilitation support for joint conditions including osteoarthritis, knee pain, hip pain, shoulder stiffness and joint inflammation; spine-related problems such as lower back pain, neck pain, spine stiffness, postural problems and movement-related discomfort; sports and soft tissue injuries including muscle injuries, ligament injuries, tendon problems and overuse injuries; and recovery and rehabilitation needs including post-surgical rehabilitation, reduced mobility, muscle weakness, balance issues and age-related movement limitations." },
+      { q: "Do you have a pool @ Secure Clinics in Mumbai?", a: "Yes, a 300 sq ft Aquatherapy pool is present at the clinic along with a locker system, fully equipped shower and changing rooms, infrared sauna, ice bath therapy and an aqua treadmill. Our facility is also wheelchair-friendly with a chair lift for paraplegic patients who cannot enter the pool otherwise. We also have a scissor lift for patients who cannot climb down the ladder to enter the pool. Our team combines clinical expertise, physiotherapy and personalised exercise programs to support safer recovery and improved mobility." },
+      { q: "Can a wheelchair user use the pool?", a: "Yes. @ Secure Clinics is equipped with a chair lift that allows wheelchair users to enter and exit the therapy pool safely, comfortably, and with full dignity. Aqua therapy is highly beneficial for wheelchair users and those with limited mobility." },
+      { q: "What is an aqua treadmill?", a: "An aqua treadmill is a treadmill submerged in a therapeutic pool. Walking or running in water significantly reduces the load on your joints — making it ideal for post-surgical recovery, arthritis, obesity-related joint pain, and sports rehabilitation. You get all the benefits of movement with a fraction of the impact." },
+      { q: "What is an ice bath used for?", a: "Ice baths — also known as cold water immersion therapy — reduce inflammation, accelerate muscle recovery, and improve circulation. At @ Secure Clinics, ice baths are used as part of structured recovery protocols for post-surgical patients, athletes, and those managing chronic pain or swelling." },
+      { q: "What is the infrared sauna used for?", a: "The infrared sauna at @ Secure Clinics is used therapeutically to relieve muscle tension, improve blood circulation, and support musculoskeletal recovery. It is often recommended alongside physiotherapy for enhanced outcomes. Sessions are guided by your treatment team — not a standalone wellness amenity." },
+      { q: "Are the ice bath and infrared sauna included in my treatment or charged separately?", a: "Each Secure Plan is carefully curated by our team of Specialists. Charges of the same are always conveyed beforehand." },
+      { q: "How clean is the pool?", a: "The pool at @ Secure Clinics is a medical-grade pool maintained to clinical hygiene standards. Water is continuously filtered and chemically treated." },
+      { q: "Is there a lady doctor available?", a: "Yes. Female doctors and therapists are part of the @ Secure Clinics team. If you'd like to be seen by a female specialist, let us know when booking and we'll arrange accordingly." },
+      { q: "Do you do home visits?", a: "Yes. For patients who are in pain or discomfort and cannot travel to our clinic, we offer the facility of home visits. Call or WhatsApp us for more details on this." },
+    ],
   },
 
   // ─── NS PAGE 4 ─── Physiotherapy
@@ -1115,26 +1449,32 @@ export const treatments = [
 
     hero: {
       eyebrow: "FLEX@SECURECLINICS",
-      title: "Physiotherapy in Mumbai",
+      title: "Physiotherapy for Pain Relief, Recovery and Improved Mobility @ Secure Clinics in Mumbai",
       tagline: "Thoughtful Rehab. Precise Movement. Real Progress.",
-      intro:
-        "At Secure Clinics, physiotherapy is structured, intentional and personalised. Every plan is built around your diagnosis, movement patterns and recovery goals — not generic routines.",
-      closing: "We focus on restoring how you move, not just reducing pain.",
+      intro: [
+        "@ Secure Clinics, Mumbai, our physiotherapy services focus on reducing pain, restoring movement and improving physical function through personalised rehabilitation programs.",
+        "Our experienced physiotherapists use evidence-based techniques to help patients recover from joint problems, spine conditions, sports injuries and movement limitations without unnecessary dependence on medication or invasive procedures.",
+        "Every treatment plan is designed after a detailed assessment of your condition, movement patterns and recovery goals. We focus on restoring how you move, not just reducing pain.",
+      ],
       image: PhysiotherapyImg,
     },
 
     why: {
-      eyebrow: "Why Physiotherapy?",
+      eyebrow: "Why Physiotherapy @ Secure Clinics?",
       heading: "Because recovery works best when it’s guided — not guessed.",
-      paragraphs: ["Physiotherapy helps to:"],
+      paragraphs: [
+        "Physiotherapy is an important part of non-surgical orthopaedic and spine care that helps restore strength, flexibility and mobility and maintains the health of your entire musculoskeletal system dictating your quality of life.",
+        "@ Secure Clinics, every physiotherapy program is designed after understanding:",
+      ],
       items: [
-        "Reduce pain and stiffness",
-        "Restore strength and mobility",
-        "Improve posture and biomechanics",
-        "Prevent recurrence and future injury",
+        "Your diagnosis",
+        "Pain severity and symptoms",
+        "Movement limitations",
+        "Activity requirements",
+        "Recovery expectations",
       ],
       closing:
-        "At Secure Clinics, physiotherapy is closely aligned with medical, interventional and surgical care for continuity and better outcomes.",
+        "Our goal is to help patients return to active and independent living. At Secure Clinics, physiotherapy is closely aligned with medical, interventional and surgical care for continuity and better outcomes. Our multidisciplinary approach of having spine and orthopaedic surgeons and physiotherapists working together helps patients achieve safer and more effective recovery, as rehabilitation is part of the treatment and not just optional after-care. With well-equipped, technologically advanced machines, a training gym, an aquatherapy set-up and skilled physiotherapists and trainers, fragmented care in your recovery ends here.",
     },
 
     experience: {
@@ -1154,15 +1494,11 @@ export const treatments = [
 
     procedures: {
       eyebrow: "Techniques",
-      heading: "Physiotherapy Techniques We Offer",
+      heading: "Physiotherapy Treatments We Offer",
       items: [
-        { number: "01", title: "Manual Therapy", description: "Hands-on techniques to improve joint mobility, reduce stiffness and release soft tissue restrictions." },
-        { number: "02", title: "Exercise Therapy", description: "Targeted strengthening and mobility programs designed to restore function and build resilience." },
-        { number: "03", title: "Electrotherapy", description: "Therapeutic electrical modalities to reduce pain, swelling and muscle spasm." },
-        { number: "04", title: "Hydrotherapy (Water Therapy)", description: "Low-impact therapy using buoyancy and resistance to support movement with reduced joint stress." },
-        { number: "05", title: "Cryotherapy", description: "Cold-based therapy to reduce inflammation and post-injury pain." },
-        { number: "06", title: "Laser Therapy", description: "Advanced light therapy to support tissue healing and pain relief." },
-        { number: "07", title: "Taping and Bracing", description: "Supportive techniques to improve joint stability and functional movement." },
+        { title: "Advanced Physiotherapy Rehabilitation", description: "Our physiotherapy programs may include manual therapy, therapeutic exercises, mobility training, strengthening exercises, stretching programs, posture correction and functional rehabilitation. Treatment is customised based on the patient's condition and progress." },
+        { title: "Orthopaedic Rehabilitation", description: "Designed to restore function after injury or musculoskeletal problems, including joint rehabilitation, muscle strengthening, movement retraining, balance improvement and functional recovery exercises." },
+        { title: "Post-Surgical Physiotherapy", description: "Physiotherapy plays an important role after procedures by helping restore movement, reduce stiffness, improve strength, support healing and return to daily activities." },
       ],
     },
 
@@ -1170,27 +1506,30 @@ export const treatments = [
       eyebrow: "Benefits",
       heading: "Benefits of Physiotherapy at Secure Clinics",
       items: [
-        "Individualised treatment planning",
-        "One-on-one guided sessions",
-        "Integrated with diagnostics and medical care",
-        "Focus on long-term movement quality",
-        "Injury prevention and performance support",
+        "Reduces pain naturally",
+        "Improves flexibility and mobility",
+        "Strengthens muscles and joints",
+        "Supports injury recovery",
+        "Improves posture and movement control",
+        "Helps prevent recurrence",
+        "Enhances overall physical function",
       ],
     },
 
     rightForYou: {
       eyebrow: "Eligibility",
       heading: "Is Physiotherapy Right for You?",
-      intro: "Physiotherapy may be recommended for:",
+      intro: "Physiotherapy may help patients experiencing:",
       items: [
-        "Back and neck pain",
-        "Joint stiffness or weakness",
-        "Post-surgical rehabilitation",
-        "Sports and overuse injuries",
-        "Postural or movement-related issues",
+        "Persistent pain",
+        "Limited movement",
+        "Muscle weakness",
+        "Joint stiffness",
+        "Sports injuries",
+        "Recovery after surgery",
+        "Difficulty performing daily activities",
       ],
-      closing:
-        "A proper assessment ensures the right approach from the start.",
+      closing: "Treatment suitability is assessed individually.",
     },
 
     cta: {
@@ -1199,6 +1538,24 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "What is physiotherapy?", a: "Physiotherapy is a rehabilitation treatment that uses exercises, movement techniques and specialised therapies to improve pain, strength and mobility." },
+      { q: "What conditions can physiotherapy treat?", a: "Secure Clinics provides physiotherapy support for joint conditions (knee pain, osteoarthritis, shoulder pain, joint stiffness, hip problems), spine-related problems (back pain, neck pain, disc-related problems, postural issues, muscle-related spinal discomfort), sports and soft tissue injuries (ligament injuries, tendon injuries, muscle strains, sports injuries, overuse injuries), and recovery and mobility conditions (post-injury weakness, reduced flexibility, balance problems, movement difficulties, age-related mobility concerns)." },
+      { q: "Can physiotherapy avoid surgery?", a: "For some conditions, physiotherapy can improve symptoms and function and may reduce the need for surgical intervention." },
+      { q: "How long does physiotherapy treatment take?", a: "Recovery time depends on the condition, severity, consistency of treatment and individual response. @ Secure Clinics, a team of surgeons and doctors together make a personalised plan with you keeping in mind your recovery goal." },
+      { q: "Is physiotherapy painful?", a: "Some exercises may cause mild discomfort during recovery, but treatment is adjusted according to patient tolerance." },
+      { q: "Is physiotherapy useful after surgery?", a: "Yes. Post-operative physiotherapy helps restore movement, strength and function after most spine and orthopaedic procedures." },
+      { q: "How many physiotherapy sessions are required?", a: "The number of sessions depends on the diagnosis, recovery goals and progress. @ Secure Clinics, our specialists will guide you based on your needs." },
+      { q: "Can physiotherapy help arthritis?", a: "Yes, physiotherapy can help improve joint mobility, strengthen supporting muscles and manage arthritis-related symptoms." },
+      { q: "Is the clinic wheelchair or crutches friendly?", a: "Yes, completely. @ Secure Clinics has step-free entry, wide corridors, and a chair lift for pool access." },
+      { q: "What's the difference between physiotherapy, orthopaedics, and spine care — how do I know which one is right for me?", a: "Orthopaedics focuses on bones, joints, and surgical conditions. Spine care is specialised treatment for the neck, back, and spinal cord. Physiotherapy uses movement, manual therapy, and exercise to restore function and reduce pain. In many cases, all three work together on the same patient. At @ Secure Clinics, you don't need to figure this out yourself — tell us your symptoms and we'll guide you to the right specialist, or to multiple specialists if needed, but in one place." },
+      { q: "Do you have in-house diagnostics, or will I need to go elsewhere for scans and tests?", a: "All pathology and diagnostics solutions are found within our space. There is no need for you to go to multiple places to get tests done and then come back to us. Your entire journey is integrated into one ecosystem, here at @ Secure Clinics." },
+      { q: "Are trainers or physios present during gym sessions?", a: "Always. You are never left alone with equipment. Every session at @ Secure Clinics is supervised by a physiotherapist who monitors your form, progression, and safety throughout." },
+      { q: "Is there a gym at the facility?", a: "Yes. @ Secure Clinics has a fully equipped rehabilitation and strength training space on-site. It's used for post-surgical recovery, injury rehab, strength training, and performance conditioning — supervised by qualified professionals at all times." },
+      { q: "Is there a lady doctor available?", a: "Yes. Female doctors and therapists are part of the @ Secure Clinics team. If you'd like to be seen by a female specialist, let us know when booking and we'll arrange accordingly." },
+      { q: "Do you do home visits?", a: "Yes. For patients who are in pain or discomfort and cannot travel to our clinic, we offer the facility of home visits. Call or WhatsApp us for more details on this." },
+    ],
   },
 
   // ─── NS PAGE 5 ─── Strength Training
@@ -1213,28 +1570,31 @@ export const treatments = [
 
     hero: {
       eyebrow: "POWER@SECURECLINICS",
-      title: "Strength Training in Mumbai",
+      title: "Strength Training for Recovery, Mobility and Stronger Muscles & Joints @ Secure Clinics in Mumbai",
       tagline: "Build Strength. Improve Control. Move Better.",
-      intro:
-        "At Secure Clinics, strength training is used as a clinical tool — not a fitness trend. Every program is designed to improve stability, control and movement efficiency, whether for recovery, injury prevention or long-term joint health.",
-      closing:
-        "The goal isn’t just strength. It’s strength that supports how you move every day.",
+      intro: [
+        "@ Secure Clinics, Mumbai, our clinical strength training programs are designed to improve muscle strength, joint stability, mobility and overall physical function through personalised exercise-based rehabilitation.",
+        "Strength training plays an important role in maintaining healthy bones, supporting joints and improving movement patterns. Our specialists create structured programs based on your condition, fitness level and recovery goals.",
+        "Whether you are recovering from an injury, managing joint pain or looking to improve functional strength, our guided programs help you build strength safely and effectively.",
+      ],
+      closing: "The goal isn’t just strength. It’s strength that supports how you move every day.",
       image: StrengthTrainingImg,
     },
 
     why: {
-      eyebrow: "Why Strength Training?",
-      heading: "Because strong muscles protect joints.",
-      paragraphs: ["Clinical strength training helps to:"],
-      items: [
-        "Improve joint stability",
-        "Reduce injury risk",
-        "Support post-surgical recovery",
-        "Enhance balance and coordination",
-        "Improve long-term movement efficiency",
+      eyebrow: "Why Strength Training @ Secure Clinics?",
+      heading: "The stronger your muscles, the safer your joints.",
+      paragraphs: [
+        "At Secure Clinics, every strength training program is planned after understanding:",
       ],
-      closing:
-        "At Secure Clinics, strength training is integrated with physiotherapy and medical care for safe, progressive results.",
+      items: [
+        "Your diagnosis",
+        "Current strength and mobility levels",
+        "Injury history",
+        "Lifestyle requirements",
+        "Functional goals",
+      ],
+      closing: "@ Secure Clinics, strength training is integrated with physiotherapy and medical care for safe, progressive results.",
     },
 
     experience: {
@@ -1297,6 +1657,21 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "What is clinical strength training?", a: "Clinical strength training is a personalised exercise program designed to improve strength, mobility and function based on a person's health condition. @ Secure Clinics provides personalised strength training programs for patients with joint, spine, bone and mobility-related concerns. Our experts combine rehabilitation science, exercise therapy and orthopaedic care to help patients improve strength safely and achieve better movement outcomes." },
+      { q: "Is strength training safe for people with joint pain?", a: "Yes, when designed and supervised appropriately, strength training can improve muscle support around painful joints." },
+      { q: "Can strength training help knee pain?", a: "Yes, strengthening the muscles around the knee can improve stability and support better movement." },
+      { q: "Is strength training useful for osteoporosis?", a: "Resistance exercises may support bone health and muscle strength as part of an osteoporosis management plan." },
+      { q: "Can older adults do strength training?", a: "Yes. Exercise intensity can be adjusted based on age, fitness level and medical requirements." },
+      { q: "Does strength training prevent injuries?", a: "Improving muscle strength, balance and movement control can help reduce injury risk." },
+      { q: "How often should I do strength training?", a: "Frequency depends on your goals, condition and rehabilitation plan recommended by your specialist." },
+      { q: "Can strength training replace physiotherapy?", a: "Strength training is often combined with physiotherapy to improve recovery and long-term function." },
+      { q: "Are trainers or physios present during gym sessions?", a: "Always. You are never left alone with equipment. Every session at @ Secure Clinics is supervised by a physiotherapist who monitors your form, progression, and safety throughout." },
+      { q: "Is there a gym at the facility?", a: "Yes. @ Secure Clinics has a fully equipped rehabilitation and strength training space on-site. It's used for post-surgical recovery, injury rehab, strength training, and performance conditioning — supervised by qualified professionals at all times." },
+      { q: "Is there a lady trainer available?", a: "Yes. Female trainers and therapists are part of the @ Secure Clinics team. If you'd like to be seen by a female specialist, let us know when booking and we'll arrange accordingly." },
+      { q: "Do you do home visits?", a: "Yes. For patients who are in pain or discomfort and cannot travel to our clinic, we offer the facility of home visits. Call or WhatsApp us for more details on this." },
+    ],
   },
 
   // ─── NS PAGE 6 ─── Pilates
@@ -1311,28 +1686,32 @@ export const treatments = [
 
     hero: {
       eyebrow: "POWER@SECURECLINICS",
-      title: "Pilates in Mumbai",
+      title: "Clinical Pilates for Better Posture, Mobility and Recovery @ Secure Clinics in Mumbai",
       tagline: "Controlled Movement. Better Alignment. Sustainable Recovery.",
-      intro:
-        "Pilates at Secure Clinics is clinically guided and purpose-driven. Each session focuses on alignment, control and core stability — supporting recovery, reducing pain and improving movement efficiency.",
-      closing:
-        "This is Pilates designed for rehabilitation, not performance alone.",
+      intro: [
+        "@ Secure Clinics, our clinical Pilates programs combine controlled movement, core strengthening and rehabilitation principles to improve posture, flexibility and overall physical function.",
+        "Unlike general fitness Pilates, clinical Pilates is designed around your specific health needs, movement limitations and recovery goals.",
+        "Our expert-guided programs help patients manage back pain, posture-related issues, muscle weakness and mobility challenges while improving strength, balance and body awareness.",
+      ],
+      closing: "This is Pilates designed for rehabilitation, not performance alone.",
       image: PilatesImg,
     },
 
     why: {
-      eyebrow: "Why Pilates?",
+      eyebrow: "Why Pilates @ Secure Clinics?",
       heading: "Because how you move matters as much as how strong you are.",
-      paragraphs: ["Clinical Pilates helps to:"],
-      items: [
-        "Improve core strength and posture",
-        "Reduce back and joint pain",
-        "Enhance movement control",
-        "Support rehabilitation and recovery",
-        "Prevent recurrence of injury",
+      paragraphs: [
+        "Clinical Pilates is a rehabilitation-focused movement approach that helps improve the way your body moves, supports recovery and builds long-term strength.",
+        "At Secure Clinics, every Pilates program is designed after understanding:",
       ],
-      closing:
-        "At Secure Clinics, Pilates is integrated with physiotherapy and medical care when required.",
+      items: [
+        "Your diagnosis",
+        "Posture and movement patterns",
+        "Muscle strength and flexibility",
+        "Injury history",
+        "Recovery goals",
+      ],
+      closing: "@ Secure Clinics, Pilates is integrated with physiotherapy and medical care when required.",
     },
 
     experience: {
@@ -1393,6 +1772,20 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "What is clinical Pilates?", a: "Clinical Pilates is a rehabilitation-based exercise approach that focuses on improving posture, strength, flexibility and movement control." },
+      { q: "Is clinical Pilates different from regular Pilates?", a: "Yes. Clinical Pilates is customised according to a person’s medical condition, injury history and rehabilitation goals." },
+      { q: "Can Pilates help back pain?", a: "Yes, clinical Pilates may help improve core strength, posture and movement patterns that contribute to back discomfort." },
+      { q: "Is Pilates safe after surgery?", a: "Clinical Pilates may be recommended after certain surgeries once healing allows and under professional supervision." },
+      { q: "Can Pilates improve posture?", a: "Yes. Pilates focuses on core stability, alignment and controlled movements that support better posture." },
+      { q: "Is clinical Pilates suitable for beginners?", a: "Yes. Exercises can be modified according to fitness level, mobility and medical requirements." },
+      { q: "Can Pilates help with joint stiffness?", a: "Yes. Controlled movements may improve flexibility, mobility and joint function." },
+      { q: "How often should I do clinical Pilates?", a: "Frequency depends on your condition, goals and rehabilitation plan." },
+      { q: "What conditions can be supported through clinical Pilates?", a: "Secure Clinics provides Pilates-based rehabilitation support for spine-related problems (lower back pain, neck pain, disc-related problems, poor posture, spinal stiffness), joint conditions (knee pain, shoulder stiffness, hip discomfort, joint mobility issues, muscle imbalance), sports and movement injuries (muscle injuries, sports-related injuries, flexibility limitations, movement dysfunction, injury prevention), and recovery and functional conditions (post-surgical rehabilitation, weak core muscles, reduced balance, poor coordination, reduced mobility)." },
+      { q: "How many Pilates sessions are required?", a: "The number of sessions depends on the diagnosis, recovery goals and progress. @ Secure Clinics, our specialists will guide you based on your needs." },
+      { q: "Is there a lady trainer available?", a: "Yes. Female trainers and therapists are part of the @ Secure Clinics team. If you’d like to be seen by a female specialist, let us know when booking and we’ll arrange accordingly." },
+    ],
   },
 
   // ─── NS PAGE 7 ─── Clinical Nutrition
@@ -1407,28 +1800,32 @@ export const treatments = [
 
     hero: {
       eyebrow: "FUEL@SECURECLINICS",
-      title: "Clinical Nutrition in Mumbai",
+      title: "Clinical Nutrition for Bone Health, Healing and Recovery @ Secure Clinics in Mumbai",
       tagline: "Fuel Healing. Strengthen Bones. Support Recovery.",
-      intro:
-        "At Secure Clinics, nutrition is not generic advice — it is clinically guided and purpose-driven. Every nutrition plan supports bone health, muscle strength, recovery and long-term mobility.",
-      closing:
-        "Nutrition here works alongside medical care, physiotherapy and surgical treatment — not in isolation.",
+      intro: [
+        "@ Secure Clinics, Mumbai, our clinical nutrition programs support bone health, muscle strength, recovery and overall musculoskeletal wellness through personalised nutrition guidance.",
+        "Nutrition plays an important role in healing, maintaining healthy bones and supporting the body's ability to recover from injuries, surgery and physical stress.",
+        "Our clinical nutrition approach focuses on understanding your health goals, lifestyle, nutritional needs and medical requirements to create practical and sustainable nutrition plans. Nutrition here works alongside medical care, physiotherapy and surgical treatment — not in isolation.",
+      ],
       image: NutritionImg,
     },
 
     why: {
-      eyebrow: "Why Clinical Nutrition Matters",
+      eyebrow: "Why Clinical Nutrition @ Secure Clinics?",
       heading: "Because recovery doesn’t stop at treatment.",
-      paragraphs: ["Targeted nutrition helps to:"],
+      paragraphs: [
+        "Clinical nutrition is an essential part of comprehensive orthopaedic and rehabilitation care. When your body is in repair mode, you need more nutrients to rebuild the damaged muscle and tissue.",
+        "@ Secure Clinics, every nutrition plan is designed after understanding:",
+      ],
       items: [
-        "Improve bone density",
-        "Support muscle repair",
-        "Enhance post-surgical healing",
-        "Reduce fatigue and weakness",
-        "Support long-term musculoskeletal health",
+        "Your medical condition",
+        "Lifestyle and activity levels",
+        "Dietary habits",
+        "Recovery requirements",
+        "Bone and muscle health goals",
       ],
       closing:
-        "At Secure Clinics, nutrition plans are aligned with diagnosis, scans and treatment goals.",
+        "Our goal is to help patients achieve better health through evidence-based nutrition strategies. Our nutrition programs are designed to complement medical treatment, rehabilitation and lifestyle goals.",
     },
 
     experience: {
@@ -1447,27 +1844,42 @@ export const treatments = [
     },
 
     procedures: {
-      eyebrow: "Nutrients",
-      heading: "Key Nutrients We Focus On",
+      eyebrow: "Programs",
+      heading: "Clinical Nutrition Programs We Offer",
       items: [
-        { number: "01", title: "Calcium", description: "Essential for bone strength and density, especially in osteoporosis and fracture recovery." },
-        { number: "02", title: "Vitamin D", description: "Improves calcium absorption and supports muscle function and immunity." },
-        { number: "03", title: "Protein", description: "Critical for muscle repair, recovery and post-surgical healing." },
-        { number: "04", title: "Magnesium", description: "Supports bone metabolism, muscle function and nerve health." },
-        { number: "05", title: "Vitamin K", description: "Plays a role in bone mineralisation and skeletal strength." },
-        { number: "06", title: "Phosphorus", description: "Works with calcium to maintain healthy bones and teeth." },
+        { title: "Bone Health Nutrition", description: "Strong bones require the right balance of nutrients. Nutrition plans may focus on calcium intake, vitamin D support, protein optimisation, bone-strengthening nutrients and healthy lifestyle habits." },
+        { title: "Recovery and Rehabilitation Nutrition", description: "Nutrition can support the body during healing and recovery. Programs may include guidance for injury recovery, post-surgical healing, muscle repair, energy requirements and strength maintenance." },
+        { title: "Weight Loss Nutrition", description: "Personalised plans supporting fat loss before or after surgery, improving joint function, muscle building and overall wellness." },
+        { title: "Joint Health and Wellness Maintenance Nutrition", description: "A balanced nutrition plan may help support healthy body weight, joint function, mobility goals and overall wellness." },
       ],
     },
 
     benefits: {
       eyebrow: "Benefits",
-      heading: "Benefits of Nutrition Care at Secure Clinics",
+      heading: "Benefits of Clinical Nutrition at Secure Clinics",
       items: [
-        "Improved bone and muscle health",
-        "Better recovery outcomes",
-        "Reduced deficiency-related pain and fatigue",
-        "Long-term strength and stability",
+        "Supports bone health",
+        "Helps improve recovery",
+        "Supports muscle strength",
+        "Improves nutritional balance",
+        "Complements rehabilitation programs",
+        "Promotes long-term wellness",
+        "Supports healthy ageing",
       ],
+    },
+
+    rightForYou: {
+      eyebrow: "Eligibility",
+      heading: "Is Clinical Nutrition Right for You?",
+      intro: "Clinical nutrition may benefit:",
+      items: [
+        "Patients with bone health concerns",
+        "Individuals recovering from injuries",
+        "Patients undergoing rehabilitation",
+        "People with nutritional deficiencies",
+        "Individuals wanting improved musculoskeletal health",
+      ],
+      closing: "Nutrition plans are customized according to individual needs.",
     },
 
     cta: {
@@ -1476,6 +1888,18 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "What is clinical nutrition?", a: "Clinical nutrition involves personalised nutrition planning based on a person’s health condition, medical needs and wellness goals." },
+      { q: "How does nutrition affect bone health?", a: "Adequate nutrients such as calcium, vitamin D and protein help maintain bone strength and support bone health." },
+      { q: "Can nutrition help with joint pain?", a: "A balanced nutrition plan may support joint health, healthy weight management and overall wellbeing." },
+      { q: "Is nutrition important after surgery?", a: "Yes. Proper nutrition supports tissue repair, healing and recovery after surgical procedures." },
+      { q: "Can diet improve osteoporosis?", a: "Nutrition is an important part of osteoporosis management along with exercise, medical care and lifestyle changes." },
+      { q: "Do athletes need clinical nutrition?", a: "Yes. Sports and active individuals may benefit from nutrition plans supporting performance, recovery and injury prevention." },
+      { q: "How is a clinical nutrition plan created?", a: "It is based on health assessment, lifestyle, dietary habits, medical condition and individual goals." },
+      { q: "Can clinical nutrition be combined with physiotherapy?", a: "Yes. Nutrition and rehabilitation together support better recovery outcomes." },
+      { q: "Do you offer nutrition and diet counselling as part of treatment?", a: "Yes. @ Secure Clinics has an in-house nutrition team. Nutrition is integrated into treatment plans where relevant. Our nutrition programs begin from 3 months until 1 year." },
+    ],
   },
 
   // ─── NS PAGE 8 ─── Osteoporosis and Orthopaedic Care
@@ -1490,28 +1914,32 @@ export const treatments = [
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Osteoporosis and Orthopaedic Care in Mumbai",
+      title: "Osteoporosis and Orthopaedic Bone Care for Stronger Bones @ Secure Clinics in Mumbai",
       tagline: "Stronger Bones. Smarter Orthopaedics. Better Outcomes.",
-      intro:
-        "At Secure Clinics, osteoporosis and orthopaedic care work hand in hand. Bone health is not treated in isolation — it directly influences fractures, joint health, recovery after surgery and long-term mobility.",
-      closing:
-        "Our approach focuses on early detection, precise diagnosis and structured treatment — ensuring bones and joints are protected today and for the future.",
+      intro: [
+        "@ Secure Clinics, our osteoporosis and orthopaedic bone care team focuses on improving bone health, preventing fractures and managing conditions related to bone weakness. We also carry out surgical solutions — only when necessary at the top hospitals in Mumbai.",
+        "Osteoporosis is a condition where bones become less dense and more fragile, increasing the risk of fractures. Early diagnosis, lifestyle modification and personalised treatment can help protect bone strength and improve quality of life.",
+        "Our specialists combine advanced diagnostics, rehabilitation, exercise guidance and clinical care to create personalised bone health plans. Our approach focuses on early detection, precise diagnosis and structured treatment — ensuring bones and joints are protected today and for the future.",
+      ],
       image: OsteoporosisImg,
     },
 
     why: {
-      eyebrow: "Why Osteoporosis and Orthopaedic Care Must Go Together",
+      eyebrow: "Why Orthopaedic Care @ Secure Clinics?",
       heading: "Because weak bones change how orthopaedic problems behave.",
-      paragraphs: ["Integrated care helps to:"],
-      items: [
-        "Reduce fracture risk",
-        "Improve surgical outcomes",
-        "Prevent implant failure",
-        "Support faster recovery",
-        "Maintain long-term mobility",
+      paragraphs: [
+        "Bone health requires a comprehensive approach that goes beyond treating fractures.",
+        "@ Secure Clinics, every bone health plan is designed after understanding:",
       ],
-      closing:
-        "At Secure Clinics, orthopaedic decisions are always made with bone health in mind.",
+      items: [
+        "Bone density status",
+        "Medical history",
+        "Fracture risk",
+        "Lifestyle factors",
+        "Nutrition and activity levels",
+        "Long-term health goals",
+      ],
+      closing: "Our goal @ Secure Clinics is to protect your bone health and help you stay active.",
     },
 
     experience: {
@@ -1604,6 +2032,29 @@ export const treatments = [
       buttonLabel: "Book a Consultation",
       buttonHref: "/contact-us",
     },
+
+    faq: [
+      { q: "What is osteoporosis?", a: "Osteoporosis is a condition where bones lose density and become weaker, increasing the risk of fractures." },
+      { q: "How is osteoporosis diagnosed?", a: "Osteoporosis is commonly diagnosed through a DEXA scan, which measures bone mineral density." },
+      { q: "What is a DEXA scan?", a: "A DEXA scan is a bone density test that evaluates bone strength and helps identify osteoporosis or osteopenia." },
+      { q: "Can osteoporosis be prevented?", a: "Yes. Regular exercise, proper nutrition, healthy lifestyle habits and early detection can help reduce risk." },
+      { q: "Is osteoporosis only seen in older people?", a: "No. While risk increases with age, bone loss can occur earlier depending on health factors and lifestyle." },
+      { q: "Can exercise improve bone strength?", a: "Yes. Appropriate weight-bearing and strength exercises can support bone health and improve muscle function." },
+      { q: "What nutrients support bone health?", a: "Calcium, vitamin D, protein and other nutrients play important roles in maintaining healthy bones." },
+      { q: "Can osteoporosis cause fractures?", a: "Yes. Weakened bones are more prone to fractures, sometimes even after minor falls or injuries." },
+      { q: "Can osteoporosis be treated without surgery?", a: "Yes. Many patients can manage osteoporosis through a combination of lifestyle changes, rehabilitation, medical care and monitoring." },
+      { q: "What are the early signs of osteoporosis?", a: "Osteoporosis is often called a silent condition because it may not cause noticeable symptoms in the early stages. Some signs may include reduced height, back pain, poor posture, weakness and fractures after minor injuries." },
+      { q: "When should I get a bone density test?", a: "A bone density test such as a DEXA scan may be recommended if you have risk factors for bone loss, previous fractures, reduced bone strength or concerns about osteoporosis. @ Secure Clinics we have a DEXA Scan in-house for all our patients." },
+      { q: "What is the difference between osteoporosis and osteopenia?", a: "Osteopenia means bone density is lower than normal but not as severe as osteoporosis. Osteoporosis involves greater bone loss and a higher risk of fractures." },
+      { q: "Can osteoporosis be reversed?", a: "Bone loss can often be managed and slowed with appropriate treatment, exercise, nutrition and lifestyle changes. Early diagnosis helps protect long-term bone health." },
+      { q: "Who is at higher risk of developing osteoporosis?", a: "Risk may increase with increasing age, family history of osteoporosis, previous fractures, low physical activity, nutritional deficiencies and certain medical conditions or medications." },
+      { q: "What happens if osteoporosis is left untreated?", a: "Untreated osteoporosis can increase the risk of fractures, chronic pain, reduced mobility and difficulty performing daily activities." },
+      { q: "What conditions are treated under orthopaedic care?", a: "Orthopaedic care focuses on diagnosing and treating conditions affecting the bones, joints, muscles, ligaments, tendons, and spine. @ Secure Clinics, our orthopaedic specialists manage conditions such as osteoarthritis, sports injuries, fractures, back pain, neck pain, frozen shoulder, ligament tears, hip pain, knee pain, foot and ankle disorders, and other musculoskeletal conditions using both non-surgical and surgical treatment options." },
+      { q: "When should I see an orthopaedic specialist?", a: "You should consult an orthopaedic specialist if you experience persistent joint pain, back pain, neck pain, swelling, stiffness, limited mobility, sports injuries, fractures, difficulty walking, or pain that does not improve with rest or medication. Early diagnosis and treatment can help prevent long-term joint damage and improve recovery outcomes." },
+      { q: "What non-surgical treatments are available for orthopaedic conditions?", a: "Many orthopaedic conditions can be successfully managed without surgery. @ Secure Clinics, treatment options may include physiotherapy, clinical nutrition, pain management, regenerative therapies, PRP injections, hyaluronic acid injections, aquatherapy, osteoporosis management, medications, lifestyle modification, and personalised rehabilitation programs based on your condition." },
+      { q: "How do I know if I need orthopaedic surgery?", a: "Orthopaedic surgery is usually recommended only when conservative treatments such as physiotherapy, medications, injections, or rehabilitation have not relieved your symptoms or when there is severe joint damage, fractures, ligament injuries, or advanced arthritis. Our orthopaedic specialists perform a comprehensive evaluation to determine the most appropriate treatment plan, with surgery considered only when necessary." },
+      { q: "Why choose @ Secure Clinics for orthopaedic care?", a: "@ Secure Clinics in Mumbai, provides comprehensive orthopaedic care through a multidisciplinary team of orthopaedic surgeons, spine specialists, physiotherapists, rehabilitation experts, pain specialists, and clinical nutritionists. We offer advanced diagnostics, personalized treatment plans, minimally invasive surgical options, robotic joint replacement, and structured rehabilitation programs to help patients reduce pain, restore mobility, and return to an active lifestyle — all under one roof with a highly qualified and skilled team coordinating your care together." },
+    ],
   },
 ];
 

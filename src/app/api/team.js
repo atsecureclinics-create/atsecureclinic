@@ -1,14 +1,17 @@
-import TeamFallback from "../../../public/doctors/empty-profile.png";
-import SambhavShah from "../../../public/doctors/sambhav-shah.png";
-import DinkyShah from "../../../public/doctors/dinkyshah.png";
-import AnkitSheth from "../../../public/doctors/ankitsheth.png";
-import KrishnaPatel from "../../../public/doctors/krishna-patel.png";
-import AmanPatel from "../../../public/doctors/aman-patel.png";
-import PrayushiShah from "../../../public/doctors/prayushi-shah.png";
-import AishwaryaChorge from "../../../public/doctors/ashwarya-chorge.png";
-import ShrutiKamya from "../../../public/doctors/shruti-kainya.png";
-import HastiGala from "../../../public/doctors/hasti-gala.png";
-import ShreyBinyala from "../../../public/doctors/shrey-binyala.png";
+import TeamFallback from "../../../public/doctors/empty-profile.webp";
+import SambhavShah from "../../../public/doctors/sambhav-shah.webp";
+import DinkyShah from "../../../public/doctors/dinky-shah.webp";
+import AnkitSheth from "../../../public/doctors/ankit-sheth.webp";
+import PrashamShah from "../../../public/doctors/prasham-shah.webp";
+import KrishnaPatel from "../../../public/doctors/krishna-patel.webp";
+import ShreyBinyala from "../../../public/doctors/shrey-binyala.webp";
+import AmanPatel from "../../../public/doctors/aman-patel.webp";
+import PrayushiShah from "../../../public/doctors/prayushi-shah.webp";
+import AishwaryaChorge from "../../../public/doctors/aishwarya-chorge.webp";
+import ShrutiKamya from "../../../public/doctors/shruti-kamya.webp";
+import HastiGala from "../../../public/doctors/hasti-gala.webp";
+import NirmalSolanki from "../../../public/doctors/nirmal-solanki.webp";
+import RaenaShah from "../../../public/doctors/raena-shah.webp";
 
 export const team = [
   {
@@ -122,7 +125,7 @@ export const team = [
     slug: "prasham-shah",
     name: "Dr. Prasham Shah",
     role: "Consulting Orthopaedic Surgeon and Co-Founder",
-    image: TeamFallback,
+    image: PrashamShah,
     portraitBg: "bg-[#5b6e7a]",
     description:
       "Over 42 years of orthopaedic practice; first Indian surgeon to perform the Ilizarov technique and a pioneer of ozone therapy in Indian orthopaedics.",
@@ -188,7 +191,7 @@ export const team = [
     askAbout:
       "Stroke and Parkinson's recovery, what neurological physiotherapy actually involves, how long rehabilitation takes, and what realistic progress looks like at each stage of recovery.",
     beyondWhiteCoat:
-      "An avid reader who believes continuous learning does not stop at the clinic door. The same curiosity that keeps her informed and growing professionally is what keeps her present, thoughtful, and genuinely engaged with every patient she works with."
+      "An avid reader who believes that continuous learning does not stop at the clinic door. The same curiosity that keeps her informed and growing professionally is what keeps her present, thoughtful, and genuinely engaged with every patient she works with."
   },
   {
     slug: "shrey-binyala",
@@ -408,5 +411,76 @@ export const team = [
       "Managing diabetes or hormonal conditions through nutrition, gut health and the Low FODMAP approach, how to lose weight sustainably, and what sports nutrition looks like for non-professional athletes too.",
     beyondWhiteCoat:
       "A recipe creator, a traveller, a yoga practitioner, and a journal keeper. Hasti is someone who is genuinely passionate about health science — not just as a profession but as a way of living. The curiosity and discipline she brings to her own life are exactly what her patients experience when they work with her."
+  },
+  {
+    slug: "nirmal-solanki",
+    name: "Dr. Nirmal Solanki",
+    role: "Consultant Physiotherapist",
+    image: NirmalSolanki,
+    portraitBg: "bg-[#4a6670]",
+    description:
+      "Sports physiotherapist and manual therapy specialist with 20 years of experience, internationally trained across Australia, UK, Europe, and the USA — combining osteopathic, chiropractic, and physiotherapy disciplines.",
+    bio: "Dr. Nirmal Solanki is a sports physiotherapist and manual therapy specialist with 20 years of clinical experience across sports rehabilitation, spine care, and advanced hands-on treatment. Internationally trained across Australia, the UK, Europe, and the USA, he holds fellowships and certifications across osteopathic, chiropractic, and physiotherapy disciplines — a combination genuinely rare in Indian clinical practice.",
+    content: [
+      "Dr. Nirmal Solanki is a sports physiotherapist and manual therapy specialist with 20 years of clinical experience across sports rehabilitation, spine care, and advanced hands-on treatment. Internationally trained across Australia, the United Kingdom, Europe, and the United States, he brings a depth of formal qualification that is genuinely rare in Indian clinical practice — combining osteopathic, chiropractic, and physiotherapy disciplines into a single, integrated approach to patient care.",
+      "What sets Dr. Nirmal apart is the breadth and rigour of his manual therapy training. A Fellow of Osteopathy and Manipulative Therapy from Ideal Health Care, Australia, he holds a Graduate Diploma in Manipulative Therapy from the English Osteopathic School, advanced certification in High Velocity Low Amplitude thrust techniques from the European Academy of Osteopathy, and a Fellowship in Therapeutic Manual Medicine from Palmer College of Osteopathic Medicine, USA. Additional specialisations include vertebral and peripheral manipulation from Instema International Institute in Spain, ACL and shoulder rehabilitation through Movementology Academy, and scoliosis management via the Schroth Method — trained at the Schroth Spine Clinic in Greece.",
+      "At the core of his practice is a root-cause philosophy: symptoms are the signal, not the diagnosis. He works backwards from what the body is presenting to what the body actually needs — addressing the biomechanical and postural origins of pain rather than managing its surface expression.",
+      "\"Committed to long-term, root-cause treatment — because addressing where pain begins is the only way to stop it from coming back.\""
+    ],
+    education: [
+      "Fellowship in Osteopathy and Manipulative Therapy — Ideal Health Care, Australia",
+      "Graduate Diploma in Manipulative Therapy (APBC Part 1 and 2) — English Osteopathic School",
+      "Fellowship in Therapeutic Manual Medicine — Palmer College of Osteopathic Medicine, USA",
+      "Certification in Thrust Osteopathic Techniques (HVLA) — European Academy of Osteopathy",
+      "Advanced Postural Biomechanical Correction (APBC) — English Osteopathic School"
+    ],
+    expertise: [
+      "Sports physiotherapy and injury rehabilitation",
+      "Spine rehabilitation and lumbo-sacral dysfunction",
+      "Osteopathic and chiropractic manual therapy",
+      "ACL rehabilitation and shoulder rehabilitation",
+      "Scoliosis management (Schroth Method)",
+      "Dry needling and myokinetic release",
+      "Postural biomechanical correction",
+      "Vertebral and peripheral manipulation"
+    ],
+    whySecureClinics:
+      "@SecureClinics gives Dr. Nirmal exactly the clinical environment his approach demands — where manual therapy, diagnostics, strength training, and specialist surgical care sit under one roof and inform each other in real time. For patients with complex spinal, sports, or postural conditions, that coordination is not incidental to recovery. It is central to it.",
+    askAbout:
+      "Sports injuries and how to prevent recurrence, when manual therapy is the right treatment versus other modalities, what osteopathic and chiropractic techniques actually do to the body, and what realistic timelines look like for spine and sports rehabilitation.",
+    beyondWhiteCoat:
+      "An active cricket player who believes staying in the game — literally — keeps a clinician honest. The physical discipline he brings to sport is the same he brings to his patients: structured, deliberate, and always focused on the long game."
+  },
+  {
+    slug: "raena-shah",
+    name: "Raena Shah",
+    role: "Co<code>-</code>Founder and COO",
+    image: RaenaShah,
+    portraitBg: "bg-[#7a6a8a]",
+    description:
+      "Co-Founder and Chief Operating Officer of @SecureClinics — a decade in PR and marketing leadership now driving clinical operations, patient relations, and the day-to-day excellence of the clinic.",
+    bio: "Raena Shah is the Co-Founder and COO of @SecureClinics, bringing a decade of PR and marketing leadership at Communique PR to healthcare operations. She oversees administration, staff management, patient relations, and workflow design — ensuring every part of the patient journey runs smoothly and with genuine care.",
+    content: [
+      "Raena Shah is the Co-Founder and Chief Operating Officer of @SecureClinics, where she is the driving force behind the day-to-day excellence that allows the clinic to deliver truly integrated patient care. With a decade-long career built across some of Mumbai's leading PR and marketing firms, Raena brings a rare combination of operational rigour, people-first leadership, and a deep understanding of brand and client relationships to healthcare — a space that demands all three in equal measure.",
+      "At @SecureClinics, Raena oversees the entire operational backbone of the clinic: from administration and staff management to sourcing, payments, and workflow design. She works closely with patients directly — understanding their needs, guiding them through their treatment plans, and ensuring every interaction reflects the clinic's promise of honest, patient-first care. She is equally invested in the team behind the scenes, championing employee wellbeing and building a culture where every staff member feels supported and valued.",
+      "Before co-founding @SecureClinics, Raena spent over a decade at Communique PR and Marketing, eventually rising to head multiple verticals — social media, strategy, administration, marketing, and digital — for a roster of high-profile clients across lifestyle, hospitality, and entertainment. That experience in managing complex client relationships, leading teams, and executing under pressure now shapes the way she runs operations at @SecureClinics."
+    ],
+    education: [
+      "Bachelors of Commerce — K.C. College, Mumbai University",
+      "Masters of Commerce — Lala Lajpat Rai College of Commerce and Economics, Mumbai University"
+    ],
+    expertise: [
+      "Operations and administration management",
+      "Staff sourcing, payments and vendor management",
+      "Patient relations and sales",
+      "Workflow design and process setup",
+      "Employee management and team wellbeing"
+    ],
+    whySecureClinics:
+      "Raena co-founded @SecureClinics with the belief that great patient care is not just about clinical expertise — it is about the experience around it. From the first phone call to the last follow-up, she ensures every part of the patient journey runs smoothly, honestly, and with genuine care.",
+    askAbout:
+      "How @SecureClinics is run day-to-day, what to expect when you walk in, and how the clinic supports patients beyond the treatment room.",
+    beyondWhiteCoat:
+      "When she is not at the clinic, Raena loves to unwind with a good book or cook leisurely in the kitchen. She is always on the lookout for new opportunities and cherishes spending time with family. On a day off, you will likely find her at her holiday home, unwinding and recharging. She also channels her creative side through art and craft — the same curiosity, warmth, and hands-on energy she brings to her work at @SecureClinics every day."
   }
 ];

@@ -1,82 +1,112 @@
 import React from 'react';
 import ConsultButton from '../consultmodal/button';
 
+const features = [
+  {
+    title: "Advanced Spine Care",
+    description: "Technique sensitive Endoscopic Surgery performed by skilled surgeons",
+    image: "/usp/usp1.png",
+    imageAlt: "Advanced spine care at Secure Clinics"
+  },
+  {
+    title: "Orthopaedic Care",
+    description: "Precision treatment for bones, joints and lasting mobility",
+    image: "/usp/usp2.png",
+    imageAlt: "Orthopaedic care at Secure Clinics"
+  },
+  {
+    title: "Physiotherapy and Sports Injuries",
+    description: "Restoring strength, movement, and performance after surgery and injury",
+    image: "/usp/usp3.png",
+    imageAlt: "Physiotherapy and sports injury rehabilitation"
+  },
+  {
+    title: "Aqua Therapy",
+    description: "Gentle water based movement for pain-free recovery with a pool, aqua treadmill, ice bath and sauna",
+    image: "/usp/usp4.png",
+    imageAlt: "Aqua therapy at Secure Clinics"
+  },
+  {
+    title: "Nutrition and Strength Training",
+    description: "Fuel your body right, build strength that lasts a lifetime",
+    image: "/usp/usp5.png",
+    imageAlt: "Nutrition and strength training"
+  },
+  {
+    title: "Collaborative Clinical Care",
+    description: "Surgeons, Physiotherapists, Strength Trainers and Nutritionists work together right from consultation and diagnosis to treatment planning, execution, post surgical rehabilitation and recovery.",
+    image: "/usp/usp1.png",
+    imageAlt: "Collaborative clinical care"
+  },
+  {
+    title: "Evidence Based Treatment",
+    description: "Every recommendation is guided by specialists from years of proven clinical research, precise clinical evaluation, advanced diagnostic imaging, thorough movement assessment to ensure long-term functional outcomes",
+    image: "/usp/usp2.png",
+    imageAlt: "Evidence based treatment"
+  },
+  {
+    title: "Minimally Invasive Philosophy",
+    description: "Conservative and rehabilitation-focussed approaches are prioritised before surgical intervention whenever clinically appropriate",
+    image: "/usp/usp3.png",
+    imageAlt: "Minimally invasive philosophy"
+  },
+  {
+    title: "Advanced Endoscopic Spine Expertise",
+    description: "Specialised care for spinal disorders with modern imaging and technology leading to one day recovery and movement",
+    image: "/usp/usp4.png",
+    imageAlt: "Advanced endoscopic spine expertise"
+  },
+  {
+    title: "One Secure Stop",
+    description: "Integrated treatment plan under the guidance of a team of specialists in the field of spine and orthopaedic care, along with physiotherapists, nutritionists and strength trainers to give you structured and definitive recovery",
+    image: "/usp/usp5.png",
+    imageAlt: "One secure stop for complete care"
+  },
+];
+
 const Features = () => {
-    const features = [
-        {
-            title: "Ethical by Design",
-            description: "Every care plan is guided by <b>need, not numbers</b>. Clear diagnosis, honest conversations, and <b>no unnecessary procedures ever.</b>",
-            image: "./usp/usp1.png",
-            imageAlt: "Patient and doctor in a modern clinic"
-        },
-        {
-            title: "Team-Based Precision",
-            description: "Decisions are made <b>collaboratively, not in isolation</b>. Doctors, therapists, nutritionists, and rehabilitation specialists work together to deliver <b>accurate, minimally invasive care.</b>",
-            image: "./usp/usp2.png",
-            imageAlt: "Medical consultation in progress"
-        },
-        {
-            title: "Technology with Intent",
-            description: "Advanced diagnostics paired with <b>minimally invasive and endoscopic surgical techniques</b>. Technology is used to <b>improve precision, reduce tissue damage, and accelerate recovery never to overtest.</b>",
-            image: "./usp/usp3.png",
-            imageAlt: "Medical consultation in progress"
-        },
-        {
-            title: "One Secure Stop",
-            description: "Consultations, diagnostics, therapy, rehabilitation, and recovery <b>under one roof</b>. No referrals across the city. No fragmented appointments. <b>Just seamless care.</b>",
-            image: "./usp/usp4.png",
-            imageAlt: "Medical consultation in progress"
-        },
-        {
-            title: "Recovery, Reimagined",
-            description: "Your journey from <b>pain to performance</b> is fully supported. Structured physiotherapy, strength training, aqua therapy, and nutrition guidance help you <b>return to movement sooner and stronger.</b>",
-            image: "./usp/usp5.png",
-            imageAlt: "Medical consultation in progress"
-        }
-    ];
+  return (
+    <section className="font-seasons text-navy relative overflow-hidden">
+      <div className="max-w-5xl mx-auto space-y-0 pt-8 md:pt-10 px-4 sm:px-6">
+        {features.map((feature, index) => (
+          <React.Fragment key={index}>
+            <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10 lg:gap-14 py-6 group">
+              {/* Image Side */}
+              <div className="w-full md:w-2.5/4 relative overflow-hidden rounded-2xl md:rounded-3xl shadow-2xl shadow-black/5">
+                <img
+                  src={feature.image}
+                  alt={feature.imageAlt}
+                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                />
+              </div>
 
-    return (
-        <section className="font-seasons text-navy relative overflow-hidden">
-            <div className="max-w-5xl mx-auto space-y-0 pt-8 md:pt-10 px-4 sm:px-6">
-                {features.map((feature, index) => (
-                    <React.Fragment key={index}>
-                        <div className="flex flex-col md:flex-row md:items-center gap-6 md:gap-10 lg:gap-14 py-6 group">
-                            {/* Image Side */}
-                            <div className="w-full md:w-2.5/4 relative overflow-hidden rounded-2xl md:rounded-3xl shadow-2xl shadow-black/5">
-                                <img
-                                    src={feature.image}
-                                    alt={feature.imageAlt}
-                                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                                />
-                            </div>
-
-                            {/* Text Side */}
-                            <div className="w-full md:w-2.5/4">
-                                <h2
-                                    className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold leading-tight text-navy mb-3 md:mb-4"
-                                    dangerouslySetInnerHTML={{ __html: feature.title }}
-                                />
-
-                                <p
-                                    className="font-opensans text-base md:text-lg lg:text-xl leading-relaxed text-navy font-normal"
-                                    dangerouslySetInnerHTML={{ __html: feature.description }}
-                                />
-                            </div>
-                        </div>
-
-                        {index < features.length - 1 && (
-                            <div className="w-full h-px bg-green my-2" />
-                        )}
-                    </React.Fragment>
-                ))}
+              {/* Text Side */}
+              <div className="w-full md:w-2.5/4">
+                <h2
+                  className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold leading-tight text-navy mb-3 md:mb-4"
+                  dangerouslySetInnerHTML={{ __html: feature.title }}
+                />
+                <p
+                  className="font-opensans text-base md:text-lg lg:text-xl leading-relaxed text-navy font-normal"
+                  dangerouslySetInnerHTML={{ __html: feature.description }}
+                />
+              </div>
             </div>
-            <div className='flex justify-center pt-8 md:pt-10' >
-                <ConsultButton className="flex justify-center items-center gap-2 theme-button ">
-                    Book A Consult
-                </ConsultButton>
-            </div>
-        </section>
-    );
+
+            {index < features.length - 1 && (
+              <div className="w-full h-px bg-green my-2" />
+            )}
+          </React.Fragment>
+        ))}
+      </div>
+
+      <div className="flex justify-center pt-8 md:pt-10">
+        <ConsultButton className="flex justify-center items-center gap-2 theme-button">
+          Book A Consult
+        </ConsultButton>
+      </div>
+    </section>
+  );
 };
 
 export default Features;

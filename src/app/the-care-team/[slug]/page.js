@@ -34,9 +34,10 @@ export default async function CareTeamProfile({ params }) {
               {member.name}
             </h1>
 
-            <p className="text-lg md:text-xl text-navy mb-6 md:mb-10 border-b border-navy pb-4 md:pb-6 inline-block">
-              {member.role}
-            </p>
+            <p
+              className="text-lg md:text-xl text-navy mb-6 md:mb-10 border-b border-navy pb-4 md:pb-6 inline-block"
+              dangerouslySetInnerHTML={{ __html: member.role }}
+            />
 
             <div className="font-opensans space-y-4 md:space-y-6 text-base md:text-lg leading-relaxed text-navy">
               {(member.content || []).map((para, i) => (

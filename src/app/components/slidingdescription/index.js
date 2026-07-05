@@ -5,50 +5,26 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import AtTheRate from "../attherate";
-import AtTheRateImage from '../../../../public/icons/atherate.svg';
-// import '../../../../public/common/blue-bg.png'
-
-
-// const BACKGROUND = "../../../../public/common/blue-bg.png";
 
 const slides = [
   {
-    quote:
-      "Diagnosis, Surgery, Therapy, Recovery, and Prevention",
-    attribution: "Everything under One Roof.",
+    quote: "One Clinic. One Plan. One System.",
+    attribution:
+      "Unlike conventional healthcare models where patients move between multiple providers, @ Secure Clinics offers a fully integrated treatment ecosystem where every stage from diagnosis to recovery is collaboratively managed.",
   },
   {
-    quote:
-      "No fragmented care. No unnecessary steps.",
-    attribution: "Just One Coordinated System.",
+    quote: "No fragmented care. No unnecessary steps.",
+    attribution: "Just one coordinated system built around you.",
   },
   {
-    quote:
-      "Surgeons, therapists, nutritionists, and strength trainers.",
-    attribution: "Working together as One Integrated Team.",
-  },
-  {
-    quote:
-      "Every decision is shared. Every step is intentional.",
-    attribution: "Care designed around You.",
-  },
-  {
-    quote:
-      "Heal stronger. Recover faster. Move better.",
-    attribution: "Only @ Secure Clinics, Mumbai.",
+    quote: "Surgeons, therapists, nutritionists, and strength trainers.",
+    attribution: "Working together as one integrated team.",
   },
 ];
 
 export default function SlidingDescription() {
   return (
-    <section
-      className="py-6 md:py-8 bg-navylight"
-    // style={{
-    //   backgroundImage: "url('/common/blue-bg.png')",
-    //   backgroundSize: "cover",
-    //   backgroundPosition: "center",
-    // }}
-    >
+    <section className="py-6 md:py-8 bg-navylight">
       <div className="container mx-auto max-w-4xl">
         <h2 className="text-base sm:text-lg md:text-xl 2xl:text-2xl font-semibold text-center leading-normal text-white">
           <AtTheRate textClassName="text-white" /> brings structure to healthcare in Mumbai.
@@ -60,7 +36,7 @@ export default function SlidingDescription() {
           slidesPerView={1}
           speed={500}
           loop
-          autoplay={{ delay: 5500, disableOnInteraction: false }}
+          autoplay={{ delay: 6000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           className="sliding-description-swiper"
         >
@@ -76,11 +52,11 @@ export default function SlidingDescription() {
                   </svg>
                 </span>
 
-                <p className="relative font-opensans text-sm sm:text-base md:text-lg leading-relaxed text-white font-semibold">
+                <p className="relative font-opensans text-sm sm:text-base md:text-lg leading-relaxed text-white font-bold">
                   {item.quote}
                 </p>
                 {item.attribution && (
-                  <p className="relative font-opensans mt-1 md:mt-2 text-sm sm:text-base md:text-lg leading-relaxed text-white font-bold">
+                  <p className="relative font-opensans mt-2 md:mt-3 text-sm sm:text-base md:text-base leading-relaxed text-white/80 font-normal max-w-2xl mx-auto">
                     {item.attribution}
                   </p>
                 )}

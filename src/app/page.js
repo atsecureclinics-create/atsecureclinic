@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Container from "./components/container";
 import SlidingDescription from "./components/slidingdescription";
 import Features from "./components/features";
@@ -10,63 +11,58 @@ import HospitalAssociations from "./components/hospitalassociations";
 import MovingGallery from "./components/movinggallery";
 import FAQ from "./components/faq";
 import ConsultButton from "./components/consultmodal/button";
+import AboutSection from "./components/aboutsection";
 
 export default function Home() {
   return (
     <>
-      {/* HERO – two-column: text left, media right */}
-      <section className="flex items-center pt-4 pb-12 md:py-12 lg:py-18 bg-vanilla">
-        <Container>
-          <div className="flex gap-8 lg:gap-12 items-center flex-col-reverse md:flex-row">
-            {/* LEFT CONTENT */}
-            <div className="md:w-1/2 lg:col-span-7 xl:col-span-6">
-              <p className="font-opensans mb-3 md:mb-4 text-sm md:text-base font-semibold leading-normal text-navy">
-                What if healthcare actually worked together?
+      {/* HERO – full-width banner image with text overlay */}
+      <section className="relative min-h-[70vh] lg:min-h-[85vh] flex items-center overflow-hidden">
+        {/* Mobile banner */}
+        <Image
+          src="/home-banner-mobile.png"
+          alt="Secure Clinics — Precision Spine, Orthopaedic and Rehabilitation Care"
+          fill
+          className="object-cover object-center block md:hidden"
+          priority
+        />
+        {/* Desktop banner */}
+        <Image
+          src="/home-banner.png"
+          alt="Secure Clinics — Precision Spine, Orthopaedic and Rehabilitation Care"
+          fill
+          className="object-cover object-center hidden md:block"
+          priority
+        />
+        <div className="absolute inset-0 bg-navy/55" />
+        <Container className="relative z-10 py-16 md:py-24">
+          <div className="max-w-2xl xl:max-w-3xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-white">
+              Precision Spine, Orthopaedic and Rehabilitation Care
+            </h1>
+
+            <div className="mt-5 md:mt-6 text-sm md:text-base lg:text-lg font-medium text-white/85">
+              <p className="font-opensans leading-relaxed">
+                A multidisciplinary clinic where spine and orthopaedic surgeons work together with physiotherapists and rehabilitation experts under one roof to deliver evidence based treatments, minimally invasive solutions and long-term recovery outcomes
               </p>
-
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy">
-                Heal Stronger. <br /> Recover Faster. <br /> Move Better.
-              </h1>
-
-              <div className="mt-5 md:mt-6 space-y-2 text-sm md:text-sm lg:text-base font-medium text-navy">
-                <p className="font-semibold no-ligatures font-opensans leading-relaxed">
-                  Surgeons, therapists, nutritionists, and strength trainers — working together in one integrated system of care.
-                </p>
-                <p className="font-semibold no-ligatures font-opensans leading-relaxed">
-                  Only @ Secure Clinics, Mumbai.
-                </p>
-              </div>
-
-              <div className="mt-8 md:mt-10">
-                <ConsultButton className="theme-button">
-                  Book a Consult
-                </ConsultButton>
-              </div>
             </div>
 
-            {/* RIGHT VIDEO */}
-            <div className="md:w-1/2 lg:col-span-5 xl:col-span-6 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg aspect-19/20 rounded-2xl overflow-hidden shadow-2xl">
-                <video
-                  className="w-full h-full object-cover"
-                  src="/video/banner-video.mp4"
-                  muted
-                  loop
-                  playsInline
-                  autoPlay
-                  controls
-                  preload="metadata"
-                />
-              </div>
+            <div className="mt-8 md:mt-10">
+              <ConsultButton className="theme-button">
+                Book a Consult
+              </ConsultButton>
             </div>
           </div>
         </Container>
       </section>
 
-      {/* SCROLL 2 – Sliding description */}
+      {/* ABOUT SECTION */}
+      <AboutSection />
+
+      {/* SCROLL 2 – Sliding description / Highlight bar */}
       <SlidingDescription />
 
-      {/* SCROLL 3 – Features */}
+      {/* SCROLL 3 – USP Features */}
       <section className="bg-white pb-12">
         <Container>
           <Features />
@@ -74,12 +70,12 @@ export default function Home() {
       </section>
 
       {/* SCROLL 4 – Meet Care Team */}
-      <section className="bg-foreground bg-cover bg-center" >
+      <section className="bg-foreground bg-cover bg-center">
         <TeamMember />
       </section>
 
       {/* SCROLL 5 – Problem / Solution */}
-      <section >
+      <section>
         <Container>
           <ProblemSolution />
         </Container>
@@ -90,15 +86,15 @@ export default function Home() {
         <HowWeTreat category="homepage" label="Treatments" />
       </section>
 
-      {/* SCROLL 7 – Secure Stories */}
+      {/* SCROLL 7 – Patient Stories (video testimonials) */}
       <section>
         <SecureStories />
       </section>
 
-      {/* SCROLL 9 – Statistic testimonial */}
+      {/* SCROLL 8 – Statistic testimonial */}
       <StatisticTestimonialSlider />
 
-      {/* SCROLL 8 – Hospital associations */}
+      {/* SCROLL 9 – Hospital associations */}
       <section>
         <HospitalAssociations />
       </section>

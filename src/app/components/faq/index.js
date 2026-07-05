@@ -114,8 +114,9 @@ const faqs = [
 const FAQ_ACCENT = "#C25E3E";
 const FAQ_BG = "#F5F4EF";
 
-export default function FAQ() {
+export default function FAQ({ items }) {
   const [openIndex, setOpenIndex] = useState(null);
+  const displayFaqs = items || faqs;
 
   return (
     <section
@@ -147,7 +148,7 @@ export default function FAQ() {
           </div>
 
           <div className="lg:col-span-9 xl:col-span-8 space-y-0">
-            {faqs.map((item, index) => (
+            {displayFaqs.map((item, index) => (
               <div
                 key={index}
                 className="border-b border-[#1a1a1a]/10 last:border-b-0"
