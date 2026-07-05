@@ -14,6 +14,7 @@ import NirmalSolanki from "../../../public/doctors/nirmal-solanki.webp";
 import RaenaShah from "../../../public/doctors/raena-shah.webp";
 
 export const team = [
+  // ── Co-founders first ──────────────────────────────
   {
     slug: "sambhav-shah",
     name: "Dr. Sambhav Shah",
@@ -49,6 +50,43 @@ export const team = [
       "Whether your back pain actually needs surgery, what an integrated recovery looks like, and how to build a spine-safe lifestyle.",
     beyondWhiteCoat:
       "Passionate drummer. Sketch artist. Travel enthusiast. Fitness lover. Devoted family man. The creativity, discipline, and empathy that define his life outside the clinic are the same qualities his patients experience inside it."
+  },
+  {
+    slug: "prasham-shah",
+    name: "Dr. Prasham Shah",
+    role: "Consulting Orthopaedic Surgeon and Co-Founder",
+    image: PrashamShah,
+    portraitBg: "bg-[#5b6e7a]",
+    description:
+      "Over 42 years of orthopaedic practice; first Indian surgeon to perform the Ilizarov technique and a pioneer of ozone therapy in Indian orthopaedics.",
+    bio: "Dr. Prasham Shah is one of Mumbai's most decorated orthopaedic surgeons, with over 42 years of active clinical practice. A Grant Medical College and JJ Hospital graduate, he was among the first surgeons in Mumbai to perform arthroscopy, the first Indian surgeon to learn and perform the Russian Ilizarov technique in India, and a pioneer of ozone therapy in orthopaedics.",
+    content: [
+      "Dr. Prasham Shah is one of Mumbai's most experienced and decorated orthopaedic surgeons, with over 42 years of active clinical practice. A graduate of the prestigious Grant Medical College and JJ Hospital, Mumbai, he went on to specialise in Arthroscopic Surgery in the USA and Germany — becoming one of the very first surgeons in Mumbai to perform arthroscopy at a time when the technique was virtually unknown in India.",
+      "That spirit of being first has defined Dr. Shah's career. In 1989, he became the first Indian orthopaedic surgeon to learn and perform the Russian Ilizarov technique in India — a landmark moment in the country's surgical history. He went on to conduct numerous workshops across India and abroad to bring this technique to the wider orthopaedic community, with over 2,500 orthopaedic surgeons from across India having learnt Ilizarov from him directly.",
+      "Today, Dr. Shah's clinical focus has evolved toward Ozone Therapy — a pioneering, minimally invasive approach he has championed for treating slipped discs, rheumatoid arthritis, osteoarthritis, diabetic and alcoholic neuritis, and infected wounds. Once again, he stands at the frontier, having introduced ozone therapy to orthopaedics in India and continuing to expand its clinical application.",
+      "Over four decades, three pioneering firsts, and thousands of patients later, Dr. Prasham Shah remains as curious, committed, and clinically sharp as ever."
+    ],
+    education: [
+      "Grant Medical College and JJ Hospital, Mumbai — MBBS and MS Orthopaedics",
+      "Arthroscopic Surgery — Specialisation, USA and Germany",
+      "Ilizarov Technique — Advanced Training, Russia"
+    ],
+    expertise: [
+      "Arthroscopic surgery",
+      "Ilizarov and limb reconstruction techniques",
+      "Ozone therapy for spine and orthopaedic conditions",
+      "Rheumatoid and osteoarthritis management",
+      "Diabetic and alcoholic neuritis",
+      "Infected wound management",
+      "Complex orthopaedic consultation",
+      "Surgical education and training"
+    ],
+    whySecureClinics:
+      "Dr. Prasham Shah joins @SecureClinics because the model reflects everything he has believed in across four decades of practice — honest, evidence-based care that explores every option before committing to surgery. A clinic where innovation and patient-first thinking are not aspirations but the baseline.",
+    askAbout:
+      "Ozone therapy and what it can treat, whether arthroscopy is right for your condition, and what four decades of orthopaedic practice has taught him about how the body heals.",
+    beyondWhiteCoat:
+      "A pioneer, a teacher, and a clinician who has spent over four decades proving that the best doctors never stop learning — and never stop pushing the boundaries of what medicine can do."
   },
   {
     slug: "dinky-shah",
@@ -122,42 +160,38 @@ export const team = [
       "Athlete at heart. Driven by performance, precision, and the belief that recovery should be as dynamic as the body itself."
   },
   {
-    slug: "prasham-shah",
-    name: "Dr. Prasham Shah",
-    role: "Consulting Orthopaedic Surgeon and Co-Founder",
-    image: PrashamShah,
-    portraitBg: "bg-[#5b6e7a]",
+    slug: "raena-shah",
+    name: "Raena Shah",
+    role: "Co<code>-</code>Founder and COO",
+    image: RaenaShah,
+    portraitBg: "bg-[#7a6a8a]",
     description:
-      "Over 42 years of orthopaedic practice; first Indian surgeon to perform the Ilizarov technique and a pioneer of ozone therapy in Indian orthopaedics.",
-    bio: "Dr. Prasham Shah is one of Mumbai's most decorated orthopaedic surgeons, with over 42 years of active clinical practice. A Grant Medical College and JJ Hospital graduate, he was among the first surgeons in Mumbai to perform arthroscopy, the first Indian surgeon to learn and perform the Russian Ilizarov technique in India, and a pioneer of ozone therapy in orthopaedics.",
+      "Co-Founder and Chief Operating Officer of @SecureClinics — a decade in PR and marketing leadership now driving clinical operations, patient relations, and the day-to-day excellence of the clinic.",
+    bio: "Raena Shah is the Co-Founder and COO of @SecureClinics, bringing a decade of PR and marketing leadership at Communique PR to healthcare operations. She oversees administration, staff management, patient relations, and workflow design — ensuring every part of the patient journey runs smoothly and with genuine care.",
     content: [
-      "Dr. Prasham Shah is one of Mumbai's most experienced and decorated orthopaedic surgeons, with over 42 years of active clinical practice. A graduate of the prestigious Grant Medical College and JJ Hospital, Mumbai, he went on to specialise in Arthroscopic Surgery in the USA and Germany — becoming one of the very first surgeons in Mumbai to perform arthroscopy at a time when the technique was virtually unknown in India.",
-      "That spirit of being first has defined Dr. Shah's career. In 1989, he became the first Indian orthopaedic surgeon to learn and perform the Russian Ilizarov technique in India — a landmark moment in the country's surgical history. He went on to conduct numerous workshops across India and abroad to bring this technique to the wider orthopaedic community, with over 2,500 orthopaedic surgeons from across India having learnt Ilizarov from him directly.",
-      "Today, Dr. Shah's clinical focus has evolved toward Ozone Therapy — a pioneering, minimally invasive approach he has championed for treating slipped discs, rheumatoid arthritis, osteoarthritis, diabetic and alcoholic neuritis, and infected wounds. Once again, he stands at the frontier, having introduced ozone therapy to orthopaedics in India and continuing to expand its clinical application.",
-      "Over four decades, three pioneering firsts, and thousands of patients later, Dr. Prasham Shah remains as curious, committed, and clinically sharp as ever."
+      "Raena Shah is the Co-Founder and Chief Operating Officer of @SecureClinics, where she is the driving force behind the day-to-day excellence that allows the clinic to deliver truly integrated patient care. With a decade-long career built across some of Mumbai's leading PR and marketing firms, Raena brings a rare combination of operational rigour, people-first leadership, and a deep understanding of brand and client relationships to healthcare — a space that demands all three in equal measure.",
+      "At @SecureClinics, Raena oversees the entire operational backbone of the clinic: from administration and staff management to sourcing, payments, and workflow design. She works closely with patients directly — understanding their needs, guiding them through their treatment plans, and ensuring every interaction reflects the clinic's promise of honest, patient-first care. She is equally invested in the team behind the scenes, championing employee wellbeing and building a culture where every staff member feels supported and valued.",
+      "Before co-founding @SecureClinics, Raena spent over a decade at Communique PR and Marketing, eventually rising to head multiple verticals — social media, strategy, administration, marketing, and digital — for a roster of high-profile clients across lifestyle, hospitality, and entertainment. That experience in managing complex client relationships, leading teams, and executing under pressure now shapes the way she runs operations at @SecureClinics."
     ],
     education: [
-      "Grant Medical College and JJ Hospital, Mumbai — MBBS and MS Orthopaedics",
-      "Arthroscopic Surgery — Specialisation, USA and Germany",
-      "Ilizarov Technique — Advanced Training, Russia"
+      "Bachelors of Commerce — K.C. College, Mumbai University",
+      "Masters of Commerce — Lala Lajpat Rai College of Commerce and Economics, Mumbai University"
     ],
     expertise: [
-      "Arthroscopic surgery",
-      "Ilizarov and limb reconstruction techniques",
-      "Ozone therapy for spine and orthopaedic conditions",
-      "Rheumatoid and osteoarthritis management",
-      "Diabetic and alcoholic neuritis",
-      "Infected wound management",
-      "Complex orthopaedic consultation",
-      "Surgical education and training"
+      "Operations and administration management",
+      "Staff sourcing, payments and vendor management",
+      "Patient relations and sales",
+      "Workflow design and process setup",
+      "Employee management and team wellbeing"
     ],
     whySecureClinics:
-      "Dr. Prasham Shah joins @SecureClinics because the model reflects everything he has believed in across four decades of practice — honest, evidence-based care that explores every option before committing to surgery. A clinic where innovation and patient-first thinking are not aspirations but the baseline.",
+      "Raena co-founded @SecureClinics with the belief that great patient care is not just about clinical expertise — it is about the experience around it. From the first phone call to the last follow-up, she ensures every part of the patient journey runs smoothly, honestly, and with genuine care.",
     askAbout:
-      "Ozone therapy and what it can treat, whether arthroscopy is right for your condition, and what four decades of orthopaedic practice has taught him about how the body heals.",
+      "How @SecureClinics is run day-to-day, what to expect when you walk in, and how the clinic supports patients beyond the treatment room.",
     beyondWhiteCoat:
-      "A pioneer, a teacher, and a clinician who has spent over four decades proving that the best doctors never stop learning — and never stop pushing the boundaries of what medicine can do."
+      "When she is not at the clinic, Raena loves to unwind with a good book or cook leisurely in the kitchen. She is always on the lookout for new opportunities and cherishes spending time with family. On a day off, you will likely find her at her holiday home, unwinding and recharging. She also channels her creative side through art and craft — the same curiosity, warmth, and hands-on energy she brings to her work at @SecureClinics every day."
   },
+  // ── Rest of the team ───────────────────────────────
   {
     slug: "krishna-patel",
     name: "Dr. Krishna Patel",
@@ -451,36 +485,4 @@ export const team = [
     beyondWhiteCoat:
       "An active cricket player who believes staying in the game — literally — keeps a clinician honest. The physical discipline he brings to sport is the same he brings to his patients: structured, deliberate, and always focused on the long game."
   },
-  {
-    slug: "raena-shah",
-    name: "Raena Shah",
-    role: "Co<code>-</code>Founder and COO",
-    image: RaenaShah,
-    portraitBg: "bg-[#7a6a8a]",
-    description:
-      "Co-Founder and Chief Operating Officer of @SecureClinics — a decade in PR and marketing leadership now driving clinical operations, patient relations, and the day-to-day excellence of the clinic.",
-    bio: "Raena Shah is the Co-Founder and COO of @SecureClinics, bringing a decade of PR and marketing leadership at Communique PR to healthcare operations. She oversees administration, staff management, patient relations, and workflow design — ensuring every part of the patient journey runs smoothly and with genuine care.",
-    content: [
-      "Raena Shah is the Co-Founder and Chief Operating Officer of @SecureClinics, where she is the driving force behind the day-to-day excellence that allows the clinic to deliver truly integrated patient care. With a decade-long career built across some of Mumbai's leading PR and marketing firms, Raena brings a rare combination of operational rigour, people-first leadership, and a deep understanding of brand and client relationships to healthcare — a space that demands all three in equal measure.",
-      "At @SecureClinics, Raena oversees the entire operational backbone of the clinic: from administration and staff management to sourcing, payments, and workflow design. She works closely with patients directly — understanding their needs, guiding them through their treatment plans, and ensuring every interaction reflects the clinic's promise of honest, patient-first care. She is equally invested in the team behind the scenes, championing employee wellbeing and building a culture where every staff member feels supported and valued.",
-      "Before co-founding @SecureClinics, Raena spent over a decade at Communique PR and Marketing, eventually rising to head multiple verticals — social media, strategy, administration, marketing, and digital — for a roster of high-profile clients across lifestyle, hospitality, and entertainment. That experience in managing complex client relationships, leading teams, and executing under pressure now shapes the way she runs operations at @SecureClinics."
-    ],
-    education: [
-      "Bachelors of Commerce — K.C. College, Mumbai University",
-      "Masters of Commerce — Lala Lajpat Rai College of Commerce and Economics, Mumbai University"
-    ],
-    expertise: [
-      "Operations and administration management",
-      "Staff sourcing, payments and vendor management",
-      "Patient relations and sales",
-      "Workflow design and process setup",
-      "Employee management and team wellbeing"
-    ],
-    whySecureClinics:
-      "Raena co-founded @SecureClinics with the belief that great patient care is not just about clinical expertise — it is about the experience around it. From the first phone call to the last follow-up, she ensures every part of the patient journey runs smoothly, honestly, and with genuine care.",
-    askAbout:
-      "How @SecureClinics is run day-to-day, what to expect when you walk in, and how the clinic supports patients beyond the treatment room.",
-    beyondWhiteCoat:
-      "When she is not at the clinic, Raena loves to unwind with a good book or cook leisurely in the kitchen. She is always on the lookout for new opportunities and cherishes spending time with family. On a day off, you will likely find her at her holiday home, unwinding and recharging. She also channels her creative side through art and craft — the same curiosity, warmth, and hands-on energy she brings to her work at @SecureClinics every day."
-  }
 ];

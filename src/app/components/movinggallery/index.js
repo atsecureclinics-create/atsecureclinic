@@ -3,11 +3,16 @@
 import ConsultButton from "../consultmodal/button";
 
 const galleryImages = [
-    "/common/design1.png",
-    "/common/design2.png",
-    "/common/design3.png",
-    "/common/design4.png",
-    "/common/design5.png",
+    "/common/1.png",
+    "/common/2.png",
+    "/common/3.png",
+    "/common/4.png",
+    "/common/5.png",
+    "/common/6.png",
+    "/common/7.png",
+    "/common/8.png",
+    "/common/9.png",
+    "/common/10.png",
 ];
 
 export default function MovingGallery() {
