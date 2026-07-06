@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Container from "../components/container";
 import ConsultButton from "../components/consultmodal/button";
-import team from "../../../public/common/team.png";
+import team from "../../../public/home-banner-mobile.png";
 import Image from "next/image";
 import { Minus, Plus } from "lucide-react";
 import MemberRoadmap from "../components/memberroadmap";

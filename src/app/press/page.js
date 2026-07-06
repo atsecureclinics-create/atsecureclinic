@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import team from "../../../public/common/team.png";
+import team from "../../../public/home-banner-mobile.png";
 import hospital from "../../../public/icons/hospital-1.png";
 
 const featured = {

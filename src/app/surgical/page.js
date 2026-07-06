@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../components/container';
 import Image from 'next/image';
-import team from "../../../public/common/team.png";
+import team from "../../../public/home-banner-mobile.png";
 import HowWeTreat from '../components/howwetreat';
 import MovingGallery from '../components/movinggallery';
 import FAQ from '../components/faq';
@@ -106,16 +106,16 @@ function SurgicalTreatments() {
                 <Container>
                     <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center text-base md:text-xl font-extrabold px-2 md:px-10'>
                         <li>
-                            <Image src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/65fa20b30dcdc496ac12a5c3_ilust-test-tubes.webp'} alt="Consultation" width={100} height={100} className='m-auto pb-3 w-20 md:w-25 h-auto' />
-                            <p>A 45 minute consultation</p>
+                            <Image src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/65fa20b30dcdc496ac12a5c3_ilust-test-tubes.webp'} alt="Consultation" width={100} height={100} className='m-auto pb-3 w-20 md:w-25 h-20' />
+                            <p className='font-serif'>A 45 minute consultation</p>
                         </li>
                         <li>
-                            <Image src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/63a3384eaec14dea5d85a105_phone-illustration.avif'} alt="Care plan" width={100} height={100} className='m-auto pb-3 w-20 md:w-25 h-auto' />
-                            <p>Care Plan and Next Steps</p>
+                            <Image src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/63a3384eaec14dea5d85a105_phone-illustration.avif'} alt="Care plan" width={100} height={100} className='m-auto pb-3 w-20 md:w-25 h-20' />
+                            <p className='font-serif'>Care Plan and Next Steps</p>
                         </li>
                         <li>
-                            <Image src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/64f6682600edf017514d172b_ilust-care-plan.webp'} alt="Rebuild regime" width={100} height={100} className='m-auto pb-3 w-20 md:w-25 h-auto' />
-                            <p>Restore and Rebuild Regime</p>
+                            <Image src={'https://cdn.prod.website-files.com/604926b0c95ad5f7026a505d/64f6682600edf017514d172b_ilust-care-plan.webp'} alt="Rebuild regime" width={100} height={100} className='m-auto pb-3 w-20 md:w-25 h-20' />
+                            <p className='font-serif font-normal'>Restore and Rebuild Regime</p>
                         </li>
                     </ul>
                 </Container>

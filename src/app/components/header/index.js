@@ -136,7 +136,7 @@ export default function Header() {
                         )}
                     </div>
 
-                    <Link href="/blogs" className="hover:opacity-70">Blogs</Link>
+                    {/* <Link href="/blogs" className="hover:opacity-70">Blogs</Link> */}
                     <Link href="/faq" className="hover:opacity-70">FAQ</Link>
                     <Link href="/contact-us" className="hover:opacity-70">Contact Us</Link>
                 </nav>
