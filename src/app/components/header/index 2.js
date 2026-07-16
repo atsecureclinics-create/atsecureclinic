@@ -180,51 +180,47 @@ export default function Header() {
                         </button>
 
                         {conditionOpen && (
-                            <div className="absolute top-full left-1/2 -translate-x-1/2 w-[40rem] lg:w-[44rem] bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
+                            <div className="absolute top-full left-1/2 -translate-x-1/2 w-[48rem] lg:w-[54rem] bg-white rounded-xl shadow-xl border border-black/5 overflow-hidden">
                                 <div className="grid grid-cols-2 divide-x divide-black/5">
                                     <div className="p-4">
                                         <Link
                                             href="/spine"
                                             className="block text-base font-extrabold text-navy uppercase tracking-[0.15em] px-2 py-2 hover:text-coral transition"
                                         >
-                                            Spine Conditions
+                                            Spine
                                         </Link>
-                                        <div className="relative">
-                                            <ul className="mt-1 font-opensans text-sm font-normal max-h-64 overflow-y-auto pr-1 [&::-webkit-scrollbar]:w-[3px] [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-navy/15 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-coral/50">
-                                                {spineConditions.map((c) => (
-                                                    <li key={c.slug}>
-                                                        <Link
-                                                            href={`/spine/${c.slug}`}
-                                                            className="block px-2 py-1.5 rounded-md hover:bg-vanilla hover:text-coral transition uppercase"
-                                                        >
-                                                            {c.name}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                                        <ul className="mt-1 font-opensans text-sm font-normal">
+                                            {spineConditions.map((c) => (
+                                                <li key={c.slug}>
+                                                    <Link
+                                                        href={`/spine/${c.slug}`}
+                                                        className="block px-2 py-1.5 rounded-md hover:bg-vanilla hover:text-coral transition"
+                                                    >
+                                                        {c.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
                                     <div className="p-4">
                                         <Link
                                             href="/orthopaedic"
                                             className="block text-base font-extrabold text-navy uppercase tracking-[0.15em] px-2 py-2 hover:text-coral transition"
                                         >
-                                            Orthopaedic Conditions
+                                            Orthopaedic
                                         </Link>
-                                        <div className="relative">
-                                            <ul className="mt-1 font-opensans text-sm font-normal max-h-64 overflow-y-auto pr-1 [&::-webkit-scrollbar]:w-[3px] [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-navy/15 [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-coral/50">
-                                                {orthopaedicConditions.map((c) => (
-                                                    <li key={c.slug}>
-                                                        <Link
-                                                            href={`/orthopaedic/${c.slug}`}
-                                                            className="block px-2 py-1.5 rounded-md hover:bg-vanilla hover:text-coral transition uppercase"
-                                                        >
-                                                            {c.name}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
+                                        <ul className="mt-1 font-opensans text-sm font-normal">
+                                            {orthopaedicConditions.map((c) => (
+                                                <li key={c.slug}>
+                                                    <Link
+                                                        href={`/orthopaedic/${c.slug}`}
+                                                        className="block px-2 py-1.5 rounded-md hover:bg-vanilla hover:text-coral transition"
+                                                    >
+                                                        {c.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

@@ -5,7 +5,7 @@ import { ChevronDown, Loader2, Check } from "lucide-react";
 
 const INTERESTS = [
     "Spine and Orthopaedic Care",
-    "Physiotherapy and Recovery",
+    "Surgical Care & and Non-Surgical Care",
     "Book a Consult",
 ];
 

@@ -38,6 +38,30 @@ const SECTIONS = [
         ],
     },
     {
+        title: "Orthopaedic Conditions",
+        links: [
+            { label: "All Orthopaedic Conditions", href: "/orthopaedic" },
+            { label: "Frozen Shoulder", href: "/orthopaedic/frozen-shoulder" },
+            { label: "Rotator Cuff Tear", href: "/orthopaedic/rotator-cuff-tear" },
+            { label: "Osteoarthritis of Knee", href: "/orthopaedic/osteoarthritis-of-knee" },
+            { label: "ACL Tear", href: "/orthopaedic/acl-tear" },
+            { label: "Meniscus Tear", href: "/orthopaedic/meniscus-tear" },
+            { label: "Tennis Elbow", href: "/orthopaedic/tennis-elbow" },
+        ],
+    },
+    {
+        title: "Spine Conditions",
+        links: [
+            { label: "All Spine Conditions", href: "/spine" },
+            { label: "Back Pain", href: "/spine/back-pain" },
+            { label: "Lower Back Pain", href: "/spine/lower-back-pain" },
+            { label: "Sciatica", href: "/spine/sciatica" },
+            { label: "Slipped Disc", href: "/spine/slipped-disc" },
+            { label: "Spinal Stenosis", href: "/spine/spinal-stenosis" },
+            { label: "Spondylosis", href: "/spine/spondylosis" },
+        ],
+    },
+    {
         title: "About",
         links: [
             { label: "About Us", href: "/about" },
