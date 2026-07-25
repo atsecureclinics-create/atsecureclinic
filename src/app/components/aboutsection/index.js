@@ -23,15 +23,17 @@ export default function AboutSection() {
             </p>
           </div>
 
-          {/* Right: Local video */}
+          {/* Right: YouTube video */}
           <div className="flex justify-center order-1 lg:order-2">
-            <div className="w-full aspect-[15/17] rounded-2xl overflow-hidden shadow-2xl">
-              <video
-                className="w-full h-full object-cover"
-                src="/video/banner-video.mp4"
-                controls
-                playsInline
-                preload="metadata"
+            <div className="w-full aspect-[16/17] shadow-2xl rounded-2xl">
+              <iframe
+                className="w-full h-full rounded-2xl"
+                src="https://www.youtube.com/embed/C1wEdta0hOg?si=8dsg6-HDw7NBNcvO&autoplay=1&mute=1"
+                title="Secure Clinics"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
               />
             </div>
           </div>

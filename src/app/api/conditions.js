@@ -117,7 +117,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for ACL Tears",
+            heading: "Non<code>-</code>Surgical Treatment Options for ACL Tears",
             intro: "Not all ACL injuries require surgery. Treatment recommendations depend on age, activity level, degree of instability, and individual goals.",
             items: [
                 {
@@ -165,7 +165,7 @@ export const conditions = [
 
         recovery: {
             heading: "Recovery and Rehabilitation",
-            intro: "Rehabilitation is one of the most important aspects of ACL recovery, whether treatment is surgical or non-surgical.",
+            intro: "Rehabilitation is one of the most important aspects of ACL recovery, whether treatment is surgical or Non<code>-</code>Surgical.",
             items: [
                 "Pain and swelling management",
                 "Range-of-motion exercises",
@@ -323,7 +323,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for an Ankle Sprain",
+            heading: "Non<code>-</code>Surgical Treatment Options for an Ankle Sprain",
             intro: "Most ankle sprains can be treated successfully without surgery.",
             items: [
                 {
@@ -535,7 +535,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Avascular Necrosis of the Hip",
+            heading: "Non<code>-</code>Surgical Treatment Options for Avascular Necrosis of the Hip",
             intro: "Treatment depends on the stage of AVN, the extent of bone involvement, and the patient's symptoms.",
             items: [
                 {
@@ -743,7 +743,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Carpal Tunnel Syndrome",
+            heading: "Non<code>-</code>Surgical Treatment Options for Carpal Tunnel Syndrome",
             intro: "Many patients achieve significant improvement without surgery, particularly when diagnosed early.",
             items: [
                 {
@@ -784,7 +784,7 @@ export const conditions = [
                 "Daily activities become increasingly difficult",
                 "Night-time symptoms significantly affect sleep",
                 "Grip strength continues to deteriorate",
-                "Non-surgical treatment fails to provide relief",
+                "Non<code>-</code>Surgical treatment fails to provide relief",
             ],
             closing: "Treatment recommendations are based on symptom severity, nerve function testing, and functional limitations.",
         },
@@ -947,7 +947,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Flat Feet",
+            heading: "Non<code>-</code>Surgical Treatment Options for Flat Feet",
             intro: "Most individuals with flat feet can be successfully managed through conservative treatment and rehabilitation.",
             items: [
                 {
@@ -1146,8 +1146,8 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Frozen Shoulder",
-            intro: "Most patients improve with non-surgical treatment and structured rehabilitation.",
+            heading: "Non<code>-</code>Surgical Treatment Options for Frozen Shoulder",
+            intro: "Most patients improve with Non<code>-</code>Surgical treatment and structured rehabilitation.",
             items: [
                 {
                     title: "Medication Management",
@@ -1347,7 +1347,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Heel Pain Syndrome",
+            heading: "Non<code>-</code>Surgical Treatment Options for Heel Pain Syndrome",
             intro: "Most cases of heel pain respond successfully to conservative treatment.",
             items: [
                 {
@@ -1562,7 +1562,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Hip Impingement",
+            heading: "Non<code>-</code>Surgical Treatment Options for Hip Impingement",
             intro: "Many patients benefit from a structured conservative treatment program, particularly in the early stages.",
             items: [
                 {
@@ -1762,7 +1762,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for a Rotator Cuff Tear",
+            heading: "Non<code>-</code>Surgical Treatment Options for a Rotator Cuff Tear",
             intro: "Many partial tears and degenerative tears can be successfully managed without surgery.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may help reduce discomfort and improve function." },
@@ -1946,7 +1946,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Osteoarthritis of the Knee",
+            heading: "Non<code>-</code>Surgical Treatment Options for Osteoarthritis of the Knee",
             intro: "Many patients can successfully manage osteoarthritis symptoms without surgery through a combination of medical treatment, rehabilitation, and lifestyle modifications.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may help control symptoms and improve daily function." },
@@ -2140,7 +2140,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Meniscus Tears",
+            heading: "Non<code>-</code>Surgical Treatment Options for Meniscus Tears",
             intro: "Many meniscus tears can be managed successfully without surgery, particularly smaller tears and degenerative tears.",
             items: [
                 { title: "Acute Injury Management", description: "Initial treatment focuses on reducing pain, swelling, and inflammation while protecting the knee joint." },
@@ -2320,7 +2320,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Tennis Elbow",
+            heading: "Non<code>-</code>Surgical Treatment Options for Tennis Elbow",
             intro: "Most patients with tennis elbow improve successfully with conservative treatment.",
             items: [
                 { title: "Activity Modification", description: "Reducing repetitive strain and modifying aggravating activities can help promote tendon healing." },
@@ -2341,7 +2341,7 @@ export const conditions = [
                 "Significant grip weakness develops",
                 "Functional limitations continue despite rehabilitation",
                 "Symptoms remain present for several months",
-                "Non-surgical treatment fails to provide adequate relief",
+                "Non<code>-</code>Surgical treatment fails to provide adequate relief",
             ],
             closing: "Treatment decisions are individualized based on symptom severity, duration, and response to treatment.",
         },
@@ -2519,7 +2519,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Hip Fractures",
+            heading: "Non<code>-</code>Surgical Treatment Options for Hip Fractures",
             intro: "While many hip fractures require surgical management, selected stable fractures may be managed conservatively depending on fracture type, patient health, and functional requirements.",
             items: [
                 { title: "Pain Management", description: "Appropriate pain control is important to improve comfort and facilitate rehabilitation." },
@@ -2711,7 +2711,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Trochanteric Bursitis",
+            heading: "Non<code>-</code>Surgical Treatment Options for Trochanteric Bursitis",
             intro: "Most patients experience significant improvement with conservative treatment.",
             items: [
                 { title: "Activity Modification", description: "Reducing aggravating activities can help decrease irritation and promote healing." },
@@ -2731,7 +2731,7 @@ export const conditions = [
                 "Significant tendon damage is present",
                 "Chronic pain affects quality of life",
                 "Functional limitations become severe",
-                "Non-surgical treatment fails to provide adequate relief",
+                "Non<code>-</code>Surgical treatment fails to provide adequate relief",
             ],
             closing: "Treatment recommendations depend on symptom duration, severity, and underlying pathology.",
         },
@@ -2906,7 +2906,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Sacroiliitis",
+            heading: "Non<code>-</code>Surgical Treatment Options for Sacroiliitis",
             intro: "Most patients experience significant improvement through conservative treatment and rehabilitation.",
             items: [
                 { title: "Activity Modification", description: "Temporary modification of activities that aggravate symptoms may help reduce joint irritation." },
@@ -2928,7 +2928,7 @@ export const conditions = [
                 "Structural instability is present",
                 "Quality of life is significantly affected",
             ],
-            closing: "Most patients improve successfully with non-surgical treatment and rehabilitation.",
+            closing: "Most patients improve successfully with Non<code>-</code>Surgical treatment and rehabilitation.",
         },
 
         recovery: {
@@ -3086,7 +3086,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Piriformis Syndrome",
+            heading: "Non<code>-</code>Surgical Treatment Options for Piriformis Syndrome",
             intro: "The majority of patients with piriformis syndrome respond well to conservative treatment.",
             items: [
                 { title: "Activity Modification", description: "Reducing or temporarily avoiding aggravating activities such as prolonged sitting or running helps reduce nerve irritation." },
@@ -3105,10 +3105,10 @@ export const conditions = [
                 "Symptoms persist despite prolonged conservative treatment",
                 "Significant nerve compression is confirmed",
                 "Severe functional limitations develop",
-                "Non-surgical treatment fails to provide adequate relief",
+                "Non<code>-</code>Surgical treatment fails to provide adequate relief",
                 "Structural abnormalities are identified requiring intervention",
             ],
-            closing: "Most patients achieve good outcomes with non-surgical treatment and structured rehabilitation.",
+            closing: "Most patients achieve good outcomes with Non<code>-</code>Surgical treatment and structured rehabilitation.",
         },
 
         recovery: {
@@ -3266,7 +3266,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Back Pain",
+            heading: "Non<code>-</code>Surgical Treatment Options for Back Pain",
             intro: "Most patients with back pain improve with conservative treatment and structured rehabilitation.",
             items: [
                 { title: "Medication Management", description: "Short-term use of pain-relieving and anti-inflammatory medications may help reduce symptoms during acute episodes." },
@@ -3442,7 +3442,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Cervical Radiculopathy",
+            heading: "Non<code>-</code>Surgical Treatment Options for Cervical Radiculopathy",
             intro: "Many patients experience significant improvement through conservative treatment and rehabilitation.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may help reduce nerve irritation and improve comfort." },
@@ -3626,7 +3626,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Lower Back Pain",
+            heading: "Non<code>-</code>Surgical Treatment Options for Lower Back Pain",
             intro: "The majority of patients with lower back pain respond well to conservative treatment and structured rehabilitation programs.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may be prescribed to manage symptoms during acute flare-ups." },
@@ -3808,7 +3808,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Neck Pain",
+            heading: "Non<code>-</code>Surgical Treatment Options for Neck Pain",
             intro: "Most patients with neck pain achieve significant improvement through conservative treatment and rehabilitation.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may help manage symptoms during acute episodes." },
@@ -3989,7 +3989,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Sciatica",
+            heading: "Non<code>-</code>Surgical Treatment Options for Sciatica",
             intro: "Many patients with sciatica improve significantly through conservative treatment and structured rehabilitation.",
             items: [
                 { title: "Medication Management", description: "Anti-inflammatory medications and pain-relieving medications may be prescribed to reduce nerve irritation and improve comfort." },
@@ -4170,7 +4170,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for a Slipped Disc",
+            heading: "Non<code>-</code>Surgical Treatment Options for a Slipped Disc",
             intro: "Most patients with a slipped disc improve without surgery through structured treatment and rehabilitation.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may help reduce pain and nerve irritation during acute episodes." },
@@ -4187,7 +4187,7 @@ export const conditions = [
             heading: "When is Surgery Needed for a Slipped Disc?",
             intro: "While most slipped discs can be managed conservatively, surgery may be recommended when:",
             items: [
-                "Symptoms persist despite adequate non-surgical treatment",
+                "Symptoms persist despite adequate Non<code>-</code>Surgical treatment",
                 "Severe nerve compression is present",
                 "Progressive muscle weakness develops",
                 "Significant neurological deficits occur",
@@ -4358,7 +4358,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Spinal Fractures",
+            heading: "Non<code>-</code>Surgical Treatment Options for Spinal Fractures",
             intro: "Many stable spinal fractures can heal successfully without surgery.",
             items: [
                 { title: "Pain Management", description: "Medications may help reduce pain and improve comfort during healing." },
@@ -4536,7 +4536,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Spinal Stenosis",
+            heading: "Non<code>-</code>Surgical Treatment Options for Spinal Stenosis",
             intro: "Many patients with spinal stenosis can manage symptoms effectively with conservative treatment and rehabilitation.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may help reduce discomfort and nerve irritation." },
@@ -4743,7 +4743,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Spondylolisthesis",
+            heading: "Non<code>-</code>Surgical Treatment Options for Spondylolisthesis",
             intro: "Many patients with mild to moderate spondylolisthesis can successfully manage symptoms without surgery.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may help reduce discomfort during symptomatic periods." },
@@ -4760,7 +4760,7 @@ export const conditions = [
             heading: "When is Surgery Needed for Spondylolisthesis?",
             intro: "While many patients improve with conservative treatment, surgery may be considered when:",
             items: [
-                "Symptoms persist despite adequate non-surgical treatment",
+                "Symptoms persist despite adequate Non<code>-</code>Surgical treatment",
                 "Severe vertebral slippage is present",
                 "Progressive neurological deficits develop",
                 "Significant nerve compression causes leg symptoms",
@@ -4934,7 +4934,7 @@ export const conditions = [
         },
 
         nonSurgical: {
-            heading: "Non-Surgical Treatment Options for Spondylosis",
+            heading: "Non<code>-</code>Surgical Treatment Options for Spondylosis",
             intro: "Most patients with spondylosis can successfully manage symptoms through conservative treatment.",
             items: [
                 { title: "Medication Management", description: "Pain-relieving and anti-inflammatory medications may help control symptoms during flare-ups." },
