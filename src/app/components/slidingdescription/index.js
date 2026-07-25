@@ -8,6 +8,21 @@ import AtTheRate from "../attherate";
 
 const slides = [
   {
+    quote: "Advanced Spine Care",
+    attribution:
+      "Technique sensitive Endoscopic Surgery performed by skilled surgeons",
+  },
+  {
+    quote: "Orthopaedic Care",
+    attribution:
+      "Precision treatment for bones, joints and lasting mobility",
+  },
+  {
+    quote: "Physiotherapy and Sports Injuries",
+    attribution:
+      "Restoring strength, movement, and performance after surgery and injury",
+  },
+  {
     quote: "One Clinic. One Plan. One System.",
     attribution:
       "Unlike conventional healthcare models where patients move between multiple providers, @ Secure Clinics offers a fully integrated treatment ecosystem where every stage from diagnosis to recovery is collaboratively managed.",

@@ -3,63 +3,45 @@ import ConsultButton from '../consultmodal/button';
 
 const features = [
   {
-    title: "Advanced Spine Care",
-    description: "Technique sensitive Endoscopic Surgery performed by skilled surgeons",
-    image: "/usp/usp1.png",
-    imageAlt: "Advanced spine care at Secure Clinics"
-  },
-  {
-    title: "Orthopaedic Care",
-    description: "Precision treatment for bones, joints and lasting mobility",
-    image: "/usp/usp2.png",
-    imageAlt: "Orthopaedic care at Secure Clinics"
-  },
-  {
-    title: "Physiotherapy and Sports Injuries",
-    description: "Restoring strength, movement, and performance after surgery and injury",
-    image: "/usp/usp3.png",
-    imageAlt: "Physiotherapy and sports injury rehabilitation"
-  },
-  {
     title: "Aqua Therapy",
     description: "Gentle water based movement for pain-free recovery with a pool, aqua treadmill, ice bath and sauna",
-    image: "/usp/usp4.png",
+    image: "/usp/usp1.png",
     imageAlt: "Aqua therapy at Secure Clinics"
   },
   {
     title: "Nutrition and Strength Training",
     description: "Fuel your body right, build strength that lasts a lifetime",
-    image: "/usp/usp5.png",
+    image: "/usp/usp2.png",
     imageAlt: "Nutrition and strength training"
   },
   {
     title: "Collaborative Clinical Care",
     description: "Surgeons, Physiotherapists, Strength Trainers and Nutritionists work together right from consultation and diagnosis to treatment planning, execution, post surgical rehabilitation and recovery.",
-    image: "/usp/usp1.png",
+    image: "/usp/usp3.png",
     imageAlt: "Collaborative clinical care"
   },
   {
     title: "Evidence Based Treatment",
     description: "Every recommendation is guided by specialists from years of proven clinical research, precise clinical evaluation, advanced diagnostic imaging, thorough movement assessment to ensure long-term functional outcomes",
-    image: "/usp/usp2.png",
+    image: "/usp/usp4.png",
     imageAlt: "Evidence based treatment"
   },
   {
     title: "Minimally Invasive Philosophy",
     description: "Conservative and rehabilitation-focussed approaches are prioritised before surgical intervention whenever clinically appropriate",
-    image: "/usp/usp3.png",
+    image: "/usp/usp5.png",
     imageAlt: "Minimally invasive philosophy"
   },
   {
     title: "Advanced Endoscopic Spine Expertise",
     description: "Specialised care for spinal disorders with modern imaging and technology leading to one day recovery and movement",
-    image: "/usp/usp4.png",
+    image: "/usp/usp6.png",
     imageAlt: "Advanced endoscopic spine expertise"
   },
   {
     title: "One Secure Stop",
     description: "Integrated treatment plan under the guidance of a team of specialists in the field of spine and orthopaedic care, along with physiotherapists, nutritionists and strength trainers to give you structured and definitive recovery",
-    image: "/usp/usp5.png",
+    image: "/usp/usp7.png",
     imageAlt: "One secure stop for complete care"
   },
 ];
