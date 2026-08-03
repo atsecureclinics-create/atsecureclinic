@@ -8,9 +8,12 @@ function BulletList({ items, cols = 1 }) {
     return (
         <ul className={`grid ${grid} gap-y-2 gap-x-6`}>
             {items.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 font-opensans text-sm md:text-base text-navy leading-snug">
+                <li
+                    key={i}
+                    className="flex items-start gap-3 font-opensans text-sm md:text-base text-navy leading-snug"
+                >
                     <span className="mt-1.5 w-2 h-2 rounded-full bg-coral shrink-0" />
-                    {item}
+                    <span dangerouslySetInnerHTML={{ __html: item || "" }} />
                 </li>
             ))}
         </ul>
@@ -21,18 +24,20 @@ function SectionHeading({ eyebrow, heading, subheading }) {
     return (
         <div className="mb-8 md:mb-12">
             {eyebrow && (
-                <p className="uppercase tracking-[0.35em] text-xs md:text-sm text-coral font-extrabold mb-2 font-opensans">
-                    {eyebrow}
-                </p>
+                <p
+                    className="uppercase tracking-[0.35em] text-xs md:text-sm text-coral font-extrabold mb-2 font-opensans"
+                    dangerouslySetInnerHTML={{ __html: eyebrow || "" }}
+                />
             )}
             <h2
                 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight"
                 dangerouslySetInnerHTML={{ __html: heading }}
             />
             {subheading && (
-                <p className="font-opensans mt-3 text-sm md:text-lg text-navy/75 leading-relaxed max-w-3xl">
-                    {subheading}
-                </p>
+                <p
+                    className="font-opensans mt-3 text-sm md:text-lg text-navy/75 leading-relaxed max-w-3xl"
+                    dangerouslySetInnerHTML={{ __html: subheading || "" }}
+                />
             )}
         </div>
     );
@@ -71,9 +76,10 @@ export default function ConditionPage({ condition }) {
             <section className="bg-vanilla pt-12 pb-10 md:pt-20 md:pb-16 lg:pt-28 lg:pb-20">
                 <Container>
                     {hero.eyebrow && (
-                        <p className="mb-3 md:mb-4 text-xs md:text-sm font-bold uppercase tracking-[0.35em] text-coral font-opensans">
-                            {hero.eyebrow}
-                        </p>
+                        <p
+                            className="mb-3 md:mb-4 text-xs md:text-sm font-bold uppercase tracking-[0.35em] text-coral font-opensans"
+                            dangerouslySetInnerHTML={{ __html: hero.eyebrow || "" }}
+                        />
                     )}
                     <h1
                         className="font-seasons text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-5"
@@ -81,7 +87,10 @@ export default function ConditionPage({ condition }) {
                     />
                     <div className="font-opensans text-sm md:text-lg lg:text-xl text-navy/85 leading-relaxed space-y-3">
                         {(Array.isArray(hero.intro) ? hero.intro : [hero.intro]).map((p, i) => (
-                            <p key={i}>{p}</p>
+                            <div
+                                key={i}
+                                dangerouslySetInnerHTML={{ __html: p || "" }}
+                            />
                         ))}
                     </div>
                 </Container>
@@ -94,7 +103,10 @@ export default function ConditionPage({ condition }) {
                         <SectionHeading heading={what.heading || `What is ${cardTitle}?`} />
                         <div className="font-opensans text-sm md:text-lg lg:text-xl text-navy leading-relaxed space-y-5">
                             {what.paragraphs.map((p, i) => (
-                                <p key={i}>{p}</p>
+                                <div
+                                    key={i}
+                                    dangerouslySetInnerHTML={{ __html: p || "" }}
+                                />
                             ))}
                         </div>
                     </Container>
@@ -107,15 +119,17 @@ export default function ConditionPage({ condition }) {
                     <Container>
                         <SectionHeading heading={symptoms.heading} />
                         {symptoms.intro && (
-                            <p className="font-opensans text-sm md:text-lg text-navy mb-6 leading-relaxed">
-                                {symptoms.intro}
-                            </p>
+                            <p
+                                className="font-opensans text-sm md:text-lg text-navy mb-6 leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: symptoms.intro || "" }}
+                            />
                         )}
                         <BulletList items={symptoms.list} cols={2} />
                         {symptoms.closing && (
-                            <p className="font-opensans text-sm md:text-base text-navy/70 mt-5 leading-relaxed">
-                                {symptoms.closing}
-                            </p>
+                            <p
+                                className="font-opensans text-sm md:text-base text-navy/70 mt-5 leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: symptoms.closing || "" }}
+                            />
                         )}
                     </Container>
                 </section>
@@ -125,9 +139,10 @@ export default function ConditionPage({ condition }) {
             {associatedConditions && (
                 <section className="bg-foreground py-8 md:py-12">
                     <Container>
-                        <h3 className="font-seasons text-xl md:text-2xl text-navy mb-4">
-                            {associatedConditions.heading}
-                        </h3>
+                        <h3
+                            className="font-seasons text-xl md:text-2xl text-navy mb-4"
+                            dangerouslySetInnerHTML={{ __html: associatedConditions.heading || "" }}
+                        />
                         <BulletList items={associatedConditions.items} cols={2} />
                     </Container>
                 </section>
@@ -141,38 +156,43 @@ export default function ConditionPage({ condition }) {
                         <div className={`grid ${causeGridClass} gap-8 md:gap-10`}>
                             {causes.common && (
                                 <div>
-                                    <h3 className="font-seasons text-lg md:text-xl text-coral uppercase tracking-wide mb-4">
-                                        {causes.common.heading}
-                                    </h3>
+                                    <h3
+                                        className="font-seasons text-lg md:text-xl text-coral uppercase tracking-wide mb-4"
+                                        dangerouslySetInnerHTML={{ __html: causes.common.heading || "" }}
+                                    />
                                     <BulletList items={causes.common.items} />
                                 </div>
                             )}
                             {causes.sports && (
                                 <div>
-                                    <h3 className="font-seasons text-lg md:text-xl text-coral uppercase tracking-wide mb-4">
-                                        {causes.sports.heading}
-                                    </h3>
+                                    <h3
+                                        className="font-seasons text-lg md:text-xl text-coral uppercase tracking-wide mb-4"
+                                        dangerouslySetInnerHTML={{ __html: causes.sports.heading || "" }}
+                                    />
                                     <BulletList items={causes.sports.items} />
                                 </div>
                             )}
                             {causes.medical && (
                                 <div>
-                                    <h3 className="font-seasons text-lg md:text-xl text-coral uppercase tracking-wide mb-4">
-                                        {causes.medical.heading}
-                                    </h3>
+                                    <h3
+                                        className="font-seasons text-lg md:text-xl text-coral uppercase tracking-wide mb-4"
+                                        dangerouslySetInnerHTML={{ __html: causes.medical.heading || "" }}
+                                    />
                                     <BulletList items={causes.medical.items} />
                                 </div>
                             )}
                             {causes.riskFactors && (
                                 <div>
-                                    <h3 className="font-seasons text-lg md:text-xl text-coral uppercase tracking-wide mb-4">
-                                        {causes.riskFactors.heading}
-                                    </h3>
+                                    <h3
+                                        className="font-seasons text-lg md:text-xl text-coral uppercase tracking-wide mb-4"
+                                        dangerouslySetInnerHTML={{ __html: causes.riskFactors.heading || "" }}
+                                    />
                                     <BulletList items={causes.riskFactors.items} />
                                     {causes.riskFactors.closing && (
-                                        <p className="font-opensans text-xs md:text-sm text-navy/65 mt-3 leading-relaxed">
-                                            {causes.riskFactors.closing}
-                                        </p>
+                                        <p
+                                            className="font-opensans text-xs md:text-sm text-navy/65 mt-3 leading-relaxed"
+                                            dangerouslySetInnerHTML={{ __html: causes.riskFactors.closing || "" }}
+                                        />
                                     )}
                                 </div>
                             )}
@@ -189,8 +209,14 @@ export default function ConditionPage({ condition }) {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             {types.items.map((t, i) => (
                                 <div key={i} className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-navy/5">
-                                    <h3 className="font-seasons text-xl md:text-2xl text-navy mb-3">{t.title}</h3>
-                                    <p className="font-opensans text-sm md:text-base text-navy/75 leading-relaxed">{t.description}</p>
+                                    <h3
+                                        className="font-seasons text-xl md:text-2xl text-navy mb-3"
+                                        dangerouslySetInnerHTML={{ __html: t.title || "" }}
+                                    />
+                                    <p
+                                        className="font-opensans text-sm md:text-base text-navy/75 leading-relaxed"
+                                        dangerouslySetInnerHTML={{ __html: t.description || "" }}
+                                    />
                                 </div>
                             ))}
                         </div>
@@ -210,17 +236,21 @@ export default function ConditionPage({ condition }) {
                                         <span className="text-2xl md:text-3xl font-serif text-coral/60">
                                             {String(i + 1).padStart(2, "0")}
                                         </span>
-                                        <h3 className="font-seasons text-lg md:text-xl text-navy">{item.title}</h3>
+                                        <h3
+                                            className="font-seasons text-lg md:text-xl text-navy"
+                                            dangerouslySetInnerHTML={{ __html: item.title || "" }}
+                                        />
                                     </div>
-                                    <p className="font-opensans text-sm md:text-base text-navy/75 leading-relaxed">
-                                        {item.description}
-                                    </p>
+                                    <p
+                                        className="font-opensans text-sm md:text-base text-navy/75 leading-relaxed"
+                                        dangerouslySetInnerHTML={{ __html: item.description || "" }}
+                                    />
                                     {item.subItems && (
                                         <ul className="mt-3 space-y-1.5">
                                             {item.subItems.map((sub, j) => (
                                                 <li key={j} className="flex items-start gap-2 font-opensans text-xs md:text-sm text-navy/70">
                                                     <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-coral/60 shrink-0" />
-                                                    {sub}
+                                                    <span dangerouslySetInnerHTML={{ __html: sub || "" }} />
                                                 </li>
                                             ))}
                                         </ul>
@@ -240,8 +270,14 @@ export default function ConditionPage({ condition }) {
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                             {nonSurgical.items.map((item, i) => (
                                 <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-navy/5 hover:shadow-md transition-shadow">
-                                    <h3 className="font-seasons text-lg md:text-xl text-navy mb-3">{item.title}</h3>
-                                    <p className="font-opensans text-sm md:text-base text-navy/75 leading-relaxed">{item.description}</p>
+                                    <h3
+                                        className="font-seasons text-lg md:text-xl text-navy mb-3"
+                                        dangerouslySetInnerHTML={{ __html: item.title || "" }}
+                                    />
+                                    <p
+                                        className="font-opensans text-sm md:text-base text-navy/75 leading-relaxed"
+                                        dangerouslySetInnerHTML={{ __html: item.description || "" }}
+                                    />
                                 </div>
                             ))}
                         </div>
@@ -256,15 +292,17 @@ export default function ConditionPage({ condition }) {
                         <div className="">
                             <SectionHeading heading={whenSurgery.heading} />
                             {whenSurgery.intro && (
-                                <p className="font-opensans text-sm md:text-lg text-navy mb-5 leading-relaxed">
-                                    {whenSurgery.intro}
-                                </p>
+                                <p
+                                    className="font-opensans text-sm md:text-lg text-navy mb-5 leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: whenSurgery.intro || "" }}
+                                />
                             )}
                             <BulletList items={whenSurgery.items} />
                             {whenSurgery.closing && (
-                                <p className="font-opensans text-sm md:text-base text-navy/70 mt-6 leading-relaxed italic">
-                                    {whenSurgery.closing}
-                                </p>
+                                <p
+                                    className="font-opensans text-sm md:text-base text-navy/70 mt-6 leading-relaxed italic"
+                                    dangerouslySetInnerHTML={{ __html: whenSurgery.closing || "" }}
+                                />
                             )}
                         </div>
                     </Container>
@@ -277,16 +315,18 @@ export default function ConditionPage({ condition }) {
                     <Container>
                         <SectionHeading heading={recovery.heading} />
                         {recovery.intro && (
-                            <p className="font-opensans text-sm md:text-lg text-navy mb-6 leading-relaxed max-w-3xl">
-                                {recovery.intro}
-                            </p>
+                            <p
+                                className="font-opensans text-sm md:text-lg text-navy mb-6 leading-relaxed max-w-3xl"
+                                dangerouslySetInnerHTML={{ __html: recovery.intro || "" }}
+                            />
                         )}
                         <div className="max-w-3xl">
                             <BulletList items={recovery.items} cols={2} />
                             {recovery.closing && (
-                                <p className="font-opensans text-sm md:text-base text-navy/70 mt-6 leading-relaxed">
-                                    {recovery.closing}
-                                </p>
+                                <p
+                                    className="font-opensans text-sm md:text-base text-navy/70 mt-6 leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: recovery.closing || "" }}
+                                />
                             )}
                         </div>
                     </Container>
@@ -300,15 +340,17 @@ export default function ConditionPage({ condition }) {
                         <div className="">
                             <SectionHeading heading={whenDoctor.heading} />
                             {whenDoctor.intro && (
-                                <p className="font-opensans text-sm md:text-lg text-navy mb-5 leading-relaxed">
-                                    {whenDoctor.intro}
-                                </p>
+                                <p
+                                    className="font-opensans text-sm md:text-lg text-navy mb-5 leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: whenDoctor.intro || "" }}
+                                />
                             )}
                             <BulletList items={whenDoctor.items} cols={2} />
                             {whenDoctor.closing && (
-                                <p className="font-opensans text-sm md:text-base text-navy/70 mt-6 leading-relaxed">
-                                    {whenDoctor.closing}
-                                </p>
+                                <p
+                                    className="font-opensans text-sm md:text-base text-navy/70 mt-6 leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: whenDoctor.closing || "" }}
+                                />
                             )}
                         </div>
                     </Container>
@@ -319,12 +361,13 @@ export default function ConditionPage({ condition }) {
             {whyChoose && (
                 <section className="bg-navy py-10 md:py-16 lg:py-20">
                     <Container>
-                        <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-vanilla mb-5">
-                            {whyChoose.heading}
-                        </h2>
+                        <h2
+                            className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-vanilla mb-5"
+                            dangerouslySetInnerHTML={{ __html: whyChoose.heading || "" }}
+                        />
                         <div className="font-opensans text-sm md:text-lg text-vanilla/80 leading-relaxed space-y-4 max-w-3xl mb-8">
                             {whyChoose.paragraphs.map((p, i) => (
-                                <p key={i}>{p}</p>
+                                <p key={i} dangerouslySetInnerHTML={{ __html: p || "" }} />
                             ))}
                         </div>
                         <ConsultButton className="theme-button inline-flex! px-6 md:px-8 py-3.5 md:py-4 text-base md:text-lg!">

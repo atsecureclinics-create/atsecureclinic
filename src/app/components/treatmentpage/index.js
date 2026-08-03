@@ -26,29 +26,42 @@ export default function TreatmentPage({ treatment }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-7">
               {hero.eyebrow && (
-                <p className="mb-3 md:mb-4 text-xs md:text-sm font-bold uppercase tracking-[0.35em] text-coral font-opensans">
-                  {hero.eyebrow}
-                </p>
+                <p
+                  className="mb-3 md:mb-4 text-xs md:text-sm font-bold uppercase tracking-[0.35em] text-coral font-opensans"
+                  dangerouslySetInnerHTML={{ __html: hero.eyebrow || "" }}
+                />
               )}
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-4 md:mb-6">
-                {hero.title}
-              </h1>
+              <h1
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-navy mb-4 md:mb-6"
+                dangerouslySetInnerHTML={{ __html: hero.title || "" }}
+              />
 
-              <p className="font-opensans text-lg md:text-xl lg:text-2xl text-navy/80 italic mb-5 md:mb-8 leading-snug">
-                {hero.tagline}
-              </p>
+              <p
+                className="font-opensans text-lg md:text-xl lg:text-2xl text-navy/80 italic mb-5 md:mb-8 leading-snug"
+                dangerouslySetInnerHTML={{ __html: hero.tagline || "" }}
+              />
 
               <div className="font-opensans text-base md:text-lg text-navy/85 leading-relaxed mb-4 md:mb-6 space-y-3">
-                {Array.isArray(hero.intro)
-                  ? hero.intro.map((p, i) => <p key={i}>{p}</p>)
-                  : <p>{hero.intro}</p>}
+                {Array.isArray(hero.intro) ? (
+                  hero.intro.map((html, i) => (
+                    <div
+                      key={i}
+                      dangerouslySetInnerHTML={{ __html: html }}
+                    />
+                  ))
+                ) : (
+                  <div
+                    dangerouslySetInnerHTML={{ __html: hero.intro || "" }}
+                  />
+                )}
+
                 {hero.introItems && hero.introItems.length > 0 && (
                   <ul className="space-y-1.5 mt-2">
                     {hero.introItems.map((item, i) => (
                       <li key={i} className="flex items-start gap-2.5">
                         <span className="mt-2 flex-none w-2 h-2 rounded-full bg-coral" />
-                        <span>{item}</span>
+                        <span dangerouslySetInnerHTML={{ __html: item }} />
                       </li>
                     ))}
                   </ul>
@@ -56,9 +69,10 @@ export default function TreatmentPage({ treatment }) {
               </div>
 
               {hero.closing && (
-                <p className="font-opensans text-base md:text-lg text-navy font-semibold leading-relaxed mb-6 md:mb-8">
-                  {hero.closing}
-                </p>
+                <p
+                  className="font-opensans text-base md:text-lg text-navy font-semibold leading-relaxed mb-6 md:mb-8"
+                  dangerouslySetInnerHTML={{ __html: hero.closing || "" }}
+                />
               )}
 
               <ConsultButton className="theme-button inline-flex! px-6 md:px-8 py-3.5 md:py-4 text-base md:text-lg!">
@@ -84,17 +98,22 @@ export default function TreatmentPage({ treatment }) {
         <section className="py-14 md:py-24 lg:py-28 bg-white">
           <Container>
             <div className="max-w-4xl mx-auto text-center mb-10 md:mb-12">
-              <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
-                {why.eyebrow}
-              </p>
-              <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight">
-                {why.heading}
-              </h2>
+              <p
+                className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans"
+                dangerouslySetInnerHTML={{ __html: why.eyebrow || "" }}
+              />
+              <h2
+                className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight"
+                dangerouslySetInnerHTML={{ __html: why.heading || "" }}
+              />
             </div>
 
             <div className="max-w-3xl mx-auto font-opensans text-base md:text-lg lg:text-xl text-navy/85 leading-relaxed space-y-5 md:space-y-6">
               {why.paragraphs?.map((p, i) => (
-                <p key={i}>{p}</p>
+                <div
+                  key={i}
+                  dangerouslySetInnerHTML={{ __html: p }}
+                />
               ))}
 
               {why.items && why.items.length > 0 && (
@@ -102,13 +121,13 @@ export default function TreatmentPage({ treatment }) {
                   {why.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="mt-2 flex-none w-2 h-2 rounded-full bg-coral" />
-                      <span>{item}</span>
+                      <span dangerouslySetInnerHTML={{ __html: item }} />
                     </li>
                   ))}
                 </ul>
               )}
 
-              {why.closing && <p>{why.closing}</p>}
+              {why.closing && <p dangerouslySetInnerHTML={{ __html: why.closing || "" }} />}
             </div>
           </Container>
         </section>
@@ -120,18 +139,20 @@ export default function TreatmentPage({ treatment }) {
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
               <div className="lg:col-span-5">
-                <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight">
-                  {experience.heading}
-                </h2>
+                <h2
+                  className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight"
+                  dangerouslySetInnerHTML={{ __html: experience.heading || "" }}
+                />
               </div>
 
               <div className="lg:col-span-7 font-opensans text-base md:text-lg text-navy/85 leading-relaxed space-y-5 md:space-y-6">
-                <p>{experience.intro}</p>
+                <p dangerouslySetInnerHTML={{ __html: experience.intro || "" }} />
 
                 {experience.listTitle && (
-                  <p className="font-semibold text-navy">
-                    {experience.listTitle}
-                  </p>
+                  <p
+                    className="font-semibold text-navy"
+                    dangerouslySetInnerHTML={{ __html: experience.listTitle || "" }}
+                  />
                 )}
 
                 <ul className="space-y-3 md:space-y-4">
@@ -140,15 +161,16 @@ export default function TreatmentPage({ treatment }) {
                       <span className="mt-1 flex-none w-6 h-6 rounded-full bg-coral/15 text-coral flex items-center justify-center">
                         <Check size={14} strokeWidth={3} />
                       </span>
-                      <span>{point}</span>
+                      <span dangerouslySetInnerHTML={{ __html: point || "" }} />
                     </li>
                   ))}
                 </ul>
 
                 {experience.closing && (
-                  <p className="font-semibold text-navy text-lg md:text-xl pt-4 border-t border-navy/10">
-                    {experience.closing}
-                  </p>
+                  <p
+                    className="font-semibold text-navy text-lg md:text-xl pt-4 border-t border-navy/10"
+                    dangerouslySetInnerHTML={{ __html: experience.closing || "" }}
+                  />
                 )}
               </div>
             </div>
@@ -162,13 +184,15 @@ export default function TreatmentPage({ treatment }) {
           <Container>
             <div className="text-center mb-12 md:mb-20">
               {procedures.eyebrow && (
-                <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
-                  {procedures.eyebrow}
-                </p>
+                <p
+                  className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans"
+                  dangerouslySetInnerHTML={{ __html: procedures.eyebrow || "" }}
+                />
               )}
-              <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight max-w-4xl mx-auto">
-                {procedures.heading}
-              </h2>
+              <h2
+                className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-navy leading-tight max-w-4xl mx-auto"
+                dangerouslySetInnerHTML={{ __html: procedures.heading || "" }}
+              />
             </div>
 
             <ProceduresGrid items={procedures.items} />
@@ -176,9 +200,10 @@ export default function TreatmentPage({ treatment }) {
             {procedures.extraGroups?.map((group, gi) => (
               <div key={gi} className="mt-14 md:mt-20 lg:mt-24">
                 <div className="text-center mb-8 md:mb-12">
-                  <h3 className="font-seasons text-xl sm:text-2xl md:text-3xl lg:text-4xl text-navy leading-tight">
-                    {group.heading}
-                  </h3>
+                  <h3
+                    className="font-seasons text-xl sm:text-2xl md:text-3xl lg:text-4xl text-navy leading-tight"
+                    dangerouslySetInnerHTML={{ __html: group.heading || "" }}
+                  />
                 </div>
                 <ProceduresGrid items={group.items} />
               </div>
@@ -195,20 +220,22 @@ export default function TreatmentPage({ treatment }) {
               {benefits && (
                 <div className="bg-vanilla rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 border border-navy/5">
                   {benefits.eyebrow && (
-                    <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
-                      {benefits.eyebrow}
-                    </p>
+                    <p
+                      className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans"
+                      dangerouslySetInnerHTML={{ __html: benefits.eyebrow || "" }}
+                    />
                   )}
-                  <h2 className="font-seasons text-2xl md:text-3xl lg:text-4xl text-navy leading-tight mb-6 md:mb-8">
-                    {benefits.heading}
-                  </h2>
+                  <h2
+                    className="font-seasons text-2xl md:text-3xl lg:text-4xl text-navy leading-tight mb-6 md:mb-8"
+                    dangerouslySetInnerHTML={{ __html: benefits.heading || "" }}
+                  />
                   <ul className="space-y-3 md:space-y-4 font-opensans text-base md:text-lg text-navy/85">
                     {benefits.items.map((b, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="mt-1 flex-none w-6 h-6 rounded-full bg-coral text-white flex items-center justify-center">
                           <Check size={14} strokeWidth={3} />
                         </span>
-                        <span>{b}</span>
+                        <span dangerouslySetInnerHTML={{ __html: b || "" }} />
                       </li>
                     ))}
                   </ul>
@@ -218,17 +245,20 @@ export default function TreatmentPage({ treatment }) {
               {rightForYou && (
                 <div className="bg-navy text-white rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12">
                   {rightForYou.eyebrow && (
-                    <p className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans">
-                      {rightForYou.eyebrow}
-                    </p>
+                    <p
+                      className="uppercase tracking-[0.3em] text-xs md:text-sm text-coral font-extrabold mb-3 md:mb-4 font-opensans"
+                      dangerouslySetInnerHTML={{ __html: rightForYou.eyebrow || "" }}
+                    />
                   )}
-                  <h2 className="font-seasons text-2xl md:text-3xl lg:text-4xl leading-tight mb-5 md:mb-6">
-                    {rightForYou.heading}
-                  </h2>
+                  <h2
+                    className="font-seasons text-2xl md:text-3xl lg:text-4xl leading-tight mb-5 md:mb-6"
+                    dangerouslySetInnerHTML={{ __html: rightForYou.heading || "" }}
+                  />
                   {rightForYou.intro && (
-                    <p className="font-opensans text-base md:text-lg text-white/80 mb-5 md:mb-6 leading-relaxed">
-                      {rightForYou.intro}
-                    </p>
+                    <p
+                      className="font-opensans text-base md:text-lg text-white/80 mb-5 md:mb-6 leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: rightForYou.intro || "" }}
+                    />
                   )}
                   <ul className="space-y-3 md:space-y-4 font-opensans text-base md:text-lg text-white/90">
                     {rightForYou.items.map((item, i) => (
@@ -236,14 +266,15 @@ export default function TreatmentPage({ treatment }) {
                         <span className="mt-1 flex-none w-6 h-6 rounded-full bg-coral/20 text-coral flex items-center justify-center">
                           <Check size={14} strokeWidth={3} />
                         </span>
-                        <span>{item}</span>
+                        <span dangerouslySetInnerHTML={{ __html: item || "" }} />
                       </li>
                     ))}
                   </ul>
                   {rightForYou.closing && (
-                    <p className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-white/15 font-opensans text-base md:text-lg text-white/80 italic leading-relaxed">
-                      {rightForYou.closing}
-                    </p>
+                    <p
+                      className="mt-6 md:mt-8 pt-5 md:pt-6 border-t border-white/15 font-opensans text-base md:text-lg text-white/80 italic leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: rightForYou.closing || "" }}
+                    />
                   )}
                 </div>
               )}
@@ -292,13 +323,15 @@ export default function TreatmentPage({ treatment }) {
         <section className="py-14 md:py-24 lg:py-28 bg-coral text-white">
           <Container>
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 md:mb-6">
-                {cta.heading}
-              </h2>
+              <h2
+                className="font-seasons text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 md:mb-6"
+                dangerouslySetInnerHTML={{ __html: cta.heading || "" }}
+              />
               {cta.text && (
-                <p className="font-opensans text-base md:text-lg lg:text-xl text-white/90 leading-relaxed mb-8 md:mb-10">
-                  {cta.text}
-                </p>
+                <p
+                  className="font-opensans text-base md:text-lg lg:text-xl text-white/90 leading-relaxed mb-8 md:mb-10"
+                  dangerouslySetInnerHTML={{ __html: cta.text || "" }}
+                />
               )}
               <ConsultButton className="inline-flex items-center justify-center bg-white text-coral font-opensans font-bold text-base md:text-lg px-6 md:px-8 py-3.5 md:py-4 rounded-xl hover:bg-vanilla transition">
                 {cta.buttonLabel}
@@ -346,9 +379,10 @@ function ProceduresGrid({ items }) {
           />
 
           {item.description && (
-            <p className="font-opensans text-sm md:text-lg text-navy/75 leading-relaxed">
-              {item.description}
-            </p>
+            <p
+              className="font-opensans text-sm md:text-lg text-navy/75 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: item.description || "" }}
+            />
           )}
         </article>
       ))}

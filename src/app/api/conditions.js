@@ -12,7 +12,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "ACL Tear Treatment AtSecure Clinics in Mumbai",
+            title: "ACL Tear Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "An Anterior Cruciate Ligament (ACL) tear is one of the most common and significant knee injuries, particularly among athletes and physically active individuals. The ACL is a strong ligament located in the centre of the knee joint that helps stabilize the knee during activities involving running, jumping, pivoting, and sudden changes in direction.",
                 "At Secure Clinics in Mumbai, we provide comprehensive ACL injury treatment through an integrated team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our goal is to restore knee stability, optimize recovery, and help patients safely return to sports and daily activities.",
@@ -201,7 +201,7 @@ export const conditions = [
         whyChoose: {
             heading: "Why Choose Secure Clinics?",
             paragraphs: [
-                "AtSecure Clinics in Mumbai, offers comprehensive ACL injury management through a multidisciplinary approach involving the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
+                "<code>@</code>Secure Clinics in Mumbai, offers comprehensive ACL injury management through a multidisciplinary approach involving the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
                 "Our focus is not only on treating the injury but also on restoring movement quality, rebuilding strength, improving athletic performance, and reducing the risk of future injuries. Through evidence-based rehabilitation and personalized treatment plans, we help patients return to sports, fitness, and daily activities safely and confidently.",
             ],
         },
@@ -217,7 +217,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Ankle Sprain Treatment AtSecure Clinics in Mumbai",
+            title: "Ankle Sprain Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "An ankle sprain is one of the most common musculoskeletal injuries, occurring when the ligaments supporting the ankle joint are stretched or torn due to excessive twisting, rolling, or sudden movement of the foot.",
                 "At Secure Clinics in Mumbai, we provide comprehensive ankle sprain treatment through an integrated team of orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our goal is to reduce pain, restore stability, improve mobility, and prevent future injuries.",
@@ -407,7 +407,7 @@ export const conditions = [
         whyChoose: {
             heading: "Why Choose Secure Clinics?",
             paragraphs: [
-                "AtSecure Clinics in Mumbai, ankle sprain treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
+                "<code>@</code>Secure Clinics in Mumbai, ankle sprain treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
                 "Our approach focuses on accurate diagnosis, effective rehabilitation, injury prevention, and long-term ankle health. Through evidence-based treatment and personalized recovery programs, we help patients regain stability, confidence, and optimal function, whether returning to sports, fitness activities, or everyday life.",
             ],
         },
@@ -423,7 +423,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Avascular Necrosis (AVN) of Hip Treatment AtSecure Clinics in Mumbai",
+            title: "Avascular Necrosis (AVN) of Hip Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Avascular Necrosis (AVN) of the hip, also known as Osteonecrosis of the Femoral Head, is a condition in which the blood supply to the head of the femur (thigh bone) becomes reduced or interrupted. Without an adequate blood supply, the bone tissue gradually weakens and dies, leading to structural collapse of the femoral head and progressive damage to the hip joint.",
                 "Early diagnosis is crucial because treatment options are often more effective before the femoral head collapses. At Secure Clinics in Mumbai, we provide comprehensive AVN treatment through a multidisciplinary team focused on preserving hip function, improving mobility, relieving pain, and supporting long-term joint health.",
@@ -617,7 +617,7 @@ export const conditions = [
         whyChoose: {
             heading: "Why Choose Secure Clinics?",
             paragraphs: [
-                "AtSecure Clinics in Mumbai, AVN treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
+                "<code>@</code>Secure Clinics in Mumbai, AVN treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
                 "Our approach focuses on early diagnosis, evidence-based treatment, personalized rehabilitation, and long-term hip preservation. By combining orthopaedic expertise with comprehensive rehabilitation and lifestyle management, we help patients maintain mobility, reduce pain, and achieve the best possible functional outcomes.",
             ],
         },
@@ -633,7 +633,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Carpal Tunnel Syndrome Treatment AtSecure Clinics in Mumbai",
+            title: "Carpal Tunnel Syndrome Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Carpal Tunnel Syndrome (CTS) is one of the most common nerve compression disorders affecting the hand and wrist. It occurs when the median nerve, which passes through a narrow passage in the wrist called the carpal tunnel, becomes compressed or irritated.",
                 "At Secure Clinics in Mumbai, we provide comprehensive Carpal Tunnel Syndrome treatment through a multidisciplinary team. Our goal is to relieve nerve compression, restore hand function, and help patients return comfortably to work and daily activities.",
@@ -827,7 +827,7 @@ export const conditions = [
         whyChoose: {
             heading: "Why Choose Secure Clinics?",
             paragraphs: [
-                "AtSecure Clinics in Mumbai, Carpal Tunnel Syndrome treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
+                "<code>@</code>Secure Clinics in Mumbai, Carpal Tunnel Syndrome treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
                 "Our approach focuses on identifying the cause of nerve compression, restoring hand function, correcting ergonomic factors, and preventing recurrence. Through evidence-based treatment and personalized rehabilitation programs, we help patients regain comfort, strength, and confidence in their daily activities.",
             ],
         },
@@ -843,7 +843,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Flat Feet Treatment AtSecure Clinics in Mumbai",
+            title: "Flat Feet Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Flat feet, medically known as pes planus, is a condition in which the arches of the feet are reduced or absent, causing the entire sole of the foot to come into contact with the ground while standing. Flat feet may affect one or both feet and can occur in both children and adults.",
                 "At Secure Clinics in Mumbai, we provide comprehensive flat feet treatment through a multidisciplinary team. Our focus is on improving foot function, optimizing movement, reducing pain, and supporting long-term musculoskeletal health.",
@@ -1030,7 +1030,7 @@ export const conditions = [
         whyChoose: {
             heading: "Why Choose Secure Clinics?",
             paragraphs: [
-                "AtSecure Clinics in Mumbai, flat feet treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
+                "<code>@</code>Secure Clinics in Mumbai, flat feet treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
                 "Our approach focuses on identifying the underlying cause of foot dysfunction, improving biomechanics, restoring movement efficiency, and preventing future complications. Through evidence-based treatment and personalized rehabilitation programs, we help patients move comfortably, improve performance, and maintain long-term musculoskeletal health.",
             ],
         },
@@ -1046,7 +1046,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Frozen Shoulder Treatment AtSecure Clinics in Mumbai",
+            title: "Frozen Shoulder Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Frozen shoulder, medically known as adhesive capsulitis, is a condition characterized by progressive pain, stiffness, and loss of movement in the shoulder joint. It occurs when the capsule surrounding the shoulder becomes inflamed, thickened, and tight, restricting normal movement.",
                 "At Secure Clinics in Mumbai, we provide comprehensive frozen shoulder treatment through a multidisciplinary team of orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers, helping patients regain mobility, reduce pain, and restore shoulder function.",
@@ -1241,7 +1241,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Heel Pain Treatment AtSecure Clinics in Mumbai",
+            title: "Heel Pain Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Heel Pain Syndrome is a common condition characterized by pain and discomfort in the heel, particularly during standing, walking, running, or after prolonged periods of rest. The most common cause is Plantar Fasciitis, a condition involving inflammation of the plantar fascia — a thick band of tissue that supports the arch of the foot.",
                 "At Secure Clinics in Mumbai, we provide comprehensive heel pain treatment through a multidisciplinary team. Our focus is on identifying the underlying cause, relieving pain, restoring mobility, and helping patients return to an active lifestyle.",
@@ -1429,7 +1429,7 @@ export const conditions = [
         whyChoose: {
             heading: "Why Choose Secure Clinics?",
             paragraphs: [
-                "AtSecure Clinics in Mumbai, heel pain treatment is delivered through a multidisciplinary team of orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
+                "<code>@</code>Secure Clinics in Mumbai, heel pain treatment is delivered through a multidisciplinary team of orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
                 "Our approach focuses on identifying the root cause of heel pain, correcting biomechanical abnormalities, restoring movement efficiency, and preventing recurrence. Through evidence-based treatment and personalized rehabilitation programs, we help patients return comfortably to work, fitness activities, sports, and everyday life.",
             ],
         },
@@ -1445,7 +1445,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Hip Impingement Treatment AtSecure Clinics in Mumbai",
+            title: "Hip Impingement Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Hip Impingement, medically known as Femoroacetabular Impingement (FAI), is a condition in which abnormal contact occurs between the ball of the hip joint (femoral head) and the socket (acetabulum). This repeated abnormal contact can damage the cartilage and labrum, leading to pain, stiffness, and reduced hip mobility.",
                 "At Secure Clinics in Mumbai, we provide comprehensive hip impingement treatment through a multidisciplinary team. Our goal is to relieve pain, restore mobility, optimize movement patterns, and preserve long-term hip health.",
@@ -1644,7 +1644,7 @@ export const conditions = [
         whyChoose: {
             heading: "Why Choose Secure Clinics?",
             paragraphs: [
-                "AtSecure Clinics in Mumbai, hip impingement treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
+                "<code>@</code>Secure Clinics in Mumbai, hip impingement treatment is delivered through a multidisciplinary team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers.",
                 "Our approach focuses on accurate diagnosis, targeted rehabilitation, movement optimization, and long-term hip preservation. Through evidence-based treatment and personalized care plans, we help patients restore function, reduce pain, and return confidently to sports and daily activities.",
             ],
         },
@@ -1660,7 +1660,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Rotator Cuff Tear Treatment AtSecure Clinics in Mumbai",
+            title: "Rotator Cuff Tear Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "A rotator cuff tear is one of the most common causes of shoulder pain, weakness, and restricted arm movement in adults. The rotator cuff is a group of four muscles and tendons that surround the shoulder joint, helping stabilize the shoulder and facilitate movements such as lifting, reaching, and rotating the arm.",
                 "At Secure Clinics in Mumbai, we provide comprehensive rotator cuff treatment through an integrated team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers, helping patients restore shoulder function and return to an active lifestyle.",
@@ -1844,7 +1844,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Osteoarthritis of Knee Treatment AtSecure Clinics in Mumbai",
+            title: "Osteoarthritis of Knee Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Osteoarthritis of the knee is one of the most common causes of knee pain, stiffness, and reduced mobility in adults. It is a degenerative joint condition that occurs when the protective cartilage cushioning the ends of the bones gradually wears away, leading to friction, inflammation, pain, and loss of function.",
                 "At Secure Clinics in Mumbai, we provide comprehensive osteoarthritis treatment through an integrated team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our focus is on reducing pain, improving mobility, enhancing joint function, and helping patients maintain an active and independent lifestyle.",
@@ -2028,7 +2028,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Meniscus Tear Treatment AtSecure Clinics in Mumbai",
+            title: "Meniscus Tear Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "A meniscus tear is one of the most common knee injuries affecting athletes, active individuals, and older adults. The meniscus is a C-shaped cartilage structure that acts as a shock absorber between the thigh bone (femur) and shin bone (tibia), helping distribute weight, stabilize the knee, and protect the joint during movement.",
                 "At Secure Clinics in Mumbai, we provide comprehensive meniscus tear treatment through an integrated team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our goal is to restore knee function, reduce pain, improve mobility, and help patients return safely to their daily activities and sports.",
@@ -2220,7 +2220,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Tennis Elbow Treatment AtSecure Clinics in Mumbai",
+            title: "Tennis Elbow Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Tennis elbow, medically known as lateral epicondylitis, is a common condition that causes pain on the outer side of the elbow due to overuse or repetitive strain of the forearm muscles and tendons. Despite its name, tennis elbow does not only affect tennis players — it frequently occurs in individuals whose work, sports, or daily activities involve repetitive gripping, lifting, typing, or wrist movements.",
                 "At Secure Clinics in Mumbai, we provide comprehensive tennis elbow treatment through an integrated team of the best orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our goal is to relieve pain, restore function, and help patients return to work, sports, and daily activities without limitations.",
@@ -2400,7 +2400,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Hip Fracture Treatment AtSecure Clinics in Mumbai",
+            title: "Hip Fracture Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "A hip fracture is a serious injury involving a break in the upper portion of the femur (thigh bone) near the hip joint. Hip fractures most commonly occur in older adults following a fall, particularly in individuals with osteoporosis or reduced bone density.",
                 "At Secure Clinics in Mumbai, we provide comprehensive hip fracture care through a multidisciplinary team of orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our focus is on restoring mobility, improving function, and helping patients regain independence and quality of life.",
@@ -2597,7 +2597,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Trochanteric Bursitis Treatment AtSecure Clinics in Mumbai",
+            title: "Trochanteric Bursitis Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Trochanteric Bursitis is a common cause of pain on the outer side of the hip. It occurs when the bursa — a small fluid-filled sac that cushions the tissues around the hip joint — becomes irritated or inflamed. The affected bursa is located over the greater trochanter, the prominent bony point on the outside of the hip.",
                 "At Secure Clinics in Mumbai, we provide comprehensive treatment for trochanteric bursitis through an integrated team of orthopaedic specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our focus is on identifying the underlying cause, reducing pain, restoring mobility, and preventing recurrence.",
@@ -2790,7 +2790,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Sacroiliitis Treatment AtSecure Clinics in Mumbai",
+            title: "Sacroiliitis Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Sacroiliitis is a condition characterized by inflammation of one or both sacroiliac (SI) joints, which connect the lower spine (sacrum) to the pelvis (ilium). These joints play a critical role in transferring weight and forces between the upper body and lower limbs during standing, walking, running, and other daily activities.",
                 "At Secure Clinics in Mumbai, we provide comprehensive sacroiliitis treatment through a multidisciplinary team of the best orthopaedic specialists, spine specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our goal is to identify the source of pain, improve joint function, and help patients return to an active, pain-free lifestyle.",
@@ -2985,7 +2985,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "ORTHO@SECURECLINICS",
-            title: "Piriformis Syndrome Treatment AtSecure Clinics in Mumbai",
+            title: "Piriformis Syndrome Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Piriformis Syndrome is a neuromuscular condition in which the piriformis muscle, a small muscle located deep within the buttock region, irritates or compresses the sciatic nerve. This can result in pain, tingling, numbness, or discomfort that radiates from the buttock down the back of the thigh, often mimicking symptoms of sciatica caused by a spinal problem.",
                 "At Secure Clinics in Mumbai, we provide comprehensive Piriformis Syndrome treatment through a multidisciplinary team of orthopaedic specialists, spine specialists, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our goal is to identify the source of nerve irritation, relieve pain, restore mobility, and prevent recurrence.",
@@ -3168,7 +3168,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "Spine Care",
-            title: "All you can know about Back Pain Treatment atSecure Clinics in Mumbai",
+            title: "All you can know about Back Pain Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Back pain is one of the most common musculoskeletal conditions affecting people of all age groups. It can range from mild discomfort that resolves within a few days to chronic pain that significantly impacts mobility, work performance, sleep quality, and overall well-being.",
                 "At Secure Clinics, our multidisciplinary team of spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers work together to identify the root cause of back pain and develop individualized treatment plans focused on long-term recovery and improved movement.",
@@ -3345,7 +3345,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "Spine Care",
-            title: "All you need to know about Cervical Radiculopathy (Pinched Nerve in the Neck) Treatment AtSecure Clinics in Mumbai",
+            title: "All you need to know about Cervical Radiculopathy (Pinched Nerve in the Neck) Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Cervical radiculopathy, commonly known as a pinched nerve in the neck, occurs when a nerve root in the cervical spine becomes compressed or irritated. This compression can cause pain, numbness, tingling, or weakness that radiates from the neck into the shoulder, arm, forearm, or hand.",
                 "At Secure Clinics, our multidisciplinary team of spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers provides comprehensive care for cervical radiculopathy, focusing on pain relief, neurological recovery, and long-term spinal health.",
@@ -3525,7 +3525,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "Spine Care",
-            title: "All you can know about Lower Back Pain Treatment AtSecure Clinics in Mumbai",
+            title: "All you can know about Lower Back Pain Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Lower back pain is one of the leading causes of disability worldwide and a common reason for medical consultations among adults. It refers to pain or discomfort in the lumbar region of the spine, which supports much of the body's weight and plays a crucial role in movement, balance, and stability.",
                 "At Secure Clinics, we adopt a comprehensive approach to lower back pain management, combining expert spine care, physiotherapy, rehabilitation, nutrition counselling, and strength conditioning to address both symptoms and their underlying causes.",
@@ -3708,7 +3708,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "Spine Care",
-            title: "All you can know about Neck Pain Treatment AtSecure Clinics in Mumbai",
+            title: "All you can know about Neck Pain Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Neck pain is a common musculoskeletal condition that affects individuals of all ages and lifestyles. The cervical spine supports the weight of the head while allowing a wide range of movement. Due to its mobility and constant use, the neck is particularly susceptible to strain, degeneration, injury, and nerve-related conditions.",
                 "At Secure Clinics, we provide comprehensive evaluation and treatment for neck pain through an integrated team of spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers. Our goal is to identify the underlying cause and create a personalized treatment plan that restores function and improves quality of life.",
@@ -3890,7 +3890,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "Spine Care",
-            title: "Sciatica Treatment AtSecure Clinics in Mumbai",
+            title: "Sciatica Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Sciatica refers to pain caused by irritation, inflammation, or compression of the sciatic nerve, the largest nerve in the human body. The sciatic nerve originates in the lower spine and travels through the buttocks, hips, and down each leg to the feet.",
                 "At Secure Clinics, our multidisciplinary team of spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers work together to identify the cause of sciatica and develop personalized treatment plans aimed at restoring mobility and improving quality of life.",
@@ -4072,7 +4072,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "Spine Care",
-            title: "Slipped Disc (Herniated Disc) Treatment AtSecure Clinics in Mumbai",
+            title: "Slipped Disc (Herniated Disc) Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "A slipped disc, also known as a herniated disc, prolapsed disc, or disc bulge, occurs when the soft inner portion of an intervertebral disc pushes through a tear or weakness in the outer layer. This can place pressure on nearby spinal nerves, resulting in pain, numbness, tingling, or weakness.",
                 "At Secure Clinics, our multidisciplinary team of spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers work together to provide comprehensive slipped disc treatment focused on relieving pain, restoring function, and preventing recurrence.",
@@ -4253,7 +4253,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "Spine Care",
-            title: "Spinal Fracture Treatment AtSecure Clinics in Mumbai",
+            title: "Spinal Fracture Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "A spinal fracture is a break or crack in one or more vertebrae, the bones that form the spinal column. These fractures can occur due to trauma, falls, road traffic accidents, sports injuries, or weakening of the bones from conditions such as osteoporosis.",
                 "At Secure Clinics in Mumbai, our multidisciplinary team of the best spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers provides comprehensive care for spinal fractures, focusing on recovery, rehabilitation, and long-term spinal health.",
@@ -4440,7 +4440,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "Spine Care",
-            title: "Spinal Stenosis Treatment AtSecure Clinics in Mumbai",
+            title: "Spinal Stenosis Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Spinal stenosis is a condition in which the spaces within the spinal canal become narrowed, placing pressure on the spinal cord and surrounding nerves. This narrowing most commonly develops as part of the natural ageing process and is frequently associated with degenerative changes in the spine.",
                 "At Secure Clinics in Mumbai, our multidisciplinary team of spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers provides comprehensive care for spinal stenosis, focusing on symptom relief, functional restoration, and long-term spinal health.",
@@ -4620,7 +4620,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "SPINE@SECURECLINICS",
-            title: "All you can know about Spondylolisthesis Treatment AtSecure Clinics in Mumbai",
+            title: "All you can know about Spondylolisthesis Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Spondylolisthesis is a spinal condition in which one vertebra slips forward over the vertebra below it. This displacement can alter the normal alignment of the spine, leading to mechanical back pain, nerve compression, reduced mobility, and functional limitations.",
                 "At Secure Clinics, our multidisciplinary team of the best spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers provide comprehensive care for patients with spondylolisthesis, focusing on pain relief, spinal stability, and long-term functional recovery.",
@@ -4826,7 +4826,7 @@ export const conditions = [
 
         hero: {
             eyebrow: "SPINE@SECURECLINICS",
-            title: "Spondylosis Treatment AtSecure Clinics in Mumbai",
+            title: "Spondylosis Treatment <code>@</code>Secure Clinics in Mumbai",
             intro: [
                 "Spondylosis is a term used to describe age-related degenerative changes affecting the spine, including the intervertebral discs, vertebrae, facet joints, and surrounding ligaments. Commonly referred to as spinal arthritis or degenerative spine disease, spondylosis can occur in the cervical spine (neck), thoracic spine (mid-back), or lumbar spine (lower back).",
                 "At Secure Clinics, our multidisciplinary team of spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers work together to provide comprehensive spondylosis treatment focused on pain relief, functional improvement, and long-term spine health.",
@@ -4999,7 +4999,7 @@ export const conditions = [
         },
 
         whyChoose: {
-            heading: "Why Choose Your Care AtSecure Clinics?",
+            heading: "Why Choose Your Care <code>@</code>Secure Clinics?",
             paragraphs: [
                 "Secure Clinics offers comprehensive care for cervical spondylosis, lumbar spondylosis, and degenerative spine disorders through a multidisciplinary team of the best spine specialists, orthopaedic surgeons, physiotherapists, rehabilitation experts, nutrition counsellors, and strength trainers in Mumbai.",
                 "Our approach emphasizes accurate diagnosis, evidence-based treatment, individualized rehabilitation, and long-term spine health. By combining medical expertise with movement-focused rehabilitation, we help patients reduce pain, improve mobility, and maintain an active, independent lifestyle.",

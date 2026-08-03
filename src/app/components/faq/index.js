@@ -177,9 +177,10 @@ export default function FAQ({ items }) {
                     }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="font-opensans pb-4 md:pb-6 text-navy text-sm sm:text-base md:text-lg leading-relaxed pr-2 sm:pr-6 md:pr-10">
-                      {item.a}
-                    </p>
+                    <p
+                      className="font-opensans pb-4 md:pb-6 text-navy text-sm sm:text-base md:text-lg leading-relaxed pr-2 sm:pr-6 md:pr-10"
+                      dangerouslySetInnerHTML={{ __html: item.a || "" }}
+                    />
                   </div>
                 </div>
               </div>

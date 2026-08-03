@@ -8,6 +8,16 @@ import AtTheRate from "../attherate";
 
 const slides = [
   {
+    quote: "Aqua Therapy",
+    attribution:
+      "Gentle water based movement for pain-free recovery with a pool, aqua treadmill, ice bath and sauna",
+  },
+  {
+    quote: "Nutrition and Strength Training",
+    attribution:
+      "Fuel your body right, build strength that lasts a lifetime",
+  },
+  {
     quote: "Advanced Spine Care",
     attribution:
       "Technique sensitive Endoscopic Surgery performed by skilled surgeons",

@@ -58,7 +58,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      {/* THE @SECURE CLINICS STORY */}
+      {/* THE <code>@</code>Secure Clinics STORY */}
       <section className="py-14 md:py-24 bg-vanilla">
         <Container>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy leading-tight mb-8 md:mb-12 text-center inline-flex items-baseline justify-center gap-2 w-full flex-wrap">

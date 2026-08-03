@@ -3,18 +3,6 @@ import ConsultButton from '../consultmodal/button';
 
 const features = [
   {
-    title: "Aqua Therapy",
-    description: "Gentle water based movement for pain-free recovery with a pool, aqua treadmill, ice bath and sauna",
-    image: "/usp/usp1.png",
-    imageAlt: "Aqua therapy at Secure Clinics"
-  },
-  {
-    title: "Nutrition and Strength Training",
-    description: "Fuel your body right, build strength that lasts a lifetime",
-    image: "/usp/usp2.png",
-    imageAlt: "Nutrition and strength training"
-  },
-  {
     title: "Collaborative Clinical Care",
     description: "Surgeons, Physiotherapists, Strength Trainers and Nutritionists work together right from consultation and diagnosis to treatment planning, execution, post surgical rehabilitation and recovery.",
     image: "/usp/usp3.png",
