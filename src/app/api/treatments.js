@@ -384,7 +384,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Knee Surgery <code>@</code>Secure Clinics in Mumbai",
+      title: "Knee Surgery <code>@</code> Secure Clinics in Mumbai",
       tagline: "Advanced Surgical Solutions for Knee Pain, Joint Damage <code>&amp;</code> Mobility Restoration",
       intro: [
         "The knee joint plays a vital role in walking, balance, stability, and everyday movement. Injuries, cartilage damage, ligament tears, and degenerative conditions can affect knee function and lead to persistent pain, stiffness, and reduced mobility.",
@@ -1078,7 +1078,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "LABS@SECURECLINICS",
-      title: "Injections and IV Therapy for Pain Relief, Recovery and Better Health <code>@</code>Secure Clinics in Mumbai",
+      title: "Injections and IV Therapy for Pain Relief, Recovery and Better Health <code>@</code> Secure Clinics in Mumbai",
       tagline: "Targeted Relief. Precision Delivery. No Guesswork.",
       intro: [
         "<code>@</code>Secure Clinics, our advanced Injections and IV therapy treatments provide personalised non-surgical solutions for pain management, tissue healing, recovery and overall musculoskeletal wellness.",
@@ -1204,7 +1204,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "LABS@SECURECLINICS",
-      title: "Path Labs and Imaging Services for Accurate Diagnosis <code>@</code>Secure Clinics in Mumbai",
+      title: "Path Labs and Imaging Services for Accurate Diagnosis <code>@</code> Secure Clinics in Mumbai",
       tagline: "Clear Answers. Reliable Results. One Place.",
       intro: [
         "At Secure Clinics, our advanced in-house pathology and imaging services support accurate diagnosis and personalised treatment planning for bone, joint, spine and musculoskeletal conditions.",
@@ -1322,7 +1322,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "AQUA@SECURECLINICS",
-      title: "Aquatherapy for Pain Relief, Rehabilitation and Improved Mobility <code>@</code>Secure Clinics in Mumbai",
+      title: "Aquatherapy for Pain Relief, Rehabilitation and Improved Mobility <code>@</code> Secure Clinics in Mumbai",
       tagline: "Movement Supported. Recovery Reimagined.",
       intro: [
         "<code>@</code>Secure Clinics, our aquatherapy and aquatic rehabilitation programs provide a gentle yet effective approach to managing pain, improving mobility and supporting recovery from orthopaedic conditions and post surgery.",
@@ -1425,7 +1425,7 @@ export const treatments = [
       { q: "Can aquatherapy replace physiotherapy?", a: "Aquatherapy is a form of rehabilitation and is often combined with physiotherapy for comprehensive recovery." },
       { q: "How does water-based rehabilitation therapy help?", a: "Aquatherapy uses controlled exercises performed in water to support recovery. The buoyancy of water helps reduce weight-bearing stress, improve joint movement, support balance and coordination, allow safer exercise progression and improve muscle activation." },
       { q: "What conditions can be treated with Aquatherapy?", a: "<code>@</code>Secure Clinics provides aquatic rehabilitation support for joint conditions including osteoarthritis, knee pain, hip pain, shoulder stiffness and joint inflammation; spine-related problems such as lower back pain, neck pain, spine stiffness, postural problems and movement-related discomfort; sports and soft tissue injuries including muscle injuries, ligament injuries, tendon problems and overuse injuries; and recovery and rehabilitation needs including post-surgical rehabilitation, reduced mobility, muscle weakness, balance issues and age-related movement limitations." },
-      { q: "Do you have a pool <code>@</code>Secure Clinics in Mumbai?", a: "Yes, a 300 sq ft Aquatherapy pool is present at the clinic along with a locker system, fully equipped shower and changing rooms, infrared sauna, ice bath therapy and an aqua treadmill. Our facility is also wheelchair-friendly with a chair lift for paraplegic patients who cannot enter the pool otherwise. We also have a scissor lift for patients who cannot climb down the ladder to enter the pool. Our team combines clinical expertise, physiotherapy and personalised exercise programs to support safer recovery and improved mobility." },
+      { q: "Do you have a pool <code>@</code> Secure Clinics in Mumbai?", a: "Yes, a 300 sq ft Aquatherapy pool is present at the clinic along with a locker system, fully equipped shower and changing rooms, infrared sauna, ice bath therapy and an aqua treadmill. Our facility is also wheelchair-friendly with a chair lift for paraplegic patients who cannot enter the pool otherwise. We also have a scissor lift for patients who cannot climb down the ladder to enter the pool. Our team combines clinical expertise, physiotherapy and personalised exercise programs to support safer recovery and improved mobility." },
       { q: "Can a wheelchair user use the pool?", a: "Yes. <code>@</code>Secure Clinics is equipped with a chair lift that allows wheelchair users to enter and exit the therapy pool safely, comfortably, and with full dignity. Aqua therapy is highly beneficial for wheelchair users and those with limited mobility." },
       { q: "What is an aqua treadmill?", a: "An aqua treadmill is a treadmill submerged in a therapeutic pool. Walking or running in water significantly reduces the load on your joints — making it ideal for post-surgical recovery, arthritis, obesity-related joint pain, and sports rehabilitation. You get all the benefits of movement with a fraction of the impact." },
       { q: "What is an ice bath used for?", a: "Ice baths — also known as cold water immersion therapy — reduce inflammation, accelerate muscle recovery, and improve circulation. At <code>@</code>Secure Clinics, ice baths are used as part of structured recovery protocols for post-surgical patients, athletes, and those managing chronic pain or swelling." },
@@ -1449,7 +1449,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "FLEX@SECURECLINICS",
-      title: "Physiotherapy for Pain Relief, Recovery and Improved Mobility <code>@</code>Secure Clinics in Mumbai",
+      title: "Physiotherapy for Pain Relief, Recovery and Improved Mobility <code>@</code> Secure Clinics in Mumbai",
       tagline: "Thoughtful Rehab. Precise Movement. Real Progress.",
       intro: [
         "<code>@</code>Secure Clinics, Mumbai, our physiotherapy services focus on reducing pain, restoring movement and improving physical function through personalised rehabilitation programs.",
@@ -1570,7 +1570,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "POWER@SECURECLINICS",
-      title: "Strength Training for Recovery, Mobility and Stronger Muscles & Joints <code>@</code>Secure Clinics in Mumbai",
+      title: "Strength Training for Recovery, Mobility and Stronger Muscles & Joints <code>@</code> Secure Clinics in Mumbai",
       tagline: "Build Strength. Improve Control. Move Better.",
       intro: [
         "<code>@</code>Secure Clinics, Mumbai, our clinical strength training programs are designed to improve muscle strength, joint stability, mobility and overall physical function through personalised exercise-based rehabilitation.",
@@ -1686,7 +1686,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "POWER@SECURECLINICS",
-      title: "Clinical Pilates for Better Posture, Mobility and Recovery <code>@</code>Secure Clinics in Mumbai",
+      title: "Clinical Pilates for Better Posture, Mobility and Recovery <code>@</code> Secure Clinics in Mumbai",
       tagline: "Controlled Movement. Better Alignment. Sustainable Recovery.",
       intro: [
         "<code>@</code>Secure Clinics, our clinical Pilates programs combine controlled movement, core strengthening and rehabilitation principles to improve posture, flexibility and overall physical function.",
@@ -1800,7 +1800,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "FUEL@SECURECLINICS",
-      title: "Clinical Nutrition for Bone Health, Healing and Recovery <code>@</code>Secure Clinics in Mumbai",
+      title: "Clinical Nutrition for Bone Health, Healing and Recovery <code>@</code> Secure Clinics in Mumbai",
       tagline: "Fuel Healing. Strengthen Bones. Support Recovery.",
       intro: [
         "<code>@</code>Secure Clinics, Mumbai, our clinical nutrition programs support bone health, muscle strength, recovery and overall musculoskeletal wellness through personalised nutrition guidance.",
@@ -1914,7 +1914,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "ORTHO@SECURECLINICS",
-      title: "Osteoporosis and Orthopaedic Bone Care for Stronger Bones <code>@</code>Secure Clinics in Mumbai",
+      title: "Osteoporosis and Orthopaedic Bone Care for Stronger Bones <code>@</code> Secure Clinics in Mumbai",
       tagline: "Stronger Bones. Smarter Orthopaedics. Better Outcomes.",
       intro: [
         "<code>@</code>Secure Clinics, our osteoporosis and orthopaedic bone care team focuses on improving bone health, preventing fractures and managing conditions related to bone weakness. We also carry out surgical solutions — only when necessary at the top hospitals in Mumbai.",
@@ -2053,7 +2053,7 @@ export const treatments = [
       { q: "When should I see an orthopaedic specialist?", a: "You should consult an orthopaedic specialist if you experience persistent joint pain, back pain, neck pain, swelling, stiffness, limited mobility, sports injuries, fractures, difficulty walking, or pain that does not improve with rest or medication. Early diagnosis and treatment can help prevent long-term joint damage and improve recovery outcomes." },
       { q: "What non<code>-</code>surgical treatments are available for orthopaedic conditions?", a: "Many orthopaedic conditions can be successfully managed without surgery. <code>@</code>Secure Clinics, treatment options may include physiotherapy, clinical nutrition, pain management, regenerative therapies, PRP injections, hyaluronic acid injections, aquatherapy, osteoporosis management, medications, lifestyle modification, and personalised rehabilitation programs based on your condition." },
       { q: "How do I know if I need orthopaedic surgery?", a: "Orthopaedic surgery is usually recommended only when conservative treatments such as physiotherapy, medications, injections, or rehabilitation have not relieved your symptoms or when there is severe joint damage, fractures, ligament injuries, or advanced arthritis. Our orthopaedic specialists perform a comprehensive evaluation to determine the most appropriate treatment plan, with surgery considered only when necessary." },
-      { q: "Why choose <code>@</code>Secure Clinics for orthopaedic care?", a: "<code>@</code>Secure Clinics in Mumbai, provides comprehensive orthopaedic care through a multidisciplinary team of orthopaedic surgeons, spine specialists, physiotherapists, rehabilitation experts, pain specialists, and clinical nutritionists. We offer advanced diagnostics, personalized treatment plans, minimally invasive surgical options, robotic joint replacement, and structured rehabilitation programs to help patients reduce pain, restore mobility, and return to an active lifestyle — all under one roof with a highly qualified and skilled team coordinating your care together." },
+      { q: "Why choose <code>@</code>Secure Clinics for orthopaedic care?", a: "<code>@</code> Secure Clinics in Mumbai, provides comprehensive orthopaedic care through a multidisciplinary team of orthopaedic surgeons, spine specialists, physiotherapists, rehabilitation experts, pain specialists, and clinical nutritionists. We offer advanced diagnostics, personalized treatment plans, minimally invasive surgical options, robotic joint replacement, and structured rehabilitation programs to help patients reduce pain, restore mobility, and return to an active lifestyle — all under one roof with a highly qualified and skilled team coordinating your care together." },
     ],
   },
 ];
