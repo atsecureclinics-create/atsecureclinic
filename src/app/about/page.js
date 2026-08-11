@@ -86,11 +86,11 @@ export default function AboutPage() {
           {/* Dr. Shah quote */}
           <div className="max-w-4xl mx-auto mt-12 md:mt-16 border-l-4 border-coral pl-6 md:pl-8">
             <p className="font-opensans text-base md:text-xl text-navy leading-relaxed italic">
-              "The spine doesn't exist in isolation — and neither should your treatment. Most patients come to us having seen three different doctors who never spoke to each other. That's not care — that's chaos. We built @ Secure Clinics to fix exactly that."
+              "The spine doesn't exist in isolation — and neither should your treatment. Most patients come to us having seen three different doctors who never spoke to each other. That's not care — that's chaos. We built At Secure Clinics to fix exactly that."
             </p>
             <div className="mt-4 md:mt-5">
               <p className="font-seasons font-bold text-navy text-base md:text-lg">Dr. Sambhav Shah</p>
-              <p className="font-opensans text-sm md:text-base text-coral">Founder and Endoscopic Spine Surgeon, @ Secure Clinics</p>
+              <p className="font-opensans text-sm md:text-base text-coral">Founder and Endoscopic Spine Surgeon, At Secure Clinics</p>
             </div>
           </div>
         </Container>

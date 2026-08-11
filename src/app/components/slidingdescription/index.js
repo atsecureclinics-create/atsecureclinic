@@ -35,7 +35,7 @@ const slides = [
   {
     quote: "One Clinic. One Plan. One System.",
     attribution:
-      "Unlike conventional healthcare models where patients move between multiple providers, @ Secure Clinics offers a fully integrated treatment ecosystem where every stage from diagnosis to recovery is collaboratively managed.",
+      "Unlike conventional healthcare models where patients move between multiple providers, At Secure Clinics offers a fully integrated treatment ecosystem where every stage from diagnosis to recovery is collaboratively managed.",
   },
   {
     quote: "No fragmented care. No unnecessary steps.",
