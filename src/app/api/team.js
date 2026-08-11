@@ -54,7 +54,7 @@ export const team = [
   {
     slug: "prasham-shah",
     name: "Dr. Prasham Shah",
-    role: "Consulting Orthopaedic Surgeon and Co-Founder",
+    role: "Consulting Orthopaedic Surgeon and Co<code>-</code>Founder",
     image: PrashamShah,
     portraitBg: "bg-[#5b6e7a]",
     description:

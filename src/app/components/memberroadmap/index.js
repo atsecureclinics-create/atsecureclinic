@@ -52,7 +52,7 @@ export default function MemberRoadmap() {
               <div className="bg-green rounded-3xl p-6 sm:p-8 md:p-10">
                 <span className="font-opensans text-xs font-bold tracking-[0.25em] uppercase opacity-70">Stage 3</span>
                 <h3 className="mt-3 md:mt-4 text-2xl md:text-3xl font-extrabold">
-                  Precision Treatment <codde>&amp;</codde> Long<code>-</code>Term Recovery
+                  Precision Treatment  Long<code>-</code>Term Recovery
                 </h3>
                 <ul className="font-opensans mt-4 md:mt-6 space-y-3 md:space-y-4 list-disc pl-5 text-base md:text-lg leading-relaxed">
                   <li>Evidence-based rehabilitation, minimally invasive procedures, or surgery if required, tailored to clinical necessity and recovery goals.</li>

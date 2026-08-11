@@ -49,6 +49,8 @@ body {
     "calt" 0;
 }
 
+code{font-weight: 100 !important;}
+
 /* ===============================
    GLOBAL CONTAINER (Custom)
 ================================ */

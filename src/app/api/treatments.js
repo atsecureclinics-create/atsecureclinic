@@ -1251,7 +1251,7 @@ export const treatments = [
       heading: "Diagnostic Services We Offer",
       items: [
         { number: "01", title: "Blood Investigations", description: "Comprehensive blood tests to assess inflammation, deficiencies, metabolic health and systemic conditions." },
-        { number: "02", title: "X-Ray", description: "Digital imaging for quick assessment of bones, joints and alignment." },
+        { number: "02", title: "X<code>-</code>Ray", description: "Digital imaging for quick assessment of bones, joints and alignment." },
         { number: "03", title: "DEXA Scan", description: "Bone density evaluation for osteoporosis diagnosis and monitoring." },
         { number: "04", title: "EMG <code>/</code> NCS <code>/</code> SSEP", description: "Advanced nerve and muscle testing to evaluate nerve compression, neuropathies and spinal conditions." },
         { number: "05", title: "Sleep Study", description: "Evaluation of sleep disorders that impact pain, recovery and overall health." },
@@ -1370,9 +1370,9 @@ export const treatments = [
       eyebrow: "Techniques",
       heading: "Aqua Therapy Techniques We Offer",
       items: [
-        { number: "01", title: "Bad Ragaz Ring Method (BRRM)", description: "Therapist-guided aquatic technique to improve strength, mobility and neuromuscular control." },
+        { number: "01", title: "Bad Ragaz Ring Method <code>(</code>BRRM<code>)</code>", description: "Therapist-guided aquatic technique to improve strength, mobility and neuromuscular control." },
         { number: "02", title: "Ai Chi", description: "Gentle flowing movements to enhance balance, relaxation and body awareness." },
-        { number: "03", title: "Watsu (Water Shiatsu)", description: "Assisted water-based mobilisation and stretching to reduce pain and stiffness." },
+        { number: "03", title: "Watsu <code>(</code>Water Shiatsu<code>)</code>", description: "Assisted water-based mobilisation and stretching to reduce pain and stiffness." },
         { number: "04", title: "Halliwick Method", description: "A structured approach focusing on balance, postural control and movement confidence in water." },
         { number: "05", title: "Aquatic Strength and Mobility Training", description: "Resistance-based exercises using water to build strength with minimal joint strain." },
       ],
@@ -1498,7 +1498,7 @@ export const treatments = [
       items: [
         { title: "Advanced Physiotherapy Rehabilitation", description: "Our physiotherapy programs may include manual therapy, therapeutic exercises, mobility training, strengthening exercises, stretching programs, posture correction and functional rehabilitation. Treatment is customised based on the patient's condition and progress." },
         { title: "Orthopaedic Rehabilitation", description: "Designed to restore function after injury or musculoskeletal problems, including joint rehabilitation, muscle strengthening, movement retraining, balance improvement and functional recovery exercises." },
-        { title: "Post-Surgical Physiotherapy", description: "Physiotherapy plays an important role after procedures by helping restore movement, reduce stiffness, improve strength, support healing and return to daily activities." },
+        { title: "Post Surgical Physiotherapy", description: "Physiotherapy plays an important role after procedures by helping restore movement, reduce stiffness, improve strength, support healing and return to daily activities." },
       ],
     },
 
@@ -1570,7 +1570,7 @@ export const treatments = [
 
     hero: {
       eyebrow: "POWER@SECURECLINICS",
-      title: "Strength Training for Recovery, Mobility and Stronger Muscles & Joints <code>@</code> Secure Clinics in Mumbai",
+      title: "Strength Training for Recovery, Mobility and Stronger Muscles <code>&</code> Joints <code>At</code> Secure Clinics in Mumbai",
       tagline: "Build Strength. Improve Control. Move Better.",
       intro: [
         "<code>@</code>Secure Clinics, Mumbai, our clinical strength training programs are designed to improve muscle strength, joint stability, mobility and overall physical function through personalised exercise-based rehabilitation.",

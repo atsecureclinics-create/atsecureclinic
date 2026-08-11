@@ -146,19 +146,23 @@ function SpineConditions() {
                                 className="group bg-white rounded-2xl md:rounded-3xl p-6 sm:p-8 md:p-10 shadow-sm hover:shadow-xl transition-all duration-500 border border-navy/5 hover:-translate-y-2"
                             >
                                 <div className="flex items-center justify-between mb-2 md:mb-8">
-                                    <span className="text-4xl sm:text-5xl md:text-6xl font-serif text-coral/70 group-hover:text-coral transition-colors duration-500">
-                                        {step.number}
-                                    </span>
+                                    <span
+                                        className="text-4xl sm:text-5xl md:text-6xl font-serif text-coral/70 group-hover:text-coral transition-colors duration-500"
+                                        dangerouslySetInnerHTML={{ __html: step.number }}
+                                    />
+
                                     <div className="w-10 md:w-12 h-px bg-navy/20 group-hover:w-16 md:group-hover:w-20 transition-all duration-500" />
                                 </div>
 
-                                <h3 className="font-seasons text-2xl sm:text-3xl md:text-4xl text-navy mb-3 md:mb-5 leading-snug">
-                                    {step.title}
-                                </h3>
+                                <h3
+                                    className="font-seasons text-2xl sm:text-3xl md:text-4xl text-navy mb-3 md:mb-5 leading-snug"
+                                    dangerouslySetInnerHTML={{ __html: step.title }}
+                                />
 
-                                <p className="font-opensans text-sm md:text-lg text-navy/75 leading-relaxed">
-                                    {step.text}
-                                </p>
+                                <p
+                                    className="font-opensans text-sm md:text-lg text-navy/75 leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: step.text }}
+                                />
                             </div>
                         ))}
                     </div>
