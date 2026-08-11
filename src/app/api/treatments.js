@@ -1131,7 +1131,7 @@ export const treatments = [
         { number: "04", title: "Facet Radiofrequency Ablation", description: "Longer-term pain relief by selectively disabling pain-carrying nerves from facet joints." },
         { number: "05", title: "Sacroiliac <code>(</code>SI<code>)</code> Joint Injection", description: "Targeted treatment for lower back and pelvic pain arising from the SI joint." },
         { number: "06", title: "Trigger Point Injection", description: "Relief for painful muscle knots causing local or referred pain." },
-        { number: "07", title: "Intra-Articular Joint Injection", description: "Injection into knee, shoulder, hip or other joints to reduce pain and inflammation." },
+        { number: "07", title: "Intra Articular Joint Injection", description: "Injection into knee, shoulder, hip or other joints to reduce pain and inflammation." },
       ],
       extraGroups: [
         {
