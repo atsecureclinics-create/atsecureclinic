@@ -33,7 +33,7 @@ const steps = [
     },
     {
         number: "06",
-        title: "You're Prepared, Not Surprised",
+        title: "You Prepared, Not Surprised",
         text: "Every step is explained clearly: what will happen, how it feels, and what recovery entails. This clarity reduces anxiety and builds confidence in your care.",
     },
     {
