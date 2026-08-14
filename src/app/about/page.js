@@ -45,12 +45,14 @@ export default function AboutPage() {
 
             <div className="lg:col-span-5 xl:col-span-6 flex justify-center lg:justify-end">
               <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md aspect-[15/17] rounded-3xl md:rounded-4xl overflow-hidden shadow-2xl">
-                <video
-                  className="w-full h-full object-cover"
-                  src="/video/banner-video.mp4"
-                  controls
-                  playsInline
-                  preload="metadata"
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/C1wEdta0hOg?si=8dsg6-HDw7NBNcvO&autoplay=1&mute=1"
+                  title="Secure Clinics"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 />
               </div>
             </div>

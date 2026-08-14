@@ -48,6 +48,10 @@ export default function Header() {
     const [treatmentOpen, setTreatmentOpen] = useState(false);
     const [conditionOpen, setConditionOpen] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [surgicalOpen, setSurgicalOpen] = useState(false);
+    const [nonsurgicalOpen, setNonsurgicalOpen] = useState(false);
+    const [spineOpen, setSpineOpen] = useState(false);
+    const [orthopaedicOpen, setOrthopaedicOpen] = useState(false);
 
     useEffect(() => {
         if (!mobileOpen) return;
@@ -58,7 +62,13 @@ export default function Header() {
         };
     }, [mobileOpen]);
 
-    const closeMobile = () => setMobileOpen(false);
+    const closeMobile = () => {
+        setMobileOpen(false);
+        setSurgicalOpen(false);
+        setNonsurgicalOpen(false);
+        setSpineOpen(false);
+        setOrthopaedicOpen(false);
+    };
 
     return (
         <header className="bg-background relative z-50">
@@ -262,23 +272,9 @@ export default function Header() {
                     className="md:hidden border-t border-navy/10 bg-background max-h-[calc(100vh-64px)] overflow-y-auto"
                 >
                     <nav className="container py-4 font-seasons text-lg font-extrabold text-navy flex flex-col">
-                        <details className="group border-b border-navy/10">
-                            <summary className="flex justify-between items-center py-3 cursor-pointer list-none">
-                                About
-                                {/* <ChevronDown
-                                    size={18}
-                                    className="transition-transform duration-200 group-open:rotate-180"
-                                /> */}
-                            </summary>
-                            {/* <div className="flex flex-col pl-3 pb-3 gap-2 text-base font-normal font-opensans">
-                                <Link href="/about" onClick={closeMobile} className="py-1.5">
-                                    About Us
-                                </Link>
-                                <Link href="/press" onClick={closeMobile} className="py-1.5">
-                                    Press
-                                </Link>
-                            </div> */}
-                        </details>
+                        <Link href="/about" onClick={closeMobile} className="py-3 border-b border-navy/10">
+                            About Us
+                        </Link>
 
                         <Link href="/the-care-team" onClick={closeMobile} className="py-3 border-b border-navy/10">
                             Our Team
@@ -293,55 +289,57 @@ export default function Header() {
                                 />
                             </summary>
                             <div className="pl-3 pb-3 flex flex-col gap-3">
-                                <details className="group/sub">
-                                    <summary className="flex justify-between items-center py-2 cursor-pointer list-none text-base font-extrabold uppercase tracking-[0.15em]">
-                                        <Link href="/surgical" onClick={closeMobile}>
+                                <div>
+                                    <div className="flex items-center justify-between py-2">
+                                        <Link href="/surgical" onClick={closeMobile} className="text-base font-extrabold uppercase tracking-[0.15em]">
                                             Surgical Treatments
                                         </Link>
-                                        <ChevronDown
-                                            size={16}
-                                            className="transition-transform duration-200 group-open/sub:rotate-180"
-                                        />
-                                    </summary>
-                                    <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
-                                        {surgicalTreatments.map((t) => (
-                                            <li key={t.slug}>
-                                                <Link
-                                                    href={`/surgical/${t.slug}`}
-                                                    onClick={closeMobile}
-                                                    className="block py-1.5"
-                                                >
-                                                    {t.cardTitle}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </details>
+                                        <button type="button" onClick={() => setSurgicalOpen(v => !v)} className="p-1">
+                                            <ChevronDown size={16} className={`transition-transform duration-200 ${surgicalOpen ? "rotate-180" : ""}`} />
+                                        </button>
+                                    </div>
+                                    {surgicalOpen && (
+                                        <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
+                                            {surgicalTreatments.map((t) => (
+                                                <li key={t.slug}>
+                                                    <Link
+                                                        href={`/surgical/${t.slug}`}
+                                                        onClick={closeMobile}
+                                                        className="block py-1.5"
+                                                    >
+                                                        {t.cardTitle}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
 
-                                <details className="group/sub">
-                                    <summary className="flex justify-between items-center py-2 cursor-pointer list-none text-base font-extrabold uppercase tracking-[0.15em]">
-                                        <Link href="/nonsurgical" onClick={closeMobile}>
-                                            Non<code>-</code>Surgical Treatments
+                                <div>
+                                    <div className="flex items-center justify-between py-2">
+                                        <Link href="/nonsurgical" onClick={closeMobile} className="text-base font-extrabold uppercase tracking-[0.15em]">
+                                            Non-Surgical Treatments
                                         </Link>
-                                        <ChevronDown
-                                            size={16}
-                                            className="transition-transform duration-200 group-open/sub:rotate-180"
-                                        />
-                                    </summary>
-                                    <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
-                                        {nonsurgicalTreatments.map((t) => (
-                                            <li key={t.slug}>
-                                                <Link
-                                                    href={`/nonsurgical/${t.slug}`}
-                                                    onClick={closeMobile}
-                                                    className="block py-1.5"
-                                                >
-                                                    {t.cardTitle}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </details>
+                                        <button type="button" onClick={() => setNonsurgicalOpen(v => !v)} className="p-1">
+                                            <ChevronDown size={16} className={`transition-transform duration-200 ${nonsurgicalOpen ? "rotate-180" : ""}`} />
+                                        </button>
+                                    </div>
+                                    {nonsurgicalOpen && (
+                                        <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
+                                            {nonsurgicalTreatments.map((t) => (
+                                                <li key={t.slug}>
+                                                    <Link
+                                                        href={`/nonsurgical/${t.slug}`}
+                                                        onClick={closeMobile}
+                                                        className="block py-1.5"
+                                                    >
+                                                        {t.cardTitle}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
                             </div>
                         </details>
 
@@ -354,55 +352,57 @@ export default function Header() {
                                 />
                             </summary>
                             <div className="pl-3 pb-3 flex flex-col gap-3">
-                                <details className="group/sub">
-                                    <summary className="flex justify-between items-center py-2 cursor-pointer list-none text-base font-extrabold uppercase tracking-[0.15em]">
-                                        <Link href="/spine" onClick={closeMobile}>
+                                <div>
+                                    <div className="flex items-center justify-between py-2">
+                                        <Link href="/spine" onClick={closeMobile} className="text-base font-extrabold uppercase tracking-[0.15em]">
                                             Spine
                                         </Link>
-                                        <ChevronDown
-                                            size={16}
-                                            className="transition-transform duration-200 group-open/sub:rotate-180"
-                                        />
-                                    </summary>
-                                    <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
-                                        {spineConditions.map((c) => (
-                                            <li key={c.slug}>
-                                                <Link
-                                                    href={`/spine/${c.slug}`}
-                                                    onClick={closeMobile}
-                                                    className="block py-1.5"
-                                                >
-                                                    {c.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </details>
+                                        <button type="button" onClick={() => setSpineOpen(v => !v)} className="p-1">
+                                            <ChevronDown size={16} className={`transition-transform duration-200 ${spineOpen ? "rotate-180" : ""}`} />
+                                        </button>
+                                    </div>
+                                    {spineOpen && (
+                                        <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
+                                            {spineConditions.map((c) => (
+                                                <li key={c.slug}>
+                                                    <Link
+                                                        href={`/spine/${c.slug}`}
+                                                        onClick={closeMobile}
+                                                        className="block py-1.5"
+                                                    >
+                                                        {c.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
 
-                                <details className="group/sub">
-                                    <summary className="flex justify-between items-center py-2 cursor-pointer list-none text-base font-extrabold uppercase tracking-[0.15em]">
-                                        <Link href="/orthopaedic" onClick={closeMobile}>
+                                <div>
+                                    <div className="flex items-center justify-between py-2">
+                                        <Link href="/orthopaedic" onClick={closeMobile} className="text-base font-extrabold uppercase tracking-[0.15em]">
                                             Orthopaedic
                                         </Link>
-                                        <ChevronDown
-                                            size={16}
-                                            className="transition-transform duration-200 group-open/sub:rotate-180"
-                                        />
-                                    </summary>
-                                    <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
-                                        {orthopaedicConditions.map((c) => (
-                                            <li key={c.slug}>
-                                                <Link
-                                                    href={`/orthopaedic/${c.slug}`}
-                                                    onClick={closeMobile}
-                                                    className="block py-1.5"
-                                                >
-                                                    {c.name}
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </details>
+                                        <button type="button" onClick={() => setOrthopaedicOpen(v => !v)} className="p-1">
+                                            <ChevronDown size={16} className={`transition-transform duration-200 ${orthopaedicOpen ? "rotate-180" : ""}`} />
+                                        </button>
+                                    </div>
+                                    {orthopaedicOpen && (
+                                        <ul className="pl-3 pb-2 flex flex-col gap-1 text-sm font-normal font-opensans">
+                                            {orthopaedicConditions.map((c) => (
+                                                <li key={c.slug}>
+                                                    <Link
+                                                        href={`/orthopaedic/${c.slug}`}
+                                                        onClick={closeMobile}
+                                                        className="block py-1.5"
+                                                    >
+                                                        {c.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </div>
                             </div>
                         </details>
 
