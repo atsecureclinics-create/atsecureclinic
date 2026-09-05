@@ -9,7 +9,7 @@ import FAQ from '../components/faq';
 const surgerySteps = [
     {
         number: "01",
-        title: "You’re Heard Properly",
+        title: "You<code>’</code>re Heard Properly",
         text: "Every journey starts with listening, not rushing. Your spine or ortho concerns, pain, lifestyle, and goals are understood before any treatment is suggested.",
     },
     {

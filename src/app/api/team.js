@@ -45,7 +45,7 @@ export const team = [
       "Paediatric spine"
     ],
     whySecureClinics:
-      "Dr. Shah founded @SecureClinics because patients deserve more than fragmented care. It is an integrated spine recovery destination in South Mumbai — diagnostics, physiotherapy, aqua therapy, nutrition, rehabilitation, and surgical options under one roof. No forced treatment paths. Surgery only for those who truly need it.",
+      "Dr. Shah founded At Secure Clinics because patients deserve more than fragmented care. It is an integrated spine recovery destination in South Mumbai — diagnostics, physiotherapy, aqua therapy, nutrition, rehabilitation, and surgical options under one roof. No forced treatment paths. Surgery only for those who truly need it.",
     askAbout:
       "Whether your back pain actually needs surgery, what an integrated recovery looks like, and how to build a spine-safe lifestyle.",
     beyondWhiteCoat:
@@ -82,7 +82,7 @@ export const team = [
       "Surgical education and training"
     ],
     whySecureClinics:
-      "Dr. Prasham Shah joins @SecureClinics because the model reflects everything he has believed in across four decades of practice — honest, evidence-based care that explores every option before committing to surgery. A clinic where innovation and patient-first thinking are not aspirations but the baseline.",
+      "Dr. Prasham Shah joins At Secure Clinics because the model reflects everything he has believed in across four decades of practice — honest, evidence-based care that explores every option before committing to surgery. A clinic where innovation and patient-first thinking are not aspirations but the baseline.",
     askAbout:
       "Ozone therapy and what it can treat, whether arthroscopy is right for your condition, and what four decades of orthopaedic practice has taught him about how the body heals.",
     beyondWhiteCoat:
@@ -118,7 +118,7 @@ export const team = [
       "Physiotherapy team leadership"
     ],
     whySecureClinics:
-      "Dr. Dinky co-founded @SecureClinics to build the kind of clinic she always believed should exist — where physiotherapy, nutrition, and surgical care are not siloed but seamlessly connected. A place where recovery is complete, not just adequate.",
+      "Dr. Dinky co-founded At Secure Clinics to build the kind of clinic she always believed should exist — where physiotherapy, nutrition, and surgical care are not siloed but seamlessly connected. A place where recovery is complete, not just adequate.",
     askAbout:
       "Post-surgical rehabilitation, how nutrition supports physical recovery, and what a truly holistic approach to healing looks like in practice.",
     beyondWhiteCoat:
@@ -153,7 +153,7 @@ export const team = [
       "Athlete and active patient care"
     ],
     whySecureClinics:
-      "@SecureClinics is the natural home for the kind of integrated, evidence-based care Dr. Sheth has always practised — where physiotherapy, aqua therapy, and clinical wellness work together under one roof rather than in isolation.",
+      "At Secure Clinics is the natural home for the kind of integrated, evidence-based care Dr. Sheth has always practised — where physiotherapy, aqua therapy, and clinical wellness work together under one roof rather than in isolation.",
     askAbout:
       "Sports injury recovery, aquatic rehabilitation, how clinical Pilates supports healing, and what performance-based physiotherapy looks like for non-athletes too.",
     beyondWhiteCoat:
@@ -166,7 +166,7 @@ export const team = [
     image: RaenaShah,
     portraitBg: "bg-[#7a6a8a]",
     description:
-      "Co-Founder and Chief Operating Officer of @SecureClinics — a decade in PR and marketing leadership now driving clinical operations, patient relations, and the day-to-day excellence of the clinic.",
+      "Co-Founder and Chief Operating Officer of At Secure Clinics — a decade in PR and marketing leadership now driving clinical operations, patient relations, and the day-to-day excellence of the clinic.",
     bio: "Raena Shah is the Co-Founder and COO of @SecureClinics, bringing a decade of PR and marketing leadership at Communique PR to healthcare operations. She oversees administration, staff management, patient relations, and workflow design — ensuring every part of the patient journey runs smoothly and with genuine care.",
     content: [
       "Raena Shah is the Co-Founder and Chief Operating Officer of @SecureClinics, where she is the driving force behind the day-to-day excellence that allows the clinic to deliver truly integrated patient care. With a decade-long career built across some of Mumbai's leading PR and marketing firms, Raena brings a rare combination of operational rigour, people-first leadership, and a deep understanding of brand and client relationships to healthcare — a space that demands all three in equal measure.",
@@ -185,11 +185,11 @@ export const team = [
       "Employee management and team wellbeing"
     ],
     whySecureClinics:
-      "Raena co-founded @SecureClinics with the belief that great patient care is not just about clinical expertise — it is about the experience around it. From the first phone call to the last follow-up, she ensures every part of the patient journey runs smoothly, honestly, and with genuine care.",
+      "Raena co-founded At Secure Clinics with the belief that great patient care is not just about clinical expertise — it is about the experience around it. From the first phone call to the last follow-up, she ensures every part of the patient journey runs smoothly, honestly, and with genuine care.",
     askAbout:
-      "How @SecureClinics is run day-to-day, what to expect when you walk in, and how the clinic supports patients beyond the treatment room.",
+      "How At Secure Clinics is run day-to-day, what to expect when you walk in, and how the clinic supports patients beyond the treatment room.",
     beyondWhiteCoat:
-      "When she is not at the clinic, Raena loves to unwind with a good book or cook leisurely in the kitchen. She is always on the lookout for new opportunities and cherishes spending time with family. On a day off, you will likely find her at her holiday home, unwinding and recharging. She also channels her creative side through art and craft — the same curiosity, warmth, and hands-on energy she brings to her work at @SecureClinics every day."
+      "When she is not at the clinic, Raena loves to unwind with a good book or cook leisurely in the kitchen. She is always on the lookout for new opportunities and cherishes spending time with family. On a day off, you will likely find her at her holiday home, unwinding and recharging. She also channels her creative side through art and craft — the same curiosity, warmth, and hands-on energy she brings to her work at At Secure Clinics every day."
   },
   // ── Rest of the team ───────────────────────────────
   {
@@ -221,7 +221,7 @@ export const team = [
       "Multi-stage neurological recovery"
     ],
     whySecureClinics:
-      "@SecureClinics offers Dr. Krishna exactly the environment her patients need — where neurological physiotherapy does not exist in isolation but is supported by aqua therapy, strength training, diagnostics, and a coordinated clinical team all working toward the same outcome.",
+      "At Secure Clinics offers Dr. Krishna exactly the environment her patients need — where neurological physiotherapy does not exist in isolation but is supported by aqua therapy, strength training, diagnostics, and a coordinated clinical team all working toward the same outcome.",
     askAbout:
       "Stroke and Parkinson's recovery, what neurological physiotherapy actually involves, how long rehabilitation takes, and what realistic progress looks like at each stage of recovery.",
     beyondWhiteCoat:
@@ -262,7 +262,7 @@ export const team = [
       "Conference presentation and surgical education"
     ],
     whySecureClinics:
-      "@SecureClinics is built on the same philosophy that has guided Dr. Binyala's entire surgical career — that the most advanced technique, applied with the most honest intent, produces the best outcomes. A clinic where minimally invasive care is not a selling point but a standard.",
+      "At Secure Clinics is built on the same philosophy that has guided Dr. Binyala's entire surgical career — that the most advanced technique, applied with the most honest intent, produces the best outcomes. A clinic where minimally invasive care is not a selling point but a standard.",
     askAbout:
       "Endoscopic and minimally invasive spine surgery, what 3D navigation means for surgical precision, when surgery is genuinely necessary, and what the latest international research says about modern spine care.",
     beyondWhiteCoat:
@@ -293,7 +293,7 @@ export const team = [
       "Functional movement restoration"
     ],
     whySecureClinics:
-      "@SecureClinics gives Dr. Aman the clinical environment that makes the biggest difference to his patients — one where physiotherapy is not a standalone appointment but part of a fully integrated care plan, supported by diagnostics, specialist consultations, and rehabilitation all under one roof.",
+      "At Secure Clinics gives Dr. Aman the clinical environment that makes the biggest difference to his patients — one where physiotherapy is not a standalone appointment but part of a fully integrated care plan, supported by diagnostics, specialist consultations, and rehabilitation all under one roof.",
     askAbout:
       "Back and neck pain, how manual therapy works, what to expect from a physiotherapy assessment, and how long recovery typically takes for common musculoskeletal conditions.",
     beyondWhiteCoat:
@@ -328,7 +328,7 @@ export const team = [
       "End-to-end patient care management"
     ],
     whySecureClinics:
-      "@SecureClinics is the kind of integrated clinical environment Dr. Prayushi trained to work in — where physiotherapy is connected to diagnostics, specialist care, and rehabilitation rather than existing in isolation. A place where the standard of care matches the standard of her training.",
+      "At Secure Clinics is the kind of integrated clinical environment Dr. Prayushi trained to work in — where physiotherapy is connected to diagnostics, specialist care, and rehabilitation rather than existing in isolation. A place where the standard of care matches the standard of her training.",
     askAbout:
       "Musculoskeletal pain, what advanced manipulative physiotherapy involves, how to address the root cause of recurring pain, and what recovery looks like when it is done properly.",
     beyondWhiteCoat:
@@ -362,7 +362,7 @@ export const team = [
       "Hospital and private clinic rehabilitation"
     ],
     whySecureClinics:
-      "@SecureClinics brings together the kind of multidisciplinary environment that makes Dr. Aishwarya's work most effective — where physiotherapy is connected to diagnostics, specialist consultations, and integrated care rather than treated as a standalone service.",
+      "At Secure Clinics brings together the kind of multidisciplinary environment that makes Dr. Aishwarya's work most effective — where physiotherapy is connected to diagnostics, specialist consultations, and integrated care rather than treated as a standalone service.",
     askAbout:
       "Musculoskeletal injuries and pain, how to recover effectively from trauma or functional limitations, and what a structured, evidence-based rehabilitation plan actually looks like in practice.",
     beyondWhiteCoat:
@@ -440,7 +440,7 @@ export const team = [
       "Evidence-based dietary counselling"
     ],
     whySecureClinics:
-      "@SecureClinics is built on the understanding that nutrition is not separate from recovery — it is central to it. Hasti brings that exact philosophy to the clinic, working alongside physiotherapists, spine specialists, and strength trainers to ensure that what patients eat is as carefully considered as every other part of their care plan.",
+      "At Secure Clinics is built on the understanding that nutrition is not separate from recovery — it is central to it. Hasti brings that exact philosophy to the clinic, working alongside physiotherapists, spine specialists, and strength trainers to ensure that what patients eat is as carefully considered as every other part of their care plan.",
     askAbout:
       "Managing diabetes or hormonal conditions through nutrition, gut health and the Low FODMAP approach, how to lose weight sustainably, and what sports nutrition looks like for non-professional athletes too.",
     beyondWhiteCoat:
@@ -479,7 +479,7 @@ export const team = [
       "Vertebral and peripheral manipulation"
     ],
     whySecureClinics:
-      "@SecureClinics gives Dr. Nirmal exactly the clinical environment his approach demands — where manual therapy, diagnostics, strength training, and specialist surgical care sit under one roof and inform each other in real time. For patients with complex spinal, sports, or postural conditions, that coordination is not incidental to recovery. It is central to it.",
+      "At Secure Clinics gives Dr. Nirmal exactly the clinical environment his approach demands — where manual therapy, diagnostics, strength training, and specialist surgical care sit under one roof and inform each other in real time. For patients with complex spinal, sports, or postural conditions, that coordination is not incidental to recovery. It is central to it.",
     askAbout:
       "Sports injuries and how to prevent recurrence, when manual therapy is the right treatment versus other modalities, what osteopathic and chiropractic techniques actually do to the body, and what realistic timelines look like for spine and sports rehabilitation.",
     beyondWhiteCoat:

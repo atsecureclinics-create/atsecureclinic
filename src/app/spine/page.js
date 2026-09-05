@@ -8,7 +8,7 @@ import FAQ from '../components/faq';
 const steps = [
     {
         number: "01",
-        title: "You're Heard Properly",
+        title: "You<code>’</code>re Heard Properly",
         text: "Every journey starts with listening. Your spine concerns, pain history, lifestyle, and goals are fully understood before any treatment is suggested.",
     },
     {

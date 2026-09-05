@@ -158,7 +158,7 @@ export const treatments = [
       title: "Minimally Invasive Spine Surgery in Mumbai",
       tagline: "Advanced Spine Procedures Designed for Precision, Faster Recovery <code>&amp;</code> Better Mobility",
       intro: [
-        ", Mumbai, minimally invasive spine surgery combines advanced surgical technology, detailed imaging, and precision-based techniques to treat spinal disorders with minimal disruption to surrounding tissues.",
+        "At Secure Clinics, Mumbai, minimally invasive spine surgery combines advanced surgical technology, detailed imaging, and precision-based techniques to treat spinal disorders with minimal disruption to surrounding tissues.",
         "Unlike traditional open spine procedures, minimally invasive approaches use smaller surgical access points and specialised instruments to address problems affecting the discs, nerves, and spinal structures.",
         "Our spine specialists evaluate every patient individually to determine whether minimally invasive surgery is the right treatment option based on the condition, symptoms, imaging findings, and recovery goals.",
       ],
@@ -388,7 +388,7 @@ export const treatments = [
       tagline: "Advanced Surgical Solutions for Knee Pain, Joint Damage <code>&amp;</code> Mobility Restoration",
       intro: [
         "The knee joint plays a vital role in walking, balance, stability, and everyday movement. Injuries, cartilage damage, ligament tears, and degenerative conditions can affect knee function and lead to persistent pain, stiffness, and reduced mobility.",
-        ", Mumbai, our orthopaedic specialists provide comprehensive knee surgical care using advanced techniques, evidence-based treatment planning, and rehabilitation-focused recovery programs.",
+        "At Secure Clinics, Mumbai, our orthopaedic specialists provide comprehensive knee surgical care using advanced techniques, evidence-based treatment planning, and rehabilitation-focused recovery programs.",
         "Every patient undergoes a detailed evaluation to identify the underlying cause of knee problems and determine the most appropriate treatment approach.",
         "Our knee surgery services include advanced treatment for:",
       ],
@@ -436,8 +436,8 @@ export const treatments = [
         { number: "01", title: "Robotic Knee Replacement", description: "Robot-assisted knee replacement for accurate alignment, improved implant positioning and long-term joint function." },
         { number: "02", title: "ACL Reconstruction", description: "Surgical reconstruction of the anterior cruciate ligament to restore knee stability and enable return to sports and activity." },
         { number: "03", title: "Meniscus Repair", description: "Preservation-focused repair of meniscal tears to protect joint health and delay arthritis progression." },
-        { number: "04", title: "Partial (Unicondylar) Knee Replacement", description: "Replacement of only the damaged compartment of the knee, preserving healthy bone and ligaments." },
-        { number: "05", title: "High Tibial Osteotomy (HTO)", description: "Joint-preserving realignment surgery to offload damaged cartilage and delay knee replacement in younger patients." },
+        { number: "04", title: "Partial <code>(</>Unicondylar<code>)</code> Knee Replacement", description: "Replacement of only the damaged compartment of the knee, preserving healthy bone and ligaments." },
+        { number: "05", title: "High Tibial Osteotomy <code>(</code>HTO<code>)</code>", description: "Joint-preserving realignment surgery to offload damaged cartilage and delay knee replacement in younger patients." },
         { number: "06", title: "Cartilage Repair Procedures", description: "Advanced techniques to repair or regenerate damaged cartilage and restore smooth joint movement." },
       ],
     },
@@ -991,7 +991,7 @@ export const treatments = [
       items: [
         { number: "01", title: "Total Hip Replacement", description: "Complete replacement of the hip joint for advanced arthritis, improving pain relief and long-term mobility." },
         { number: "02", title: "Hip Arthroscopy", description: "Minimally invasive keyhole surgery for labral tears, impingement and early hip joint conditions." },
-        { number: "03", title: "Partial Hip Replacement (Bipolar)", description: "Replacement of the femoral head in selected fracture and arthritis cases to restore function." },
+        { number: "03", title: "Partial Hip Replacement <code>(</code>Bipolar<code>)</code>", description: "Replacement of the femoral head in selected fracture and arthritis cases to restore function." },
         { number: "04", title: "Hip Revision Surgery", description: "Complex surgery to replace or correct failed or worn-out hip implants." },
         { number: "05", title: "Hip Resurfacing Surgery", description: "Bone-preserving surgical option for selected active patients with hip arthritis." },
       ],
@@ -1735,7 +1735,7 @@ export const treatments = [
         { number: "01", title: "Clinical Pilates", description: "Therapist-guided Pilates focused on rehabilitation and movement correction." },
         { number: "02", title: "Pilates for Lower Back Pain", description: "Targeted core and mobility work to reduce pain and improve spinal support." },
         { number: "03", title: "Pilates for Knee and Hip Rehabilitation", description: "Controlled strengthening and alignment-focused exercises to support joint recovery." },
-        { number: "04", title: "Pilates for Post-Surgical Recovery", description: "Gentle, progressive movement to rebuild strength and confidence after surgery." },
+        { number: "04", title: "Pilates for Post<code>-</code>Surgical Recovery", description: "Gentle, progressive movement to rebuild strength and confidence after surgery." },
       ],
     },
 
