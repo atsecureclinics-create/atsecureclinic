@@ -1,6 +1,59 @@
 "use client";
 
 import { useState } from "react";
+import aquapool from "../../../public/images/aquapool.jpg";
+import Aquatreadmill from "../../../public/images/Aquatreadmill.jpg";
+import IceBath from "../../../public/images/IceBath.jpg";
+import Sauna from "../../../public/images/Sauna.jpg";
+import Startyour from "../../../public/images/Startyour.jpg";
+
+const galleryImages = [
+  "/common/1.png",
+  "/common/2.png",
+  "/common/3.png",
+  "/common/4.png",
+  "/common/5.png",
+  "/common/6.png",
+  "/common/7.png",
+];
+
+const galleryItems = [
+  ["Hydrotherapy pool, wide shot", galleryImages[0]],
+  ["Rehab gym", galleryImages[1]],
+  ["Reception / waiting area", galleryImages[2]],
+  ["Private treatment room", galleryImages[3]],
+  ["Chair lift / pool access", galleryImages[4]],
+  ["X-ray / diagnostics room", galleryImages[5]],
+  ["Aqua treadmill", galleryImages[6]],
+];
+
+const teamMembers = [
+  {
+    name: "Aishwarya chorge",
+    position: "Senior Physiotherapist",
+    image: "/doctors/aishwarya-chorge.webp",
+  },
+  {
+    name: "Aman Patel",
+    position: "Aqua Therapist",
+    image: "/doctors/aman-patel.webp",
+  },
+  {
+    name: "Ankit Sheth",
+    position: "Physiotherapist",
+    image: "/doctors/ankit-sheth.webp",
+  },
+  {
+    name: "Dinky Shah",
+    position: "Receptionist",
+    image: "/doctors/dinky-shah.webp",
+  },
+  {
+    name: "Krishna Patel",
+    position: "Physiotherapist",
+    image: "/doctors/krishna-patel.webp",
+  },
+];
 
 const faqs = [
   {
@@ -219,14 +272,17 @@ export default function LandingPage() {
               <Placeholder
                 ratio="ph-4-5"
                 tag="Video"
-                label={
-                  <>
-                    30–60 sec clinic walkthrough video
-                    <br />
-                    (pool + gym + reception)
-                  </>
+                iframe={
+                  <iframe
+                    className="hero-video"
+                    src="https://www.youtube.com/embed/C1wEdta0hOg?si=8dsg6-HDw7NBNcvO&autoplay=1&mute=1"
+                    title="Secure Clinics"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
                 }
-                play
               />
             </div>
           </div>
@@ -339,6 +395,7 @@ export default function LandingPage() {
               <Placeholder
                 ratio="ph-4-5"
                 tag="Photo"
+                image={IceBath.src}
                 label="Physio + surgeon reviewing a patient's plan together"
               />
             </div>
@@ -366,7 +423,8 @@ export default function LandingPage() {
               <Track
                 type="land"
                 title="Land — Physiotherapy"
-                subtitle="Manual, exercise-led rehab for strength and control"
+                subtitle="Rehab gym / manual therapy session"
+                image={Startyour.src}
                 imageLabel="Rehab gym / manual therapy session"
                 items={[
                   [
@@ -388,6 +446,7 @@ export default function LandingPage() {
                 type="water"
                 title="Water — Aqua Therapy"
                 subtitle="Buoyancy-assisted rehab when land feels too much"
+                image={aquapool.src}
                 imageLabel="Hydrotherapy pool / aqua session in progress"
                 items={[
                   [
@@ -484,6 +543,7 @@ export default function LandingPage() {
               <Placeholder
                 ratio="ph-4-5"
                 tag="Photo"
+                image={Aquatreadmill.src}
                 label="Patient consultation / assessment in progress"
               />
             </div>
@@ -592,18 +652,11 @@ export default function LandingPage() {
             </div>
 
             <div className="gallery">
-              {[
-                "Hydrotherapy pool, wide shot",
-                "Rehab gym",
-                "Reception / waiting area",
-                "Private treatment room",
-                "Chair lift / pool access",
-                "X-ray / diagnostics room",
-                "Aqua treadmill",
-              ].map((label) => (
+              {galleryItems.map(([label, image]) => (
                 <Placeholder
-                  key={label}
+                  key={image}
                   tag="Photo"
+                  image={image}
                   label={label}
                 />
               ))}
@@ -663,22 +716,17 @@ export default function LandingPage() {
             </div>
 
             <div className="team-strip">
-              {[
-                ["Dr. [Name]", "Spine & Orthopaedic Surgeon"],
-                ["[Name]", "Lead Physiotherapist"],
-                ["[Name]", "Aqua Therapist"],
-                ["[Name]", "Physiotherapist"],
-                ["[Name]", "Aqua Therapist"],
-              ].map(([name, role], index) => (
-                <div className="team-card" key={`${name}-${role}-${index}`}>
+              {teamMembers.map((member) => (
+                <div className="team-card" key={member.image}>
                   <Placeholder
                     ratio="ph-3-4"
                     tag="Photo"
-                    label="Headshot"
+                    image={member.image}
+                    label={member.name}
                   />
 
-                  <div className="name">{name}</div>
-                  <div className="role">{role}</div>
+                  <div className="name">{member.name}</div>
+                  <div className="role">{member.position}</div>
                 </div>
               ))}
             </div>
@@ -692,6 +740,7 @@ export default function LandingPage() {
               <Placeholder
                 ratio="ph-1-1"
                 tag="Photo"
+                image={Sauna.src}
                 label="Patient photo (with consent) or before/after mobility shot"
               />
             </div>
@@ -774,27 +823,12 @@ export default function LandingPage() {
               Message us on WhatsApp
             </a>
               <div className="lead-media">
-                <div
-                  className="ph ph-3-2"
-                  style={{ minHeight: "auto" }}
-                >
-                  <span className="ph-tag">Photo</span>
-                  <svg
-                    className="ph-icon"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    aria-hidden="true"
-                  >
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <circle cx="9" cy="10" r="1.5" />
-                    <path d="M21 15l-5-4-4 3-3-2-6 5" />
-                  </svg>
-                  <span className="ph-label">
-                    Therapist greeting a patient at reception
-                  </span>
-                </div>
+                <Placeholder
+                  ratio="ph-3-2"
+                  tag="Photo"
+                  image={Startyour.src}
+                  label="Therapist greeting a patient at reception"
+                />
               </div>
             </div>
 
@@ -1036,24 +1070,58 @@ export default function LandingPage() {
 
 
 
-function Placeholder({ ratio, tag, label }) {
+function Placeholder({
+  ratio = "",
+  tag,
+  label,
+  play = false,
+  iframe = null,
+  image = null,
+}) {
   return (
     <div className={`ph ${ratio}`}>
-      <span className="ph-tag">{tag}</span>
+      {tag && <span className="ph-tag">{tag}</span>}
 
-      <svg
-        className="ph-icon"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        aria-hidden="true"
-      >
-        <circle cx="12" cy="8" r="4" />
-        <path d="M4 21c0-4 4-6 8-6s8 2 8 6" />
-      </svg>
+      {iframe ? (
+        iframe
+      ) : image ? (
+        <img
+          className="placeholder-image"
+          src={image}
+          alt={label || ""}
+        />
+      ) : (
+        <>
+          {play && (
+            <div className="ph-play">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </div>
+          )}
 
-      <span className="ph-label">{label}</span>
+          <svg
+            className="ph-icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            aria-hidden="true"
+          >
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <circle cx="9" cy="10" r="1.5" />
+            <path d="M21 15l-5-4-4 3-3-2-6 5" />
+          </svg>
+
+          <span className="ph-label">{label}</span>
+        </>
+      )}
     </div>
   );
 }
@@ -1062,6 +1130,7 @@ function Track({
   type,
   title,
   subtitle,
+  image,
   imageLabel,
   items,
 }) {
@@ -1071,6 +1140,7 @@ function Track({
         <Placeholder
           ratio="ph-3-2"
           tag="Photo"
+          image={image}
           label={imageLabel}
         />
       </div>
@@ -1079,11 +1149,27 @@ function Track({
         <div className="track-label">
           <div className="badge">
             {type === "land" ? (
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" aria-hidden="true">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                strokeWidth="2"
+                aria-hidden="true"
+              >
                 <path d="M13 4l3 3-9 9-4 1 1-4 9-9z" />
               </svg>
             ) : (
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" aria-hidden="true">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#fff"
+                strokeWidth="2"
+                aria-hidden="true"
+              >
                 <path d="M2 15c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0 3.5 2 5 0M2 19c1.5-2 3.5-2 5 0s3.5 2 5 0 3.5-2 5 0 3.5 2 5 0" />
               </svg>
             )}
