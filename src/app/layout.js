@@ -1,5 +1,52 @@
+// src/app/layout.js
+
+import localFont from "next/font/local";
+import { Open_Sans } from "next/font/google";
+
 import "./globals.css";
 import Providers from "./providers";
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
+  variable: "--font-open-sans",
+  display: "swap",
+});
+
+const theSeasons = localFont({
+  src: [
+    {
+      path: "./fonts/TheSeasons-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./fonts/TheSeasons-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/TheSeasons-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/theseasons-it.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "./fonts/theseasons-bdit.woff2",
+      weight: "700",
+      style: "italic",
+    },
+  ],
+  variable: "--font-the-seasons",
+  display: "swap",
+  fallback: ["Open Sans", "Georgia", "Times New Roman", "serif"],
+  adjustFontFallback: "Times New Roman",
+});
 
 export const metadata = {
   title: "Secure Clinics",
@@ -23,7 +70,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </head>
 
-      <body>
+      <body className={`${theSeasons.variable} ${openSans.variable}`}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-KKPXBX86"
