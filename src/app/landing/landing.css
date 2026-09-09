@@ -35,7 +35,7 @@
   color: var(--landing-ink);
 
   font-family:
-    var(--font-open-sans),
+    var(--font-the-seasons),
     "Open Sans",
     Georgia,
     "Times New Roman",
@@ -83,6 +83,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 }
 
@@ -409,6 +410,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size:
@@ -518,6 +520,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size:
@@ -682,6 +685,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size: 24px;
@@ -786,6 +790,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size: 19px;
@@ -833,6 +838,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size: 12.5px;
@@ -869,6 +875,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size: 16.5px;
@@ -909,6 +916,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 }
 
@@ -1228,6 +1236,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size: 22px;
@@ -1270,6 +1279,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size:
@@ -1333,6 +1343,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size: 18px;
@@ -1374,6 +1385,8 @@
   font-family:
     var(--font-the-seasons),
     "Open Sans",
+    Georgia,
+    "Times New Roman",
     serif;
 
   font-size: 18px;
@@ -1553,6 +1566,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size: 16px;
@@ -1692,6 +1706,7 @@
     var(--font-the-seasons),
     "Open Sans",
     Georgia,
+    "Times New Roman",
     serif;
 
   font-size:
