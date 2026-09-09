@@ -2,8 +2,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { team } from "../../../api/team";
 import Link from "next/link";
-import MoreTeam from "@/app/components/morerteams";
-import ContactSection from "@/app/components/contactus";
+import MoreTeam from "../../components/morerteams";
+import ContactSection from "../../components/contactus";
 
 // 1. Statically generate routes at build time (Great for SEO and Speed)
 export async function generateStaticParams() {

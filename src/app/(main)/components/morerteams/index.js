@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { team } from "../../api/team"; // Ensure this matches your alias setup
+import { team } from "../../../api/team";
 
 export default function MoreTeam({ currentSlug }) {
   // Filter out the profile currently being viewed

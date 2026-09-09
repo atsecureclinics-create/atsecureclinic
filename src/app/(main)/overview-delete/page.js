@@ -2,7 +2,7 @@ import React from 'react'
 import Container from '../components/container'
 import Image from 'next/image'
 import Link from 'next/link'
-import team from "../../../public/common/team.png";
+import team from "../../../../public/common/team.png";
 import AtTheRate from '../components/attherate';
 import HowWeTreat from '../components/howwetreat';
 import MovingGallery from '../components/movinggallery';
