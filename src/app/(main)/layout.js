@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import { Open_Sans } from "next/font/google";
-import "./main.css";
 
 import Header from "./components/header";
 import Footer from "./components/footer";

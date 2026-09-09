@@ -487,11 +487,20 @@ export default function LandingPage() {
             </div>
 
             <Placeholder
-              ratio="ph-16-9"
-              tag="Video"
-              label="Full facility tour — pool, gym, treatment rooms, reception"
-              play
-            />
+                ratio="ph-4-5"
+                tag="Video"
+                iframe={
+                  <iframe
+                    className="hero-video"
+                    src="https://www.youtube.com/embed/C1wEdta0hOg?si=8dsg6-HDw7NBNcvO&autoplay=1&mute=1"
+                    title="Full facility tour — pool, gym, treatment rooms, reception"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                }
+              />
           </div>
         </section>
 

@@ -1793,7 +1793,7 @@
   justify-content: center;
 
   gap: 8px;
-  padding: 18px;
+  padding: 0;
 
   border: 1.5px dashed var(--landing-ph-border);
   border-radius: 16px;
