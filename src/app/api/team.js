@@ -1,14 +1,11 @@
 import TeamFallback from "../../../public/doctors/empty-profile.webp";
 import SambhavShah from "../../../public/doctors/sambhav-shah.webp";
 import DinkyShah from "../../../public/doctors/dinky-shah.webp";
-import AnkitSheth from "../../../public/doctors/ankit-sheth.webp";
 import PrashamShah from "../../../public/doctors/prasham-shah.webp";
-import KrishnaPatel from "../../../public/doctors/krishna-patel.webp";
 import ShreyBinyala from "../../../public/doctors/shrey-binyala.webp";
-import AmanPatel from "../../../public/doctors/aman-patel.webp";
 import PrayushiShah from "../../../public/doctors/prayushi-shah.webp";
 import AishwaryaChorge from "../../../public/doctors/aishwarya-chorge.webp";
-import ShrutiKamya from "../../../public/doctors/shruti-kamya.webp";
+import ShrutiKainya from "../../../public/doctors/shruti-kamya.webp";
 import HastiGala from "../../../public/doctors/hasti-gala.webp";
 import NirmalSolanki from "../../../public/doctors/nirmal-solanki.webp";
 import RaenaShah from "../../../public/doctors/raena-shah.webp";
@@ -124,41 +121,41 @@ export const team = [
     beyondWhiteCoat:
       "Yoga practitioner. Meditator. Mother of two. Dr. Dinky brings the same mindfulness and intention to her patients that she brings to her own life — making every recovery feel less clinical and more human."
   },
-  {
-    slug: "ankit-sheth",
-    name: "Dr. Ankit Sheth",
-    role: "Consultant Physiotherapist and Co<code>-</code>Founder",
-    image: AnkitSheth,
-    portraitBg: "bg-[#c8a97e]",
-    description:
-      "HCPC-registered physiotherapist and sports scientist with a Master's in Sports Medicine from the UK; prior work with Liverpool FC, Leeds FC, and the NHS.",
-    bio: "Dr. Ankit Sheth is a physiotherapist and sports scientist with a Master's in Sports Medicine from the UK and registration with the HCPC. His postgraduate work with Liverpool FC, Leeds FC, and the NHS informs an approach that bridges physiotherapy and performance — combining functional movement, manual therapy, and evidence-based rehabilitation into programmes that go far beyond standard recovery.",
-    content: [
-      "Dr. Ankit Sheth is a physiotherapist and sports scientist with a Master's degree in Sports Medicine from the United Kingdom, registered with the Health and Care Professions Council (HCPC, UK). He brings a rare blend of clinical rigour and performance science to his practice — shaped by an elite international training background that few practitioners in India can match.",
-      "During his postgraduate studies in the UK, Dr. Sheth worked with Liverpool FC, Leeds FC, and the NHS — gaining hands-on experience at the highest levels of sport and clinical care. That exposure to elite athlete recovery, performance optimisation, and evidence-based rehabilitation now informs everything he brings to his patients at @SecureClinics.",
-      "His approach bridges the gap between physiotherapy and wellness — combining functional movement, manual therapy, and performance enhancement into recovery programmes that go far beyond standard rehabilitation."
-    ],
-    education: [
-      "MSc Sports Medicine — United Kingdom",
-      "HCPC Registered Physiotherapist (UK)"
-    ],
-    expertise: [
-      "Sports injury rehabilitation",
-      "Aquatic therapy",
-      "Clinical Pilates",
-      "Manual therapy",
-      "Functional movement and performance enhancement",
-      "Musculoskeletal physiotherapy",
-      "Cold therapy and recovery protocols",
-      "Athlete and active patient care"
-    ],
-    whySecureClinics:
-      "At Secure Clinics is the natural home for the kind of integrated, evidence-based care Dr. Sheth has always practised — where physiotherapy, aqua therapy, and clinical wellness work together under one roof rather than in isolation.",
-    askAbout:
-      "Sports injury recovery, aquatic rehabilitation, how clinical Pilates supports healing, and what performance-based physiotherapy looks like for non-athletes too.",
-    beyondWhiteCoat:
-      "Athlete at heart. Driven by performance, precision, and the belief that recovery should be as dynamic as the body itself."
-  },
+  // {
+  //   slug: "ankit-sheth",
+  //   name: "Dr. Ankit Sheth",
+  //   role: "Consultant Physiotherapist and Co<code>-</code>Founder",
+  //   image: AnkitSheth,
+  //   portraitBg: "bg-[#c8a97e]",
+  //   description:
+  //     "HCPC-registered physiotherapist and sports scientist with a Master's in Sports Medicine from the UK; prior work with Liverpool FC, Leeds FC, and the NHS.",
+  //   bio: "Dr. Ankit Sheth is a physiotherapist and sports scientist with a Master's in Sports Medicine from the UK and registration with the HCPC. His postgraduate work with Liverpool FC, Leeds FC, and the NHS informs an approach that bridges physiotherapy and performance — combining functional movement, manual therapy, and evidence-based rehabilitation into programmes that go far beyond standard recovery.",
+  //   content: [
+  //     "Dr. Ankit Sheth is a physiotherapist and sports scientist with a Master's degree in Sports Medicine from the United Kingdom, registered with the Health and Care Professions Council (HCPC, UK). He brings a rare blend of clinical rigour and performance science to his practice — shaped by an elite international training background that few practitioners in India can match.",
+  //     "During his postgraduate studies in the UK, Dr. Sheth worked with Liverpool FC, Leeds FC, and the NHS — gaining hands-on experience at the highest levels of sport and clinical care. That exposure to elite athlete recovery, performance optimisation, and evidence-based rehabilitation now informs everything he brings to his patients at @SecureClinics.",
+  //     "His approach bridges the gap between physiotherapy and wellness — combining functional movement, manual therapy, and performance enhancement into recovery programmes that go far beyond standard rehabilitation."
+  //   ],
+  //   education: [
+  //     "MSc Sports Medicine — United Kingdom",
+  //     "HCPC Registered Physiotherapist (UK)"
+  //   ],
+  //   expertise: [
+  //     "Sports injury rehabilitation",
+  //     "Aquatic therapy",
+  //     "Clinical Pilates",
+  //     "Manual therapy",
+  //     "Functional movement and performance enhancement",
+  //     "Musculoskeletal physiotherapy",
+  //     "Cold therapy and recovery protocols",
+  //     "Athlete and active patient care"
+  //   ],
+  //   whySecureClinics:
+  //     "At Secure Clinics is the natural home for the kind of integrated, evidence-based care Dr. Sheth has always practised — where physiotherapy, aqua therapy, and clinical wellness work together under one roof rather than in isolation.",
+  //   askAbout:
+  //     "Sports injury recovery, aquatic rehabilitation, how clinical Pilates supports healing, and what performance-based physiotherapy looks like for non-athletes too.",
+  //   beyondWhiteCoat:
+  //     "Athlete at heart. Driven by performance, precision, and the belief that recovery should be as dynamic as the body itself."
+  // },
   {
     slug: "raena-shah",
     name: "Raena Shah",
@@ -192,41 +189,41 @@ export const team = [
       "When she is not at the clinic, Raena loves to unwind with a good book or cook leisurely in the kitchen. She is always on the lookout for new opportunities and cherishes spending time with family. On a day off, you will likely find her at her holiday home, unwinding and recharging. She also channels her creative side through art and craft — the same curiosity, warmth, and hands-on energy she brings to her work at At Secure Clinics every day."
   },
   // ── Rest of the team ───────────────────────────────
-  {
-    slug: "krishna-patel",
-    name: "Dr. Krishna Patel",
-    role: "Consultant Physiotherapist",
-    image: KrishnaPatel,
-    portraitBg: "bg-[#b38b6d]",
-    description:
-      "Specialist neuro physiotherapist with a Master's in Neurological Sciences and 5+ years dedicated entirely to neurological rehabilitation.",
-    bio: "Dr. Krishna Patel is a specialist neuro physiotherapist with over five years of clinical experience dedicated entirely to neurological rehabilitation. She works with patients facing stroke, spinal cord injury, Parkinson's, and balance disorders — guiding them back toward movement, independence, and quality of life through rigorous assessment and evidence-based rehabilitation.",
-    content: [
-      "Dr. Krishna Patel is a specialist neuro physiotherapist with over five years of clinical experience dedicated entirely to neurological rehabilitation. Holding a Master's in Physiotherapy with a specialisation in Neurological Sciences, she works with patients facing some of the most complex and life-altering conditions in medicine — stroke, spinal cord injury, Parkinson's disease, balance disorders, and a range of neurological impairments — guiding them back toward movement, independence, and quality of life.",
-      "What defines Dr. Krishna's approach is where she begins — with a rigorous, comprehensive assessment before any treatment plan is formed. She believes that identifying the true underlying cause of movement dysfunction is the only honest starting point for effective rehabilitation. Through detailed movement analysis, motor control assessment, and functional evaluation, she builds a precise picture of each patient's limitations and potential — and from there, a programme that is entirely their own.",
-      "Her clinical expertise spans stroke and Parkinson's rehabilitation, gait training, balance retraining, neuromuscular re-education, and supporting patients through every stage of neurological recovery. She combines scientific rigour with genuine compassion — understanding that for many of her patients, regaining the ability to walk, balance, or move independently is not a clinical milestone. It is everything.",
-      "\"Dedicated to helping neurological patients regain movement, independence, confidence, and quality of life through evidence-based rehabilitation.\""
-    ],
-    education: [
-      "MPT — Neurological Sciences (Master's in Physiotherapy)"
-    ],
-    expertise: [
-      "Stroke rehabilitation",
-      "Parkinson's rehabilitation",
-      "Spinal cord injury rehabilitation",
-      "Balance and gait training",
-      "Neuromuscular re-education",
-      "Functional neurological rehabilitation",
-      "Motor control and movement analysis",
-      "Multi-stage neurological recovery"
-    ],
-    whySecureClinics:
-      "At Secure Clinics offers Dr. Krishna exactly the environment her patients need — where neurological physiotherapy does not exist in isolation but is supported by aqua therapy, strength training, diagnostics, and a coordinated clinical team all working toward the same outcome.",
-    askAbout:
-      "Stroke and Parkinson's recovery, what neurological physiotherapy actually involves, how long rehabilitation takes, and what realistic progress looks like at each stage of recovery.",
-    beyondWhiteCoat:
-      "An avid reader who believes that continuous learning does not stop at the clinic door. The same curiosity that keeps her informed and growing professionally is what keeps her present, thoughtful, and genuinely engaged with every patient she works with."
-  },
+  // {
+  //   slug: "krishna-patel",
+  //   name: "Dr. Krishna Patel",
+  //   role: "Consultant Physiotherapist",
+  //   image: KrishnaPatel,
+  //   portraitBg: "bg-[#b38b6d]",
+  //   description:
+  //     "Specialist neuro physiotherapist with a Master's in Neurological Sciences and 5+ years dedicated entirely to neurological rehabilitation.",
+  //   bio: "Dr. Krishna Patel is a specialist neuro physiotherapist with over five years of clinical experience dedicated entirely to neurological rehabilitation. She works with patients facing stroke, spinal cord injury, Parkinson's, and balance disorders — guiding them back toward movement, independence, and quality of life through rigorous assessment and evidence-based rehabilitation.",
+  //   content: [
+  //     "Dr. Krishna Patel is a specialist neuro physiotherapist with over five years of clinical experience dedicated entirely to neurological rehabilitation. Holding a Master's in Physiotherapy with a specialisation in Neurological Sciences, she works with patients facing some of the most complex and life-altering conditions in medicine — stroke, spinal cord injury, Parkinson's disease, balance disorders, and a range of neurological impairments — guiding them back toward movement, independence, and quality of life.",
+  //     "What defines Dr. Krishna's approach is where she begins — with a rigorous, comprehensive assessment before any treatment plan is formed. She believes that identifying the true underlying cause of movement dysfunction is the only honest starting point for effective rehabilitation. Through detailed movement analysis, motor control assessment, and functional evaluation, she builds a precise picture of each patient's limitations and potential — and from there, a programme that is entirely their own.",
+  //     "Her clinical expertise spans stroke and Parkinson's rehabilitation, gait training, balance retraining, neuromuscular re-education, and supporting patients through every stage of neurological recovery. She combines scientific rigour with genuine compassion — understanding that for many of her patients, regaining the ability to walk, balance, or move independently is not a clinical milestone. It is everything.",
+  //     "\"Dedicated to helping neurological patients regain movement, independence, confidence, and quality of life through evidence-based rehabilitation.\""
+  //   ],
+  //   education: [
+  //     "MPT — Neurological Sciences (Master's in Physiotherapy)"
+  //   ],
+  //   expertise: [
+  //     "Stroke rehabilitation",
+  //     "Parkinson's rehabilitation",
+  //     "Spinal cord injury rehabilitation",
+  //     "Balance and gait training",
+  //     "Neuromuscular re-education",
+  //     "Functional neurological rehabilitation",
+  //     "Motor control and movement analysis",
+  //     "Multi-stage neurological recovery"
+  //   ],
+  //   whySecureClinics:
+  //     "At Secure Clinics offers Dr. Krishna exactly the environment her patients need — where neurological physiotherapy does not exist in isolation but is supported by aqua therapy, strength training, diagnostics, and a coordinated clinical team all working toward the same outcome.",
+  //   askAbout:
+  //     "Stroke and Parkinson's recovery, what neurological physiotherapy actually involves, how long rehabilitation takes, and what realistic progress looks like at each stage of recovery.",
+  //   beyondWhiteCoat:
+  //     "An avid reader who believes that continuous learning does not stop at the clinic door. The same curiosity that keeps her informed and growing professionally is what keeps her present, thoughtful, and genuinely engaged with every patient she works with."
+  // },
   {
     slug: "shrey-binyala",
     name: "Dr. Shrey Binyala",
@@ -268,37 +265,37 @@ export const team = [
     beyondWhiteCoat:
       "First-rank student. Published researcher. International fellow. Invited speaker. Dr. Binyala brings the same relentless standard he has applied to every examination and fellowship to every patient he treats — because in spine surgery, precision is not optional. It is everything."
   },
-  {
-    slug: "aman-patel",
-    name: "Dr. Aman Patel",
-    role: "Consultant Physiotherapist",
-    image: AmanPatel,
-    portraitBg: "bg-[#8a6d5b]",
-    description:
-      "Physiotherapist specialising in musculoskeletal pain management and functional rehabilitation with strong manual therapy skills.",
-    bio: "Dr. Aman Patel is a physiotherapist specialising in musculoskeletal pain management and functional rehabilitation — working with patients experiencing back pain, neck pain, joint pain, and muscle injuries. He is recognised for strong manual therapy skills and a patient-focused approach that makes even complex or chronic pain cases feel manageable.",
-    content: [
-      "Dr. Aman Patel is a physiotherapist specialising in musculoskeletal pain management and functional rehabilitation. He works with patients experiencing back pain, neck pain, joint pain, muscle injuries, and a range of musculoskeletal disorders — bringing a hands-on, assessment-first approach to every case.",
-      "Dr. Aman believes that accurate diagnosis is the foundation of effective treatment. Before any intervention, he conducts a thorough evaluation to identify the true root cause of pain — because treating symptoms without understanding their origin rarely produces lasting results. From that foundation, he builds targeted rehabilitation plans designed to reduce pain, restore mobility, and return patients to their daily lives safely and comfortably.",
-      "He is recognised for his strong manual therapy skills and a patient-focused approach that makes even complex or chronic pain cases feel manageable. His goal with every patient is simple: less pain, better movement, and the confidence to get back to living fully."
-    ],
-    education: [
-      "BPT — Bachelor of Physiotherapy"
-    ],
-    expertise: [
-      "Musculoskeletal pain management",
-      "Manual therapy techniques",
-      "Back and neck pain rehabilitation",
-      "Joint and muscle injury treatment",
-      "Functional movement restoration"
-    ],
-    whySecureClinics:
-      "At Secure Clinics gives Dr. Aman the clinical environment that makes the biggest difference to his patients — one where physiotherapy is not a standalone appointment but part of a fully integrated care plan, supported by diagnostics, specialist consultations, and rehabilitation all under one roof.",
-    askAbout:
-      "Back and neck pain, how manual therapy works, what to expect from a physiotherapy assessment, and how long recovery typically takes for common musculoskeletal conditions.",
-    beyondWhiteCoat:
-      "A passionate traveller who finds meaning in exploring new destinations and immersing himself in different cultures — a curiosity about people and the world that translates directly into the care and attention he brings to every patient."
-  },
+  // {
+  //   slug: "aman-patel",
+  //   name: "Dr. Aman Patel",
+  //   role: "Consultant Physiotherapist",
+  //   image: AmanPatel,
+  //   portraitBg: "bg-[#8a6d5b]",
+  //   description:
+  //     "Physiotherapist specialising in musculoskeletal pain management and functional rehabilitation with strong manual therapy skills.",
+  //   bio: "Dr. Aman Patel is a physiotherapist specialising in musculoskeletal pain management and functional rehabilitation — working with patients experiencing back pain, neck pain, joint pain, and muscle injuries. He is recognised for strong manual therapy skills and a patient-focused approach that makes even complex or chronic pain cases feel manageable.",
+  //   content: [
+  //     "Dr. Aman Patel is a physiotherapist specialising in musculoskeletal pain management and functional rehabilitation. He works with patients experiencing back pain, neck pain, joint pain, muscle injuries, and a range of musculoskeletal disorders — bringing a hands-on, assessment-first approach to every case.",
+  //     "Dr. Aman believes that accurate diagnosis is the foundation of effective treatment. Before any intervention, he conducts a thorough evaluation to identify the true root cause of pain — because treating symptoms without understanding their origin rarely produces lasting results. From that foundation, he builds targeted rehabilitation plans designed to reduce pain, restore mobility, and return patients to their daily lives safely and comfortably.",
+  //     "He is recognised for his strong manual therapy skills and a patient-focused approach that makes even complex or chronic pain cases feel manageable. His goal with every patient is simple: less pain, better movement, and the confidence to get back to living fully."
+  //   ],
+  //   education: [
+  //     "BPT — Bachelor of Physiotherapy"
+  //   ],
+  //   expertise: [
+  //     "Musculoskeletal pain management",
+  //     "Manual therapy techniques",
+  //     "Back and neck pain rehabilitation",
+  //     "Joint and muscle injury treatment",
+  //     "Functional movement restoration"
+  //   ],
+  //   whySecureClinics:
+  //     "At Secure Clinics gives Dr. Aman the clinical environment that makes the biggest difference to his patients — one where physiotherapy is not a standalone appointment but part of a fully integrated care plan, supported by diagnostics, specialist consultations, and rehabilitation all under one roof.",
+  //   askAbout:
+  //     "Back and neck pain, how manual therapy works, what to expect from a physiotherapy assessment, and how long recovery typically takes for common musculoskeletal conditions.",
+  //   beyondWhiteCoat:
+  //     "A passionate traveller who finds meaning in exploring new destinations and immersing himself in different cultures — a curiosity about people and the world that translates directly into the care and attention he brings to every patient."
+  // },
   {
     slug: "prayushi-shah",
     name: "Dr. Prayushi Shah",
@@ -369,16 +366,16 @@ export const team = [
       "A live music enthusiast and passionate traveller. She finds concerts and live events both relaxing and creatively energising — and brings that same openness and connection to people from all walks of life into the way she treats every patient."
   },
   {
-    slug: "shruti-kamya",
-    name: "Shruti Kamya",
+    slug: "shruti-kainya",
+    name: "Shruti Kainya",
     role: "Consultant Nutritionist",
-    image: ShrutiKamya,
+    image: ShrutiKainya,
     portraitBg: "bg-[#d49072]",
     description:
       "Sports and Performance Nutritionist and Founder of Nutryst — nearly a decade of experience serving 3,000+ clients including elite cricketers, swimmers, and athletes.",
-    bio: "Shruti Kamya is one of India's most accomplished sports and performance nutritionists, with nearly a decade of clinical experience and 3,000+ clients globally — from elite cricketers and swimmers to hockey and tennis players. A university topper from SNDT with a distinguished PG Diploma in Sports Nutrition from Oxford and dual ACSM/ISSA certifications, her credentials are matched by her results.",
+    bio: "Shruti Kainya is one of India's most accomplished sports and performance nutritionists, with nearly a decade of clinical experience and 3,000+ clients globally — from elite cricketers and swimmers to hockey and tennis players. A university topper from SNDT with a distinguished PG Diploma in Sports Nutrition from Oxford and dual ACSM/ISSA certifications, her credentials are matched by her results.",
     content: [
-      "Shruti Kamya is one of India's most accomplished sports and performance nutritionists, with nearly a decade of clinical experience and a client base of over 3,000 individuals across the globe. From elite cricketers and swimmers to hockey and tennis players, she has built a reputation for nutrition strategies that are as precise as they are personalised — grounded in science, shaped by results.",
+      "Shruti Kainya is one of India's most accomplished sports and performance nutritionists, with nearly a decade of clinical experience and a client base of over 3,000 individuals across the globe. From elite cricketers and swimmers to hockey and tennis players, she has built a reputation for nutrition strategies that are as precise as they are personalised — grounded in science, shaped by results.",
       "Her academic credentials are as strong as her track record. A university topper from SNDT University in Sports Science, Exercise and Wellness Nutrition, she went on to earn a Postgraduate Diploma from Oxford University with Distinction, and holds dual certifications in Sports Nutrition from the American College of Sports Medicine (ACSM) and the International Sports Sciences Association (ISSA).",
       "Shruti's work extends well beyond the clinic. She has served as Nutrition Consultant for Triumph Knights in the Mumbai T20 League, Puneri Paltan Season 10 Champions of Pro Kabaddi, and The Fundamental of Sports Fitness Academy, among many others. Her expertise has been recognised with the Star Indian Icon Award for Best Nutritionist (2024), the Great Companies International Women Entrepreneur Award in Nutrition and Fitness (2024), and features in the Times of India and Femina.",
       "At @SecureClinics, she brings that same elite-level thinking to everyday patients — because whether you are a professional athlete or someone recovering from surgery, your nutrition deserves the same rigour."

@@ -6,6 +6,11 @@ import Aquatreadmill from "../../../public/images/Aquatreadmill.jpg";
 import IceBath from "../../../public/images/IceBath.jpg";
 import Sauna from "../../../public/images/Sauna.jpg";
 import Startyour from "../../../public/images/Startyour.jpg";
+import AishwaryaChorge from "../../../public/doctors/aishwarya-chorge.webp";
+import ShrutiKainya from "../../../public/doctors/shruti-kamya.webp";
+import HastiGala from "../../../public/doctors/hasti-gala.webp";
+import NirmalSolanki from "../../../public/doctors/nirmal-solanki.webp";
+import RaenaShah from "../../../public/doctors/raena-shah.webp";
 
 const galleryImages = [
   "/common/1.png",
@@ -29,30 +34,30 @@ const galleryItems = [
 
 const teamMembers = [
   {
+    name: "Raena Shah",
+    position: "Co-Founder and COO",
+    image: "/doctors/raena-shah.webp",
+  },
+  {
     name: "Aishwarya chorge",
-    position: "Senior Physiotherapist",
+    position: "Consultant Physiotherapist",
     image: "/doctors/aishwarya-chorge.webp",
   },
   {
-    name: "Aman Patel",
-    position: "Aqua Therapist",
-    image: "/doctors/aman-patel.webp",
+    name: "Shruti Kainya",
+    position: "AConsultant Nutritionist",
+    image: "/doctors/shruti-kamya.webp",
   },
   {
-    name: "Ankit Sheth",
-    position: "Physiotherapist",
-    image: "/doctors/ankit-sheth.webp",
+    name: "Hasti Gala",
+    position: "Consultant Nutritionist",
+    image: "/doctors/hasti-gala.webp",
   },
   {
     name: "Dinky Shah",
-    position: "Receptionist",
+    position: "Consultant Physiotherapist and Co-Founder",
     image: "/doctors/dinky-shah.webp",
-  },
-  {
-    name: "Krishna Patel",
-    position: "Physiotherapist",
-    image: "/doctors/krishna-patel.webp",
-  },
+  }
 ];
 
 const faqs = [
