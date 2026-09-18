@@ -1,5 +1,6 @@
 import { Fraunces, Inter } from "next/font/google";
 import "./landing.css";
+import MobileContactBar from "../(main)/components/footer/MobileContactBar";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function LandingLayout({ children }) {
       className={`${fraunces.variable} ${inter.variable} landing-layout`}
     >
       {children}
+      <MobileContactBar />
     </div>
   );
 }

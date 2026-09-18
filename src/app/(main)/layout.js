@@ -2,6 +2,7 @@
 
 import Header from "./components/header";
 import Footer from "./components/footer";
+import MobileContactBar from "./components/footer/MobileContactBar";
 
 export default function MainLayout({ children }) {
   return (
@@ -11,6 +12,7 @@ export default function MainLayout({ children }) {
       <main>{children}</main>
 
       <Footer />
+      <MobileContactBar />
     </div>
   );
 }

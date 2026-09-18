@@ -6,11 +6,6 @@ import Aquatreadmill from "../../../public/images/Aquatreadmill.jpg";
 import IceBath from "../../../public/images/IceBath.jpg";
 import Sauna from "../../../public/images/Sauna.jpg";
 import Startyour from "../../../public/images/Startyour.jpg";
-import AishwaryaChorge from "../../../public/doctors/aishwarya-chorge.webp";
-import ShrutiKainya from "../../../public/doctors/shruti-kamya.webp";
-import HastiGala from "../../../public/doctors/hasti-gala.webp";
-import NirmalSolanki from "../../../public/doctors/nirmal-solanki.webp";
-import RaenaShah from "../../../public/doctors/raena-shah.webp";
 
 const galleryImages = [
   "/common/1.png",
@@ -172,7 +167,7 @@ export default function LandingPage() {
     <div className="landing-page">
       <header className="topbar">
         <div className="wrap">
-          <a href="#top" className="brand">
+          <a href="/" className="brand">
             <span className="dot" aria-hidden="true"></span>
             Secure Clinics
           </a>
@@ -1063,21 +1058,6 @@ export default function LandingPage() {
         </div>
       </footer>
 
-      <div className="mobile-bar">
-        <a
-          href="tel:+91XXXXXXXXXX"
-          className="btn btn-primary"
-        >
-          Call now
-        </a>
-
-        <a
-          href="https://wa.me/91XXXXXXXXXX"
-          className="btn btn-wa"
-        >
-          WhatsApp
-        </a>
-      </div>
     </div>
   );
 }
