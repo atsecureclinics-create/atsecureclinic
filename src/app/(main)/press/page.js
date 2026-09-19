@@ -7,7 +7,7 @@ import team from "../../../../public/images/press.jpg";
 import hospital from "../../../../public/icons/hospital-1.png";
 
 const featured = {
-    title: "India's Growth Story: 10 Founders, Innovators, and Business Leaders to Follow",
+    title: "India’s Growth Story: 10 Founders, Innovators, and Business Leaders to Follow",
     description:
         "hese 10 founders, innovators, and business leaders are some of the many people who are driving the wheels of India's growth. This feature showcases ten outstanding individuals whose inspiring leadership continues to drive the growth of our nation.",
     image: team,
@@ -115,7 +115,7 @@ export default function NewsroomPage() {
                 </div>
 
                 {/* ARTICLE GRID */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
                     {articles.map((item, index) => (
                         <div
                             key={index}
@@ -150,7 +150,7 @@ export default function NewsroomPage() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </section>
         </main>
     );
