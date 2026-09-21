@@ -165,8 +165,8 @@ export default function FAQPage() {
             {/* FAQ SECTION */}
             <section className="max-w-4xl py-24 m-auto">
 
-                <p className="uppercase tracking-[0.25em] text-2xl font-extrabold text-navy mb-8">
-                    The Membership
+                <p className="tracking-[0.25em] text-2xl font-extrabold text-navy mb-8">
+                    FAQs
                 </p>
 
                 <div className="border-t border-navy/10">

@@ -3,13 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import team from "../../../../public/home-banner-mobile.png";
+import team from "../../../../public/images/press.jpg";
 import hospital from "../../../../public/icons/hospital-1.png";
 
 const featured = {
-    title: "How Modern Care Is Redefining Surgical Confidence",
+    title: "India’s Growth Story: 10 Founders, Innovators, and Business Leaders to Follow",
     description:
-        "A closer look at how coordinated treatment pathways improve patient trust, recovery, and long-term outcomes.",
+        "hese 10 founders, innovators, and business leaders are some of the many people who are driving the wheels of India's growth. This feature showcases ten outstanding individuals whose inspiring leadership continues to drive the growth of our nation.",
     image: team,
 };
 
@@ -105,7 +105,8 @@ export default function NewsroomPage() {
                         </p>
 
                         <Link
-                            href="#"
+                            href="https://www.dnaindia.com/insights/report-india-s-growth-story-10-founders-innovators-and-business-leaders-to-follow-3218472"
+                            target="_blank"
                             className="inline-flex items-center gap-3 bg-navy text-white px-5 md:px-6 py-2.5 md:py-3 rounded-full font-semibold hover:bg-coral transition text-sm md:text-base"
                         >
                             Read Article <ArrowUpRight size={18} />
@@ -114,7 +115,7 @@ export default function NewsroomPage() {
                 </div>
 
                 {/* ARTICLE GRID */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
                     {articles.map((item, index) => (
                         <div
                             key={index}
@@ -149,7 +150,7 @@ export default function NewsroomPage() {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div> */}
             </section>
         </main>
     );

@@ -1756,44 +1756,6 @@
 
 
 /* =========================================================
-   MOBILE BOTTOM BAR
-========================================================= */
-
-.landing-page .mobile-bar {
-  position: fixed;
-
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  z-index: 60;
-
-  display: flex;
-
-  gap: 10px;
-
-  padding: 10px 14px;
-
-  border-top:
-    1px solid var(--landing-line);
-
-  background: var(--landing-card);
-
-  box-shadow:
-    0 -6px 20px
-    rgba(0, 0, 0, 0.08);
-}
-
-.landing-page .mobile-bar .btn {
-  flex: 1;
-
-  padding: 12px 10px;
-
-  font-size: 14px;
-}
-
-
-/* =========================================================
    MEDIA / IMAGE / VIDEO FRAMES
 ========================================================= */
 
@@ -2567,7 +2529,4 @@
     padding-bottom: 26px;
   }
 
-  .landing-page .mobile-bar {
-    display: none;
-  }
 }

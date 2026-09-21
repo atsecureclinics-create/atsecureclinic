@@ -318,7 +318,7 @@ export default function Header() {
                                 <div>
                                     <div className="flex items-center justify-between py-2">
                                         <Link href="/nonsurgical" onClick={closeMobile} className="text-base font-extrabold uppercase tracking-[0.15em]">
-                                            Non-Surgical Treatments
+                                            Non<code>-</code>Surgical Treatments
                                         </Link>
                                         <button type="button" onClick={() => setNonsurgicalOpen(v => !v)} className="p-1">
                                             <ChevronDown size={16} className={`transition-transform duration-200 ${nonsurgicalOpen ? "rotate-180" : ""}`} />
