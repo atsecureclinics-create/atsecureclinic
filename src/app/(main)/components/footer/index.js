@@ -152,8 +152,8 @@ const Footer = () => {
             </footer>
 
             <div
-                className="bg-cover bg-center bg-no-repeat px-4 sm:px-8 md:px-12 lg:px-24 py-6 sm:py-8 md:py-10"
-                style={{ backgroundImage: "url('/common/blue-bg.png')", marginBottom: "70px" }}
+                className="bg-cover bg-center bg-no-repeat px-4 sm:px-8 md:px-12 lg:px-24 py-6 sm:py-8 md:py-10 mb-14 sm:mb-0"
+                style={{ backgroundImage: "url('/common/blue-bg.png')"}}
             >
                 <div className="max-w-7xl mx-auto flex flex-col gap-5 sm:gap-6 md:gap-8">
                     <div className="logo-footer">
