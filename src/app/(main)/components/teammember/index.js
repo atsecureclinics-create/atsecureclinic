@@ -12,6 +12,7 @@ import Image from 'next/image';
 import Container from '../container';
 import AtTheRate from '../attherate';
 import { team } from '../../../api/team';
+import { formatDoctorName } from '../../../helper';
 
 const TeamMember = () => {
     return (
@@ -54,7 +55,9 @@ const TeamMember = () => {
                                     <div className="md:col-span-8 flex flex-col justify-center order-2 md:order-1">
                                         <h3
                                             className="text-navy text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-2"
-                                            dangerouslySetInnerHTML={{ __html: member.name }}
+                                            dangerouslySetInnerHTML={{
+                                                __html: formatDoctorName(member.name)
+                                            }}
                                         />
                                         {member.role && (
                                             <p

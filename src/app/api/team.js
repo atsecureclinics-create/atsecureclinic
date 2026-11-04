@@ -9,6 +9,11 @@ import ShrutiKainya from "../../../public/doctors/shruti-kamya.webp";
 import HastiGala from "../../../public/doctors/hasti-gala.webp";
 import NirmalSolanki from "../../../public/doctors/nirmal-solanki.webp";
 import RaenaShah from "../../../public/doctors/raena-shah.webp";
+import DhruvPatel from "../../../public/doctors/Dr-Dhruv-Patel.png";
+import AnushkaRaote from "../../../public/doctors/Dr-Anushka-Raote.png";
+import AmanMinocha from "../../../public/doctors/Dr-Aman-Minocha.png";
+import RutujaSathe from "../../../public/doctors/Dr-Rutuja-Sathe.png";
+import ShrinivasWaghmare from "../../../public/doctors/Dr-Shriniwas-Waghamare.png";
 
 export const team = [
   // ── Co-founders first ──────────────────────────────
@@ -482,4 +487,205 @@ export const team = [
     beyondWhiteCoat:
       "An active cricket player who believes staying in the game — literally — keeps a clinician honest. The physical discipline he brings to sport is the same he brings to his patients: structured, deliberate, and always focused on the long game."
   },
+  {
+    slug: "dhruv-patel",
+    name: "Dr. Dhruv K. Patel",
+    role: "Consultant Physiotherapist",
+    image: DhruvPatel,
+    portraitBg: "bg-[#FE805D]",
+    description:
+      "Consultant Physiotherapist with over 4 years of clinical experience. Certified shoulder rehabilitation specialist and aquatic rehabilitation therapist with expertise in musculoskeletal recovery and sports injury prevention.",
+    bio: "Dr. Dhruv K. Patel is a Consultant Physiotherapist at @SecureClinics, Marine Drive, bringing over 4 years of focused clinical experience across hospitals, clinics, and private practice. A certified shoulder rehabilitation specialist and aquatic rehabilitation therapist, he combines precise manual techniques with a performance-driven approach to help patients recover faster, move better, and stay injury-free.",
+    content: [
+      "Dr. Dhruv K. Patel is a Consultant Physiotherapist at @SecureClinics, Marine Drive, bringing over 4 years of focused clinical experience across hospitals, clinics, and private practice. A certified shoulder rehabilitation specialist and aquatic rehabilitation therapist, he combines precise manual techniques with a performance-driven approach to help patients recover faster, move better, and stay injury-free.",
+      "Certified by the London Shoulder Clinic — one of the world's most respected institutions in shoulder care — Dr. Dhruv brings an internationally validated standard to his practice. His expertise spans the full spectrum of musculoskeletal rehabilitation, from complex post-surgical recovery to sports injury prevention, with a particular focus on shoulder conditions that others often struggle to resolve.",
+      "What sets Dr. Dhruv apart is his fluency across disciplines — dry needling, aquatic therapy, sports taping, and functional movement — seamlessly woven into individualised recovery programmes that address not just the symptom, but the root cause."
+    ],
+    education: [
+      "Bachelor of Physiotherapy (BPT) — Sarvajanik College of Physiotherapy, VNSGU, Surat"
+    ],
+    certifications: [
+      "London Shoulder Clinic Certified Practitioner (LSCCP)",
+      "Certified Aquatic Rehabilitation Therapist (CART)",
+      "Vertebral & Peripheral Manipulation Techniques",
+      "Sports Taping & Dry Needling"
+    ],
+    expertise: [
+      "Shoulder rehabilitation & sports injuries",
+      "Musculoskeletal & post-surgical rehabilitation",
+      "Manual therapy & chiropractic techniques",
+      "Aquatic rehabilitation",
+      "Pain management & movement dysfunction",
+      "Postural correction & ergonomics",
+      "Strength, mobility & functional rehabilitation",
+      "Sports physiotherapy & injury prevention"
+    ],
+    whySecureClinics:
+      "@SecureClinics is where Dr. Dhruv's multi-disciplinary skill set finds its fullest expression — a clinic where aqua therapy, physiotherapy, and surgical care work together under one roof, giving every patient the most complete path to recovery.",
+    askAbout:
+      "Shoulder pain and injury recovery, how aquatic therapy accelerates healing, and what a truly functional rehabilitation programme looks like — for athletes and non-athletes alike.",
+    beyondWhiteCoat:
+      "Driven by movement, precision, and the belief that every body has the capacity to heal — when given the right support."
+  },
+
+  {
+    slug: "aman-minocha",
+    name: "Dr. Aman U. Minocha (PT)",
+    role: "Consultant Physiotherapist — Neuro <code>&</code> Spine Rehabilitation",
+    image: AmanMinocha,
+    portraitBg: "bg-[#FE805D]",
+    description:
+      "Neuro and Spine Rehabilitation Expert with over 5 years of specialised experience. Expertise in complex spine conditions, neurological rehabilitation, post-surgical recovery, and advanced manual therapy.",
+    bio: "Dr. Aman U. Minocha is a Neuro and Spine Rehabilitation Expert and Musculoskeletal Physiotherapist at @SecureClinics, bringing over 5 years of specialised experience in some of South Mumbai's most demanding clinical environments. Known for his advanced clinical acumen and deeply compassionate approach, Dr. Minocha helps patients restore mobility, resolve acute pain, and rebuild long-term functional stability.",
+    content: [
+      "Dr. Aman U. Minocha is a Neuro and Spine Rehabilitation Expert and Musculoskeletal Physiotherapist at @SecureClinics, bringing over 5 years of specialised experience in some of South Mumbai's most demanding clinical environments. Known for his advanced clinical acumen and deeply compassionate approach, Dr. Minocha helps patients restore mobility, resolve acute pain, and rebuild long-term functional stability — even in cases others have found difficult to treat.",
+      "Before joining @SecureClinics, Dr. Minocha served as Team Lead for the Inpatient Rehabilitation Unit at Bombay Hospital & Medical Research Centre — one of Mumbai's most prestigious institutions — where he directed complex post-surgical, neurological, and acute trauma recoveries. That high-stakes clinical foundation shapes everything he brings to his patients today.",
+      "His expertise spans the full arc of neuro and spine rehabilitation — from disc herniations and sciatica to stroke recovery, spinal cord injuries, and Guillain-Barré Syndrome — supported by advanced certifications in orthopaedic manual therapy, neurodynamics, and aquatic rehabilitation. Beyond clinical practice, Dr. Minocha is actively engaged in the wider physiotherapy community, organising CME seminars and hands-on workshops to train the next generation of practitioners.",
+      "He practises by a philosophy that is simple but profound: 'Healing is a science, but rehabilitation is an art.'"
+    ],
+    education: [
+      "Master of Physiotherapy (MPT) in Musculoskeletal Physiotherapy — MGM College of Physiotherapy, Navi Mumbai"
+    ],
+    certifications: [
+      "Certification in Orthopaedic Manual Therapy (COMT)",
+      "Neurodynamics Solutions (NDS) — Nerve Mobilisation & Radiating Pain Management",
+      "Certified Aquatic Rehabilitation Therapist"
+    ],
+    expertise: [
+      "Spine rehabilitation — disc herniations, sciatica, fractures & chronic spinal pathology",
+      "Neuro rehabilitation — stroke, spinal cord injury, GBS & balance disorders",
+      "Orthopaedic manual therapy & spinal adjustments",
+      "Musculoskeletal & sports physiotherapy",
+      "Post-surgical rehabilitation",
+      "Aquatic therapy & hydrodynamic conditioning",
+      "Strength, conditioning & core stability",
+      "Academic leadership & CME facilitation"
+    ],
+    whySecureClinics:
+      "@SecureClinics reflects the kind of integrated, evidence-based care Dr. Minocha has always believed in — where neuro rehabilitation, spine care, aqua therapy, and surgical expertise work in concert rather than isolation, giving every patient the most complete recovery possible.",
+    askAbout:
+      "Complex spine and nerve conditions, neurological rehabilitation, how aquatic therapy supports recovery, and what a truly personalised rehabilitation programme looks like from assessment to full functional return.",
+    beyondWhiteCoat:
+      "Clinician, educator, and relentless advocate for the belief that every patient — no matter how complex their condition — deserves a path back to an active, pain-free life."
+  },
+
+  {
+    slug: "rutuja-sathe",
+    name: "Dr. Rutuja Sathe <span>(MPT Neuro)</span>",
+    role: "Consultant Physiotherapist — Neurological Rehabilitation",
+    image: RutujaSathe,
+    portraitBg: "bg-[#FE805D]",
+    description:
+      "Consultant Neurophysiotherapist with over 4 years of clinical experience. Specialises in neurological and orthopaedic rehabilitation, aquatic therapy, dry needling, and neurodevelopmental treatment.",
+    bio: "Dr. Rutuja Sathe is a Consultant Neurophysiotherapist at @SecureClinics, Marine Drive, bringing over 4 years of clinical experience across hospitals, specialised polyclinics, and private rehabilitation centres. A Master's graduate in Neurophysiotherapy from PT School and Centre, Seth GS Medical College and KEM Hospital, Mumbai, she brings both academic rigour and hands-on clinical depth to every patient she works with.",
+    content: [
+      "Dr. Rutuja Sathe is a Consultant Neurophysiotherapist at @SecureClinics, Marine Drive, bringing over 4 years of clinical experience across hospitals, specialised polyclinics, and private rehabilitation centres. A Master's graduate in Neurophysiotherapy from one of India's most respected institutions — PT School and Centre, Seth GS Medical College and KEM Hospital, Mumbai — she brings both academic rigour and hands-on clinical depth to every patient she works with.",
+      "Dr. Rutuja specialises in neurological rehabilitation, helping patients navigate some of the most complex and life-altering conditions that the nervous system presents — from movement dysfunction and spinal injuries to post-operative neurological recovery. Her training at KEM Hospital, a premier government medical institution handling high volumes of acute and complex cases, gave her an exceptional clinical foundation.",
+      "What distinguishes Dr. Rutuja is her versatility — equally fluent in neurological and orthopaedic rehabilitation, certified in aquatic therapy, dry needling, and neurodevelopmental treatment, she builds recovery programmes that are as comprehensive as they are personalised. Her calm, methodical approach and genuine investment in each patient's progress make her a trusted presence at @SecureClinics."
+    ],
+    education: [
+      "Masters in Neurophysiotherapy (MPT Neuro) — PT School and Centre, Seth GS Medical College & KEM Hospital, Mumbai (2025)",
+      "Bachelor of Physiotherapy (BPT) — K. J. Somaiya College of Physiotherapy, Mumbai (2022)"
+    ],
+    certifications: [
+      "Neurodevelopmental Treatment (NDT) — Certified Practitioner",
+      "Certified Aquatic Rehabilitation Therapist (CART)",
+      "Dry Needling",
+      "Therapeutic Taping",
+      "Basic Life Support (BLS)"
+    ],
+    expertise: [
+      "Neurological rehabilitation",
+      "Orthopaedic & spinal rehabilitation",
+      "Pain management & movement dysfunction",
+      "Operative & non-operative neurological case management",
+      "Aquatic therapy & hydrodynamic rehabilitation",
+      "Functional rehabilitation & recovery"
+    ],
+    whySecureClinics:
+      "@SecureClinics is where Dr. Rutuja's dual expertise in neurology and orthopaedics finds its fullest expression — an integrated clinic where neurophysiotherapy, aqua therapy, spine care, and surgical expertise work seamlessly together for every patient's complete recovery.",
+    askAbout:
+      "Neurological rehabilitation, how aquatic therapy supports recovery from complex conditions, and what a structured, evidence-based functional recovery programme looks like from first assessment to full return to life.",
+    beyondWhiteCoat:
+      "A dedicated clinician with a quiet determination — committed to the belief that even the most complex neurological conditions deserve a thoughtful, personalised path forward."
+  },
+
+  {
+    slug: "anushka-raote",
+    name: "Dr. Anushka Raote <code>(MPT)</code>",
+    role: "Consultant Physiotherapist — Musculoskeletal <code>&</code> Sports Rehabilitation",
+    image: AnushkaRaote,
+    portraitBg: "bg-[#FE805D]",
+    description:
+      "Consultant Physiotherapist specialising in musculoskeletal and sports rehabilitation. Experienced in shoulder and spinal recovery, sports injury management, post-surgical care, and movement-focused rehabilitation.",
+    bio: "Dr. Anushka Raote is a Consultant Physiotherapist at @SecureClinics, Marine Drive, specialising in musculoskeletal and sports rehabilitation. A postgraduate from Sunandan Divatia School of Science, SVKM's NMIMS, she brings academic excellence and sharp clinical instincts to her practice, backed by hands-on hospital experience at Nanavati Max Super Speciality Hospital.",
+    content: [
+      "Dr. Anushka Raote is a Consultant Physiotherapist at @SecureClinics, Marine Drive, specialising in musculoskeletal and sports rehabilitation. A postgraduate from Sunandan Divatia School of Science, SVKM's NMIMS — one of Mumbai's most respected institutions — she brings academic excellence and sharp clinical instincts to her practice, backed by hands-on hospital experience at Nanavati Max Super Speciality Hospital.",
+      "Though early in her career, Dr. Anushka has already built a strong foundation across the full range of musculoskeletal and orthopaedic rehabilitation — from shoulder and spinal recovery to sports injury management and post-surgical care. Her exposure at Nanavati Max sharpened her skills in clinical assessment and decision-making in a high-volume, high-acuity hospital environment — a grounding that reflects clearly in the quality and confidence of her clinical work today.",
+      "Her approach is movement-first and patient-centred — combining therapeutic exercise, functional rehabilitation, and cupping therapy to create recovery programmes that address not just the site of pain, but the underlying patterns driving it."
+    ],
+    education: [
+      "Master of Physiotherapy (MPT) — Musculoskeletal Physiotherapy, Sunandan Divatia School of Science, SVKM's NMIMS, Mumbai (2026)",
+      "Bachelor of Physiotherapy (BPT) — MGM School of Physiotherapy, MGM University (2024)"
+    ],
+    certifications: [
+      "Cupping Therapy"
+    ],
+    expertise: [
+      "Musculoskeletal & orthopaedic rehabilitation",
+      "Shoulder & spinal rehabilitation",
+      "Sports injury rehabilitation",
+      "Post-surgical rehabilitation",
+      "Pain management",
+      "Therapeutic exercise & strengthening",
+      "Movement assessment & functional rehabilitation",
+      "Neurological rehabilitation"
+    ],
+    whySecureClinics:
+      "@SecureClinics gives Dr. Anushka the ideal environment to practise the kind of integrated, patient-first physiotherapy she trained for — where musculoskeletal care, sports rehabilitation, and surgical expertise work hand in hand under one roof.",
+    askAbout:
+      "Sports injury recovery, shoulder and spinal rehabilitation, how cupping therapy supports musculoskeletal healing, and what a movement-focused recovery programme looks like in practice.",
+    beyondWhiteCoat:
+      "A young clinician with a sharp eye for movement and a genuine commitment to helping every patient get back to doing what they love — better and stronger than before."
+  },
+
+  {
+    slug: "shrinivas-waghmare",
+    name: "Dr. Shrinivas Waghmare",
+    role: "Physiotherapist, Aquatic Rehabilitation <code>&</code>  Neurodynamics",
+    image: ShrinivasWaghmare,
+    portraitBg: "bg-[#FE805D]",
+    description:
+      "Physiotherapist specialising in aquatic rehabilitation and musculoskeletal care. Trained in Neuro Dynamic Solutions (NDS) from Australia, with experience in neurological rehabilitation, aquatic therapy, and home-based patient care.",
+    bio: "Dr. Shrinivas Waghmare is a physiotherapist at @SecureClinics, specialising in aquatic rehabilitation and musculoskeletal care. A recent Bachelor of Physiotherapy graduate from MAEER's Physiotherapy College, Talegaon Dabhade, Pune (2026), he has already built hands-on experience across outpatient physiotherapy, musculoskeletal and neurological rehabilitation, aquatic therapy, and home-based patient care.",
+    content: [
+      "Dr. Shrinivas Waghmare is a physiotherapist at @SecureClinics, specialising in aquatic rehabilitation and musculoskeletal care. A recent Bachelor of Physiotherapy graduate from MAEER's Physiotherapy College, Talegaon Dabhade, Pune (2026), he has already built hands-on experience across outpatient physiotherapy, musculoskeletal and neurological rehabilitation, aquatic therapy, and home-based patient care.",
+      "Dr. Shrinivas is trained in Neuro Dynamic Solutions (NDS) from Australia, a specialised approach to assessing and treating nerve-related pain and movement restriction. Alongside this, his certification in aquatic rehabilitation allows him to design low-impact, water-based recovery programmes that help patients regain strength and mobility safely.",
+      "His approach is thorough and practical: careful assessment, individualised treatment planning, therapeutic exercise prescription, and clear patient education, so that every patient understands their recovery and stays confident throughout it."
+    ],
+    education: [
+      "Bachelor of Physiotherapy (BPTh) — MAEER's Physiotherapy College, Talegaon Dabhade, Pune (2026)"
+    ],
+    certifications: [
+      "Neuro Dynamic Solutions (NDS), Australia",
+      "Aquatic Rehabilitation Therapy"
+    ],
+    expertise: [
+      "Musculoskeletal rehabilitation",
+      "Aquatic rehabilitation (aquatherapy)",
+      "Orthopaedic & post-surgical rehabilitation",
+      "Neurological rehabilitation",
+      "Manual therapy & therapeutic exercise",
+      "Pain management & movement dysfunction",
+      "Mobility, strengthening & functional training",
+      "Postural correction & ergonomics",
+      "Home-based physiotherapy & patient education"
+    ],
+    whySecureClinics:
+      "@SecureClinics offers Dr. Shrinivas the ideal setting to grow within an integrated model of care, where physiotherapy, aqua therapy, and surgical expertise work together under one roof for complete patient recovery.",
+    askAbout:
+      "Aquatic therapy and how it supports recovery, nerve-related pain and neurodynamics, and what a home-based or exercise-led rehabilitation plan looks like.",
+    beyondWhiteCoat:
+      "A dedicated young clinician committed to continuous learning and to helping every patient move better, with confidence and care."
+  }
 ];
