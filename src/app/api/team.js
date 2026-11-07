@@ -530,7 +530,7 @@ export const team = [
 
   {
     slug: "aman-minocha",
-    name: "Dr. Aman U. Minocha (PT)",
+    name: "Dr. Aman U. Minocha — PT",
     role: "Consultant Physiotherapist — Neuro <code>&</code> Spine Rehabilitation",
     image: AmanMinocha,
     portraitBg: "bg-[#FE805D]",
@@ -571,7 +571,7 @@ export const team = [
 
   {
     slug: "rutuja-sathe",
-    name: "Dr. Rutuja Sathe (MPT Neuro)",
+    name: "Dr. Rutuja Sathe — MPT Neuro",
     role: "Consultant Physiotherapist — Neurological Rehabilitation",
     image: RutujaSathe,
     portraitBg: "bg-[#FE805D]",
@@ -612,7 +612,7 @@ export const team = [
 
   {
     slug: "anushka-raote",
-    name: "Dr. Anushka Raote (MPT)",
+    name: "Dr. Anushka Raote — MPT",
     role: "Consultant Physiotherapist — Musculoskeletal <code>&</code> Sports Rehabilitation",
     image: AnushkaRaote,
     portraitBg: "bg-[#FE805D]",

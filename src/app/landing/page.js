@@ -789,7 +789,7 @@ export default function LandingPage() {
               </p>
 
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+919833165670"
                 className="call-block"
               >
                 <div className="ic">
@@ -807,17 +807,18 @@ export default function LandingPage() {
                 </div>
 
                 <div>
-                  <b>+91-XXXXX-XXXXX</b>
+                  <b><code>+</code>91<code>-</code>XXXXX<code>-</code>XXXXX</b>
                   <span>
-                    Mon–Sat, 8am–9pm · same-day slots where possible
+                    Mon–Sat, 8am–9pm same-day slots where possible
                   </span>
                 </div>
               </a>
 
              <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919833165670"
               className="btn btn-wa"
               style={{ width: "100%" }}
+              target="_blank"
             >
               <svg
                 width="16"

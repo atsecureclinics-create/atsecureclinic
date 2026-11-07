@@ -145,7 +145,7 @@ export default function ContactSection() {
                   </h4>
                   <p className="text-navy font-opensans text-sm md:text-base leading-relaxed">
                     Monday – Saturday<br />
-                    9:00 AM – 7:00 PM
+                    8:00 AM – 9:00 PM
                   </p>
                 </div>
               </div>
