@@ -2227,15 +2227,6 @@
     border-radius: 24px;
   }
 
-  /* .landing-page .stat-card b {
-    font-size: 46px;
-  } */
-
-  /* .landing-page .stat-card span {
-    font-size: 24px;
-    line-height: 1.7;
-  } */
-
   .landing-page .tracks {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 30px;
@@ -2329,6 +2320,73 @@
 
   .landing-page .final-ctas .btn {
     width: 100%;
+  }
+
+
+/* Final CTA - Mobile Fix Only */
+  .final-cta {
+    position: relative;
+    min-height: auto;
+    height: auto;
+    padding: 65px 20px;
+    overflow: hidden;
+  }
+
+  .final-cta > .ph {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  /* Hide placeholder text and icon on mobile */
+  .final-cta .ph-label,
+  .final-cta .ph-icon {
+    display: none;
+  }
+
+  .final-cta-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .landing-page .final-cta h2 {
+  margin: 0;}
+
+  .final-cta-inner h2 {
+    font-size: clamp(32px, 8vw, 42px);
+    line-height: 1.15;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .final-cta-inner p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .final-ctas {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+    margin-top: 5px;
+  }
+
+  .final-ctas .btn {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
   }
 }
 
