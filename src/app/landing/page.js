@@ -4,7 +4,6 @@ import { useState } from "react";
 import aquapool from "../../../public/images/aquapool.jpg";
 import Aquatreadmill from "../../../public/images/Aquatreadmill.jpg";
 import IceBath from "../../../public/images/IceBath.jpg";
-import Sauna from "../../../public/images/Sauna.jpg";
 import Logo from "../../../public/icons/logo.png";
 import Startyour from "../../../public/images/Startyour.jpg";
 import Image from "next/image";
@@ -186,14 +185,14 @@ export default function LandingPage() {
 
           <div className="topbar-cta">
             <a
-              href="tel:+91XXXXXXXXXX"
+              href="tel:+919833165670"
               className="btn btn-outline btn-sm"
             >
               Call now
             </a>
 
             <a
-              href="https://wa.me/91XXXXXXXXXX"
+              href="https://wa.me/919833165670"
               className="btn btn-primary btn-sm"
             >
               WhatsApp
@@ -228,7 +227,7 @@ export default function LandingPage() {
 
               <div className="hero-ctas">
                 <a
-                  href="tel:+91XXXXXXXXXX"
+                  href="tel:+919833165670"
                   className="btn btn-primary"
                 >
                   <svg
