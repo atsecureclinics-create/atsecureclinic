@@ -33,7 +33,7 @@ export default function CareTeam() {
                   />
                 </div>
 
-                <div className="absolute inset-x-0 bottom-0 bg-vanilla p-5 md:p-6 rounded-t-2xl translate-y-[calc(100%-120px)] sm:translate-y-[calc(100%-130px)] group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                <div className="absolute inset-x-0 bottom-0 bg-vanilla p-5 md:p-6 rounded-t-2xl translate-y-[calc(100%-120px)] sm:translate-y-[calc(100%-150px)] group-hover:translate-y-0 transition-transform duration-500 ease-out">
                   <p
                     className="text-sm md:text-lg font-semibold tracking-widest uppercase text-coral mb-2"
                     dangerouslySetInnerHTML={{ __html: member.role }}
