@@ -5,7 +5,9 @@ import aquapool from "../../../public/images/aquapool.jpg";
 import Aquatreadmill from "../../../public/images/Aquatreadmill.jpg";
 import IceBath from "../../../public/images/IceBath.jpg";
 import Sauna from "../../../public/images/Sauna.jpg";
+import Logo from "../../../public/icons/logo.png";
 import Startyour from "../../../public/images/Startyour.jpg";
+import Image from "next/image";
 
 const galleryImages = [
   "/common/1.png",
@@ -168,8 +170,14 @@ export default function LandingPage() {
       <header className="topbar">
         <div className="wrap">
           <a href="/" className="brand">
-            <span className="dot" aria-hidden="true"></span>
-            Secure Clinics
+            <Image
+              src={Logo}
+              alt="Secure Clinic"
+              width={300}
+              height={100}
+              priority
+              className="w-40 md:w-40 xl:w-80 h-auto"
+          />
           </a>
 
           <span className="topline">
@@ -743,7 +751,7 @@ export default function LandingPage() {
         </section>
 
         {/* TESTIMONIAL */}
-        <section className="band-sand">
+        {/* <section className="band-sand">
           <div className="wrap split-row">
             <div className="col-media">
               <Placeholder
@@ -769,7 +777,7 @@ export default function LandingPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* BOOKING */}
         <section className="band-deep" id="book">
@@ -807,9 +815,9 @@ export default function LandingPage() {
                 </div>
 
                 <div>
-                  <b><code>+</code>91<code>-</code>XXXXX<code>-</code>XXXXX</b>
+                  <b><code>+91 98331 65670</code></b>
                   <span>
-                    Mon–Sat, 8am–9pm same-day slots where possible
+                    Mon–Sat, 8am–9pm
                   </span>
                 </div>
               </a>
