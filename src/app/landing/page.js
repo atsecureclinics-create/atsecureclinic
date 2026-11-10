@@ -1004,7 +1004,7 @@ export default function LandingPage() {
             className="ph ph-16-9"
             style={{ position: "absolute", inset: 0 }}
           >
-            <span className="ph-tag">Photo</span>
+            {/* <span className="ph-tag">Photo</span> */}
             <svg
               className="ph-icon"
               viewBox="0 0 24 24"
@@ -1035,14 +1035,14 @@ export default function LandingPage() {
 
             <div className="final-ctas">
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+919833165670"
                 className="btn btn-primary"
               >
                 Call now
               </a>
 
               <a
-                href="https://wa.me/91XXXXXXXXXX"
+                href="https://wa.me/919833165670"
                 className="btn btn-wa"
               >
                 WhatsApp us
@@ -1075,7 +1075,7 @@ function Placeholder({
 }) {
   return (
     <div className={`ph ${ratio}`}>
-      {tag && <span className="ph-tag">{tag}</span>}
+      {/* {tag && <span className="ph-tag">{tag}</span>} */}
 
       {iframe ? (
         iframe
