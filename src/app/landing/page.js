@@ -1055,7 +1055,7 @@ export default function LandingPage() {
       <footer>
         <div className="wrap">
           Secure Clinics · Marine Drive, Mumbai · PAMS SpineSecure LLP <br />
-          Replace +91XXXXXXXXXX with your real phone/WhatsApp numbers, and swap every dashed placeholder box with real photos/video before publishing.
+          +919833165670
         </div>
       </footer>
 
