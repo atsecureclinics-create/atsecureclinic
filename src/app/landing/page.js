@@ -1033,7 +1033,7 @@ export default function LandingPage() {
           </div>
 
           <div className="final-cta-inner">
-            <h2>Guided recovery starts with one call.</h2>
+            <h2 className="mb-[0px]">Guided recovery starts with one call.</h2>
 
             <p>
               Book a clinical assessment and we'll tell you, honestly,
