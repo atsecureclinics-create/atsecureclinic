@@ -14,7 +14,6 @@ import AnushkaRaote from "../../../public/doctors/Dr-Anushka-Raote.png";
 import AmanMinocha from "../../../public/doctors/Dr-Aman-Minocha.png";
 import RutujaSathe from "../../../public/doctors/Dr-Rutuja-Sathe.png";
 import ShrinivasWaghmare from "../../../public/doctors/Dr-Shriniwas-Waghamare.png";
-import DimpleJethwani from "../../../public/doctors/DimpleJethwani.jpeg";
 
 export const team = [
   // ── Co-founders first ──────────────────────────────
@@ -688,56 +687,5 @@ export const team = [
       "Aquatic therapy and how it supports recovery, nerve-related pain and neurodynamics, and what a home-based or exercise-led rehabilitation plan looks like.",
     beyondWhiteCoat:
       "A dedicated young clinician committed to continuous learning and to helping every patient move better, with confidence and care."
-  },
-  {
-    slug: "dimple-jethwani",
-    name: "Dr. Dimple Jethwani",
-    qualification: "BDS, MDS",
-    role: "Specialist Endodontist – Conservative Dentistry <code>&</code> Endodontics",
-    image: DimpleJethwani,
-    portraitBg: "bg-[#FE805D]",
-    description:
-      "Specialist Endodontist with over seven years of post-graduate clinical experience. Specialises in complex root canal treatments, micro-endodontics, restorative dentistry, and natural tooth preservation.",
-    bio: "Dr. Dimple Jethwani is a Specialist Endodontist with over seven years of post-graduate clinical experience in diagnosing and managing a wide spectrum of endodontic and restorative dental conditions. She is dedicated to preserving natural teeth through precise, evidence-based treatment and comprehensive restorative care.",
-    content: [
-      "Dr. Dimple Jethwani is a Specialist Endodontist with over seven years of post-graduate clinical experience in diagnosing and managing a wide spectrum of endodontic and restorative dental conditions. She is dedicated to preserving natural teeth through precise, evidence-based treatment and comprehensive restorative care.",
-      "Her clinical expertise includes primary and complex root canal treatments, non-surgical endodontic retreatments, management of calcified canals and retrieval of separated instruments.",
-      "She focuses on accurate diagnosis and precision-driven treatment, incorporating dental operating microscope-assisted procedures, contemporary endodontic techniques and advanced diagnostic aids such as CBCT.",
-      "Beyond endodontics, Dr. Dimple has a keen interest in conservative and restorative dentistry, including post-and-core restorations, aesthetic rehabilitation and the restoration of structurally compromised teeth. She believes that successful endodontic treatment goes hand in hand with appropriate restorative planning to ensure long-term function and preservation of the treated tooth.",
-      "Known for her empathetic communication and meticulous approach, she places particular emphasis on patient comfort, building trust and helping anxious patients feel at ease throughout treatment. She believes in individualised treatment planning, interdisciplinary collaboration and delivering care that balances clinical precision with long-term oral health.",
-      "She has undertaken additional professional training at the Royal College of Surgeons of Edinburgh and the ZimVie Institute, Switzerland. She is also a member of the Indian Endodontic Society (IES) and the Indian Association of Conservative Dentistry and Endodontics (IACDE)."
-    ],
-    education: [
-      "Bachelor of Dental Surgery (BDS)",
-      "Master of Dental Surgery (MDS) – Conservative Dentistry & Endodontics"
-    ],
-    certifications: [
-      "Additional professional training — Royal College of Surgeons of Edinburgh",
-      "Additional professional training — ZimVie Institute, Switzerland",
-      "Member — Indian Endodontic Society (IES)",
-      "Member — Indian Association of Conservative Dentistry and Endodontics (IACDE)"
-    ],
-    expertise: [
-      "Primary and complex root canal treatments",
-      "Micro-endodontics",
-      "Non-surgical endodontic retreatments",
-      "Management of calcified canals",
-      "Retrieval of separated instruments",
-      "Dental operating microscope-assisted procedures",
-      "CBCT-assisted diagnosis",
-      "Conservative and restorative dentistry",
-      "Post-and-core restorations",
-      "Aesthetic rehabilitation",
-      "Restoration of structurally compromised teeth",
-      "Interdisciplinary restorative treatment planning"
-    ],
-    whySecureClinics:
-      "Not provided in the supplied profile.",
-    askAbout:
-      "Complex root canal treatments, micro-endodontics, microscope-assisted procedures, CBCT-based diagnosis, preserving natural teeth, and comprehensive restorative treatment planning.",
-    beyondWhiteCoat:
-      "Beyond dentistry, Dr. Dimple enjoys reading, travelling and exploring new experiences. She appreciates art, creativity and meaningful conversations, and believes in the importance of continuous learning and personal growth. Her curiosity, attention to detail and appreciation for different perspectives extend into her approach to both life and clinical practice.",
-    clinicalPhilosophy:
-      "I believe in preserving natural teeth through thoughtful diagnosis, precision-driven endodontic treatment and comprehensive restorative planning. My goal is not just to relieve pain, but to restore comfort, function and confidence while ensuring that every patient feels informed, reassured and cared for."
   }
 ];
